@@ -7,3 +7,6 @@ node_modules
 css/
 images/
 dist/
+
+# デザイン確認用の書き出しデータ
+xd-code/

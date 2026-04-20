@@ -30,8 +30,8 @@
   <!-- CSS (sassコマンドで自動生成) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/styles.css?v=20260330">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css?v=20260420">
   <!-- JavaScript -->
   <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
@@ -42,452 +42,276 @@
 
 <body>
   <header class="p-header js-header">
-    <div class="l-inner">
-      <div class="p-header__content">
-        <h1 class="p-header__logo-wrapper">
-          <a class="p-header__logo" href="https://yamatanedm.co.jp/">
-            <img decoding="async" loading="lazy" src="./images/common/header-logo.svg" alt="ワンプライス66,000円で1箱からお手軽に電子化はじめませんか？かんたんはこスキャン" width="157" height="68">
-          </a>
-        </h1>
-        <a class="p-header__btn" href="#contact">
-          <span class="p-header__btn-text">お申し込みはこちら</span>
-          <span class="p-header__btn-icon" aria-hidden="true">
-            <img decoding="async" loading="lazy" src="./images/common/header-arrow.svg" alt="" width="27" height="27">
-          </span>
-        </a>
-      </div>
-    </div>
+   
   
   </header>
   <main>
     <section class="p-mv">
       <div class="l-inner">
         
-        <figure class="p-mv__img js-mv-img">
-          <picture>
-            <source srcset="./images/common/mv_img.webp" media="(min-width: 768px)" width="1200" height="475"/>
-            <img src="./images/common/mv_img_sp.webp" alt="かんたんはこスキャン" width="1200" height="475">
-          </picture>
-        </figure>
+      
       </div>
     </section>
-    <section class="p-worries">
+    <section class="p-top-text">
       <div class="l-inner">
-        <div class="p-worries__content">
-          <h2 class="p-worries__title js-opacity-word">こんなお悩みを<br class="u-mobile"><span class="js-yellow-word">解決</span>します</h2>
-          <ul class="p-worries__items">
-            <li class="p-worries__item js-opacity-word">
-              <div class="p-worries__card">
-                <p class="p-worries__card-title">
-                  書類がありすぎて<br>
-                  <span>すぐ見つからない</span>
-                </p>
-                <figure class="p-worries__card-img">
-                  <img decoding="async" loading="lazy" src="./images/common/worries-search.svg" alt="書類が多くて探せない悩み" width="256" height="175">
+        <div class="p-top-text__content">
+          <h2 class="p-top-text__title">
+            <span class="p-top-text__line">私たちといっしょに</span>
+            <span class="p-top-text__line">あなたのキャリアを実現しませんか。</span>
+            <span class="p-top-text__line">70年経ったいまも、伸び盛りの会社です。</span>
+          </h2>
+        </div>
+      </div>
+    </section>
+    <section class="p-top-interview">
+      <div class="l-inner">
+        <div class="p-top-interview__content">
+          <div class="p-top-interview__heading">
+            <h2 class="p-top-interview__title">INTERVIEW</h2>
+            <p class="p-top-interview__sub-title">働く仲間の言葉</p>
+          </div>
+          <ul class="p-top-interview__cards">
+            <li class="p-top-interview__card">
+              <a class="p-top-interview__card-link" href="#">
+                <figure class="p-top-interview__image">
+                  <img decoding="async" loading="lazy" src="./images/common/top-interview-card-01.webp" alt="総務部 N.Kさん" width="274" height="283">
                 </figure>
-              </div>
+                <p class="p-top-interview__card-title">次は私が採用を通じて<br>誰かの縁をつなぎたい</p>
+                <p class="p-top-interview__name">総務部　N.Kさん</p>
+              </a>
             </li>
-            <li class="p-worries__item js-opacity-word">
-              <div class="p-worries__card">
-                <p class="p-worries__card-title p-worries__card-title--center">
-                  よく使うのに<br>
-                  <span>原本が1つしかない</span>
-                </p>
-                <figure class="p-worries__card-img">
-                  <img decoding="async" loading="lazy" src="./images/common/worries-original.svg" alt="原本が一つしかない悩み" width="256" height="175">
+            <li class="p-top-interview__card">
+              <a class="p-top-interview__card-link" href="#">
+                <figure class="p-top-interview__image">
+                  <img decoding="async" loading="lazy" src="./images/common/top-interview-card-02.webp" alt="工事事業部 S.Sさん" width="274" height="283">
                 </figure>
-              </div>
+                <p class="p-top-interview__card-title">情報系の知識をベースに<br>ステップアップを実感！</p>
+                <p class="p-top-interview__name">工事事業部　S.Sさん</p>
+              </a>
             </li>
-            <li class="p-worries__item js-opacity-word">
-              <div class="p-worries__card">
-                <p class="p-worries__card-title">
-                  <span>紙から脱却しろ</span><br>
-                  と言われている
-                </p>
-                <figure class="p-worries__card-img">
-                  <img decoding="async" loading="lazy" src="./images/common/worries-paperless.svg" alt="ペーパーレス化を求められる悩み" width="256" height="175">
+            <li class="p-top-interview__card">
+              <a class="p-top-interview__card-link" href="#">
+                <figure class="p-top-interview__image">
+                  <img decoding="async" loading="lazy" src="./images/common/top-interview-card-03.webp" alt="営業部 A.Mさん" width="274" height="283">
                 </figure>
-              </div>
+                <p class="p-top-interview__card-title">異業種からの挑戦でも<br>相談しながら成長できる！</p>
+                <p class="p-top-interview__name">営業部　A.Mさん</p>
+              </a>
+            </li>
+            <li class="p-top-interview__card">
+              <a class="p-top-interview__card-link" href="#">
+                <figure class="p-top-interview__image">
+                  <img decoding="async" loading="lazy" src="./images/common/top-interview-card-04.webp" alt="総務部 S.Hさん" width="274" height="283">
+                </figure>
+                <p class="p-top-interview__card-title">私をきちんと見てくれる<br>そんな会社で働く心地よさ</p>
+                <p class="p-top-interview__name">総務部　S.Hさん</p>
+              </a>
             </li>
           </ul>
-        </div>
-      </div>
-    </section>
-    <div class="p-worries__arrow">
-      <picture>
-        <source srcset="./images/common/worries_arrow.webp" media="(min-width: 768px)" width="1440" height="100"/>
-        <img src="./images/common/worries_arrow_sp.webp" alt="" width="375" height="46">
-      </picture>
-    </div>
-    <section class="p-step">
-      <div class="l-inner">
-        <div class="p-step__content">
-          <h2 class="p-step__title js-opacity-word">ご利用は<br class="u-mobile">かんたん<span class="js-blue-word">3ステップ</span></h2>
-
-          <ol class="p-step__items">
-            <li class="p-step__item js-opacity-word">
-              <div class="p-step__item-inner">
-                <div class="p-step__item-head">
-                  <p class="p-step__tag js-marker">step1</p>
-                  <figure class="p-step__img">
-                    <img decoding="async" loading="lazy" src="./images/common/step-01.svg" alt="" width="213" height="173">
-                  </figure>
-                </div>
-                <p class="p-step__text">
-                  まずはご連絡<br>
-                  お申し込みフォームから<br>ご注文
-                </p>
-              </div>
-            </li>
-            <li class="p-step__item js-opacity-word">
-              <div class="p-step__item-inner">
-                <div class="p-step__item-head">
-                  <p class="p-step__tag js-marker">step2</p>
-                  <figure class="p-step__img">
-                    <img decoding="async" loading="lazy" src="./images/common/step-02.svg" alt="" width="213" height="173">
-                  </figure>
-                </div>
-                <p class="p-step__text">
-                  届いたダンボールに<br>
-                  書類をつめて送る
-                </p>
-              </div>
-            </li>
-            <li class="p-step__item js-opacity-word">
-              <div class="p-step__item-inner">
-                <div class="p-step__item-head">
-                  <p class="p-step__tag js-marker">step3</p>
-                  <figure class="p-step__img">
-                    <img decoding="async" loading="lazy" src="./images/common/step-03.svg" alt="" width="213" height="173">
-                  </figure>
-                </div>
-                <p class="p-step__text">
-                  電子化したデータ(DVD)と<br>
-                  共に原本をご返却
-                </p>
-              </div>
-            </li>
-          </ol>
-
-          <div class="p-step__callout js-opacity-word">
-            <p class="p-step__callout-lead">バインダのまま！<br class="u-mobile">クリップやホッチキスも<br class="u-mobile"><span>そのままでOK</span></p>
-            <div class="p-step__callout-price-wrapper">
-              <figure class="p-step__callout-price">
-                <img decoding="async" loading="lazy" src="./images/common/step-price.svg" alt="66,000円/箱(税込)" width="416" height="62">
-              </figure>
-              <p class="p-step__callout-note">※送料込</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="p-document">
-      <div class="l-inner">
-        <div class="p-document__content">
-          <h2 class="p-document__title js-opacity-word">電子化に<br class="u-mobile"><span class="js-blue-word">対応した書類</span></h2>
-
-          <ul class="p-document__items">
-            <li class="p-document__item js-opacity-word">
-              <div class="p-document__card">
-                <p class="p-document__num">01</p>
-                <p class="p-document__label">バインダ</p>
-                <figure class="p-document__img">
-                  <img decoding="async" loading="lazy" src="./images/common/document-binder.svg" alt="" width="222" height="185">
-                </figure>
-              </div>
-            </li>
-            <li class="p-document__item js-opacity-word">
-              <div class="p-document__card">
-                <p class="p-document__num">02</p>
-                <p class="p-document__label">紙ファイル<span class="p-document__label-text">(フォルダ)</span></p>
-                <figure class="p-document__img">
-                  <img decoding="async" loading="lazy" src="./images/common/document-file.svg" alt="" width="222" height="186">
-                </figure>
-              </div>
-            </li>
-            <li class="p-document__item js-opacity-word">
-              <div class="p-document__card">
-                <p class="p-document__num">03</p>
-                <p class="p-document__label">クリアファイル</p>
-                <figure class="p-document__img">
-                  <img decoding="async" loading="lazy" src="./images/common/document-clearfile.svg" alt="" width="222" height="186">
-                </figure>
-              </div>
-            </li>
-            <li class="p-document__item js-opacity-word">
-              <div class="p-document__card">
-                <p class="p-document__num">04</p>
-                <p class="p-document__label">封筒</p>
-                <figure class="p-document__img">
-                  <img decoding="async" loading="lazy" src="./images/common/document-envelope.svg" alt="" width="222" height="186">
-                </figure>
-              </div>
-            </li>
-          </ul>
-
-          <p class="p-document__note js-opacity-word">
-            ※この単位毎で電子化いたします。<br>
-            ※上記以外の単独(バラ)で詰められた書類は電子化対象から除外される恐れがあります。
-          </p>
-        </div>
-      </div>
-    </section>
-    <section class="p-down">
-      <div class="l-inner">
-        <div class="p-down__content">
-          <div class="p-down__box">
-            <figure class="p-down__icon">
-              <img decoding="async" loading="lazy" src="./images/common/down-attention.svg" alt="" width="50" height="50">
-            </figure>
-            <p class="p-down__title">以下のものは<br class="u-mobile">電子化対象外となります</p>
-            <div class="p-down__text-wrapper">
-              <p class="p-down__text">
-                ・冊子 / A5～A3サイズ以外のサイズ（名刺を含む）/ 写真、アルバム
-              </p>
-              <p class="p-down__text">
-                ・CD・フロッピーなど紙ではないもの / 封筒などの包材 / ネガなどのフィルム類
-              </p>
-              <p class="p-down__text">
-                ・和紙などの特殊紙 / 公序良俗に反するもの / マイナンバーや個人情報が付されている文書/対応する書類以外の綴じ方・まとめ方以外の単独(バラ)の書類
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="p-example">
-      <div class="l-inner">
-        <div class="p-example__content">
-          <div class="p-example__box">
-            <h2 class="p-example__title js-opacity-word js-blue-word">
-              <span class="p-example__title--text">箱<span class="p-example__title--number">（W40㎝ × D33㎝ × H30㎝）</span>に</span><br>
-              詰めたイメージ
-            </h2>
-
-            <figure class="p-example__mini">
-              <img decoding="async" loading="lazy" src="./images/common/example-mini.svg" alt="" width="195" height="157">
-            </figure>
-
-            <div class="p-example__media">
-              <figure class="p-example__photo js-opacity-word">
-                <picture>
-                  <source srcset="./images/common/example-left.webp" type="image/webp" width="537" height="415">
-                  <img decoding="async" loading="lazy" src="./images/common/example-left.png" alt="" width="537" height="415">
-                </picture>
-              </figure>
-
-              <figure class="p-example__photo js-opacity-word">
-                <picture>
-                  <source srcset="./images/common/example-right.webp" type="image/webp" width="444" height="415">
-                  <img decoding="async" loading="lazy" src="./images/common/example-right.png" alt="" width="444" height="415">
-                </picture>
-              </figure>
-            </div>
-
-            <div class="p-example__caption js-opacity-word">
-              <p class="p-example__caption-text">
-                バインダ<span class="p-example__hl js-marker">5冊</span>、紙ファイル<span class="p-example__hl js-marker">6冊</span>、<br class="u-mobile">封筒<span class="p-example__hl js-marker">1袋</span>を<span class="p-example__orange">収納可能！</span>
-              </p>
-            </div>
-          </div>
-          <div class="p-example__flow">
-            <h3 class="p-example__flow-title js-opacity-word">箱詰めの<span class="js-blue-word">手順</span></h3> 
-
-            <div class="p-example__flow-items">
-              <div class="p-example__flow-item js-opacity-word">
-                <p class="p-example__flow-tag">step1</p>
-                <div class="p-example__flow-video">
-                  <video src="./images/common/movie_1.mp4" controls width="520" height="350"></video>
-                </div>
-              </div>
-
-              <div class="p-example__flow-item js-opacity-word">
-                <p class="p-example__flow-tag">step2</p>
-                <div class="p-example__flow-video">
-                  <video src="./images/common/movie_2.mp4" controls width="520" height="350"></video>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="p-submit js-submit">
-      <div class="l-inner">
-        <div class="p-submit__content">
-          <div class="p-submit__inner">
-            <div class="p-submit__title-wrapper">
-
-              <h2 class="p-submit__title">お申し込みは<br class="u-mobile">こちら</h2>
-            </div>
-            <a class="p-submit__btn" href="#contact">
-              <span class="p-submit__btn-text">お申し込みはこちら</span>
-              <span class="p-submit__btn-icon">
-                <img decoding="async" loading="lazy" src="./images/common/submit-arrow.svg" alt="" width="34" height="34">
-              </span>
+          <div class="p-top-interview__button-wrap">
+            <a class="p-top-interview__button" href="#">
+              <span class="p-top-interview__button-text">MORE</span>
+              <span class="p-top-interview__button-icon" aria-hidden="true"></span>
             </a>
           </div>
         </div>
       </div>
     </section>
-    <section class="p-detail">
+    <section class="p-top-number">
       <div class="l-inner">
-        <div class="p-detail__content">
-          <h2 class="p-detail__title js-opacity-word">電子化の<span class="js-blue-word">仕様</span></h2>
-
-          <div class="p-detail__box">
-            <ul class="p-detail__items">
-              <li class="p-detail__item js-opacity-word">
-                <img class="p-detail__icon" decoding="async" loading="lazy" src="./images/common/detail-color.svg" alt="" width="134" height="120">
-                <p class="p-detail__label">フルカラー</p>
-              </li>
-              <li class="p-detail__item js-opacity-word">
-                <img class="p-detail__icon" decoding="async" loading="lazy" src="./images/common/detail-dpi.svg" alt="" width="134" height="120">
-                <p class="p-detail__label">300dpi</p>
-              </li>
-              <li class="p-detail__item js-opacity-word">
-                <img class="p-detail__icon" decoding="async" loading="lazy" src="./images/common/detail-blank.svg" alt="" width="134" height="120">
-                <p class="p-detail__label">裏面白紙除去<sup class="p-detail__note">※1</sup></p>
-              </li>
-              <li class="p-detail__item js-opacity-word">
-                <img class="p-detail__icon" decoding="async" loading="lazy" src="./images/common/detail-remove.svg" alt="" width="134" height="120">
-                <p class="p-detail__label">ホッチキス<sup class="p-detail__note">※2</sup><br>・付箋除去</p>
-              </li>
-              <li class="p-detail__item js-opacity-word">
-                <img class="p-detail__icon" decoding="async" loading="lazy" src="./images/common/detail-pdf.svg" alt="" width="134" height="120">
-                <p class="p-detail__label">PDF形式</p>
-              </li>
-              <li class="p-detail__item js-opacity-word">
-                <img class="p-detail__icon" decoding="async" loading="lazy" src="./images/common/detail-seq.svg" alt="" width="134" height="120">
-                <p class="p-detail__label">ファイル名連番</p>
-              </li>
-              <li class="p-detail__item js-opacity-word">
-                <img class="p-detail__icon" decoding="async" loading="lazy" src="./images/common/detail-size.svg" alt="" width="134" height="120">
-
-                <p class="p-detail__label">DVD納品</p>
-              </li>
-              <li class="p-detail__item js-opacity-word">
-                <img class="p-detail__icon" decoding="async" loading="lazy" src="./images/common/detail-dvd.svg" alt="" width="134" height="120">
-
-                <p class="p-detail__label">OCR付与<sup class="p-detail__note">※3</sup></p>
-              </li>
-              <li class="p-detail__item js-opacity-word">
-                <img class="p-detail__icon" decoding="async" loading="lazy" src="./images/common/detail-ocr.svg" alt="" width="134" height="120">
-
-                <p class="p-detail__label">冊子不可</p>
-              </li>
-              <li class="p-detail__item js-opacity-word">
-                <img class="p-detail__icon" decoding="async" loading="lazy" src="./images/common/detail-booklet.svg" alt="" width="134" height="120">
-
-                <p class="p-detail__label">A5〜A3限定</p>
-              </li>
-            </ul>
+        <div class="p-top-number__content">
+          <div class="p-top-number__heading">
+            <h2 class="p-top-number__title">数字で見る京浜電設</h2>
           </div>
-
-          <p class="p-detail__footnotes js-opacity-word">
-            ※1 裏面の白紙は自動処理で除去いたしますが、汚れ・色紙等の理由で残る場合があります。<br>
-            ※2 ホッチキス・付箋は復元無しとなります。<br>
-            ※3 OCRは自動処理で付与しますので、完全に文字認識することを保証するものではありません。
-          </p>
-        </div>
-        <div class="p-detail__bottom js-opacity-word">
-          <div class="p-detail__attention">
-            <div class="p-detail__attention-head">
-              <img class="p-detail__attention-icon" decoding="async" loading="lazy" src="./images/common/detail-attention.svg" alt="" width="24" height="24">
-              <p class="p-detail__attention-title">注意事項</p>
-            </div>
-            <ul class="p-detail__attention-list">
-              <li class="p-detail__attention-item">画像の向きは書類綴じの方向に対し一定となります。</li>
-              <li class="p-detail__attention-item">著作権が関係するもの・名刺・紙焼写真の束は対象外になります。</li>
-              <li class="p-detail__attention-item">作業納期は時期・混み合い具合により異なりますので依頼時にご確認ください。</li>
-            </ul>
-            
+          <ul class="p-top-number__cards">
+            <li class="p-top-number__card">
+              <figure class="p-top-number__image">
+                <img decoding="async" loading="lazy" src="./images/common/top-number-card-01.png" alt="会社創業74年" width="224" height="243">
+              </figure>
+            </li>
+            <li class="p-top-number__card">
+              <figure class="p-top-number__image">
+                <img decoding="async" loading="lazy" src="./images/common/top-number-card-02.png" alt="従業員数66名" width="224" height="243">
+              </figure>
+            </li>
+            <li class="p-top-number__card">
+              <figure class="p-top-number__image">
+                <img decoding="async" loading="lazy" src="./images/common/top-number-card-03.png" alt="3年以内の新卒採用人数00人" width="224" height="243">
+              </figure>
+            </li>
+            <li class="p-top-number__card">
+              <figure class="p-top-number__image">
+                <img decoding="async" loading="lazy" src="./images/common/top-number-card-04.png" alt="平均年齢40歳" width="224" height="243">
+              </figure>
+            </li>
+            <li class="p-top-number__card">
+              <figure class="p-top-number__image">
+                <img decoding="async" loading="lazy" src="./images/common/top-number-card-05.png" alt="平均勤続年数6.6年" width="224" height="243">
+              </figure>
+            </li>
+            <li class="p-top-number__card">
+              <figure class="p-top-number__image">
+                <img decoding="async" loading="lazy" src="./images/common/top-number-card-06.png" alt="男女比13対7" width="224" height="243">
+              </figure>
+            </li>
+            <li class="p-top-number__card">
+              <figure class="p-top-number__image">
+                <img decoding="async" loading="lazy" src="./images/common/top-number-card-07.png" alt="年間休日123日" width="224" height="243">
+              </figure>
+            </li>
+            <li class="p-top-number__card">
+              <figure class="p-top-number__image">
+                <img decoding="async" loading="lazy" src="./images/common/top-number-card-08.png" alt="社員の年代別比率" width="224" height="243">
+              </figure>
+            </li>
+          </ul>
+          <div class="p-top-number__button-wrap">
+            <a class="p-top-number__button" href="#">
+              <span class="p-top-number__button-text">京浜電設の仕事を見る</span>
+              <span class="p-top-number__button-icon" aria-hidden="true"></span>
+            </a>
           </div>
         </div>
       </div>
     </section>
-    <section class="p-flow">
+    <section class="p-top-rep">
       <div class="l-inner">
-        <div class="p-flow__content">
-          <h2 class="p-flow__title js-opacity-word">ご利用の<span class="js-blue-word">流れ</span></h2>
-
-          <ol class="p-flow__items">
-            <li class="p-flow__item js-opacity-word">
-              <div class="p-flow__card">
-                <div class="p-flow__step">
-                  <p class="p-flow__step-label">step</p>
-                  <p class="p-flow__step-num">01</p>
-                </div>
-                <div class="p-flow__body">
-                  <h3 class="p-flow__heading"><span class="p-flow__marker">お申し込み</span></h3>
-                  <p class="p-flow__text">
-                    <a href="#contact">お申し込みフォーム</a>に必要事項をご記入ください。<br>
-                    弊社担当者が内容を確認し、専用ダンボール（空箱）をお送りします。<br>
-                    箱サイズ（W33×H30×D40㎝）
-                  </p>
-                </div>
+        <div class="p-top-rep__content">
+          <div class="p-top-rep__body">
+            <div class="p-top-rep__text">
+              <div class="p-top-rep__heading">
+                <h2 class="p-top-rep__title">MESSAGE</h2>
+                <p class="p-top-rep__sub-title">代表メッセージ</p>
               </div>
-            </li>
-
-            <li class="p-flow__arrow" aria-hidden="true">
-              <img decoding="async" loading="lazy" src="./images/common/flow-arrow.svg" alt="" width="47" height="47">
-            </li>
-
-            <li class="p-flow__item js-opacity-word">
-              <div class="p-flow__card">
-                <div class="p-flow__step">
-                  <p class="p-flow__step-label">step</p>
-                  <p class="p-flow__step-num">02</p>
-                </div>
-                <div class="p-flow__body">
-                  <h3 class="p-flow__heading"><span class="p-flow__marker">箱詰め・発送</span></h3>
-                  <p class="p-flow__text">
-                    届いた専用ダンボールに書類を詰めていただき、専用の返信用伝票を貼付の上、佐川急便に集荷のご依頼をお願いいたします。<br><br class="u-mobile">
-                    弊社にダンボールが届きましたら電子化（スキャン）作業を行います。<br>
-                    作業納期は原則1ヶ月以内を目途としておりますが、お預かり時期、数量によって異なります。
-                  </p>
-                </div>
+              <p class="p-top-rep__catch">三方よしの理念を胸に、新たな時代へ。</p>
+              <p class="p-top-rep__description">
+                お客様と、社会とともに成長していくために<br>
+                人づくり、働く環境づくりが最も大切です。<br>
+                一緒に、夢のある未来を描いていきましょう。
+              </p>
+              <div class="p-top-rep__button-wrap">
+                <a class="p-top-rep__button" href="#">
+                  <span class="p-top-rep__button-text">MORE</span>
+                  <span class="p-top-rep__button-icon" aria-hidden="true"></span>
+                </a>
               </div>
-            </li>
-
-            <li class="p-flow__arrow" aria-hidden="true">
-              <img decoding="async" loading="lazy" src="./images/common/flow-arrow.svg" alt="" width="47" height="47">
-            </li>
-
-            <li class="p-flow__item js-opacity-word">
-              <div class="p-flow__card">
-                <div class="p-flow__step">
-                  <p class="p-flow__step-label">step</p>
-                  <p class="p-flow__step-num">03</p>
-                </div>
-                <div class="p-flow__body">
-                  <h3 class="p-flow__heading">
-                    <span class="p-flow__marker">電子化データと</span><br class="u-mobile">
-                    <span class="p-flow__marker">原本をご返却</span>
-                  </h3>
-                  <p class="p-flow__text">
-                    電子化（スキャン）したデータが保存されたDVDを、原本のダンボールに同封しご返却いたします。
-                  </p>
-                </div>
-              </div>
-            </li>
-          </ol>
-          <div class="p-flow__attention js-opacity-word">
-            <div class="p-flow__attention-head">
-              <span class="p-flow__attention-dot" aria-hidden="true">
-                <img decoding="async" loading="lazy" src="./images/common/flow-attention.svg" alt="" width="24" height="24">
-              </span>
-              <p class="p-flow__attention-title">ご注意事項</p>
             </div>
-            <p class="p-flow__attention-text">
-              専用ボックス発送後、1ヶ月（休日・祝日を含む）以内に弊社へ原本が入った<br class="u-desktop">専用ボックスの到着が確認できない場合はキャンセルとなります。<br>
-              その場合は5,500円（税込）のキャンセル料をご請求いたします。
-            </p>
+            <figure class="p-top-rep__image">
+              <img decoding="async" loading="lazy" src="./images/top/top-rep-message.webp" alt="代表メッセージ" width="500" height="352">
+            </figure>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section class="p-top-career">
+      <div class="l-inner">
+        <div class="p-top-career__content">
+          <div class="p-top-career__body">
+            <figure class="p-top-career__image">
+              <img decoding="async" loading="lazy" src="./images/top/top-career-story.webp" alt="キャリアアップストーリー" width="500" height="352">
+            </figure>
+            <div class="p-top-career__text">
+              <div class="p-top-career__heading">
+                <h2 class="p-top-career__title">CAREER UP STORY</h2>
+                <p class="p-top-career__sub-title">キャリアアップストーリー</p>
+              </div>
+              <p class="p-top-career__catch">会社と自らの夢の実現に向けて<br>工事の現場から副社長になるまで。</p>
+              <div class="p-top-career__more-wrap">
+                <a class="p-top-career__more" href="#">
+                  <span class="p-top-career__more-text">MORE</span>
+                  <span class="p-top-career__more-icon" aria-hidden="true"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="p-top-career__button-wrap">
+            <a class="p-top-career__button" href="#">
+              <span class="p-top-career__button-text">キャリアプランを見る</span>
+              <span class="p-top-career__button-icon" aria-hidden="true"></span>
+            </a>
           </div>
         </div>
       </div>
     </section>
+    <section class="p-top-license">
+      <div class="l-inner">
+        <div class="p-top-license__content">
+          <div class="p-top-license__box">
+            <div class="p-top-license__heading">
+              <h2 class="p-top-license__title">社員の学生時代の専攻学部・学科・保有する資格</h2>
+            </div>
+            <div class="p-top-license__section">
+              <h3 class="p-top-license__label">専攻学部</h3>
+              <p class="p-top-license__text">工学部・理学部・経済学部・商学部・商経学部・法学部・文学部・教育学部・社会科学部・外国語学部・<br>ネットワーク情報学部・グローバルコミュニケーション学部 他</p>
+            </div>
+            <div class="p-top-license__section">
+              <h3 class="p-top-license__label">専攻学科</h3>
+              <p class="p-top-license__text">電気工学科・電気科・電気工事科・電気工事技術科・電気電子学科・電気システム科・経営学科・政治学科・<br>建築学科・法律学科・心理学科・情報サイエンス学科 他</p>
+            </div>
+            <div class="p-top-license__section p-top-license__section--last">
+              <h3 class="p-top-license__label">社員の保有する資格</h3>
+              <p class="p-top-license__text">1級施工管理・2級施工管理・第一種電気工事士・第二種電気工事士 他</p>
+            </div>
+            <div class="p-top-license__button-wrap">
+              <a class="p-top-license__button" href="#">
+                <span class="p-top-license__button-text">出身校などについてもっと見る</span>
+                <span class="p-top-license__button-icon" aria-hidden="true"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="p-top-welfare">
+      <div class="l-inner">
+        <div class="p-top-welfare__content">
+          <div class="p-top-welfare__body">
+            <div class="p-top-welfare__text">
+              <div class="p-top-welfare__heading">
+                <h2 class="p-top-welfare__title">WELFARE</h2>
+              </div>
+              <p class="p-top-welfare__sub-title">福利厚生</p>
+              <p class="p-top-welfare__description">ワークライフバランスを大切に、社員が夢を持っていきいきと働ける環境づくりのために、さまざまな制度をご用意しています。</p>
+              <div class="p-top-welfare__more-wrap">
+                <a class="p-top-welfare__more" href="#">
+                  <span class="p-top-welfare__more-text">MORE</span>
+                  <span class="p-top-welfare__more-icon" aria-hidden="true"></span>
+                </a>
+              </div>
+            </div>
+            <div class="p-top-welfare__panel">
+              <ul class="p-top-welfare__list">
+                <li class="p-top-welfare__item">社宅制度</li>
+                <li class="p-top-welfare__item">健康診断</li>
+                <li class="p-top-welfare__item">社内イベント</li>
+                <li class="p-top-welfare__item">資格検定取得支援</li>
+                <li class="p-top-welfare__item">通勤交通費支給</li>
+                <li class="p-top-welfare__item">永年勤続制度</li>
+                <li class="p-top-welfare__item">貸与品</li>
+                <li class="p-top-welfare__item">創立記念日(5/10)</li>
+                <li class="p-top-welfare__item">慶弔見舞金制度</li>
+                <li class="p-top-welfare__item">MBA取得</li>
+                <li class="p-top-welfare__item">奨学金</li>
+                <li class="p-top-welfare__item">リファラル採用</li>
+              </ul>
+            </div>
+          </div>
+          <div class="p-top-welfare__button-wrap">
+            <a class="p-top-welfare__button" href="#">
+              <span class="p-top-welfare__button-text">新卒・キャリア採用募集要項はこちら</span>
+              <span class="p-top-welfare__button-icon" aria-hidden="true"></span>
+            </a>
+          </div>
+          <div class="p-top-welfare__instagram">
+            <a class="p-top-welfare__instagram-link" href="#">
+              <img decoding="async" loading="lazy" src="./images/common/top-welfare-instagram-card.png" alt="京浜電設株式会社のInstagramアカウント" width="529" height="101">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
     <section class="p-contact">
       <div class="l-inner">
         <div class="p-contact__content">

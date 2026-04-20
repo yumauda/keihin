@@ -1,0 +1,188 @@
+@use "../global" as *;
+
+.p-top-interview {
+  background-color: #f2f1e9;
+  padding-top: rem(72);
+  padding-bottom: rem(72);
+
+  @include mq(md) {
+    padding-top: rem(106);
+    padding-bottom: rem(82);
+  }
+}
+
+.p-top-interview__content {
+  max-width: rem(1400);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.p-top-interview__heading {
+  text-align: center;
+}
+
+.p-top-interview__title {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: rem(48);
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  line-height: 1;
+
+  @include mq(md) {
+    font-size: rem(70);
+  }
+}
+
+.p-top-interview__sub-title {
+  display: inline-block;
+  font-size: rem(15);
+  font-weight: 500;
+  line-height: 1.5;
+  margin-top: rem(12);
+  padding-top: rem(14);
+  position: relative;
+
+  @include mq(md) {
+    font-size: rem(18);
+  }
+}
+
+.p-top-interview__sub-title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: rem(180);
+  border-top: rem(3) solid #f77423;
+  transform: translateX(-50%);
+
+  @include mq(md) {
+    width: rem(248);
+  }
+}
+
+.p-top-interview__cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: rem(20);
+  row-gap: rem(40);
+  margin-top: rem(56);
+
+  @include mq(md) {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    column-gap: rem(31);
+    margin-top: rem(74);
+  }
+}
+
+.p-top-interview__card {
+  text-align: center;
+}
+
+.p-top-interview__card-link {
+  color: inherit;
+  display: block;
+}
+
+.p-top-interview__image {
+  aspect-ratio: 274 / 283;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: rem(274);
+  width: 100%;
+}
+
+.p-top-interview__image img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.p-top-interview__card-title {
+  font-size: rem(20);
+  font-weight: 600;
+  line-height: 1.45;
+  margin-top: rem(18);
+
+  @include mq(md) {
+    font-size: rem(22);
+    line-height: 1.45;
+    letter-spacing: 0.02em;
+    min-height: rem(64);
+  }
+}
+
+.p-top-interview__name {
+  font-size: rem(14);
+  line-height: 1.5;
+  margin-top: rem(12);
+
+  @include mq(md) {
+    font-size: rem(16);
+    letter-spacing: 0.08em;
+  }
+}
+
+.p-top-interview__button-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: rem(48);
+
+  @include mq(md) {
+    margin-top: rem(64);
+  }
+}
+
+.p-top-interview__button {
+  align-items: center;
+  background-color: #fff;
+  border: rem(1.2) solid #000;
+  border-radius: rem(24);
+  color: #000;
+  display: inline-flex;
+  height: rem(40);
+  justify-content: center;
+  padding-left: rem(34);
+  padding-right: rem(8);
+  position: relative;
+  width: rem(157);
+}
+
+.p-top-interview__button-text {
+  font-size: rem(12.5);
+  font-weight: 500;
+  line-height: 1;
+}
+
+.p-top-interview__button-icon {
+  background-color: #000;
+  border-radius: 50%;
+  display: block;
+  height: rem(27);
+  margin-left: rem(18);
+  position: relative;
+  width: rem(27);
+}
+
+.p-top-interview__button-icon::before {
+  border-right: rem(1.5) solid #fff;
+  border-top: rem(1.5) solid #fff;
+  content: "";
+  height: rem(7);
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-65%, -50%) rotate(45deg);
+  width: rem(7);
+}
+
+.p-top-interview__button-icon::after {
+  background-color: #fff;
+  content: "";
+  height: rem(1.5);
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-55%, -50%);
+  width: rem(10);
+}
