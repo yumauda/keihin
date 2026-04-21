@@ -2,14 +2,15 @@
 
 .p-top-interview {
   background-color: #f2f1e9;
-  padding-top: rem(72);
-  padding-bottom: rem(72);
+  padding-top: rem(24);
+  padding-bottom: rem(40);
 
   @include mq(md) {
     padding-top: rem(106);
     padding-bottom: rem(82);
   }
 }
+
 .p-top-interview__inner {
   max-width: $inner-interview;
   margin-left: auto;
@@ -28,7 +29,7 @@
 
 .p-top-interview__title {
   font-family: "Bebas Neue", sans-serif;
-  font-size: rem(48);
+  font-size: rem(40);
   font-weight: 400;
   letter-spacing: 0.03em;
   line-height: 1;
@@ -40,14 +41,15 @@
 
 .p-top-interview__sub-title {
   display: inline-block;
-  font-size: rem(15);
+  font-size: rem(11);
   font-weight: 500;
   line-height: 1.5;
-  margin-top: rem(12);
-  padding-top: rem(14);
   position: relative;
+  padding-top: rem(8);
 
   @include mq(md) {
+    margin-top: rem(12);
+    padding-top: rem(14);
     font-size: rem(18);
   }
 }
@@ -57,7 +59,7 @@
   position: absolute;
   top: 0;
   left: 50%;
-  width: rem(180);
+  width: rem(148);
   border-top: rem(3) solid #f77423;
   transform: translateX(-50%);
 
@@ -69,12 +71,14 @@
 .p-top-interview__cards {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  column-gap: rem(20);
-  row-gap: rem(40);
-  margin-top: rem(56);
+  column-gap: rem(13);
+  row-gap: rem(15);
+
+  margin-top: rem(24);
 
   @include mq(md) {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+    row-gap: rem(40);
     column-gap: rem(31);
     margin-top: rem(74);
   }
@@ -97,24 +101,27 @@
   width: 100%;
   overflow: hidden;
 }
+
 .p-top-interview__image img {
   transition: 0.3s ease-in-out;
   display: block;
   height: auto;
   width: 100%;
 }
+
 .p-top-interview__card-link:hover .p-top-interview__image img {
   transform: scale(1.05);
 }
 
 .p-top-interview__card-title {
-  font-size: rem(20);
+  font-size: rem(13);
   font-weight: 600;
   line-height: 1.45;
-  margin-top: rem(18);
+  margin-top: rem(8);
 
   @include mq(md) {
     font-size: rem(22);
+    margin-top: rem(18);
     line-height: 1.45;
     letter-spacing: 0.02em;
     min-height: rem(64);
@@ -122,12 +129,13 @@
 }
 
 .p-top-interview__name {
-  font-size: rem(14);
+  font-size: rem(11);
   line-height: 1.5;
-  margin-top: rem(12);
+  margin-top: rem(6);
 
   @include mq(md) {
     font-size: rem(16);
+    margin-top: rem(12);
     letter-spacing: 0.08em;
   }
 }
@@ -135,7 +143,7 @@
 .p-top-interview__button-wrap {
   display: flex;
   justify-content: center;
-  margin-top: rem(48);
+  margin-top: rem(32);
 
   @include mq(md) {
     margin-top: rem(64);
@@ -148,19 +156,29 @@
   border: rem(1.2) solid #000;
   border-radius: rem(24);
   color: #000;
-  display: inline-flex;
-  height: rem(40);
+  display: flex;
   justify-content: center;
   padding-left: rem(34);
   padding-right: rem(8);
   position: relative;
-  width: rem(157);
+  width: rem(140);
+  height: rem(35);
+
+  @include mq(md) {
+    width: rem(157);
+    height: rem(40);
+
+  }
 }
 
 .p-top-interview__button-text {
-  font-size: rem(12.5);
   font-weight: 500;
   line-height: 1;
+  font-size: rem(10);
+  @include mq(md){
+    font-size: rem(12);
+    
+  }
 }
 
 .p-top-interview__button-icon {

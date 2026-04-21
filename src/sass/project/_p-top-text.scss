@@ -1,8 +1,8 @@
 @use "../global" as *;
 
 .p-top-text {
-  padding-top: rem(64);
-  padding-bottom: rem(64);
+  padding-top: rem(20);
+  padding-bottom: rem(20);
 
   @include mq(md) {
     padding-top: rem(96);
@@ -18,7 +18,7 @@
 
 .p-top-text__title {
   color: #005dc9;
-  font-size: rem(24);
+  font-size: rem(15);
   font-weight: 700;
   line-height: 1.5;
   text-align: center;

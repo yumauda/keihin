@@ -42,18 +42,11 @@
 
 <body>
   <header class="p-header js-header">
-    <div class="l-inner">
+    <div class="p-header__inner">
       <div class="p-header__content">
         <h1 class="p-header__heading">
           <a class="p-header__logo" href="#">
-            <span class="p-header__mark" aria-hidden="true"></span>
-            <span class="p-header__logo-text">
-              <span class="p-header__logo-line">
-                <span class="p-header__logo-name-main">Keihin</span><span class="p-header__logo-name-sub">Densetsu</span>
-                <span class="p-header__logo-recruit">RECRUIT</span>
-              </span>
-              <span class="p-header__logo-company">京浜電設株式会社</span>
-            </span>
+            <img decoding="async" src="./images/common/header_logo.png" alt="京浜電設株式会社 RECRUIT" width="336" height="41">
           </a>
         </h1>
 
@@ -363,7 +356,10 @@
           </div>
           <div class="p-top-welfare__instagram">
             <a class="p-top-welfare__instagram-link" href="#">
-              <img decoding="async" loading="lazy" src="./images/top/top-instagram.png" alt="京浜電設株式会社のInstagramアカウント" width="529" height="101">
+              <picture>
+                <source srcset="./images/top/top-instagram.webp" media="(min-width: 768px)" width="1238" height="570"/>
+                <img decoding="async" loading="lazy" src="./images/top/top-instagram-sp.webp" alt="京浜電設株式会社のInstagramアカウント" width="529" height="101">
+              </picture>
             </a>
           </div>
         </div>
@@ -631,13 +627,7 @@
     <div class="p-footer__inner">
       <div class="p-footer__brand">
         <a class="p-footer__logo" href="#">
-          <span class="p-footer__mark" aria-hidden="true"></span>
-          <span class="p-footer__logo-text">
-            <span class="p-footer__logo-name">
-              <span class="p-footer__logo-name-main">Keihin</span><span class="p-footer__logo-name-sub">Densetsu</span>
-            </span>
-            <span class="p-footer__logo-company">京浜電設株式会社</span>
-          </span>
+          <img decoding="async" loading="lazy" src="./images/common/footer_logo.png" alt="京浜電設株式会社" width="544" height="138">
         </a>
         <address class="p-footer__address">
           <span class="p-footer__address-line">〒221-0005</span>

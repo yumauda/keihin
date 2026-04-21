@@ -2,12 +2,11 @@
 
 .p-top-welfare {
   background-color: #fff;
-  padding-top: rem(72);
+  padding-top: rem(54);
   padding-bottom: rem(72);
 
   @include mq(md) {
     padding-top: rem(77);
-    padding-bottom: rem(72);
   }
 }
 
@@ -35,9 +34,6 @@
   padding-bottom: rem(8);
   position: relative;
   text-align: center;
-
-  @include mq(md) {
-  }
 }
 
 .p-top-welfare__heading::before {
@@ -73,21 +69,23 @@
   font-weight: 500;
   line-height: 1.5;
   margin-top: rem(10);
+  text-align: center;
 
   @include mq(md) {
     font-size: rem(16);
-    text-align: center;
   }
 }
 
 .p-top-welfare__description {
   color: #000;
-  font-size: rem(16);
   font-weight: 600;
   line-height: 1.5;
-  margin-top: rem(32);
+  margin-top: rem(24);
+  font-size: rem(13);
 
+  
   @include mq(md) {
+    font-size: rem(16);
     margin-top: rem(44);
   }
 }
@@ -149,7 +147,7 @@
 .p-top-welfare__more-icon::after {
   background-color: #fff;
   content: "";
-  height: rem(1.5);
+  height: 1px;
   left: 50%;
   position: absolute;
   top: 50%;
@@ -161,7 +159,7 @@
   background-color: #e5f5ff;
   border-radius: rem(10);
   margin-top: rem(40);
-  padding: rem(24);
+  padding: rem(20) rem(24);
 
   @include mq(md) {
     margin-top: rem(64);
@@ -176,7 +174,9 @@
 
 .p-top-welfare__list {
   display: grid;
-  gap: rem(18);
+  gap: rem(14);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
 
   @include mq(md) {
     column-gap: rem(28);
@@ -187,11 +187,17 @@
 
 .p-top-welfare__item {
   color: #646464;
-  font-size: rem(15);
   font-weight: 700;
   line-height: 1.3333;
-  padding-left: rem(16);
   position: relative;
+  font-size: rem(11);
+  padding-left: rem(12);
+
+  @include mq(md){
+    padding-left: rem(16);
+    font-size: rem(15);
+    
+  }
 }
 
 .p-top-welfare__item::before {
@@ -222,12 +228,13 @@
   border-radius: 9999px;
   box-shadow: rem(-2) rem(3) rem(6) rgba(0, 0, 0, 0.4);
   color: #fff;
-  display: inline-flex;
+  display: flex;
   justify-content: center;
-  min-height: rem(56);
+  min-height: rem(35);
   padding-left: rem(24);
   padding-right: rem(8);
   width: 100%;
+  max-width: rem(273);
 
   @include mq(md) {
     max-width: rem(471);
@@ -238,7 +245,7 @@
 }
 
 .p-top-welfare__button-text {
-  font-size: rem(18);
+  font-size: rem(12);
   font-weight: 500;
   line-height: 1.4;
 
@@ -249,13 +256,13 @@
 
 .p-top-welfare__button-icon {
   background-color: #fff;
-  border-radius: 50%;
+  border-radius: 9999px;
   display: block;
   flex-shrink: 0;
-  height: rem(34);
-  margin-left: rem(16);
+  margin-left: rem(12);
   position: relative;
-  width: rem(34);
+  width: rem(22);
+  height: rem(22);
 
   @include mq(md) {
     height: rem(41);

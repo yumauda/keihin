@@ -3,7 +3,7 @@
 .p-header {
   background-color: #fff;
   box-shadow: 0 rem(1) rem(8) rgba(0, 0, 0, 0.08);
-  height: rem(72);
+  height: rem(50);
   left: 0;
   right: 0;
   position: fixed;
@@ -21,9 +21,18 @@
   box-shadow: 0 rem(4) rem(14) rgba(0, 0, 0, 0.12);
 }
 
-.p-header .l-inner {
+.p-header__inner {
   height: inherit;
-  max-width: rem(1400);
+  max-width: rem(1344);
+  padding-left: rem(20);
+  padding-right: rem(20);
+  margin-left: auto;
+  margin-right: auto;
+  @include mq(md){
+    padding-left: rem(27);
+    padding-right: rem(27);
+    
+  }
 }
 
 .p-header__content {
@@ -39,113 +48,18 @@
 }
 
 .p-header__logo {
-  align-items: center;
-  display: inline-flex;
-}
-
-.p-header__mark {
-  border: rem(2.5) solid #0c318b;
-  border-radius: 50%;
   display: block;
-  flex-shrink: 0;
-  height: rem(28);
-  position: relative;
-  width: rem(28);
+  width: rem(180);
 
   @include mq(md) {
-    height: rem(36);
-    width: rem(36);
+    width: rem(334);
   }
 }
 
-.p-header__mark::before,
-.p-header__mark::after {
-  border: rem(2.5) solid #0c318b;
-  border-radius: 50%;
-  content: "";
-  left: 50%;
-  position: absolute;
-  top: 50%;
-}
-
-.p-header__mark::before {
-  height: rem(15);
-  transform: translate(-50%, -50%);
-  width: rem(15);
-
-  @include mq(md) {
-    height: rem(20);
-    width: rem(20);
-  }
-}
-
-.p-header__mark::after {
-  border-left: 0;
-  border-top: 0;
-  height: rem(8);
-  transform: translate(-18%, -50%) rotate(-20deg);
-  width: rem(8);
-
-  @include mq(md) {
-    height: rem(10);
-    width: rem(10);
-  }
-}
-
-.p-header__logo-text {
+.p-header__logo img {
   display: block;
-  margin-left: rem(10);
-}
-
-.p-header__logo-line {
-  align-items: baseline;
-  display: flex;
-}
-
-.p-header__logo-name-main,
-.p-header__logo-name-sub {
-  color: #231815;
-  font-family: "Noto Sans JP", sans-serif;
-  font-size: rem(18);
-  line-height: 1;
-
-  @include mq(md) {
-    font-size: rem(21);
-  }
-}
-
-.p-header__logo-name-main {
-  font-weight: 700;
-}
-
-.p-header__logo-name-sub {
-  font-weight: 300;
-}
-
-.p-header__logo-recruit {
-  color: #f77423;
-  font-size: rem(11);
-  font-weight: 800;
-  line-height: 1;
-  margin-left: rem(10);
-
-  @include mq(md) {
-    font-size: rem(18);
-    margin-left: rem(14);
-  }
-}
-
-.p-header__logo-company {
-  display: none;
-
-  @include mq(md) {
-    color: #231815;
-    display: block;
-    font-size: rem(11);
-    font-weight: 500;
-    line-height: 1.2;
-    margin-top: rem(2);
-  }
+  height: auto;
+  width: 100%;
 }
 
 .p-header__menu-area {

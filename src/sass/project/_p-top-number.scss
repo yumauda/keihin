@@ -2,8 +2,8 @@
 
 .p-top-number {
   background-color: #fff;
-  padding-top: rem(72);
-  padding-bottom: rem(72);
+  padding-top: rem(37);
+  padding-bottom: rem(54);
 
   @include mq(md) {
     padding-top: rem(90);
@@ -18,7 +18,7 @@
 }
 
 .p-top-number__heading {
-  padding-bottom: rem(20);
+  padding-bottom: rem(8);
   position: relative;
   text-align: center;
 }
@@ -30,7 +30,7 @@
   position: absolute;
   bottom: 0;
   transform: translateX(-50%);
-  width: rem(180);
+  width: rem(195);
 
   @include mq(md) {
     width: rem(349);
@@ -39,7 +39,7 @@
 
 .p-top-number__title {
   color: #000;
-  font-size: rem(28);
+  font-size: rem(20);
   font-weight: 700;
   line-height: 1.4;
 
@@ -52,9 +52,8 @@
 .p-top-number__cards {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  margin-top: rem(40);
-  column-gap: rem(20);
-  row-gap: rem(20);
+  margin-top: rem(24);
+  gap: rem(10);
 
   @include mq(md) {
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -73,7 +72,7 @@
 .p-top-number__button-wrap {
   display: flex;
   justify-content: center;
-  margin-top: rem(40);
+  margin-top: rem(32);
 
   @include mq(md) {
     margin-top: rem(77);
@@ -88,13 +87,14 @@
   color: #fff;
   display: inline-flex;
   justify-content: center;
-  min-height: rem(56);
+  min-height: rem(35);
   padding-left: rem(24);
   padding-right: rem(8);
-  width: 100%;
+  width: rem(250);
 
   @include mq(md) {
-    max-width: rem(469);
+    width: rem(469);
+    
     min-height: rem(67);
     padding-left: rem(42);
     padding-right: rem(10);
@@ -102,7 +102,7 @@
 }
 
 .p-top-number__button-text {
-  font-size: rem(18);
+  font-size: rem(13);
   font-weight: 500;
   line-height: 1.4;
 
@@ -116,10 +116,10 @@
   border-radius: 50%;
   display: block;
   flex-shrink: 0;
-  height: rem(34);
+  width: rem(22);
+  height: rem(22);
   margin-left: rem(16);
   position: relative;
-  width: rem(34);
 
   @include mq(md) {
     height: rem(41);
