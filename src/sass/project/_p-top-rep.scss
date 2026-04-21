@@ -12,7 +12,7 @@
 }
 
 .p-top-rep__content {
-  max-width: rem(1080);
+  max-width: rem(1000);
   margin-left: auto;
   margin-right: auto;
 }
@@ -31,14 +31,20 @@
     width: 100%;
   }
 }
+.p-top-rep__heading-wrap {
+  text-align: center;
 
+ 
+}
 .p-top-rep__heading {
-  padding-bottom: rem(20);
+  padding-bottom: rem(8);
   position: relative;
   text-align: center;
 
   @include mq(md) {
     max-width: rem(217);
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

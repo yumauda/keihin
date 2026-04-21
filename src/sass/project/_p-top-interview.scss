@@ -10,6 +10,11 @@
     padding-bottom: rem(82);
   }
 }
+.p-top-interview__inner {
+  max-width: $inner-interview;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .p-top-interview__content {
   max-width: rem(1400);
@@ -90,12 +95,16 @@
   margin-right: auto;
   max-width: rem(274);
   width: 100%;
+  overflow: hidden;
 }
-
 .p-top-interview__image img {
+  transition: 0.3s ease-in-out;
   display: block;
   height: auto;
   width: 100%;
+}
+.p-top-interview__card-link:hover .p-top-interview__image img {
+  transform: scale(1.05);
 }
 
 .p-top-interview__card-title {

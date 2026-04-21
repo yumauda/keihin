@@ -4,11 +4,132 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   const $topBtn = $('.js-pagetop');
   const $mv = $('.p-mv');
   const $header = $('.js-header');
+  const $translate = $('.js-translate');
+  const $translateToggle = $('.js-translate-toggle');
+  const $translateMenu = $('.js-translate-menu');
+  const $translateOptions = $('.js-translate-option');
 
   const params = new URLSearchParams(window.location.search);
   const sentType = params.get('sent');
 
   const SCROLL_KEY = 'hakoSkan_scrollY';
+  const TRANSLATE_STORAGE_KEY = 'keihinTranslateLang';
+  let translateScriptRequested = false;
+  let pendingTranslateLang = null;
+
+  function getCurrentTranslateLang() {
+    const match = document.cookie.match(/(?:^|;\s*)googtrans=([^;]+)/);
+    if (match) {
+      const parts = decodeURIComponent(match[1]).split('/');
+      if (parts[parts.length - 1] === 'en') return 'en';
+    }
+
+    try {
+      const stored = localStorage.getItem(TRANSLATE_STORAGE_KEY);
+      if (stored === 'en') return 'en';
+    } catch (e) {
+      // ignore
+    }
+
+    return 'ja';
+  }
+
+  function syncTranslateUi(lang) {
+    const currentLang = lang === 'en' ? 'en' : 'ja';
+    if (!$translate.length) return;
+
+    $translate.attr('data-current-lang', currentLang);
+    $translateOptions.removeClass('is-current');
+    $translateOptions.filter('[data-lang="' + currentLang + '"]').addClass('is-current');
+
+    try {
+      localStorage.setItem(TRANSLATE_STORAGE_KEY, currentLang);
+    } catch (e) {
+      // ignore
+    }
+  }
+
+  function setTranslateMenuState(isOpen) {
+    if (!$translateMenu.length || !$translateToggle.length) return;
+    $translateToggle.attr('aria-expanded', isOpen ? 'true' : 'false');
+    $translateMenu.prop('hidden', !isOpen);
+  }
+
+  function getTranslateCombo() {
+    return document.querySelector('.goog-te-combo');
+  }
+
+  function clearTranslateCookies() {
+    const hostname = window.location.hostname;
+    const domains = [hostname, '.' + hostname];
+
+    if (hostname.indexOf('.') !== -1) {
+      const parts = hostname.split('.');
+      for (let i = 1; i < parts.length - 1; i++) {
+        domains.push('.' + parts.slice(i).join('.'));
+      }
+    }
+
+    domains.forEach(function (domain) {
+      document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/';
+      document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/; domain=' + domain;
+    });
+  }
+
+  function applyEnglishTranslation() {
+    const combo = getTranslateCombo();
+    if (!combo) return false;
+    combo.value = 'en';
+    combo.dispatchEvent(new Event('change'));
+    syncTranslateUi('en');
+    return true;
+  }
+
+  function waitForTranslateCombo(callback) {
+    let tries = 0;
+    const timer = window.setInterval(function () {
+      const combo = getTranslateCombo();
+      tries += 1;
+
+      if (combo) {
+        window.clearInterval(timer);
+        callback(combo);
+        return;
+      }
+
+      if (tries > 50) {
+        window.clearInterval(timer);
+      }
+    }, 200);
+  }
+
+  window.googleTranslateElementInit = function () {
+    if (!window.google || !window.google.translate) return;
+
+    new window.google.translate.TranslateElement({
+      pageLanguage: 'ja',
+      includedLanguages: 'ja,en',
+      autoDisplay: false
+    }, 'google_translate_element');
+
+    waitForTranslateCombo(function () {
+      if (pendingTranslateLang === 'en') {
+        applyEnglishTranslation();
+        pendingTranslateLang = null;
+      }
+    });
+  };
+
+  function ensureTranslateScript() {
+    if (window.google && window.google.translate && getTranslateCombo()) return;
+    if (translateScriptRequested) return;
+
+    translateScriptRequested = true;
+    const script = document.createElement('script');
+    script.src = '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+    script.async = true;
+    document.body.appendChild(script);
+  }
 
   function formatDateTimeJP(date) {
     const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
@@ -141,6 +262,44 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   $topBtn.on('click', function (e) {
     e.preventDefault();
     $('body,html').animate({ scrollTop: 0 }, 300, 'swing');
+  });
+
+  if ($translate.length) {
+    syncTranslateUi(getCurrentTranslateLang());
+
+    if (getCurrentTranslateLang() === 'en') {
+      pendingTranslateLang = 'en';
+      ensureTranslateScript();
+    }
+  }
+
+  $translateToggle.on('click', function () {
+    const isOpen = $translateToggle.attr('aria-expanded') === 'true';
+    setTranslateMenuState(!isOpen);
+  });
+
+  $translateOptions.on('click', function () {
+    const lang = $(this).data('lang');
+    setTranslateMenuState(false);
+
+    if (lang === 'en') {
+      syncTranslateUi('en');
+      pendingTranslateLang = 'en';
+      if (!applyEnglishTranslation()) {
+        ensureTranslateScript();
+      }
+      return;
+    }
+
+    syncTranslateUi('ja');
+    clearTranslateCookies();
+    window.location.reload();
+  });
+
+  $(document).on('click', function (e) {
+    if (!$translate.length) return;
+    if ($translate.get(0).contains(e.target)) return;
+    setTranslateMenuState(false);
   });
 
  
