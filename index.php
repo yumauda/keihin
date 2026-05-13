@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
@@ -39,58 +40,23 @@
 </head>
 
 <body>
-  <header class="p-header js-header">
-    <div class="p-header__inner">
-      <div class="p-header__content">
-        <h1 class="p-header__heading">
-          <a class="p-header__logo" href="#">
-            <img decoding="async" src="./images/common/header_logo.png" alt="京浜電設株式会社 RECRUIT" width="336" height="41">
-          </a>
-        </h1>
 
-        <div class="p-header__menu-area">
-          <div class="p-header__utility">
-            <div class="p-header__translate js-translate" translate="no">
-              <button class="p-header__language js-translate-toggle" type="button" aria-label="言語選択" aria-expanded="false" aria-controls="header-language-menu">
-                <span class="p-header__language-icon" aria-hidden="true"></span>
-                <span class="p-header__language-text">LANGUAGE ▼</span>
-              </button>
-              <div class="p-header__language-menu js-translate-menu" id="header-language-menu" hidden>
-                <button class="p-header__language-option js-translate-option" type="button" data-lang="ja">日本語</button>
-                <button class="p-header__language-option js-translate-option" type="button" data-lang="en">English</button>
-              </div>
-              <div class="p-header__translate-widget" id="google_translate_element" aria-hidden="true"></div>
-            </div>
-          </div>
+  <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'); ?>
 
-          <div class="p-header__bottom">
-            <nav class="p-header__nav" aria-label="グローバルナビゲーション">
-              <ul class="p-header__nav-list">
-                <li class="p-header__nav-item"><a class="p-header__nav-link" href="#">働く仲間の声</a></li>
-                <li class="p-header__nav-item"><a class="p-header__nav-link" href="#">代表メッセージ</a></li>
-                <li class="p-header__nav-item"><a class="p-header__nav-link" href="#">京浜電設の仕事</a></li>
-                <li class="p-header__nav-item"><a class="p-header__nav-link" href="#">キャリアアップストーリー</a></li>
-                <li class="p-header__nav-item"><a class="p-header__nav-link" href="#">福利厚生</a></li>
-                <li class="p-header__nav-item"><a class="p-header__nav-link" href="#">よくある質問</a></li>
-                <li class="p-header__nav-item"><a class="p-header__nav-link" href="#">募集要項</a></li>
-              </ul>
-            </nav>
-
-            <div class="p-header__actions">
-              <a class="p-header__entry" href="#">
-                <span class="p-header__entry-text">エントリー</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
   <main>
     <section class="p-mv">
-      <div class="l-inner">
-        
-      
+      <div class="l-wide-inner">
+        <div class="p-mv__content">
+          <figure class="p-mv__img">
+            <img src="./images/top/mv_img.webp" alt="働く未来のためにともに育とう。" width="1400" height="746">
+          </figure>
+          <h1 class="p-mv__title">輝く未来のために<br>ともに育とう。</h1>
+          <figure class="p-mv__logo">
+            <img decoding="async" loading="lazy" src="./images/top/mv_logo.png" alt="grow to glow" width="904" height="241">
+          </figure>
+        </div>
+
+
       </div>
     </section>
     <section class="p-top-text">
@@ -155,6 +121,105 @@
               <span class="p-top-interview__button-icon" aria-hidden="true"></span>
             </a>
           </div>
+        </div>
+      </div>
+    </section>
+    <section class="p-people">
+      <div class="l-wide-inner">
+        <div class="p-people__content">
+          <div class="p-people__heading">
+            <h2 class="p-people__title">京浜電設に合うのは、こんな人です</h2>
+            <span class="p-people__en">OUR PEOPLE</span>
+          </div>
+          <p class="p-people__message">京浜電設は、誰にでも合う会社ではありません。</p>
+          <p class="p-people__lead">
+            ただ、合う方にとっては大きく成長できる環境です。<br>
+            実際に、未経験からスタートした社員の多くが<br>
+            現場で経験を積みながら成長しています。
+          </p>
+          <ul class="p-people__cards">
+            <li class="p-people__card">
+              <div class="p-people__icon" aria-hidden="true">
+                <svg viewBox="0 0 96 80" role="img">
+                  <path d="M15 18h27c6 0 10 4 10 10v34c0-6-4-10-10-10H15V18Z" />
+                  <path d="M81 18H54c-6 0-10 4-10 10v34c0-6 4-10 10-10h27V18Z" />
+                  <path d="M24 29h16M24 39h16M56 29h16M56 39h16" />
+                </svg>
+              </div>
+              <h3 class="p-people__card-title">素直に<br>学び続けられる方</h3>
+              <p class="p-people__card-text">先輩や職人に聞きながら<br>一歩ずつ成長していく環境です。</p>
+              <div class="p-people__field">
+                <p class="p-people__field-label">現場では</p>
+                <p class="p-people__field-text">先輩や職人に聞きながら<br>仕事を覚えていきます</p>
+              </div>
+            </li>
+            <li class="p-people__card">
+              <div class="p-people__icon" aria-hidden="true">
+                <svg viewBox="0 0 96 80" role="img">
+                  <path d="M33 12h30v14H33V12Z" />
+                  <path d="M22 34h52v14H22V34Z" />
+                  <path d="M33 56h30v14H33V56Z" />
+                </svg>
+              </div>
+              <h3 class="p-people__card-title">コツコツ<br>積み重なれる方</h3>
+              <p class="p-people__card-text">すぐに結果が出なくても、積み上げが力になる仕事です。</p>
+              <div class="p-people__field">
+                <p class="p-people__field-label">現場では</p>
+                <p class="p-people__field-text">一つひとつの作業を積み上げる<br>仕事です</p>
+              </div>
+            </li>
+            <li class="p-people__card">
+              <div class="p-people__icon" aria-hidden="true">
+                <svg viewBox="0 0 96 80" role="img">
+                  <circle cx="48" cy="18" r="10" />
+                  <circle cx="26" cy="25" r="9" />
+                  <circle cx="70" cy="25" r="9" />
+                  <path d="M33 62V48c0-10 6-17 15-17s15 7 15 17v14H33Z" />
+                  <path d="M12 62V50c0-9 5-15 14-15 5 0 9 2 12 6" />
+                  <path d="M84 62V50c0-9-5-15-14-15-5 0-9 2-12 6" />
+                </svg>
+              </div>
+              <h3 class="p-people__card-title">人との関わりを<br>大切にできる方</h3>
+              <p class="p-people__card-text">現場はチーム戦。声を掛け合い、支え合うことで仕事が進みます。</p>
+              <div class="p-people__field">
+                <p class="p-people__field-label">現場では</p>
+                <p class="p-people__field-text">チームで連携しながら<br>現場を進めていきます</p>
+              </div>
+            </li>
+            <li class="p-people__card">
+              <div class="p-people__icon" aria-hidden="true">
+                <svg viewBox="0 0 96 80" role="img">
+                  <path d="M48 10 74 20v20c0 17-11 30-26 38-15-8-26-21-26-38V20l26-10Z" />
+                  <path d="m35 41 9 9 20-22" />
+                </svg>
+              </div>
+              <h3 class="p-people__card-title">手応えのある<br>仕事が好きな方</h3>
+              <p class="p-people__card-text">自分の関わった工事が形になり、街のインフラとして残ります。</p>
+              <div class="p-people__field">
+                <p class="p-people__field-label">現場では</p>
+                <p class="p-people__field-text">完成したときに<br>成果が形として残ります</p>
+              </div>
+            </li>
+            <li class="p-people__card">
+              <div class="p-people__icon" aria-hidden="true">
+                <svg viewBox="0 0 96 80" role="img">
+                  <path d="M16 66h64" />
+                  <path d="M20 66V16" />
+                  <path d="m30 55 14-14 11 8 22-25" />
+                  <path d="M67 24h10v10" />
+                  <circle cx="30" cy="55" r="3" />
+                  <circle cx="44" cy="41" r="3" />
+                  <circle cx="55" cy="49" r="3" />
+                </svg>
+              </div>
+              <h3 class="p-people__card-title">成長したい<br>気持ちがある方</h3>
+              <p class="p-people__card-text">資格取得や研修を会社が支え、本人の意思に応えていきます。</p>
+              <div class="p-people__field">
+                <p class="p-people__field-label">現場では</p>
+                <p class="p-people__field-text">未経験からでも<br>挑戦できる環境があります</p>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
@@ -355,7 +420,7 @@
           <div class="p-top-welfare__instagram">
             <a class="p-top-welfare__instagram-link" href="#">
               <picture>
-                <source srcset="./images/top/top-instagram.webp" media="(min-width: 768px)" width="1238" height="570"/>
+                <source srcset="./images/top/top-instagram.webp" media="(min-width: 768px)" width="1238" height="570" />
                 <img decoding="async" loading="lazy" src="./images/top/top-instagram-sp.webp" alt="京浜電設株式会社のInstagramアカウント" width="529" height="101">
               </picture>
             </a>
@@ -363,7 +428,7 @@
         </div>
       </div>
     </section>
-    
+
     <!-- <section class="p-contact">
       <div class="l-inner">
         <div class="p-contact__content">
@@ -619,51 +684,11 @@
         </div>
       </div>
     </section> -->
-    
+
   </main>
-  <footer class="p-footer">
-    <div class="p-footer__inner">
-      <div class="p-footer__brand">
-        <a class="p-footer__logo" href="#">
-          <img decoding="async" loading="lazy" src="./images/common/footer_logo.png" alt="京浜電設株式会社" width="544" height="138">
-        </a>
-        <address class="p-footer__address">
-          <span class="p-footer__address-line">〒221-0005</span>
-          <span class="p-footer__address-line">神奈川県横浜市神奈川区松見町4-1020</span>
-          <span class="p-footer__address-line">TEL <a class="p-footer__tel" href="tel:0454214951">045-421-4951</a></span>
-        </address>
-      </div>
+  <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'); ?>
 
-      <div class="p-footer__nav-wrap">
-        <ul class="p-footer__nav">
-          <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="#">働く仲間の声</a></li>
-          <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="#">代表メッセージ</a></li>
-          <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="#">企業理念</a></li>
-          <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="#">社会課題解決に向けて</a></li>
-          <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="#">社員の学生時代の専攻学部・学科</a></li>
-        </ul>
 
-        <ul class="p-footer__nav">
-          <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="#">京浜電設の仕事</a></li>
-          <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="#">電気の流れ</a></li>
-          <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="#">キャリアアップストーリー</a></li>
-          <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="#">キャリアプラン</a></li>
-          <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="#">福利厚生</a></li>
-        </ul>
-
-        <ul class="p-footer__nav">
-          <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="#">よくある質問</a></li>
-          <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="#">募集要項</a></li>
-          <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="#">エントリーフォーム</a></li>
-          <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="#">コーポレートサイト</a></li>
-          <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="#">プライバシーポリシー</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="p-footer__copy">
-      <p class="p-footer__copy-text">Copyright © 京浜電設株式会社 All Rights Reserved.</p>
-    </div>
-  </footer>
 </body>
+
 </html>
