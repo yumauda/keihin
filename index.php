@@ -380,49 +380,100 @@
     <section class="p-top-welfare">
       <div class="l-inner">
         <div class="p-top-welfare__content">
-          <div class="p-top-welfare__body">
-            <div class="p-top-welfare__text">
-              <div class="p-top-welfare__heading">
-                <h2 class="p-top-welfare__title">WELFARE</h2>
-              </div>
-              <p class="p-top-welfare__sub-title">福利厚生</p>
-              <p class="p-top-welfare__description">ワークライフバランスを大切に、社員が夢を持っていきいきと働ける環境づくりのために、さまざまな制度をご用意しています。</p>
-              <div class="p-top-welfare__more-wrap">
-                <a class="p-top-welfare__more" href="#">
-                  <span class="p-top-welfare__more-text">MORE</span>
-                  <span class="p-top-welfare__more-icon" aria-hidden="true"></span>
-                </a>
-              </div>
-            </div>
-            <div class="p-top-welfare__panel">
-              <ul class="p-top-welfare__list">
-                <li class="p-top-welfare__item">社宅制度</li>
-                <li class="p-top-welfare__item">健康診断</li>
-                <li class="p-top-welfare__item">社内イベント</li>
-                <li class="p-top-welfare__item">資格検定取得支援</li>
-                <li class="p-top-welfare__item">通勤交通費支給</li>
-                <li class="p-top-welfare__item">永年勤続制度</li>
-                <li class="p-top-welfare__item">貸与品</li>
-                <li class="p-top-welfare__item">創立記念日(5/10)</li>
-                <li class="p-top-welfare__item">慶弔見舞金制度</li>
-                <li class="p-top-welfare__item">MBA取得</li>
-                <li class="p-top-welfare__item">奨学金</li>
-                <li class="p-top-welfare__item">リファラル採用</li>
-              </ul>
-            </div>
+          <div class="p-top-welfare__heading">
+            <h2 class="p-top-welfare__title">OUR BENEFITS</h2>
           </div>
-          <div class="p-top-welfare__button-wrap">
-            <a class="p-top-welfare__button" href="#">
-              <span class="p-top-welfare__button-text">新卒・キャリア採用募集要項はこちら</span>
-              <span class="p-top-welfare__button-icon" aria-hidden="true"></span>
+          <p class="p-top-welfare__sub-title">働く人を支える福利厚生制度</p>
+          <p class="p-top-welfare__description">ワークライフバランスを大切に、社員が夢を持っていきいきと働ける環境づくりのために、さまざまな制度をご用意しています。</p>
+          <ul class="p-top-welfare__grid">
+            <li class="p-top-welfare__card">
+              <figure class="p-top-welfare__card-image">
+                <img decoding="async" loading="lazy" src="./images/top/top-welfare-icon-01.webp" alt="" width="96" height="78">
+              </figure>
+              <p class="p-top-welfare__card-title">社宅制度</p>
+            </li>
+            <li class="p-top-welfare__card">
+              <figure class="p-top-welfare__card-image">
+                <img decoding="async" loading="lazy" src="./images/top/top-welfare-icon-02.webp" alt="" width="104" height="81">
+              </figure>
+              <p class="p-top-welfare__card-title">健康診断</p>
+            </li>
+            <li class="p-top-welfare__card">
+              <figure class="p-top-welfare__card-image">
+                <img decoding="async" loading="lazy" src="./images/top/top-welfare-icon-03.webp" alt="" width="124" height="81">
+              </figure>
+              <p class="p-top-welfare__card-title">社内イベント</p>
+            </li>
+            <li class="p-top-welfare__card">
+              <figure class="p-top-welfare__card-image">
+                <img decoding="async" loading="lazy" src="./images/top/top-welfare-icon-04.webp" alt="" width="124" height="81">
+              </figure>
+              <p class="p-top-welfare__card-title">資格検定取得支援</p>
+            </li>
+            <li class="p-top-welfare__card">
+              <figure class="p-top-welfare__card-image">
+                <img decoding="async" loading="lazy" src="./images/top/top-welfare-icon-05.webp" alt="" width="118" height="86">
+              </figure>
+              <p class="p-top-welfare__card-title">通勤交通費支給</p>
+            </li>
+            <li class="p-top-welfare__card">
+              <figure class="p-top-welfare__card-image">
+                <img decoding="async" loading="lazy" src="./images/top/top-welfare-icon-06.webp" alt="" width="67" height="80">
+              </figure>
+              <p class="p-top-welfare__card-title">永年勤続制度</p>
+            </li>
+            <li class="p-top-welfare__card">
+              <figure class="p-top-welfare__card-image">
+                <img decoding="async" loading="lazy" src="./images/top/top-welfare-icon-07.webp" alt="" width="81" height="77">
+              </figure>
+              <p class="p-top-welfare__card-title">貸与品</p>
+            </li>
+            <li class="p-top-welfare__card">
+              <figure class="p-top-welfare__card-image">
+                <img decoding="async" loading="lazy" src="./images/top/top-welfare-icon-08.webp" alt="" width="126" height="98">
+              </figure>
+              <p class="p-top-welfare__card-title">創立記念日(5/10)</p>
+            </li>
+            <li class="p-top-welfare__card">
+              <figure class="p-top-welfare__card-image">
+                <img decoding="async" loading="lazy" src="./images/top/top-welfare-icon-09.webp" alt="" width="114" height="74">
+              </figure>
+              <p class="p-top-welfare__card-title">慶弔見舞金制度</p>
+            </li>
+            <li class="p-top-welfare__card">
+              <figure class="p-top-welfare__card-image">
+                <img decoding="async" loading="lazy" src="./images/top/top-welfare-icon-10.webp" alt="" width="113" height="80">
+              </figure>
+              <p class="p-top-welfare__card-title">MBA取得</p>
+            </li>
+            <li class="p-top-welfare__card">
+              <figure class="p-top-welfare__card-image">
+                <img decoding="async" loading="lazy" src="./images/top/top-welfare-icon-11.webp" alt="" width="90" height="86">
+              </figure>
+              <p class="p-top-welfare__card-title">奨学金</p>
+            </li>
+            <li class="p-top-welfare__card">
+              <figure class="p-top-welfare__card-image">
+                <img decoding="async" loading="lazy" src="./images/top/top-welfare-icon-12.webp" alt="" width="83" height="64">
+              </figure>
+              <p class="p-top-welfare__card-title">リファラル採用</p>
+            </li>
+          </ul>
+          <div class="p-top-welfare__more-wrap">
+            <a class="p-top-welfare__more" href="#">
+              <span class="p-top-welfare__more-text">MORE</span>
+              <span class="p-top-welfare__more-icon" aria-hidden="true"></span>
             </a>
           </div>
-          <div class="p-top-welfare__instagram">
-            <a class="p-top-welfare__instagram-link" href="#">
-              <picture>
-                <source srcset="./images/top/top-instagram.webp" media="(min-width: 768px)" width="1238" height="570" />
-                <img decoding="async" loading="lazy" src="./images/top/top-instagram-sp.webp" alt="京浜電設株式会社のInstagramアカウント" width="529" height="101">
-              </picture>
+          <div class="p-top-welfare__bottom">
+            <div class="p-top-welfare__cta-wrap">
+              <a class="p-top-welfare__cta" href="#">
+                <span class="p-top-welfare__cta-text">新卒・キャリア採用募集要項はこちら</span>
+                <span class="p-top-welfare__cta-icon" aria-hidden="true"></span>
+              </a>
+            </div>
+            <a class="p-top-welfare__instagram" href="https://www.instagram.com/keihindensetsu_jp/" target="_blank" rel="noopener">
+              <img decoding="async" loading="lazy" src="./images/top/top-instagram.webp" alt="京浜電設株式会社（Keihindensetsu_jp）京浜電設・秋田犬の慶ちゃんの魅力を発信しています！！" width="529" height="101">
             </a>
           </div>
         </div>
