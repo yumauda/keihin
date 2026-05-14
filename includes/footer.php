@@ -1,8 +1,8 @@
 <footer class="p-footer">
     <div class="p-footer__inner">
         <div class="p-footer__brand">
-            <a class="p-footer__logo" href="#">
-                <img decoding="async" loading="lazy" src="./images/common/footer_logo.png" alt="京浜電設株式会社" width="544" height="138">
+            <a class="p-footer__logo" href="/">
+                <img decoding="async" loading="lazy" src="/images/common/footer_logo.png" alt="京浜電設株式会社" width="544" height="138">
             </a>
             <address class="p-footer__address">
                 <span class="p-footer__address-line">〒221-0005</span>
@@ -13,7 +13,7 @@
 
         <div class="p-footer__nav-wrap">
             <ul class="p-footer__nav">
-                <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="#">働く仲間の声</a></li>
+                <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="/interview/">働く仲間の声</a></li>
                 <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="#">代表メッセージ</a></li>
                 <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="#">企業理念</a></li>
                 <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="#">社会課題解決に向けて</a></li>

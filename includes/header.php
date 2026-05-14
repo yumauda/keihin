@@ -2,8 +2,8 @@
     <div class="p-header__inner">
         <div class="p-header__content">
             <div class="p-header__heading">
-                <a class="p-header__logo" href="#">
-                    <img decoding="async" src="./images/common/header_logo.png" alt="京浜電設株式会社 RECRUIT" width="336" height="41">
+                <a class="p-header__logo" href="/">
+                    <img decoding="async" src="/images/common/header_logo.png" alt="京浜電設株式会社 RECRUIT" width="336" height="41">
                 </a>
             </div>
 
@@ -25,7 +25,7 @@
                 <div class="p-header__bottom">
                     <nav class="p-header__nav" aria-label="グローバルナビゲーション">
                         <ul class="p-header__nav-list">
-                            <li class="p-header__nav-item"><a class="p-header__nav-link" href="#">働く仲間の声</a></li>
+                            <li class="p-header__nav-item"><a class="p-header__nav-link" href="/interview/">働く仲間の声</a></li>
                             <li class="p-header__nav-item"><a class="p-header__nav-link" href="#">代表メッセージ</a></li>
                             <li class="p-header__nav-item"><a class="p-header__nav-link" href="#">京浜電設の仕事</a></li>
                             <li class="p-header__nav-item"><a class="p-header__nav-link" href="#">キャリアアップストーリー</a></li>

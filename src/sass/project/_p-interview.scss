@@ -1,0 +1,338 @@
+@use "../global" as *;
+
+.p-interview {
+  background: #fff;
+  padding-top: rem(82);
+
+  @include mq(md) {
+    padding-top: rem(138);
+  }
+}
+
+.p-interview__intro {
+  background: #f2f1e9;
+  padding: rem(28) 0 rem(48);
+
+  @include mq(md) {
+    padding: rem(118) 0 rem(100);
+  }
+}
+
+.p-interview__heading {
+  text-align: center;
+
+  @include mq(md) {
+    text-align: left;
+    max-width: rem(1010);
+    margin: 0 auto;
+  }
+}
+
+.p-interview__title {
+  font-family: $second-font-family;
+  font-size: rem(42);
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1;
+
+  @include mq(md) {
+    font-size: rem(100);
+  }
+}
+
+.p-interview__sub-title {
+  display: inline-block;
+  font-size: rem(12);
+  font-weight: 500;
+  line-height: 1.5;
+  margin-top: rem(8);
+  padding-top: rem(8);
+  position: relative;
+
+  @include mq(md) {
+    font-size: rem(25);
+    margin-top: rem(14);
+    padding-top: rem(18);
+  }
+}
+
+.p-interview__sub-title::before {
+  border-top: rem(3) solid #fe4504;
+  content: "";
+  left: 50%;
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+  width: rem(150);
+
+  @include mq(md) {
+    left: 0;
+    transform: none;
+    width: rem(320);
+  }
+}
+
+.p-interview__cards {
+  display: grid;
+  gap: rem(18);
+  margin: rem(32) auto 0;
+  max-width: rem(1010);
+
+  @include mq(md) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: rem(86) rem(50);
+    margin-top: rem(70);
+  }
+}
+
+.p-interview__card {
+  align-items: center;
+  background: linear-gradient(90deg, #e1edf2 0%, #fcfcfc 52%, #e1edf2 100%);
+  border-radius: rem(5);
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(rem(110), 0.8fr);
+  min-height: rem(160);
+  overflow: visible;
+  padding: 0 rem(12) 0 0;
+  position: relative;
+
+  @include mq(md) {
+    display: block;
+    min-height: rem(260);
+    padding: 0 rem(26) 0 0;
+  }
+}
+
+.p-interview__card:nth-child(2n) {
+  @include mq(md) {
+    grid-template-columns: none;
+  }
+}
+
+.p-interview__image {
+  align-self: stretch;
+  border-radius: rem(5);
+  overflow: hidden;
+
+  @include mq(md) {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: rem(300);
+  }
+}
+
+.p-interview__image img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.p-interview__body {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: rem(14);
+  padding-left: 0;
+  transform: translate(rem(8), rem(-34));
+
+  @include mq(md) {
+    gap: rem(18);
+    padding-left: 0;
+    position: absolute;
+    right: rem(-22);
+    top: 50%;
+    transform: translateY(-84%);
+    width: rem(252);
+    z-index: 1;
+  }
+}
+
+.p-interview__bubble {
+  width: rem(126);
+
+  @include mq(md) {
+    width: 100%;
+  }
+}
+
+.p-interview__bubble img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.p-interview__profile {
+  font-size: rem(12);
+  font-weight: 600;
+  line-height: 1.55;
+
+  @include mq(md) {
+    font-size: rem(18);
+    letter-spacing: 0.03em;
+    margin-left: rem(68);
+  }
+}
+
+.p-interview__middle {
+  padding: rem(48) 0 rem(58);
+
+  @include mq(md) {
+    padding: rem(98) 0 rem(118);
+  }
+}
+
+.p-interview__middle-title {
+  color: #005dc9;
+  font-size: rem(22);
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+
+  @include mq(md) {
+    font-size: rem(31);
+  }
+}
+
+.p-interview__message-cards {
+  display: grid;
+  gap: rem(18);
+  margin: rem(32) auto 0;
+  max-width: rem(1010);
+
+  @include mq(md) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: rem(70) rem(50);
+    margin-top: rem(70);
+  }
+}
+
+.p-interview__message-card {
+  align-items: self-end;
+  background: linear-gradient(90deg, #e1edf2 0%, #fcfcfc 52%, #e1edf2 100%);
+  border-radius: rem(5);
+  display: grid;
+  grid-template-columns: minmax(rem(130), 0.88fr) minmax(0, 1fr);
+  min-height: rem(160);
+  overflow: hidden;
+  padding: rem(10) rem(10) 0 0;
+
+  @include mq(md) {
+    grid-template-columns: rem(220) 1fr;
+    min-height: rem(240);
+    padding: rem(20) rem(20) 0 0;
+  }
+}
+
+.p-interview__message-image {
+  aspect-ratio: 4 / 3;
+  border-radius: rem(5);
+  overflow: hidden;
+  @include mq(md){
+    width: rem(300);
+    
+  }
+}
+
+.p-interview__message-image img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.p-interview__message-body {
+  padding-left: rem(14);
+
+  @include mq(md) {
+    padding-left: rem(28);
+  }
+}
+
+.p-interview__message-profile {
+  border-left: rem(4) solid #000;
+  font-size: rem(12);
+  font-weight: 600;
+  line-height: 1.55;
+  padding-left: rem(12);
+
+  @include mq(md) {
+    font-size: rem(18);
+    padding-left: rem(18);
+  }
+}
+
+.p-interview__message-text {
+  font-size: rem(11);
+  font-weight: 600;
+  line-height: 1.75;
+  margin-top: rem(12);
+
+  @include mq(md) {
+    font-size: rem(16);
+    line-height: 1.85;
+    margin-top: rem(24);
+    padding-bottom: rem(24);
+  }
+}
+
+.p-interview__cta {
+  align-items: center;
+  background: #476ed6;
+  border-radius: rem(999);
+  box-shadow: rem(-2) rem(3) rem(6) rgba(0, 0, 0, 0.4);
+  color: #fff;
+  display: flex;
+  font-size: rem(14);
+  font-weight: 500;
+  height: rem(56);
+  justify-content: center;
+  margin: rem(48) auto 0;
+  max-width: rem(469);
+  padding: 0 rem(18);
+  position: relative;
+  width: 100%;
+
+  @include mq(md) {
+    font-size: rem(20);
+    height: rem(67);
+    margin-top: rem(88);
+  }
+}
+
+.p-interview__cta::after {
+  background: #fff;
+  border-radius: 50%;
+  content: "";
+  height: rem(32);
+  position: absolute;
+  right: rem(12);
+  top: 50%;
+  transform: translateY(-50%);
+  width: rem(32);
+
+  @include mq(md) {
+    height: rem(41);
+    right: rem(20);
+    width: rem(41);
+  }
+}
+
+.p-interview__cta::before {
+  border-right: rem(2) solid #1571c8;
+  border-top: rem(2) solid #1571c8;
+  content: "";
+  height: rem(9);
+  position: absolute;
+  right: rem(25);
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  width: rem(9);
+  z-index: 1;
+
+  @include mq(md) {
+    right: rem(36);
+  }
+}
