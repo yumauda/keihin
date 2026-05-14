@@ -14,7 +14,7 @@
         <div class="p-footer__nav-wrap">
             <ul class="p-footer__nav">
                 <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="/interview/">働く仲間の声</a></li>
-                <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="#">代表メッセージ</a></li>
+                <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="/message/">代表メッセージ</a></li>
                 <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="#">企業理念</a></li>
                 <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="#">社会課題解決に向けて</a></li>
                 <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="#">社員の学生時代の専攻学部・学科</a></li>

@@ -42,6 +42,7 @@
 
         <ul class="p-interview__cards">
           <li class="p-interview__card">
+            <a class="p-interview__card-link" href="/interview/akiyama-hinata/">
             <figure class="p-interview__image">
               <img src="../images/interview/interview-h-a.webp" alt="工事事業部 在職1年目 H.Aさん" width="2250" height="1500">
             </figure>
@@ -49,8 +50,10 @@
               <figure class="p-interview__bubble"><img src="../images/interview/bubble-h-a.svg" alt="文系出身の私が知った 街に明かりを灯す喜び" width="252" height="98"></figure>
               <p class="p-interview__profile">工事事業部<br>在職1年目<br>H.Aさん</p>
             </div>
+            </a>
           </li>
           <li class="p-interview__card">
+            <a class="p-interview__card-link" href="/interview/masamori-akihito/">
             <figure class="p-interview__image">
               <img src="../images/interview/interview-a-m.webp" alt="営業部 営業 在職1年目 A.Mさん" width="2250" height="1500">
             </figure>
@@ -58,6 +61,7 @@
               <figure class="p-interview__bubble"><img src="../images/interview/bubble-a-m.svg" alt="異業種からの挑戦でも 相談しながら成長できる！" width="276" height="99"></figure>
               <p class="p-interview__profile">営業部 営業<br>在職1年目<br>A.Mさん</p>
             </div>
+            </a>
           </li>
           <li class="p-interview__card">
             <figure class="p-interview__image">

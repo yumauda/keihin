@@ -1,0 +1,429 @@
+@use "../global" as *;
+
+.p-message {
+  background: #fff;
+  padding-top: rem(82);
+
+  @include mq(md) {
+    padding-top: rem(138);
+  }
+}
+
+.p-message__hero {
+  background: radial-gradient(circle at 50% 50%, #fff 0%, #e1edf2 61%, #e1edf2 100%);
+  overflow: hidden;
+  padding: rem(28) 0 rem(42);
+
+  @include mq(md) {
+    padding: rem(118) 0 rem(84);
+  }
+}
+
+.p-message__heading {
+  text-align: center;
+
+  @include mq(md) {
+    max-width: rem(1010);
+    margin: 0 auto;
+    text-align: left;
+  }
+}
+
+.p-message__en {
+  font-family: $second-font-family;
+  font-size: rem(42);
+  font-weight: 400;
+  line-height: 1;
+
+  @include mq(md) {
+    font-size: rem(100);
+  }
+}
+
+.p-message__sub {
+  display: inline-block;
+  font-size: rem(12);
+  font-weight: 500;
+  line-height: 1.5;
+  margin-top: rem(8);
+  padding-top: rem(8);
+  position: relative;
+
+  @include mq(md) {
+    font-size: rem(25);
+    margin-top: rem(14);
+    padding-top: rem(18);
+  }
+}
+
+.p-message__sub::before {
+  border-top: rem(3) solid #fe4504;
+  content: "";
+  left: 50%;
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+  width: rem(150);
+
+  @include mq(md) {
+    left: 0;
+    transform: none;
+    width: rem(320);
+  }
+}
+
+.p-message__hero-body {
+  display: flex;
+  flex-direction: column;
+  gap: rem(20);
+  margin: rem(34) auto 0;
+  max-width: rem(1010);
+
+  @include mq(md) {
+    display: block;
+    margin-top: rem(66);
+    min-height: rem(420);
+    position: relative;
+  }
+}
+
+.p-message__hero-text {
+  position: relative;
+  z-index: 1;
+
+  @include mq(md) {
+    left: 0;
+    position: absolute;
+    top: rem(96);
+    width: rem(600);
+  }
+}
+
+.p-message__title {
+  font-size: rem(22);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1.7;
+
+  @include mq(md) {
+    font-size: rem(38);
+    line-height: 1.63;
+  }
+}
+
+.p-message__profile {
+  font-size: rem(13);
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  line-height: 1.6;
+  margin-top: rem(14);
+
+  @include mq(md) {
+    font-size: rem(22);
+    line-height: 1.45;
+    margin-top: rem(36);
+  }
+}
+
+.p-message__main-image {
+  align-self: center;
+  aspect-ratio: 800 / 420;
+  margin-left: rem(-26);
+  margin-right: rem(-26);
+  overflow: visible;
+
+  @include mq(md) {
+    bottom: 0;
+    margin: 0;
+    position: absolute;
+    right: rem(-206);
+    width: rem(800);
+  }
+}
+
+.p-message__main-image img {
+  display: block;
+  height: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+  width: 100%;
+}
+
+.p-message__content {
+  padding: rem(42) 0 rem(64);
+
+  @include mq(md) {
+    padding: rem(96) 0 rem(112);
+  }
+}
+
+.p-message__article {
+  margin: 0 auto;
+  max-width: rem(1010);
+}
+
+.p-message__section + .p-message__section,
+.p-message__image + .p-message__section,
+.p-message__section + .p-message__image {
+  margin-top: rem(38);
+
+  @include mq(md) {
+    margin-top: rem(74);
+  }
+}
+
+.p-message__section-title {
+  color: #0381f8;
+  font-size: rem(18);
+  font-weight: 700;
+  line-height: 1.65;
+
+  @include mq(md) {
+    font-size: rem(26);
+    line-height: 1.46;
+  }
+}
+
+.p-message__text {
+  font-size: rem(13);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 1.85;
+
+  @include mq(md) {
+    font-size: rem(18);
+    line-height: 1.95;
+  }
+}
+
+.p-message__section-title + .p-message__text,
+.p-message__text + .p-message__text {
+  margin-top: rem(16);
+
+  @include mq(md) {
+    margin-top: rem(24);
+  }
+}
+
+.p-message__image {
+  aspect-ratio: 320 / 200;
+  overflow: hidden;
+
+  @include mq(md) {
+    aspect-ratio: 640 / 400;
+    max-width: rem(640);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.p-message__image img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.p-message__philosophy {
+  background: #f2f1e9;
+  padding: rem(54) 0 rem(64);
+
+  @include mq(md) {
+    padding: rem(110) 0 rem(112);
+  }
+}
+
+.p-message__philosophy-inner {
+  margin: 0 auto;
+  max-width: rem(1010);
+  text-align: center;
+}
+
+.p-message__philosophy-title {
+  font-size: rem(24);
+  font-weight: 700;
+  line-height: 1.5;
+
+  @include mq(md) {
+    font-size: rem(35);
+  }
+}
+
+.p-message__philosophy-lead {
+  font-size: rem(13);
+  font-weight: 600;
+  line-height: 1.85;
+  margin-top: rem(18);
+
+  @include mq(md) {
+    font-size: rem(18);
+    line-height: 1.95;
+    margin-top: rem(28);
+  }
+}
+
+.p-message__philosophy-layout {
+  display: flex;
+  flex-direction: column;
+  gap: rem(34);
+  margin-top: rem(30);
+
+  @include mq(md) {
+    align-items: flex-start;
+    display: grid;
+    gap: rem(60);
+    grid-template-columns: rem(540) rem(408);
+    justify-content: space-between;
+    margin-top: rem(70);
+  }
+}
+
+.p-message__philosophy-text {
+  text-align: left;
+}
+
+.p-message__philosophy-image {
+  margin: 0 auto;
+  max-width: rem(249);
+  order: 2;
+
+  @include mq(md) {
+    margin: rem(-8) 0 0;
+    max-width: rem(408);
+    order: initial;
+  }
+}
+
+.p-message__philosophy-image img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.p-message__philosophy-subtitle {
+  font-size: rem(22);
+  font-weight: 700;
+  line-height: 1.45;
+  text-align: center;
+
+  @include mq(md) {
+    font-size: rem(30);
+    line-height: 1;
+    text-align: left;
+  }
+}
+
+.p-message__philosophy-body {
+  margin-top: rem(18);
+  text-align: left;
+
+  @include mq(md) {
+    margin-top: rem(28);
+  }
+}
+
+.p-message__philosophy-body .p-message__text:first-child {
+  @include mq(md) {
+    font-size: rem(23);
+    line-height: 1.52;
+  }
+}
+
+.p-message__meeting {
+  background: radial-gradient(circle at 50% 50%, #fff 0%, #e1edf2 61%, #e1edf2 100%);
+  padding: rem(58) 0 rem(76);
+
+  @include mq(md) {
+    padding: rem(100) 0 rem(120);
+  }
+}
+
+.p-message__meeting-image {
+  aspect-ratio: 320 / 200;
+  margin: 0 auto;
+  max-width: rem(640);
+  position: relative;
+}
+
+.p-message__meeting-image img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.p-message__meeting-image figcaption {
+  background: rgba(0, 0, 0, 0.55);
+  bottom: 0;
+  color: #fff;
+  font-size: rem(12);
+  font-weight: 500;
+  left: 0;
+  line-height: 1;
+  padding: rem(9) rem(12);
+  position: absolute;
+
+  @include mq(md) {
+    font-size: rem(15);
+    padding: rem(12) rem(18);
+  }
+}
+
+.p-message__cta {
+  align-items: center;
+  background: #476ed6;
+  border-radius: rem(999);
+  box-shadow: rem(-2) rem(3) rem(6) rgba(0, 0, 0, 0.4);
+  color: #fff;
+  display: flex;
+  font-size: rem(14);
+  font-weight: 500;
+  height: rem(56);
+  justify-content: center;
+  margin: rem(48) auto 0;
+  max-width: rem(469);
+  padding: 0 rem(58) 0 rem(18);
+  position: relative;
+  width: 100%;
+
+  @include mq(md) {
+    font-size: rem(20);
+    height: rem(67);
+    margin-top: rem(76);
+  }
+}
+
+.p-message__cta::after {
+  background: #fff;
+  border-radius: 50%;
+  content: "";
+  height: rem(32);
+  position: absolute;
+  right: rem(12);
+  top: 50%;
+  transform: translateY(-50%);
+  width: rem(32);
+
+  @include mq(md) {
+    height: rem(41);
+    right: rem(20);
+    width: rem(41);
+  }
+}
+
+.p-message__cta::before {
+  border-right: rem(2) solid #1571c8;
+  border-top: rem(2) solid #1571c8;
+  content: "";
+  height: rem(9);
+  position: absolute;
+  right: rem(25);
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  width: rem(9);
+  z-index: 1;
+
+  @include mq(md) {
+    right: rem(36);
+  }
+}

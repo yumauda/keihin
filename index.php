@@ -298,7 +298,7 @@
                 一緒に、夢のある未来を描いていきましょう。
               </p>
               <div class="p-top-rep__button-wrap">
-                <a class="p-top-rep__button" href="#">
+                <a class="p-top-rep__button" href="/message/">
                   <span class="p-top-rep__button-text">MORE</span>
                   <span class="p-top-rep__button-icon" aria-hidden="true"></span>
                 </a>
