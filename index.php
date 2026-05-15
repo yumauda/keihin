@@ -460,7 +460,7 @@
             </li>
           </ul>
           <div class="p-top-welfare__more-wrap">
-            <a class="p-top-welfare__more" href="#">
+            <a class="p-top-welfare__more" href="/welfare/">
               <span class="p-top-welfare__more-text">MORE</span>
               <span class="p-top-welfare__more-icon" aria-hidden="true"></span>
             </a>

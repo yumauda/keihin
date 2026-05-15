@@ -25,7 +25,7 @@
                 <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="#">電気の流れ</a></li>
                 <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="/career/">キャリアアップストーリー</a></li>
                 <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="/career-plan/">キャリアプラン</a></li>
-                <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="#">福利厚生</a></li>
+                <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="/welfare/">福利厚生</a></li>
             </ul>
 
             <ul class="p-footer__nav">
