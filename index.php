@@ -334,7 +334,7 @@
             </div>
           </div>
           <div class="p-top-career__button-wrap">
-            <a class="p-top-career__button" href="#">
+            <a class="p-top-career__button" href="/career-plan/">
               <span class="p-top-career__button-text">キャリアプランを見る</span>
               <span class="p-top-career__button-icon" aria-hidden="true"></span>
             </a>

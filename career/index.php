@@ -108,6 +108,16 @@
         </article>
       </div>
     </section>
+    <section class="p-work-recruit">
+      <div class="l-inner">
+        <div class="p-work-electric__cta-wrap">
+          <a class="p-work-electric__cta p-work-electric__cta--career" href="/career-plan/">
+            <span class="p-work-electric__cta-text">キャリアプラン</span>
+            <span class="p-work-electric__cta-icon" aria-hidden="true"></span>
+          </a>
+        </div>
+      </div>
+    </section>
   </main>
 
   <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'); ?>

@@ -1,0 +1,434 @@
+@use "../global" as *;
+
+.p-career-plan {
+  background: #fff;
+  color: #111;
+  padding-top: rem(82);
+
+  @include mq(md) {
+    padding-top: rem(138);
+  }
+}
+
+.p-career-plan__hero {
+  padding: rem(50) 0 rem(58);
+
+  @include mq(md) {
+    padding: rem(96) 0 rem(76);
+  }
+}
+
+.p-career-plan__heading {
+  text-align: center;
+
+  @include mq(md) {
+    text-align: left;
+  }
+}
+
+.p-career-plan__en {
+  font-family: $second-font-family;
+  font-size: rem(52);
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1;
+
+  @include mq(md) {
+    font-size: rem(100);
+  }
+}
+
+.p-career-plan__sub {
+  display: inline-block;
+  font-size: rem(16);
+  font-weight: 500;
+  line-height: 1.4;
+  margin-top: rem(8);
+  padding-top: rem(9);
+  position: relative;
+
+  @include mq(md) {
+    font-size: rem(23);
+    margin-top: rem(12);
+    padding-top: rem(18);
+  }
+}
+
+.p-career-plan__sub::before {
+  border-top: rem(3) solid #fe4504;
+  content: "";
+  left: 50%;
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+  width: rem(220);
+
+  @include mq(md) {
+    left: 0;
+    transform: none;
+    width: rem(307);
+  }
+}
+
+.p-career-plan__intro {
+  margin: rem(58) auto 0;
+  max-width: rem(1000);
+
+  @include mq(md) {
+    margin-top: rem(76);
+  }
+}
+
+.p-career-plan__intro-title {
+  color: #476ed6;
+  font-size: rem(25);
+  font-weight: 700;
+  line-height: 1.45;
+  text-align: center;
+
+  @include mq(md) {
+    font-size: rem(35);
+  }
+}
+
+.p-career-plan__text {
+  font-size: rem(14);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.9;
+  margin-top: rem(26);
+
+  @include mq(md) {
+    font-size: rem(18);
+    letter-spacing: 0.03em;
+    line-height: 1.95;
+    margin-top: rem(30);
+  }
+}
+
+.p-career-plan__text p + p {
+  margin-top: rem(12);
+
+  @include mq(md) {
+    margin-top: rem(16);
+  }
+}
+
+.p-career-plan__text--wide {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: rem(1010);
+}
+
+.p-career-plan__future,
+.p-career-plan__training {
+  background: #f2f1e9;
+}
+
+.p-career-plan__future {
+  padding: rem(58) 0 rem(64);
+
+  @include mq(md) {
+    padding: rem(104) 0 rem(76);
+  }
+}
+
+.p-career-plan__section-title {
+  font-size: rem(25);
+  font-weight: 700;
+  line-height: 1.45;
+  text-align: center;
+
+  @include mq(md) {
+    font-size: rem(35);
+  }
+}
+
+.p-career-plan__diagram {
+  margin: rem(36) auto 0;
+  max-width: rem(1000);
+  position: relative;
+
+  @include mq(md) {
+    margin-top: rem(112);
+  }
+}
+
+.p-career-plan__diagram-main {
+  display: block;
+  height: auto;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.p-career-plan__diagram-logo {
+  display: none;
+
+  @include mq(md) {
+    display: block;
+    height: auto;
+    position: absolute;
+    z-index: 2;
+  }
+}
+
+.p-career-plan__diagram-logo--left {
+  @include mq(md) {
+    right: rem(150);
+    top: rem(-125);
+    width: rem(125);
+  }
+}
+
+.p-career-plan__diagram-logo--right {
+  @include mq(md) {
+    right: rem(-2);
+    top: rem(14);
+    width: rem(129);
+  }
+}
+
+.p-career-plan__license {
+  background: #fff;
+  margin: rem(38) auto 0;
+  max-width: rem(1000);
+  padding: rem(28) rem(18);
+  text-align: center;
+
+  @include mq(md) {
+    margin-top: rem(58);
+    min-height: rem(223);
+    padding: rem(48) rem(42) rem(38);
+  }
+}
+
+.p-career-plan__license-title {
+  font-size: rem(20);
+  font-weight: 700;
+  line-height: 1.45;
+
+  @include mq(md) {
+    font-size: rem(30);
+  }
+}
+
+.p-career-plan__license-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: rem(10) rem(20);
+  justify-content: center;
+  margin-top: rem(24);
+}
+
+.p-career-plan__license-list li {
+  font-size: rem(14);
+  font-weight: 700;
+  line-height: 1.5;
+  padding-left: rem(18);
+  position: relative;
+
+  @include mq(md) {
+    font-size: rem(22);
+    padding-left: rem(24);
+  }
+}
+
+.p-career-plan__license-list li::before {
+  border: rem(2) solid currentColor;
+  border-radius: 50%;
+  content: "";
+  height: rem(9);
+  left: 0;
+  position: absolute;
+  top: 0.55em;
+  width: rem(9);
+
+  @include mq(md) {
+    height: rem(12);
+    top: 0.48em;
+    width: rem(12);
+  }
+}
+
+.p-career-plan__salary {
+  padding: rem(58) 0 rem(62);
+
+  @include mq(md) {
+    padding: rem(84) 0 rem(82);
+  }
+}
+
+.p-career-plan__salary-list {
+  display: grid;
+  gap: rem(18);
+  justify-content: center;
+  margin: rem(34) auto 0;
+  max-width: rem(1000);
+
+  @include mq(sm) {
+    grid-template-columns: repeat(2, rem(220));
+  }
+
+  @include mq(md) {
+    gap: rem(40);
+    grid-template-columns: repeat(4, rem(220));
+    margin-top: rem(54);
+  }
+}
+
+.p-career-plan__salary-item {
+  position: relative;
+  width: rem(220);
+}
+
+.p-career-plan__salary-item + .p-career-plan__salary-item::before {
+  @include mq(md) {
+    border-bottom: rem(20) solid transparent;
+    border-left: rem(20) solid #fcb98b;
+    border-top: rem(20) solid transparent;
+    content: "";
+    left: rem(-30);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+  }
+}
+
+.p-career-plan__salary-item img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.p-career-plan__training {
+  padding: rem(58) 0 rem(68);
+
+  @include mq(md) {
+    padding: rem(92) 0 rem(92);
+  }
+}
+
+.p-career-plan__training-title {
+  font-size: rem(20);
+  font-weight: 700;
+  line-height: 1.45;
+  margin-top: rem(42);
+  text-align: center;
+
+  @include mq(md) {
+    font-size: rem(30);
+    margin-top: rem(58);
+  }
+}
+
+.p-career-plan__training-list {
+  display: grid;
+  gap: rem(24);
+  justify-content: center;
+  margin: rem(28) auto 0;
+  max-width: rem(1000);
+
+  @include mq(md) {
+    gap: rem(77);
+    grid-template-columns: repeat(3, rem(282));
+    margin-top: rem(36);
+  }
+}
+
+.p-career-plan__training-item {
+  background: #fff;
+  border: rem(2) solid #4688e3;
+  border-radius: rem(15);
+  box-shadow: 0 rem(2) 0 #4688e3;
+  display: flex;
+  flex-direction: column;
+  min-height: rem(390);
+  overflow: hidden;
+  position: relative;
+
+  @include mq(md) {
+    min-height: rem(390);
+  }
+}
+
+.p-career-plan__training-item + .p-career-plan__training-item::before {
+  @include mq(md) {
+    border-bottom: rem(18) solid transparent;
+    border-left: rem(18) solid #fcb98b;
+    border-top: rem(18) solid transparent;
+    content: "";
+    left: rem(-49);
+    position: absolute;
+    top: rem(190);
+    z-index: 2;
+  }
+}
+
+.p-career-plan__training-month {
+  align-items: center;
+  background: #4688e3;
+  color: #fff;
+  display: flex;
+  font-size: rem(24);
+  font-weight: 700;
+  height: rem(58);
+  justify-content: center;
+  line-height: 1;
+
+  @include mq(md) {
+    font-size: rem(26);
+    height: rem(61);
+  }
+}
+
+.p-career-plan__training-icon {
+  align-items: center;
+  align-self: center;
+  background: #9fc5f8;
+  border-radius: 50%;
+  display: flex;
+  height: rem(104);
+  justify-content: center;
+  margin-top: rem(30);
+  width: rem(104);
+}
+
+.p-career-plan__training-icon img {
+  display: block;
+  height: rem(74);
+  object-fit: contain;
+  width: rem(78);
+}
+
+.p-career-plan__training-name {
+  display: block;
+  font-size: rem(21);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  line-height: 1.55;
+  margin-top: rem(22);
+  padding: 0 rem(18);
+  text-align: center;
+
+  @include mq(md) {
+    font-size: rem(22);
+  }
+}
+
+.p-career-plan__training-note {
+  display: block;
+  font-size: rem(16);
+  font-weight: 500;
+  line-height: 1.8;
+  margin-top: rem(22);
+  padding: 0 rem(25) rem(24);
+  text-align: left;
+  white-space: nowrap;
+
+  @include mq(md) {
+    font-size: rem(18);
+    line-height: 1.88;
+  }
+}
