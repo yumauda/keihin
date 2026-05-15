@@ -31,7 +31,7 @@
                             <li class="p-header__nav-item"><a class="p-header__nav-link" href="/career/">キャリアアップストーリー</a></li>
                             <li class="p-header__nav-item"><a class="p-header__nav-link" href="/welfare/">福利厚生</a></li>
                             <li class="p-header__nav-item"><a class="p-header__nav-link" href="/faq/">よくある質問</a></li>
-                            <li class="p-header__nav-item"><a class="p-header__nav-link" href="#">募集要項</a></li>
+                            <li class="p-header__nav-item"><a class="p-header__nav-link" href="/recruit/">募集要項</a></li>
                         </ul>
                     </nav>
 

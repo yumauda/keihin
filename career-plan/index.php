@@ -146,7 +146,7 @@
     <section class="p-work-recruit">
       <div class="l-inner">
         <div class="p-work-electric__cta-wrap">
-          <a class="p-work-electric__cta" href="#">
+          <a class="p-work-electric__cta" href="/recruit/">
             <span class="p-work-electric__cta-text">新卒・キャリア採用募集要項はこちら</span>
             <span class="p-work-electric__cta-icon" aria-hidden="true"></span>
           </a>

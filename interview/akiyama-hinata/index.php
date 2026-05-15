@@ -91,7 +91,7 @@
           </section>
         </article>
 
-        <a class="p-interview-detail__cta" href="#">新卒・キャリア採用募集要項はこちら</a>
+        <a class="p-interview-detail__cta" href="/recruit/">新卒・キャリア採用募集要項はこちら</a>
       </div>
     </section>
   </main>

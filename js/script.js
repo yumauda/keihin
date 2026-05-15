@@ -508,4 +508,31 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     });
   })();
 
+  // 募集要項 タブ切り替え
+  (function initRecruitTabs() {
+    const tabs = document.querySelectorAll('.js-recruit-tab');
+    const panels = document.querySelectorAll('.js-recruit-panel');
+    if (!tabs.length || !panels.length) return;
+
+    function activate(tab) {
+      const target = tab.getAttribute('aria-controls');
+
+      tabs.forEach(function (item) {
+        const isActive = item === tab;
+        item.classList.toggle('is-active', isActive);
+        item.setAttribute('aria-selected', isActive ? 'true' : 'false');
+      });
+
+      panels.forEach(function (panel) {
+        panel.hidden = panel.id !== target;
+      });
+    }
+
+    tabs.forEach(function (tab) {
+      tab.addEventListener('click', function () {
+        activate(tab);
+      });
+    });
+  })();
+
 });

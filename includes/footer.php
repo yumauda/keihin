@@ -30,7 +30,7 @@
 
             <ul class="p-footer__nav">
                 <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="/faq/">よくある質問</a></li>
-                <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="#">募集要項</a></li>
+                <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="/recruit/">募集要項</a></li>
                 <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="#">エントリーフォーム</a></li>
                 <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="#">コーポレートサイト</a></li>
                 <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="#">プライバシーポリシー</a></li>
