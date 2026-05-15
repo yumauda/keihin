@@ -28,7 +28,7 @@
                             <li class="p-header__nav-item"><a class="p-header__nav-link" href="/interview/">働く仲間の声</a></li>
                             <li class="p-header__nav-item"><a class="p-header__nav-link" href="/message/">代表メッセージ</a></li>
                             <li class="p-header__nav-item"><a class="p-header__nav-link" href="/work/">京浜電設の仕事</a></li>
-                            <li class="p-header__nav-item"><a class="p-header__nav-link" href="#">キャリアアップストーリー</a></li>
+                            <li class="p-header__nav-item"><a class="p-header__nav-link" href="/career/">キャリアアップストーリー</a></li>
                             <li class="p-header__nav-item"><a class="p-header__nav-link" href="#">福利厚生</a></li>
                             <li class="p-header__nav-item"><a class="p-header__nav-link" href="#">よくある質問</a></li>
                             <li class="p-header__nav-item"><a class="p-header__nav-link" href="#">募集要項</a></li>

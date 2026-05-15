@@ -326,7 +326,7 @@
               <p class="p-top-career__sub-title">キャリアアップストーリー</p>
               <p class="p-top-career__catch">会社と自らの夢の実現に向けて<br>工事の現場から副社長になるまで。</p>
               <div class="p-top-career__more-wrap">
-                <a class="p-top-career__more" href="#">
+                <a class="p-top-career__more" href="/career/">
                   <span class="p-top-career__more-text">MORE</span>
                   <span class="p-top-career__more-icon" aria-hidden="true"></span>
                 </a>

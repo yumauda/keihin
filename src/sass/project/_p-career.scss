@@ -1,0 +1,259 @@
+@use "../global" as *;
+
+.p-career {
+  background: #fff;
+  padding-top: rem(82);
+
+  @include mq(md) {
+    padding-top: rem(138);
+  }
+}
+
+.p-career__hero {
+  padding-top: rem(50);
+
+  @include mq(md) {
+    padding-top: rem(96);
+  }
+}
+
+.p-career__heading {
+  text-align: center;
+
+  @include mq(md) {
+    text-align: left;
+  }
+}
+
+.p-career__en {
+  font-family: $second-font-family;
+  font-size: rem(52);
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1;
+
+  @include mq(md) {
+    font-size: rem(100);
+  }
+}
+
+.p-career__sub {
+  display: inline-block;
+  font-size: rem(16);
+  font-weight: 500;
+  line-height: 1.4;
+  margin-top: rem(8);
+  padding-top: rem(9);
+  position: relative;
+
+  @include mq(md) {
+    font-size: rem(23);
+    margin-top: rem(12);
+    padding-top: rem(18);
+  }
+}
+
+.p-career__sub::before {
+  border-top: rem(3) solid #fe4504;
+  content: "";
+  left: 50%;
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+  width: rem(220);
+
+  @include mq(md) {
+    left: 0;
+    transform: none;
+    width: rem(307);
+  }
+}
+
+.p-career__hero-panel {
+  background: linear-gradient(90deg, #e1edf2 0%, #f7fafc 25.6158%, #f8f8f8 70.4434%, #e1edf2 100%);
+  margin-top: rem(42);
+  overflow: hidden;
+
+  @include mq(md) {
+    margin-top: rem(62);
+  }
+}
+
+.p-career__hero-layout {
+  display: grid;
+  gap: rem(28);
+  padding: rem(38) 0 0;
+
+  @include mq(md) {
+    align-items: end;
+    gap: rem(64);
+    grid-template-columns: minmax(0, rem(520)) minmax(0, 1fr);
+    min-height: rem(430);
+    padding-top: 0;
+  }
+}
+
+.p-career__hero-text {
+  color: #000;
+  position: relative;
+  z-index: 1;
+
+  @include mq(md) {
+    padding-bottom: rem(40);
+  }
+}
+
+.p-career__catch {
+  font-size: rem(24);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1.65;
+
+  @include mq(md) {
+    font-size: rem(38);
+    line-height: 1.63;
+  }
+}
+
+.p-career__lead {
+  font-size: rem(14);
+  font-weight: 600;
+  line-height: 1.85;
+  margin-top: rem(20);
+
+  @include mq(md) {
+    font-size: rem(20);
+    line-height: 1.75;
+    margin-top: rem(28);
+  }
+}
+
+.p-career__profile {
+  font-size: rem(14);
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  line-height: 1.6;
+  margin-top: rem(18);
+
+  @include mq(md) {
+    font-size: rem(20);
+    line-height: 1.3;
+    margin-top: rem(28);
+  }
+}
+
+.p-career__hero-image {
+  align-self: end;
+  justify-self: center;
+  margin-bottom: rem(-1);
+  max-width: rem(430);
+  width: 92%;
+
+  @include mq(md) {
+    justify-self: end;
+    max-width: rem(800);
+    width: rem(620);
+  }
+}
+
+.p-career__hero-image img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.p-career__steps {
+  padding: rem(46) 0 rem(54);
+
+  @include mq(md) {
+    padding: rem(64) 0 rem(60);
+  }
+}
+
+.p-career__chart {
+  margin: 0 auto;
+  max-width: rem(1195);
+}
+
+.p-career__chart img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.p-career__article {
+  background: #f2f1e9;
+  padding: rem(54) 0 rem(70);
+
+  @include mq(md) {
+    padding: rem(96) 0 rem(112);
+  }
+}
+
+.p-career__article-inner {
+  margin: 0 auto;
+  max-width: rem(1010);
+}
+
+.p-career__section + .p-career__photo,
+.p-career__photo + .p-career__section,
+.p-career__section + .p-career__section {
+  margin-top: rem(40);
+
+  @include mq(md) {
+    margin-top: rem(76);
+  }
+}
+
+.p-career__section-title {
+  color: #0381f8;
+  font-size: rem(19);
+  font-weight: 700;
+  line-height: 1.7;
+
+  @include mq(md) {
+    font-size: rem(26);
+    line-height: 1.4;
+  }
+}
+
+.p-career__text {
+  font-size: rem(14);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.9;
+
+  @include mq(md) {
+    font-size: rem(18);
+    letter-spacing: 0.03em;
+    line-height: 1.95;
+  }
+}
+
+.p-career__section-title + .p-career__text,
+.p-career__text + .p-career__text {
+  margin-top: rem(16);
+
+  @include mq(md) {
+    margin-top: rem(22);
+  }
+}
+
+.p-career__photo {
+  aspect-ratio: 320 / 200;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+
+  @include mq(md) {
+    aspect-ratio: 640 / 400;
+    max-width: rem(640);
+  }
+}
+
+.p-career__photo img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
