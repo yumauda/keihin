@@ -407,4 +407,105 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     setActiveTab(nextTab);
   });
 
+  // FAQ details 開閉アニメーション
+  (function initFaqDetailsAnimation() {
+    const items = document.querySelectorAll('.p-faq__item');
+    if (!items.length) return;
+
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduceMotion) return;
+
+    items.forEach(function (item) {
+      const summary = item.querySelector('.p-faq__question');
+      const answer = item.querySelector('.p-faq__answer');
+      if (!summary || !answer) return;
+
+      let animation = null;
+
+      function finishOpen() {
+        answer.style.height = '';
+        answer.style.opacity = '';
+        answer.style.overflow = '';
+        answer.style.paddingTop = '';
+        answer.style.paddingBottom = '';
+        animation = null;
+      }
+
+      function finishClose() {
+        item.removeAttribute('open');
+        answer.style.height = '';
+        answer.style.opacity = '';
+        answer.style.overflow = '';
+        answer.style.paddingTop = '';
+        answer.style.paddingBottom = '';
+        animation = null;
+      }
+
+      summary.addEventListener('click', function (e) {
+        e.preventDefault();
+        if (animation) animation.cancel();
+
+        answer.style.overflow = 'hidden';
+
+        if (item.open) {
+          const startHeight = answer.offsetHeight;
+          const style = window.getComputedStyle(answer);
+          const startPaddingTop = style.paddingTop;
+          const startPaddingBottom = style.paddingBottom;
+          animation = answer.animate(
+            [
+              {
+                height: startHeight + 'px',
+                opacity: 1,
+                paddingTop: startPaddingTop,
+                paddingBottom: startPaddingBottom
+              },
+              {
+                height: '0px',
+                opacity: 0,
+                paddingTop: '0px',
+                paddingBottom: '0px'
+              }
+            ],
+            { duration: 360, easing: 'cubic-bezier(0.22, 1, 0.36, 1)' }
+          );
+          animation.onfinish = finishClose;
+          animation.oncancel = finishOpen;
+          return;
+        }
+
+        item.setAttribute('open', '');
+        const style = window.getComputedStyle(answer);
+        const endPaddingTop = style.paddingTop;
+        const endPaddingBottom = style.paddingBottom;
+        const endHeight = answer.scrollHeight;
+
+        answer.style.height = '0px';
+        answer.style.opacity = '0';
+        answer.style.paddingTop = '0px';
+        answer.style.paddingBottom = '0px';
+
+        animation = answer.animate(
+          [
+            {
+              height: '0px',
+              opacity: 0,
+              paddingTop: '0px',
+              paddingBottom: '0px'
+            },
+            {
+              height: endHeight + 'px',
+              opacity: 1,
+              paddingTop: endPaddingTop,
+              paddingBottom: endPaddingBottom
+            }
+          ],
+          { duration: 420, easing: 'cubic-bezier(0.22, 1, 0.36, 1)' }
+        );
+        animation.onfinish = finishOpen;
+        animation.oncancel = finishOpen;
+      });
+    });
+  })();
+
 });
