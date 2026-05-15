@@ -21,7 +21,7 @@
             </ul>
 
             <ul class="p-footer__nav">
-                <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="#">京浜電設の仕事</a></li>
+                <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="/work/">京浜電設の仕事</a></li>
                 <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="#">電気の流れ</a></li>
                 <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="#">キャリアアップストーリー</a></li>
                 <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="#">キャリアプラン</a></li>

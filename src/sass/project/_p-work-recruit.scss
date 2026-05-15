@@ -1,0 +1,10 @@
+@use "../global" as *;
+
+.p-work-recruit {
+  background: #fff;
+
+  @include mq(md) {
+    padding-top: rem(72);
+    padding-bottom: rem(72);
+  }
+}

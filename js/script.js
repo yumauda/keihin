@@ -18,19 +18,6 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   let pendingTranslateLang = null;
 
   function getCurrentTranslateLang() {
-    const match = document.cookie.match(/(?:^|;\s*)googtrans=([^;]+)/);
-    if (match) {
-      const parts = decodeURIComponent(match[1]).split('/');
-      if (parts[parts.length - 1] === 'en') return 'en';
-    }
-
-    try {
-      const stored = localStorage.getItem(TRANSLATE_STORAGE_KEY);
-      if (stored === 'en') return 'en';
-    } catch (e) {
-      // ignore
-    }
-
     return 'ja';
   }
 
@@ -74,6 +61,15 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/';
       document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/; domain=' + domain;
     });
+  }
+
+  function resetTranslateToJapanese() {
+    clearTranslateCookies();
+    try {
+      localStorage.setItem(TRANSLATE_STORAGE_KEY, 'ja');
+    } catch (e) {
+      // ignore
+    }
   }
 
   function applyEnglishTranslation() {
@@ -265,12 +261,8 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   });
 
   if ($translate.length) {
+    resetTranslateToJapanese();
     syncTranslateUi(getCurrentTranslateLang());
-
-    if (getCurrentTranslateLang() === 'en') {
-      pendingTranslateLang = 'en';
-      ensureTranslateScript();
-    }
   }
 
   $translateToggle.on('click', function () {

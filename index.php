@@ -272,7 +272,7 @@
             </li>
           </ul>
           <div class="p-top-number__button-wrap">
-            <a class="p-top-number__button" href="#">
+            <a class="p-top-number__button" href="/work/">
               <span class="p-top-number__button-text">京浜電設の仕事を見る</span>
               <span class="p-top-number__button-icon" aria-hidden="true"></span>
             </a>
