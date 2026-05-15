@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <!-- meta情報 -->
+  <title>tk</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!-- ogp -->
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:description" content="" />
+  <!-- ファビコン -->
+  <link rel="icon" href="./images/common/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/common/apple-touch-icon.png">
+  <!-- CSS (sassコマンドで自動生成) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script defer src="./js/script.js"></script>
+  <!-- Vite Entry Point -->
+  <script type="module" crossorigin src="/js/index.js"></script>
+  <link rel="stylesheet" crossorigin href="/css/style.css">
+</head>
+
+<body>
+  <header class="p-header">
+    <div class="l-inner">
+      <div class="p-header__content">
+        <a class="p-header__logo" href="#">
+          <img decoding="async" loading="lazy" src="/images/header-logo.svg" alt="かんたんはこスキャン" width="157" height="68">
+        </a>
+
+        <a class="p-header__btn" href="#">
+          <span class="p-header__btn-text">お申し込みはこちら</span>
+          <span class="p-header__btn-icon" aria-hidden="true">
+            <img decoding="async" loading="lazy" src="data:image/svg+xml,%3csvg%20width='27'%20height='27'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M17.2929%2013.2929C17.6834%2013.6834%2017.6834%2014.3166%2017.2929%2014.7071L11.7071%2020.2929C11.0771%2020.9229%2010%2020.4767%2010%2019.5858V8.41421C10%207.52331%2011.0771%207.07714%2011.7071%207.70711L17.2929%2013.2929Z'%20fill='white'/%3e%3c/svg%3e" alt="" width="27" height="27">
+          </span>
+        </a>
+      </div>
+    </div>
+  
+  </header>
+  <main>
+    <section class="p-mv">
+      <div class="l-inner">
+        <figure class="p-mv__img">
+          <picture>
+            <source srcset="/images/mv_img.webp" media="(min-width: 768px)" width="1200" height="475"/>
+            <img src="/images/mv_img_sp.webp" alt="かんたんはこスキャン" width="1200" height="475">
+          </picture>
+        </figure>
+      </div>
+    </section>
+    <section class="p-worries">
+      <div class="l-inner">
+        <div class="p-worries__content">
+          <h2 class="p-worries__title">こんなお悩みを<span>解決</span>します</h2>
+          <ul class="p-worries__items">
+            <li class="p-worries__item">
+              <div class="p-worries__card">
+                <p class="p-worries__card-title">
+                  書類がありすぎて<br>
+                  <span>すぐ見つからない</span>
+                </p>
+                <figure class="p-worries__card-img">
+                  <img decoding="async" loading="lazy" src="/images/worries-search.svg" alt="書類が多くて探せない悩み" width="256" height="175">
+                </figure>
+              </div>
+            </li>
+            <li class="p-worries__item">
+              <div class="p-worries__card">
+                <p class="p-worries__card-title p-worries__card-title--center">
+                  よく使うのに<br>
+                  <span>原本が1つしかない</span>
+                </p>
+                <figure class="p-worries__card-img">
+                  <img decoding="async" loading="lazy" src="/images/worries-original.svg" alt="原本が一つしかない悩み" width="256" height="175">
+                </figure>
+              </div>
+            </li>
+            <li class="p-worries__item">
+              <div class="p-worries__card">
+                <p class="p-worries__card-title">
+                  <span>紙から脱却しろ</span><br>
+                  と言われている
+                </p>
+                <figure class="p-worries__card-img">
+                  <img decoding="async" loading="lazy" src="/images/worries-paperless.svg" alt="ペーパーレス化を求められる悩み" width="256" height="175">
+                </figure>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div class="p-worries__arrow">
+      <picture>
+        <source srcset="/images/worries_arrow.webp" media="(min-width: 768px)" width="1440" height="100"/>
+        <img src="data:image/webp;base64,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" alt="" width="375" height="46">
+      </picture>
+    </div>
+    <section class="p-step">
+      <div class="l-inner">
+        <div class="p-step__content">
+          <h2 class="p-step__title">ご利用はかんたん<span>3ステップ</span></h2>
+
+          <ol class="p-step__items">
+            <li class="p-step__item">
+              <div class="p-step__item-inner">
+                <div class="p-step__item-head">
+                  <p class="p-step__tag">step1</p>
+                  <figure class="p-step__img">
+                    <img decoding="async" loading="lazy" src="/images/step-01.svg" alt="" width="213" height="173">
+                  </figure>
+                </div>
+                <p class="p-step__text">
+                  まずはご連絡<br>
+                  内容のご確認を行いご注文
+                </p>
+              </div>
+            </li>
+            <li class="p-step__item">
+              <div class="p-step__item-inner">
+                <div class="p-step__item-head">
+                  <p class="p-step__tag">step2</p>
+                  <figure class="p-step__img">
+                    <img decoding="async" loading="lazy" src="/images/step-02.svg" alt="" width="213" height="173">
+                  </figure>
+                </div>
+                <p class="p-step__text">
+                  届いたダンボールに<br>
+                  書類をつめて送る
+                </p>
+              </div>
+            </li>
+            <li class="p-step__item">
+              <div class="p-step__item-inner">
+                <div class="p-step__item-head">
+                  <p class="p-step__tag">step3</p>
+                  <figure class="p-step__img">
+                    <img decoding="async" loading="lazy" src="/images/step-03.svg" alt="" width="213" height="173">
+                  </figure>
+                </div>
+                <p class="p-step__text">
+                  電子化したデータ(DVD)と<br>
+                  共に原本をご返却
+                </p>
+              </div>
+            </li>
+          </ol>
+
+          <div class="p-step__callout">
+            <p class="p-step__callout-lead">バインダのまま！クリップやホッチキスもそのままでOK</p>
+            <figure class="p-step__callout-price">
+              <img decoding="async" loading="lazy" src="/images/step-price.svg" alt="66,000円/箱(税込)" width="416" height="62">
+            </figure>
+            <p class="p-step__callout-note">※送料込</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="p-document">
+      <div class="l-inner">
+        <div class="p-document__content">
+          <h2 class="p-document__title">電子化に<span>対応した書類</span></h2>
+
+          <ul class="p-document__items">
+            <li class="p-document__item">
+              <div class="p-document__card">
+                <p class="p-document__num">01</p>
+                <p class="p-document__label">バインダ</p>
+                <figure class="p-document__img">
+                  <img decoding="async" loading="lazy" src="data:image/svg+xml,%3csvg%20width='222'%20height='185'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M154.385%20141.407L52%20176.199V34.7924L154.385%200V141.407Z'%20fill='%23005D97'/%3e%3cpath%20d='M52%2040.8266L67.6146%2049.6277L167.18%2015.8067L151.565%207.00562L52%2040.8266Z'%20fill='%23DCDDDD'/%3e%3cpath%20d='M170%20150.208L67.6146%20185V43.5934L170%208.80103V150.208Z'%20fill='%23005D97'/%3e%3cpath%20d='M52%20176.199V34.7925L67.6146%2043.5936V185L52%20176.199Z'%20fill='%233075A8'/%3e%3cpath%20d='M54.8201%20112.266V50.8345L64.7944%2056.4566V117.888L54.8201%20112.266Z'%20fill='white'/%3e%3c/svg%3e" alt="" width="222" height="185">
+                </figure>
+              </div>
+            </li>
+            <li class="p-document__item">
+              <div class="p-document__card">
+                <p class="p-document__num">02</p>
+                <p class="p-document__label">紙ファイル(フォルダ)</p>
+                <figure class="p-document__img">
+                  <img decoding="async" loading="lazy" src="data:image/svg+xml,%3csvg%20width='222'%20height='186'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M159.065%20145.79L55%20181.66V35.8708L159.065%200V145.79Z'%20fill='%23F5BDD5'/%3e%3cpath%20d='M55%2042.092L62.9353%2046.5834L164.134%2011.7141L156.198%207.22266L55%2042.092Z'%20fill='white'/%3e%3cpath%20d='M167%20150.129L62.9353%20186V40.2104L167%204.3396V150.129Z'%20fill='%23F7C9DD'/%3e%3cpath%20d='M147.177%2038.7235L82.7587%2060.9683V59.8758L147.177%2037.6614V38.7235Z'%20fill='%23F2A3C5'/%3e%3cpath%20d='M147.177%2057.7514L82.7587%2079.9658V78.9037L147.177%2056.6589V57.7514Z'%20fill='%23F2A3C5'/%3e%3cpath%20d='M147.177%20112.013L82.7587%20134.227V133.165L147.177%20110.92V112.013Z'%20fill='%23F2A3C5'/%3e%3cpath%20d='M147.177%20131.01L82.7587%20153.255V152.162L147.177%20129.948V131.01Z'%20fill='%23F2A3C5'/%3e%3cpath%20d='M55%20181.66V35.8708L62.9353%2040.2105V186L55%20181.66Z'%20fill='%23F9D5E5'/%3e%3cpath%20d='M55%2083.3039V82.2417L62.9353%2086.551V87.6436L55%2083.3039Z'%20fill='%23F2A3C5'/%3e%3cpath%20d='M55%20135.32V134.227L62.9353%20138.567V139.629L55%20135.32Z'%20fill='%23F2A3C5'/%3e%3c/svg%3e" alt="" width="222" height="186">
+                </figure>
+              </div>
+            </li>
+            <li class="p-document__item">
+              <div class="p-document__card">
+                <p class="p-document__num">03</p>
+                <p class="p-document__label">クリアファイル</p>
+                <figure class="p-document__img">
+                  <img decoding="async" loading="lazy" src="data:image/svg+xml,%3csvg%20width='222'%20height='186'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M107.079%20127.426L19%20157.539V35.1128L107.079%205V127.426Z'%20fill='%23AADDF7'/%3e%3cpath%20d='M111.366%20131.183L25.7056%20160.473V44.1358L111.366%2014.8457V131.183Z'%20fill='%23DCDDDD'/%3e%3cpath%20d='M19%20156.689L25.7055%20160.473V44.1357L19%2040.3511V156.689Z'%20fill='%23EFEFEF'/%3e%3cpath%20d='M19%2040.3511L25.7055%2044.1358L111.366%2014.8183L104.633%2011.061L19%2040.3511Z'%20fill='white'/%3e%3cpath%20d='M113.784%20131.046L25.7056%20161.159V38.7604L113.784%208.62012V131.046Z'%20fill='%23BAE3F9'/%3e%3cpath%20d='M19%20157.539V35.1128L25.7055%2038.7603V161.159L19%20157.539Z'%20fill='%23CAE9FA'/%3e%3cpath%20d='M198.373%2062.2363H122.056V168.207H198.373V62.2363Z'%20fill='white'/%3e%3cpath%20d='M195.707%2078.9932C195.707%2075.5376%20198.51%2072.7128%20202%2072.7128V57.6016H122.029V169.771H202V85.2736C198.51%2085.2736%20195.707%2082.4488%20195.707%2078.9932Z'%20fill='%23E6E6E6'/%3e%3cpath%20d='M165.741%2056.6976L90.5837%2069.9226L109.023%20174.284L184.18%20161.059L165.741%2056.6976Z'%20fill='white'/%3e%3cpath%20d='M166.054%2073.6727C165.449%2070.2446%20167.73%2067.0084%20171.166%2066.3776L168.527%2051.5132L89.7925%2065.3629L109.304%20175.831L188.039%20161.982L173.337%2078.7738C169.901%2079.3772%20166.659%2077.1009%20166.054%2073.6727Z'%20fill='%23E6E6E6'/%3e%3cpath%20d='M132.999%2052.9252L61.2854%2078.9734L97.6042%20178.553L169.318%20152.505L132.999%2052.9252Z'%20fill='white'/%3e%3cpath%20d='M136.236%2069.5863C135.055%2066.3227%20136.731%2062.73%20140.001%2061.5233L134.835%2047.3445L59.7002%2074.6325L98.147%20180.027L173.282%20152.739L144.316%2073.3435C141.046%2074.5228%20137.446%2072.8499%20136.236%2069.5863Z'%20fill='%23E6E6E6'/%3e%3c/svg%3e" alt="" width="222" height="186">
+                </figure>
+              </div>
+            </li>
+            <li class="p-document__item">
+              <div class="p-document__card">
+                <p class="p-document__num">04</p>
+                <p class="p-document__label">封筒</p>
+                <figure class="p-document__img">
+                  <img decoding="async" loading="lazy" src="data:image/svg+xml,%3csvg%20width='222'%20height='186'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M154.604%2031.2042L147.882%2019.1332C147.191%2017.889%20145.48%2017.0815%20144.081%2017.3287L58.1506%2032.5061C56.7518%2032.7533%2055.4272%2034.1046%2055.205%2035.5053L53%2049.1502'%20fill='%23C9A063'/%3e%3cpath%20d='M134.997%203.99997L55.2773%2025.3918L76.6404%20105.235L156.36%2083.8435L134.997%203.99997Z'%20fill='white'%20stroke='%23DCDDDD'%20stroke-width='1.25'%20stroke-miterlimit='10'/%3e%3cpath%20d='M144.542%2014.6318L63.2551%2028.9856L77.5881%20110.39L158.875%2096.0361L144.542%2014.6318Z'%20fill='white'%20stroke='%23DCDDDD'%20stroke-width='1.25'%20stroke-miterlimit='10'/%3e%3cpath%20d='M53%2049.15L75.3959%20176.337L177%20158.399L154.604%2031.2041'%20fill='%23DFCC97'/%3e%3cpath%20d='M124.4%20157.188L103.979%2041.199'%20stroke='%23D2A36C'%20stroke-width='1.57'%20stroke-miterlimit='10'%20stroke-linecap='round'/%3e%3cpath%20d='M175.552%20157.6L170.418%20151.347C169.513%20150.251%20167.637%20149.55%20166.238%20149.797L82.5788%20164.571C81.18%20164.818%2079.6497%20166.112%2079.1807%20167.455L76.4902%20175.093'%20fill='%23DFCC97'/%3e%3cpath%20d='M175.552%20157.6L170.418%20151.347C169.513%20150.251%20167.637%20149.55%20166.238%20149.797L82.5787%20164.571C81.18%20164.818%2079.6497%20166.112%2079.1807%20167.455L76.4902%20175.093'%20stroke='%23D2A36C'%20stroke-width='1.57'%20stroke-miterlimit='10'%20stroke-linecap='round'/%3e%3c/svg%3e" alt="" width="222" height="186">
+                </figure>
+              </div>
+            </li>
+          </ul>
+
+          <p class="p-document__note">
+            ※この単位毎で電子化いたします。<br>
+            ※上記以外の単独バラで詰められた書類は電子化対象から除外される恐れがあります。
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="p-down">
+      <div class="l-inner">
+        <div class="p-down__content">
+          <div class="p-down__box">
+            <figure class="p-down__icon">
+              <img decoding="async" loading="lazy" src="data:image/svg+xml,%3csvg%20width='50'%20height='50'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3ccircle%20cx='25'%20cy='25'%20r='25'%20fill='%23E5005A'/%3e%3cpath%20d='M24.9999%2015.3999C25.5512%2015.3999%2026.0574%2015.7037%2026.3199%2016.1874L34.4199%2031.1874C34.6712%2031.6524%2034.6599%2032.2149%2034.3899%2032.6687C34.1199%2033.1224%2033.6287%2033.3999%2033.0999%2033.3999H16.8999C16.3712%2033.3999%2015.8799%2033.1224%2015.6099%2032.6687C15.3399%2032.2149%2015.3287%2031.6524%2015.5799%2031.1874L23.6799%2016.1874C23.9424%2015.7037%2024.4487%2015.3999%2024.9999%2015.3999ZM24.9999%2028.5999C24.3362%2028.5999%2023.7999%2029.1362%2023.7999%2029.7999C23.7999%2030.4637%2024.3362%2030.9999%2024.9999%2030.9999C25.6637%2030.9999%2026.1999%2030.4637%2026.1999%2029.7999C26.1999%2029.1362%2025.6637%2028.5999%2024.9999%2028.5999ZM24.9999%2021.3999C24.3174%2021.3999%2023.7737%2021.9812%2023.8224%2022.6637L24.0999%2026.5637C24.1337%2027.0324%2024.5274%2027.3999%2024.9962%2027.3999C25.4687%2027.3999%2025.8587%2027.0362%2025.8924%2026.5637L26.1699%2022.6637C26.2187%2021.9812%2025.6787%2021.3999%2024.9924%2021.3999H24.9999Z'%20fill='white'/%3e%3c/svg%3e" alt="" width="50" height="50">
+            </figure>
+            <p class="p-down__title">以下のものは電子化対象外となります</p>
+            <div class="p-down__text-wrapper">
+              <p class="p-down__text">
+                ・冊子 / A5～A3サイズ以外のサイズ（名刺を含む）/ 写真、アルバム
+              </p>
+              <p class="p-down__text">
+                ・CD・フロッピーなど紙ではないもの / 封筒などの包材 / ネガなどのフィルム類
+              </p>
+              <p class="p-down__text">
+                ・和紙などの特殊紙 / 公序良俗に反するもの / マイナンバーや個人情報が付されている文書/対応する書類以外の綴じ方、まとめ方以外に単独/バラでの書類
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="p-example">
+      <div class="l-inner">
+        <div class="p-example__content">
+          <div class="p-example__box">
+            <h2 class="p-example__title">
+              箱（W40㎝ × D33㎝ × H30㎝）に<br>
+              詰めたイメージ
+            </h2>
+
+            <figure class="p-example__mini">
+              <img decoding="async" loading="lazy" src="/images/example-mini.svg" alt="" width="195" height="157">
+            </figure>
+
+            <div class="p-example__media">
+              <figure class="p-example__photo">
+                <picture>
+                  <source srcset="/images/example-left.webp" type="image/webp" width="537" height="415">
+                  <img decoding="async" loading="lazy" src="/images/example-left.png" alt="" width="537" height="415">
+                </picture>
+              </figure>
+
+              <figure class="p-example__arrow">
+                <img decoding="async" loading="lazy" src="data:image/svg+xml,%3csvg%20width='97'%20height='31'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cmask%20id='mask0_2118_2378'%20style='mask-type:alpha'%20maskUnits='userSpaceOnUse'%20x='-1'%20y='-1'%20width='99'%20height='32'%3e%3crect%20x='-0.901366'%20y='-0.294757'%20width='98.0264'%20height='31.0084'%20fill='%23D9D9D9'/%3e%3c/mask%3e%3cg%20mask='url(%23mask0_2118_2378)'%3e%3cpath%20d='M94.3827%2019.0975C94.1609%2018.6841%2093.8138%2018.2851%2093.3524%2017.996L93.3525%2017.9946C82.4164%2011.0894%2069.9537%206.9858%2057.0677%206.03782L55.8189%205.95601L55.8181%205.95663C51.3762%205.72094%2046.5569%205.94114%2042.4023%207.81178C36.1485%204.39426%2029.0664%202.75236%2021.926%203.08335C14.227%203.44027%206.80729%206.07393%200.605947%2010.6506L0.539483%2010.699L0.534376%2010.7159C0.382809%2010.8538%200.293809%2011.0272%200.262715%2011.219C0.228521%2011.43%200.266559%2011.6507%200.342648%2011.8603C0.494153%2012.2776%200.818339%2012.7112%201.20611%2013.0726C1.59539%2013.4355%202.0708%2013.7465%202.54459%2013.9029C3.01467%2014.0581%203.52908%2014.0733%203.93763%2013.7649L4.64686%2013.2509C12.0305%208.04026%2021.1179%205.79692%2030.0976%206.98929L30.0997%206.9888C33.317%207.39178%2036.4543%208.25717%2039.4179%209.55022C37.5298%2010.954%2036.081%2012.8676%2035.2446%2015.0677C34.3994%2017.2909%2034.2144%2019.7111%2034.7123%2022.0369L34.7147%2022.0476C35.3062%2024.3188%2036.6264%2026.3335%2038.4725%2027.7827C40.3186%2029.2319%2042.5892%2030.0356%2044.9359%2030.0709L44.9449%2030.071C46.1864%2030.0436%2047.4077%2029.7492%2048.5251%2029.2073C49.6423%2028.6655%2050.6299%2027.8892%2051.4201%2026.9314C52.2104%2025.9735%2052.7851%2024.8564%2053.1048%2023.6565C53.4246%2022.4565%2053.4818%2021.2015%2053.2729%2019.9774C52.6061%2016.0677%2049.8008%2012.9339%2046.6844%2010.5652C48.473%209.95319%2050.4214%209.6159%2052.4324%209.47498C57.2579%209.13688%2062.392%209.92254%2066.4152%2010.6472C75.6673%2012.3118%2084.5158%2015.7324%2092.4822%2020.7234C93.0775%2021.0961%2093.5815%2021.2422%2093.976%2021.1552C94.4054%2021.0603%2094.6205%2020.7132%2094.6658%2020.327C94.7098%2019.9503%2094.6029%2019.5078%2094.3827%2019.0975ZM46.9736%2014.3589C48.4877%2015.88%2049.5444%2017.6883%2049.5391%2019.8227C49.5338%2021.9906%2048.2372%2024.1138%2046.4115%2025.3703C44.5908%2026.6233%2042.2866%2026.9888%2040.2581%2025.7189C38.5374%2024.6423%2038.0378%2022.687%2038.2466%2020.5962C38.4551%2018.507%2039.3694%2016.3519%2040.3799%2014.9901L40.6436%2014.6479C41.549%2013.516%2042.6219%2012.6072%2043.8192%2011.8843C44.9355%2012.5975%2046.0384%2013.4193%2046.9736%2014.3589Z'%20fill='%2354C3F1'%20stroke='%2354C3F1'%20stroke-width='0.5'/%3e%3cpath%20d='M81.8421%202.22039C81.7006%201.88258%2081.3801%201.53447%2081.0221%201.23923C80.6394%200.923564%2080.1784%200.637324%2079.7513%200.455746C79.5379%200.365025%2079.3249%200.296865%2079.1291%200.266893C78.9384%200.237722%2078.7342%200.239911%2078.5608%200.323392C78.3689%200.415817%2078.252%200.589325%2078.2225%200.811695C78.1953%201.01802%2078.2423%201.2636%2078.3452%201.54188L78.3458%201.54263C80.6231%207.64093%2084.3054%2013.0768%2089.0528%2017.4343C84.2937%2016.7578%2079.4045%2017.3576%2074.9023%2019.2235L74.8224%2019.2602C74.6427%2019.3538%2074.513%2019.4935%2074.4443%2019.6725C74.3691%2019.8689%2074.3793%2020.0835%2074.4305%2020.286C74.5321%2020.687%2074.816%2021.1256%2075.1611%2021.509C75.5096%2021.896%2075.9436%2022.2525%2076.3767%2022.4821C76.7964%2022.7045%2077.2798%2022.8403%2077.6852%2022.6717L77.6859%2022.6711C83.2039%2020.3329%2089.3823%2020.1014%2095.0526%2022.0077L95.0832%2022.028L95.0822%2022.0175C95.2198%2022.064%2095.3573%2022.1113%2095.4944%2022.1603C95.7569%2022.254%2095.9849%2022.2997%2096.1754%2022.2868C96.3751%2022.2734%2096.551%2022.192%2096.6563%2022.0227C96.7525%2021.8679%2096.7612%2021.6834%2096.7411%2021.5215C96.7204%2021.355%2096.6649%2021.1755%2096.5927%2020.9984C96.4479%2020.6431%2096.2186%2020.2584%2095.986%2019.9367C95.759%2019.6228%2095.5045%2019.3354%2095.3002%2019.2031C89.0951%2015.1758%2084.3774%209.22985%2081.8656%202.27194L81.8508%202.23095L81.8421%202.22039Z'%20fill='%2354C3F1'%20stroke='%2354C3F1'%20stroke-width='0.5'/%3e%3c/g%3e%3c/svg%3e" alt="" width="97" height="31">
+              </figure>
+
+              <figure class="p-example__photo">
+                <picture>
+                  <source srcset="/images/example-right.webp" type="image/webp" width="444" height="415">
+                  <img decoding="async" loading="lazy" src="/images/example-right.png" alt="" width="444" height="415">
+                </picture>
+              </figure>
+            </div>
+
+            <div class="p-example__caption">
+              <img class="p-example__mark" decoding="async" loading="lazy" src="data:image/svg+xml,%3csvg%20width='21'%20height='22'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M10.296%2020.9825C11.2776%2021.6416%2011.9874%2021.9561%2012.5924%2021.9999L14.5816%2021.2867C15.1255%2020.9047%2015.7572%2020.4371%2016.6113%2019.9186C20.0971%2017.8004%2021.1171%2017.9783%2020.8364%2014.4405C18.1569%2014.1752%2011.249%2017.8169%2010.3261%2020.9709L10.296%2020.9825Z'%20fill='%23F6AB00'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M5.28274%20-0.000122459C0.556428%206.32725%20-2.27028%2014.5676%202.36245%2011.2135L7.59032%200.822913L5.28274%20-0.000122459Z'%20fill='%23F6AB00'/%3e%3c/svg%3e" alt="" width="21" height="22">
+              <p class="p-example__caption-text">
+                <span class="p-example__hl">バインダ5冊</span>、<span class="p-example__hl">紙ファイル6冊</span>、<span class="p-example__hl">封筒1袋</span>を収納可能！
+              </p>
+            </div>
+          </div>
+          <div class="p-example__flow">
+            <h3 class="p-example__flow-title">箱詰めの手順</h3>
+
+            <div class="p-example__flow-items">
+              <div class="p-example__flow-item">
+                <p class="p-example__flow-tag">step1</p>
+                <div class="p-example__flow-video">
+                  <iframe
+                    src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ"
+                    title="箱詰め手順 step1（仮）"
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+
+              <div class="p-example__flow-item">
+                <p class="p-example__flow-tag">step2</p>
+                <div class="p-example__flow-video">
+                  <iframe
+                    src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ"
+                    title="箱詰め手順 step2（仮）"
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="p-submit">
+      <div class="l-inner">
+        <div class="p-submit__content">
+          <div class="p-submit__inner">
+            <div class="p-submit__title-wrapper">
+
+              <h2 class="p-submit__title">お申し込みはこちら</h2>
+            </div>
+            <a class="p-submit__btn" href="#">
+              <span class="p-submit__btn-text">お申し込みはこちら</span>
+              <span class="p-submit__btn-icon">
+                <img decoding="async" loading="lazy" src="data:image/svg+xml,%3csvg%20width='34'%20height='34'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M21.7762%2016.7391C22.2679%2017.2309%2022.2679%2018.0282%2021.7762%2018.52L14.7422%2025.5539C13.9489%2026.3472%2012.5925%2025.7854%2012.5925%2024.6635V10.5956C12.5925%209.47371%2013.9489%208.91187%2014.7422%209.70516L21.7762%2016.7391Z'%20fill='white'/%3e%3c/svg%3e" alt="" width="34" height="34">
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="p-detail">
+      <div class="l-inner">
+        <div class="p-detail__content">
+          <h2 class="p-detail__title">電子化の仕様</h2>
+
+          <div class="p-detail__box">
+            <ul class="p-detail__items">
+              <li class="p-detail__item">
+                <img class="p-detail__icon" decoding="async" loading="lazy" src="data:image/svg+xml,%3csvg%20width='134'%20height='120'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M67%20110.019C81.3645%20110.019%2093.0093%2098.3738%2093.0093%2084.0093C93.0093%2069.6448%2081.3645%2058%2067%2058C52.6355%2058%2040.9907%2069.6448%2040.9907%2084.0093C40.9907%2098.3738%2052.6355%20110.019%2067%20110.019Z'%20fill='%23FFF100'/%3e%3cpath%20d='M67%20110.019C81.3645%20110.019%2093.0093%2098.3738%2093.0093%2084.0093C93.0093%2069.6448%2081.3645%2058%2067%2058C52.6355%2058%2040.9907%2069.6448%2040.9907%2084.0093C40.9907%2098.3738%2052.6355%20110.019%2067%20110.019Z'%20fill='%23FFF100'/%3e%3cpath%20d='M41.0093%2084.0093C55.3738%2084.0093%2067.0186%2072.3645%2067.0186%2058C67.0186%2043.6355%2055.3738%2031.9907%2041.0093%2031.9907C26.6448%2031.9907%2015%2043.6355%2015%2058C15%2072.3645%2026.6448%2084.0093%2041.0093%2084.0093Z'%20fill='%23E4007F'/%3e%3cpath%20d='M92.4522%2037.4489C95.4535%2023.4014%2086.4988%209.58067%2072.4513%206.5794C58.4038%203.57813%2044.583%2012.5329%2041.5817%2026.5804C38.5805%2040.6279%2047.5352%2054.4486%2061.5827%2057.4499C75.6302%2060.4512%2089.451%2051.4964%2092.4522%2037.4489Z'%20fill='%2300A0E9'/%3e%3cpath%20d='M93.0093%2032.0093C78.6484%2032.0093%2067%2043.6577%2067%2058.0186C81.3608%2058.0186%2093.0093%2069.667%2093.0093%2084.0279C107.37%2084.0279%20119.019%2072.3794%20119.019%2058.0186C119.019%2043.6577%20107.37%2032.0093%2093.0093%2032.0093Z'%20fill='%23190E0A'/%3e%3c/svg%3e" alt="" width="134" height="120">
+                <p class="p-detail__label">フルカラー</p>
+              </li>
+              <li class="p-detail__item">
+                <img class="p-detail__icon" decoding="async" loading="lazy" src="/images/detail-dpi.svg" alt="" width="134" height="120">
+                <p class="p-detail__label">300dpi</p>
+              </li>
+              <li class="p-detail__item">
+                <img class="p-detail__icon" decoding="async" loading="lazy" src="data:image/svg+xml,%3csvg%20width='134'%20height='120'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M83.6402%206H18V96.6977H83.6402V6Z'%20fill='%23727171'/%3e%3cpath%20d='M116.471%2026.7554H50.8306V117.453H116.471V26.7554Z'%20fill='white'%20stroke='%23231815'%20stroke-width='0.5'%20stroke-miterlimit='10'/%3e%3c/svg%3e" alt="" width="134" height="120">
+                <p class="p-detail__label">裏面白紙除去<sup class="p-detail__note">※1</sup></p>
+              </li>
+              <li class="p-detail__item">
+                <img class="p-detail__icon" decoding="async" loading="lazy" src="data:image/svg+xml,%3csvg%20width='134'%20height='120'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M104.405%2013.6294H30.5952V116.404H104.405V13.6294Z'%20fill='white'%20stroke='%23231815'%20stroke-width='0.5'%20stroke-miterlimit='10'/%3e%3cpath%20d='M37.4263%2031.978L49.3273%2020.0635'%20stroke='%23231815'%20stroke-width='0.5'%20stroke-miterlimit='10'%20stroke-dasharray='1%201'/%3e%3cpath%20d='M94.1226%201.5957H84.1257V28.4034H94.1226V1.5957Z'%20fill='white'/%3e%3cpath%20d='M94.1225%2026.9736V28.4034H92.6943'%20stroke='%23005D97'%20stroke-width='0.5'%20stroke-miterlimit='10'/%3e%3cpath%20d='M90.3142%2028.4033H86.7439'%20stroke='%23005D97'%20stroke-width='0.5'%20stroke-miterlimit='10'%20stroke-dasharray='0.83%200.83'/%3e%3cpath%20d='M85.5539%2028.4034H84.1257V26.9736'%20stroke='%23005D97'%20stroke-width='0.5'%20stroke-miterlimit='10'/%3e%3cpath%20d='M84.1257%2024.3286V4.35986'%20stroke='%23231815'%20stroke-width='0.5'%20stroke-miterlimit='10'%20stroke-dasharray='0.93%200.93'/%3e%3cpath%20d='M84.1257%203.02545V1.5957H85.5539'%20stroke='%23005D97'%20stroke-width='0.5'%20stroke-miterlimit='10'/%3e%3cpath%20d='M87.9341%201.5957H91.5044'%20stroke='%23005D97'%20stroke-width='0.5'%20stroke-miterlimit='10'%20stroke-dasharray='0.83%200.83'/%3e%3cpath%20d='M92.6943%201.5957H94.1225V3.02545'%20stroke='%23005D97'%20stroke-width='0.5'%20stroke-miterlimit='10'/%3e%3cpath%20d='M94.1226%205.69434V25.6631'%20stroke='%23005D97'%20stroke-width='0.5'%20stroke-miterlimit='10'%20stroke-dasharray='0.93%200.93'/%3e%3c/svg%3e" alt="" width="134" height="120">
+                <p class="p-detail__label">ホッチキス<br>・付箋除去<sup class="p-detail__note">※2</sup></p>
+              </li>
+              <li class="p-detail__item">
+                <img class="p-detail__icon" decoding="async" loading="lazy" src="data:image/svg+xml,%3csvg%20width='134'%20height='120'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M112.389%2028.7365V110.393H36.6533V5.60742H89.1383L112.389%2028.7365Z'%20fill='white'%20stroke='%23231815'%20stroke-width='0.5'%20stroke-linejoin='round'/%3e%3cpath%20d='M70.1133%2075.5049H22V97.6135H70.1133V75.5049Z'%20fill='%23E60027'/%3e%3cpath%20d='M30.1572%2092.9488V79.7808H34.5289C37.0689%2079.7808%2038.8274%2081.2142%2038.8274%2083.7409C38.8274%2086.4134%2037.0934%2088.3327%2034.2359%2088.3327H32.453V92.9245H30.1328L30.1572%2092.9488ZM32.4774%2081.773V86.3648H33.894C35.4082%2086.3648%2036.3118%2085.5873%2036.3118%2083.9838C36.3118%2082.599%2035.5303%2081.7487%2033.9916%2081.7487H32.4774V81.773Z'%20fill='white'/%3e%3cpath%20d='M41.5381%2092.9488V79.7808H46.5936C50.3548%2079.7808%2052.6505%2081.9673%2052.6505%2086.1218C52.6505%2090.2763%2050.3792%2092.9245%2046.5936%2092.9245H41.5381V92.9488ZM43.9071%2081.7973V90.9566H46.3494C48.5231%2090.9566%2050.0861%2089.2559%2050.0861%2086.1704C50.0861%2083.0849%2048.4254%2081.773%2046.154%2081.773H43.9071V81.7973Z'%20fill='white'/%3e%3cpath%20d='M55.3369%2092.9488V79.7808H63.25V81.7973H57.6815V85.6602H62.4684V87.6524H57.6815V92.9245H55.3369V92.9488Z'%20fill='white'/%3e%3cpath%20d='M89.1387%2028.7365H112.389L89.1387%205.60742V28.7365Z'%20fill='white'%20stroke='%23231815'%20stroke-width='0.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e" alt="" width="134" height="120">
+                <p class="p-detail__label">PDF形式</p>
+              </li>
+              <li class="p-detail__item">
+                <img class="p-detail__icon" decoding="async" loading="lazy" src="/images/detail-seq.svg" alt="" width="134" height="120">
+                <p class="p-detail__label">ファイル名連番</p>
+              </li>
+              <li class="p-detail__item">
+                <img class="p-detail__icon" decoding="async" loading="lazy" src="/images/detail-dvd.svg" alt="" width="134" height="120">
+                <p class="p-detail__label">DVD納品</p>
+              </li>
+              <li class="p-detail__item">
+                <img class="p-detail__icon" decoding="async" loading="lazy" src="data:image/svg+xml,%3csvg%20width='134'%20height='120'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M23.5889%2096.0949C23.5889%2096.0949%2057.2643%2093.725%2067.5114%2099.3903V37.9077C62.749%2032.0619%2023.5889%2034.6124%2023.5889%2034.6124V96.0949Z'%20fill='white'%20stroke='%23E60027'%20stroke-width='0.75'%20stroke-linejoin='round'/%3e%3cpath%20d='M23.5889%2096.0947L25.4171%2099.3901H67.5114'%20fill='white'/%3e%3cpath%20d='M23.5889%2096.0947L25.4171%2099.3901H67.5114'%20stroke='%23E60027'%20stroke-width='0.75'%20stroke-miterlimit='10'/%3e%3cpath%20d='M111.411%2096.0949C111.411%2096.0949%2077.7359%2093.725%2067.4888%2099.3903V37.9077C72.2512%2032.0619%20111.411%2034.6124%20111.411%2034.6124V96.0949Z'%20fill='white'%20stroke='%23E60027'%20stroke-width='0.75'%20stroke-linejoin='round'/%3e%3cpath%20d='M111.411%2096.0947L109.583%2099.3901H67.5115'%20fill='white'/%3e%3cpath%20d='M111.411%2096.0947L109.583%2099.3901H67.5115'%20stroke='%23E60027'%20stroke-width='0.75'%20stroke-miterlimit='10'/%3e%3cpath%20d='M109.724%2017.9991L19.9971%20107.726L25.2798%20113.008L115.006%2023.2819L109.724%2017.9991Z'%20fill='%23E60027'/%3e%3cpath%20d='M25.2798%2018.0151L19.9971%2023.2979L109.724%20113.024L115.006%20107.742L25.2798%2018.0151Z'%20fill='%23E60027'/%3e%3c/svg%3e" alt="" width="134" height="120">
+                <p class="p-detail__label">OCR付与<sup class="p-detail__note">※3</sup></p>
+              </li>
+              <li class="p-detail__item">
+                <img class="p-detail__icon" decoding="async" loading="lazy" src="data:image/svg+xml,%3csvg%20width='134'%20height='120'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M126.52%2026.499H67.0098V105.501H126.52V26.499Z'%20fill='%23FDD7DD'%20stroke='%23E60027'%20stroke-width='0.5'%20stroke-miterlimit='10'/%3e%3cpath%20d='M67.0098%2066H7.49902V105.501H67.0098V66Z'%20fill='%23FDD7DD'%20stroke='%23E60027'%20stroke-width='0.5'%20stroke-miterlimit='10'/%3e%3cpath%20d='M67.0093%2026.499H37.2539V65.9998H67.0093V26.499Z'%20fill='white'%20stroke='%23E60027'%20stroke-width='0.5'%20stroke-miterlimit='10'/%3e%3cpath%20d='M37.2544%2046.2495H7.49902V65.9999H37.2544V46.2495Z'%20fill='white'%20stroke='%23E60027'%20stroke-width='0.5'%20stroke-miterlimit='10'/%3e%3cpath%20d='M37.2544%2046.2495H7.49902V65.9999H37.2544V46.2495Z'%20fill='white'%20stroke='%23E60027'%20stroke-width='0.5'%20stroke-miterlimit='10'/%3e%3cpath%20d='M37.2546%2026.499H22.377V46.2494H37.2546V26.499Z'%20fill='white'%20stroke='%23E60027'%20stroke-width='0.5'%20stroke-miterlimit='10'/%3e%3cpath%20d='M22.3767%2036.3643H7.49902V46.2494H22.3767V36.3643Z'%20fill='%23FDD7DD'%20stroke='%23E60027'%20stroke-width='0.5'%20stroke-miterlimit='10'/%3e%3cpath%20d='M22.3568%2026.499H14.928V36.3842H22.3568V26.499Z'%20fill='%23FDD7DD'%20stroke='%23E60027'%20stroke-width='0.5'%20stroke-miterlimit='10'/%3e%3cpath%20d='M14.9279%2026.499H7.49902V36.3842H14.9279V26.499Z'%20fill='%23FDD7DD'%20stroke='%23E60027'%20stroke-width='0.5'%20stroke-miterlimit='10'/%3e%3cpath%20d='M41.248%2052.5799L45.941%2040.0986H48.2575L52.9505%2052.5799H50.5341L49.4957%2049.6044H44.603L43.5646%2052.5799H41.288H41.248ZM45.2021%2047.7072H48.7967L46.9795%2042.6149L45.2021%2047.7072Z'%20fill='%23E60027'/%3e%3cpath%20d='M54.3083%2050.5029C54.8475%2050.6627%2055.8061%2050.9023%2056.8046%2050.9023C58.9015%2050.9023%2059.7003%2050.0636%2059.7003%2048.9453C59.7003%2047.7471%2058.8815%2047.128%2057.1441%2047.128H55.3268L55.6863%2045.3307H56.4651C58.5819%2045.3307%2059.4207%2044.5718%2059.4207%2043.3936C59.4207%2042.1155%2058.4821%2041.776%2057.1641%2041.776C56.2654%2041.776%2055.4267%2041.9957%2054.568%2042.3152V40.3981C55.5465%2040.0386%2056.6648%2039.8589%2057.843%2039.8589C60.4791%2039.8589%2061.5974%2041.1569%2061.5974%2043.0142C61.5974%2044.2523%2060.8785%2045.3906%2059.5605%2045.9497C61.238%2046.3292%2062.0168%2047.4874%2062.0168%2048.9253C62.0168%2051.0621%2060.3193%2052.8194%2057.1441%2052.8194C55.9459%2052.8194%2055.1072%2052.6996%2054.3283%2052.46V50.5229L54.3083%2050.5029Z'%20fill='%23E60027'/%3e%3cpath%20d='M24.5735%2039.6194L26.8301%2033.6084H27.9484L30.205%2039.6194H29.0468L28.5475%2038.1815H26.1911L25.6918%2039.6194H24.5935H24.5735ZM26.4706%2037.2829H28.1881L27.3094%2034.8266L26.4507%2037.2829H26.4706Z'%20fill='%23E60027'/%3e%3cpath%20d='M31.0639%2038.6608C31.4233%2038.7407%2031.7828%2038.8006%2032.2221%2038.8006C33.1607%2038.8006%2033.5402%2038.3812%2033.5402%2037.7421C33.5402%2037.1031%2033.1408%2036.7636%2032.3419%2036.7636C32.0823%2036.7636%2031.663%2036.8435%2031.3834%2036.9433L31.0239%2036.6638L31.1637%2033.5884H34.4388V34.507H32.0823L32.0025%2035.9448C32.2621%2035.9049%2032.5416%2035.8849%2032.7613%2035.8849C34.0394%2035.8849%2034.6385%2036.5839%2034.6385%2037.6623C34.6385%2038.8804%2033.8397%2039.6992%2032.3419%2039.6992C31.9026%2039.6992%2031.4034%2039.6593%2031.0239%2039.5794V38.6408L31.0639%2038.6608Z'%20fill='%23E60027'/%3e%3cpath%20d='M11.4929%2062.7445L16.1859%2050.2632H18.5024L23.1954%2062.7445H20.779L19.7405%2059.7689H14.8479L13.8094%2062.7445H11.5329H11.4929ZM15.447%2057.8718H19.0416L17.2243%2052.7794L15.447%2057.8718Z'%20fill='%23E60027'/%3e%3cpath%20d='M29.1863%2062.7446V59.8888H24.074V57.9717L28.5073%2050.1035H31.3031V58.0316H32.9207V59.8689H31.3031V62.7246H29.1863V62.7446ZM29.1863%2058.0316V52.3601L26.1109%2058.0316H29.1863Z'%20fill='%23E60027'/%3e%3cpath%20d='M46.2175%2074.8997L25.7139%2095.4033L26.9283%2096.6177L47.4319%2076.1141L46.2175%2074.8997Z'%20fill='%23E60027'/%3e%3cpath%20d='M26.9419%2074.8857L25.7275%2076.1001L46.2312%2096.6037L47.4456%2095.3893L26.9419%2074.8857Z'%20fill='%23E60027'/%3e%3cpath%20d='M106.391%2055.1526L85.8877%2075.6562L87.1021%2076.8707L107.606%2056.367L106.391%2055.1526Z'%20fill='%23E60027'/%3e%3cpath%20d='M87.1158%2055.1386L85.9014%2056.353L106.405%2076.8567L107.619%2075.6422L87.1158%2055.1386Z'%20fill='%23E60027'/%3e%3cpath%20d='M19.7518%2030.9474L9.5%2041.1992L10.1072%2041.8064L20.359%2031.5546L19.7518%2030.9474Z'%20fill='%23E60027'/%3e%3cpath%20d='M10.1209%2030.9475L9.51367%2031.5547L19.7655%2041.8065L20.3727%2041.1993L10.1209%2030.9475Z'%20fill='%23E60027'/%3e%3c/svg%3e" alt="" width="134" height="120">
+                <p class="p-detail__label">冊子不可</p>
+              </li>
+              <li class="p-detail__item">
+                <img class="p-detail__icon" decoding="async" loading="lazy" src="data:image/svg+xml,%3csvg%20width='134'%20height='120'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M101.223%2095.1633C94.5572%20102.981%2085.2062%20108.538%2074.2772%20110.257C71.8982%20110.634%2069.5663%20110.799%2067.258%20110.799C56.541%20110.799%2046.4598%20106.867%2038.6399%20100.202C30.8199%2093.5385%2025.2612%2084.1899%2023.5417%2073.2637C23.1649%2070.8854%2023%2068.5542%2023%2066.2465C23%2055.5322%2026.9335%2045.4537%2033.5993%2037.6358C40.218%2029.8179%2049.569%2024.2606%2060.5216%2022.5416C62.877%2022.1648%2065.2324%2022%2067.5407%2022C78.2578%2022.0235%2088.3389%2025.9325%2096.1589%2032.5965C103.979%2039.237%20109.538%2048.6091%20111.257%2059.5353C111.634%2061.8901%20111.799%2064.2449%20111.799%2066.5526C111.799%2077.2669%20107.865%2087.3454%20101.223%2095.1633Z'%20fill='%23DCDDDD'%20stroke='%23231815'%20stroke-width='0.5'%20stroke-miterlimit='10'/%3e%3cpath%20d='M73.7354%2086.3798L79.3883%20104.182C86.5016%20101.921%2092.6493%2097.7535%2097.313%2092.361L83.2041%2080.1396C80.7309%2082.9889%2077.504%2085.2024%2073.7354%2086.3798Z'%20fill='%23F7C9DD'/%3e%3cpath%20d='M61.0396%2046.4428L55.3867%2028.6406C48.2733%2030.9012%2042.1022%2035.0692%2037.4385%2040.4617L51.5473%2052.683C54.0205%2049.8102%2057.271%2047.6202%2061.0396%2046.4193V46.4428Z'%20fill='%23F7C9DD'/%3e%3cpath%20d='M66.3632%2059.8417C62.7359%2060.4068%2060.2627%2063.7977%2060.828%2067.4241C61.3933%2071.0505%2064.7851%2073.523%2068.4124%2072.9578C72.0398%2072.3927%2074.5129%2069.0018%2073.9476%2065.3754C73.3823%2061.7491%2069.9905%2059.2765%2066.3632%2059.8417Z'%20fill='white'%20stroke='%23231815'%20stroke-width='0.5'%20stroke-miterlimit='10'/%3e%3cpath%20d='M84.0048%2066.4585C84.0048%2065.5872%2083.9341%2064.716%2083.7928%2063.8447C82.5209%2055.65%2075.4547%2049.8102%2067.4227%2049.7866C66.5512%2049.7866%2065.6797%2049.8573%2064.8082%2049.9986C56.635%2051.2937%2050.77%2058.3345%2050.77%2066.3643C50.77%2067.2356%2050.8407%2068.1069%2050.982%2068.9781C52.2775%2077.1728%2059.3201%2083.0127%2067.3521%2083.0127C68.2236%2083.0127%2069.0951%2082.942%2069.9666%2082.8007C78.1634%2081.5292%2084.0048%2074.4648%2084.0048%2066.435V66.4585ZM69.3306%2078.7741C68.6711%2078.8918%2068.0116%2078.9153%2067.3521%2078.9153C61.2987%2078.9153%2055.9755%2074.4883%2055.0097%2068.3188C54.9155%2067.6595%2054.8449%2067.0001%2054.8449%2066.3408C54.8449%2060.289%2059.273%2054.9672%2065.4442%2054.0017C66.1037%2053.884%2066.7632%2053.8369%2067.4227%2053.8369C73.4761%2053.8369%2078.7993%2058.2639%2079.765%2064.4334C79.8828%2065.0927%2079.9299%2065.7756%2079.9299%2066.4114C79.9299%2072.4632%2075.5018%2077.785%2069.3306%2078.7505V78.7741Z'%20fill='%23C9CACA'/%3e%3cpath%20d='M84.9601%2076.785L100.977%2086.4161C102.249%2084.3203%20103.309%2082.1068%20104.133%2079.7756L86.6324%2073.2764C86.1849%2074.5009%2085.596%2075.6783%2084.9365%2076.785H84.9601Z'%20fill='%23D5EAD8'/%3e%3cpath%20d='M29.8672%2052.2244L47.3678%2058.7236C47.8154%2057.4991%2048.4042%2056.3217%2049.0637%2055.215L33.047%2045.6074C31.7751%2047.7032%2030.7151%2049.9167%2029.8672%2052.2244Z'%20fill='%23D5EAD8'/%3e%3c/svg%3e" alt="" width="134" height="120">
+                <p class="p-detail__label">A5〜A3限定</p>
+              </li>
+            </ul>
+          </div>
+
+          <p class="p-detail__footnotes">
+            ※1 裏面の白紙は自動処理で除去いたしますが、汚れ・色紙等の理由で残る場合があります。<br>
+            ※2 ホッチキス・付箋は復元無しとなります。<br>
+            ※3 OCRは自動処理で付与しますので、完全に文字認識することを保証するものではありません。
+          </p>
+        </div>
+        <div class="p-detail__bottom">
+          <div class="p-detail__attention">
+            <img class="p-detail__attention-icon" decoding="async" loading="lazy" src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M11.9999%202.3999C12.5512%202.3999%2013.0574%202.70365%2013.3199%203.1874L21.4199%2018.1874C21.6712%2018.6524%2021.6599%2019.2149%2021.3899%2019.6687C21.1199%2020.1224%2020.6287%2020.3999%2020.0999%2020.3999H3.89994C3.37119%2020.3999%202.87994%2020.1224%202.60994%2019.6687C2.33994%2019.2149%202.32869%2018.6524%202.57994%2018.1874L10.6799%203.1874C10.9424%202.70365%2011.4487%202.3999%2011.9999%202.3999ZM11.9999%2015.5999C11.3362%2015.5999%2010.7999%2016.1362%2010.7999%2016.7999C10.7999%2017.4637%2011.3362%2017.9999%2011.9999%2017.9999C12.6637%2017.9999%2013.1999%2017.4637%2013.1999%2016.7999C13.1999%2016.1362%2012.6637%2015.5999%2011.9999%2015.5999ZM11.9999%208.3999C11.3174%208.3999%2010.7737%208.98115%2010.8224%209.66365L11.0999%2013.5637C11.1337%2014.0324%2011.5274%2014.3999%2011.9962%2014.3999C12.4687%2014.3999%2012.8587%2014.0362%2012.8924%2013.5637L13.1699%209.66365C13.2187%208.98115%2012.6787%208.3999%2011.9924%208.3999H11.9999Z'%20fill='%23005D97'/%3e%3c/svg%3e" alt="" width="24" height="24">
+            <p class="p-detail__attention-title">注意事項</p>
+            <p class="p-detail__attention-text">
+              画像の向きは書類綴じの方向に対し一定となります。<br>
+              著作権・名刺・紙焼写真の束は対象外となります。<br>
+              作業納期は時期・混み合い具合により異なりますので依頼時にご確認ください。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="p-flow">
+      <div class="l-inner">
+        <div class="p-flow__content">
+          <h2 class="p-flow__title">ご利用の<span>流れ</span></h2>
+
+          <ol class="p-flow__items">
+            <li class="p-flow__item">
+              <div class="p-flow__card">
+                <div class="p-flow__step">
+                  <p class="p-flow__step-label">step</p>
+                  <p class="p-flow__step-num">01</p>
+                </div>
+                <div class="p-flow__body">
+                  <h3 class="p-flow__heading">お申し込み</h3>
+                  <p class="p-flow__text">
+                    お申し込みフォームに必要事項をご記入ください。<br>
+                    弊社担当者が内容を確認し、専用ダンボール（空箱）をお送りします。<br>
+                    箱サイズ（W33×H30×D40㎝）
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="p-flow__arrow" aria-hidden="true">
+              <img decoding="async" loading="lazy" src="data:image/svg+xml,%3csvg%20width='47'%20height='47'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M23.8604%2030.1023C23.1806%2030.7821%2022.0785%2030.7821%2021.3986%2030.1023L11.6752%2020.3789C10.5786%2019.2823%2011.3553%2017.4072%2012.9061%2017.4072L32.3529%2017.4072C33.9038%2017.4072%2034.6804%2019.2823%2033.5838%2020.3789L23.8604%2030.1023Z'%20fill='%2354C3F1'/%3e%3c/svg%3e" alt="" width="47" height="47">
+            </li>
+
+            <li class="p-flow__item">
+              <div class="p-flow__card">
+                <div class="p-flow__step">
+                  <p class="p-flow__step-label">step</p>
+                  <p class="p-flow__step-num">02</p>
+                </div>
+                <div class="p-flow__body">
+                  <h3 class="p-flow__heading">箱詰め・発送</h3>
+                  <p class="p-flow__text">
+                    届いた専用ダンボールに書類を詰めていただき、専用の返信用伝票を貼付の上、佐川急便に集荷のご依頼をお願いいたします。<br>
+                    弊社にダンボールが届きましたら電子化（スキャン）作業を行います。<br>
+                    作業納期は原則1ヶ月以内を目途としておりますが、お預かり時期、数量によって異なります。
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="p-flow__arrow" aria-hidden="true">
+              <img decoding="async" loading="lazy" src="data:image/svg+xml,%3csvg%20width='47'%20height='47'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M23.8604%2030.1023C23.1806%2030.7821%2022.0785%2030.7821%2021.3986%2030.1023L11.6752%2020.3789C10.5786%2019.2823%2011.3553%2017.4072%2012.9061%2017.4072L32.3529%2017.4072C33.9038%2017.4072%2034.6804%2019.2823%2033.5838%2020.3789L23.8604%2030.1023Z'%20fill='%2354C3F1'/%3e%3c/svg%3e" alt="" width="47" height="47">
+            </li>
+
+            <li class="p-flow__item">
+              <div class="p-flow__card">
+                <div class="p-flow__step">
+                  <p class="p-flow__step-label">step</p>
+                  <p class="p-flow__step-num">03</p>
+                </div>
+                <div class="p-flow__body">
+                  <h3 class="p-flow__heading">電子化データと原本をご返却</h3>
+                  <p class="p-flow__text">
+                    電子化（スキャン）したデータが保存されたDVDを、原本のダンボールに同封しご返却いたします。
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ol>
+          <div class="p-flow__attention">
+            <div class="p-flow__attention-head">
+              <span class="p-flow__attention-dot" aria-hidden="true">
+                <img decoding="async" loading="lazy" src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M11.9999%202.3999C12.5512%202.3999%2013.0574%202.70365%2013.3199%203.1874L21.4199%2018.1874C21.6712%2018.6524%2021.6599%2019.2149%2021.3899%2019.6687C21.1199%2020.1224%2020.6287%2020.3999%2020.0999%2020.3999H3.89994C3.37119%2020.3999%202.87994%2020.1224%202.60994%2019.6687C2.33994%2019.2149%202.32869%2018.6524%202.57994%2018.1874L10.6799%203.1874C10.9424%202.70365%2011.4487%202.3999%2011.9999%202.3999ZM11.9999%2015.5999C11.3362%2015.5999%2010.7999%2016.1362%2010.7999%2016.7999C10.7999%2017.4637%2011.3362%2017.9999%2011.9999%2017.9999C12.6637%2017.9999%2013.1999%2017.4637%2013.1999%2016.7999C13.1999%2016.1362%2012.6637%2015.5999%2011.9999%2015.5999ZM11.9999%208.3999C11.3174%208.3999%2010.7737%208.98115%2010.8224%209.66365L11.0999%2013.5637C11.1337%2014.0324%2011.5274%2014.3999%2011.9962%2014.3999C12.4687%2014.3999%2012.8587%2014.0362%2012.8924%2013.5637L13.1699%209.66365C13.2187%208.98115%2012.6787%208.3999%2011.9924%208.3999H11.9999Z'%20fill='white'/%3e%3c/svg%3e" alt="" width="24" height="24">
+              </span>
+              <p class="p-flow__attention-title">ご注意事項</p>
+            </div>
+            <p class="p-flow__attention-text">
+              専用ボックス発送後、1ヶ月（休日・祝日を含む）以内に弊社へ原本が入った専用ボックスの<br>
+              到着が確認できない場合はキャンセルとなります。<br>
+              その場合は5,500円（税込）のキャンセル料をご請求いたします。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="p-contact">
+      <div class="l-inner">
+        <div class="p-contact__content">
+          <div class="p-contact__box" id="contact">
+            <div class="p-contact__tabs" role="tablist" aria-label="フォーム切り替え">
+              <button class="p-contact__tab is-active js-contact-tab" type="button" role="tab" aria-selected="true" aria-controls="contact-panel-apply" id="contact-tab-apply">お申し込み</button>
+              <button class="p-contact__tab js-contact-tab" type="button" role="tab" aria-selected="false" aria-controls="contact-panel-inquiry" id="contact-tab-inquiry" tabindex="-1">お問い合わせ</button>
+            </div>
+
+            <p class="p-contact__note">全て必須入力になります。</p>
+
+            <div class="p-contact__panels">
+              <div class="p-contact__panel js-contact-panel" id="contact-panel-apply" role="tabpanel" aria-labelledby="contact-tab-apply">
+                <form class="p-contact__form" action="https://formsubmit.co/firststep.yumauda@gmail.com" method="POST">
+                  <input type="hidden" name="_subject" value="【かんたんはこスキャン】お申し込みフォーム">
+                  <input type="hidden" name="_captcha" value="false">
+                  <input type="text" id="contact-honey-apply" name="_honey" class="p-contact__honey" tabindex="-1" autocomplete="off" aria-label="この項目は入力しないでください">
+
+                  <div class="p-contact__fields">
+                    <div class="p-contact__field">
+                      <label class="p-contact__label" for="apply-company">会社名</label>
+                      <input class="p-contact__input" id="apply-company" name="会社名" type="text" placeholder="例）株式会社ヤマタネ" autocomplete="organization" required>
+                    </div>
+
+                    <div class="p-contact__field">
+                      <div class="p-contact__label-row">
+                        <label class="p-contact__label" for="apply-address">住所</label>
+                        <span class="p-contact__required" aria-hidden="true">必須</span>
+                      </div>
+
+                      <div class="p-contact__address">
+                        <div class="p-contact__zip">
+                          <span class="p-contact__zip-mark">〒</span>
+                          <input class="p-contact__input p-contact__input--zip" id="apply-zip" name="郵便番号" type="text" inputmode="numeric" autocomplete="postal-code" placeholder="501-0000" required>
+                        </div>
+                        <input class="p-contact__input" id="apply-address" name="住所" type="text" placeholder="例）東京都港区○丁目○-○" autocomplete="street-address" required>
+                      </div>
+                    </div>
+
+                    <div class="p-contact__field">
+                      <label class="p-contact__label" for="apply-tel">電話番号</label>
+                      <input class="p-contact__input" id="apply-tel" name="電話番号" type="tel" placeholder="例）1234-123-1234" autocomplete="tel" required>
+                    </div>
+
+                    <div class="p-contact__field">
+                      <label class="p-contact__label" for="apply-name">ご担当者名</label>
+                      <input class="p-contact__input" id="apply-name" name="ご担当者名" type="text" placeholder="例）山種　花子" autocomplete="name" required>
+                    </div>
+
+                    <div class="p-contact__field">
+                      <label class="p-contact__label" for="apply-email">メールアドレス</label>
+                      <input class="p-contact__input" id="apply-email" name="email" type="email" placeholder="例）XXXXXX@XXXX" autocomplete="email" required>
+                    </div>
+
+                    <div class="p-contact__field p-contact__field--short">
+                      <label class="p-contact__label" for="apply-boxes">箱数</label>
+                      <input class="p-contact__input p-contact__input--short" id="apply-boxes" name="箱数" type="text" placeholder="例）11箱" required>
+                    </div>
+
+                    <div class="p-contact__field p-contact__field--short">
+                      <label class="p-contact__label" for="apply-books">冊数</label>
+                      <input class="p-contact__input p-contact__input--short" id="apply-books" name="冊数" type="text" placeholder="例）1冊" required>
+                    </div>
+
+                    <div class="p-contact__field p-contact__field--short">
+                      <label class="p-contact__label" for="apply-total">合計金額</label>
+                      <input class="p-contact__input p-contact__input--short" id="apply-total" name="合計金額" type="text" placeholder="例）00,000円" required>
+                    </div>
+                  </div>
+
+                  <div class="p-contact__agreements">
+                    <div class="p-contact__agree">
+                      <label class="p-contact__check">
+                        <input class="p-contact__checkbox" type="checkbox" name="同意（仕様）" value="同意" required>
+                        <span class="p-contact__check-box" aria-hidden="true"></span>
+                        <span class="p-contact__check-label">かんたんはこスキャン仕様に同意します</span>
+                      </label>
+                      <p class="p-contact__agree-text">
+                        仕様外文書は電子化せずに原本を返却されることに同意します<br>
+                        対応書類以外の混入および冊子（背表紙接着）はありません<br>
+                        A5～A3以外サイズはありません<br>
+                        著作物・名刺・束の写真はありません<br>
+                        専用ボックスが1月以内に返送なければキャンセル料5,500円発生
+                      </p>
+                    </div>
+
+                    <div class="p-contact__agree">
+                      <label class="p-contact__check">
+                        <input class="p-contact__checkbox" type="checkbox" name="同意（個人情報）" value="同意" required>
+                        <span class="p-contact__check-box" aria-hidden="true"></span>
+                        <span class="p-contact__check-label">個人情報の取扱に同意します。</span>
+                      </label>
+                      <div class="p-contact__policy" role="region" aria-label="個人情報の取扱">
+                        <p class="p-contact__policy-text">
+                          （個人情報の管理）
+
+                          1．弊社は、申込者の個人情報（個人情報の保護に関する法律に定義されるもの）を、
+                          　 弊社のプライバシーポリシーに基づき適切に取り扱うものとし、申込者はこれに同意したものとみなします。
+
+                          2．弊社は、申込者から取得した個人情報（会社名、氏名、電話番号、メールアドレス等、申込時に記載された項目）を保有します。
+
+                          3．弊社は、取得した個人情報を、契約の検討・履行および弊社の営業活動（郵送物、電話、電子メールによる案内・連絡等）の目的で利用します。
+
+                          4．弊社は、以下のとおり個人情報を共同利用する場合があります。
+                          （1）共同利用する個人情報の項目：前項に記載の個人情報
+                          （2）共同利用の目的：前項に記載の利用目的
+                          （3）共同利用する者の範囲：ヤマタネグループ各社および利用目的達成に必要な範囲の相手先
+                          （4）当該個人データの管理責任者：弊社
+
+                          5．弊社は、本サービスの履行に必要な範囲において、機密保持契約を締結した第三者に対し、申込者の個人情報を提供する場合があります。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <button class="p-contact__submit" type="submit">
+                    <span class="p-contact__submit-text">お申し込み</span>
+                    <span class="p-contact__submit-icon" aria-hidden="true">
+                      <img decoding="async" loading="lazy" src="data:image/svg+xml,%3csvg%20width='35'%20height='35'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M22.4166%2017.2316C22.9229%2017.7378%2022.9229%2018.5586%2022.4166%2019.0648L15.1758%2026.3056C14.3592%2027.1223%2012.9629%2026.5439%2012.9629%2025.389V10.9074C12.9629%209.75248%2014.3592%209.17411%2015.1758%209.99073L22.4166%2017.2316Z'%20fill='white'/%3e%3c/svg%3e" alt="" width="35" height="35">
+                    </span>
+                  </button>
+                </form>
+              </div>
+
+              <div class="p-contact__panel js-contact-panel" id="contact-panel-inquiry" role="tabpanel" aria-labelledby="contact-tab-inquiry" hidden>
+                <form class="p-contact__form" action="https://formsubmit.co/firststep.yumauda@gmail.com" method="POST">
+                  <input type="hidden" name="_subject" value="【かんたんはこスキャン】お問い合わせフォーム">
+                  <input type="hidden" name="_captcha" value="false">
+                  <input type="text" id="contact-honey-inquiry" name="_honey" class="p-contact__honey" tabindex="-1" autocomplete="off" aria-label="この項目は入力しないでください">
+
+                  <div class="p-contact__fields">
+                    <div class="p-contact__field">
+                      <label class="p-contact__label" for="inq-company">会社名</label>
+                      <input class="p-contact__input" id="inq-company" name="会社名" type="text" placeholder="例）株式会社ヤマタネ" autocomplete="organization" required>
+                    </div>
+
+                    <div class="p-contact__field">
+                      <label class="p-contact__label" for="inq-name">ご担当者名</label>
+                      <input class="p-contact__input" id="inq-name" name="ご担当者名" type="text" placeholder="例）山種　花子" autocomplete="name" required>
+                    </div>
+
+                    <div class="p-contact__field">
+                      <label class="p-contact__label" for="inq-email">メールアドレス</label>
+                      <input class="p-contact__input" id="inq-email" name="email" type="email" placeholder="例）XXXXXX@XXXX" autocomplete="email" required>
+                    </div>
+
+                    <div class="p-contact__field">
+                      <label class="p-contact__label" for="inq-tel">電話番号</label>
+                      <input class="p-contact__input" id="inq-tel" name="電話番号" type="tel" placeholder="例）1234-123-1234" autocomplete="tel" required>
+                    </div>
+
+                    <div class="p-contact__field">
+                      <label class="p-contact__label" for="inq-message">お問い合わせ内容</label>
+                      <textarea class="p-contact__textarea" id="inq-message" name="お問い合わせ内容" rows="6" placeholder="お問い合わせ内容をご入力ください" required></textarea>
+                    </div>
+                  </div>
+
+                  <button class="p-contact__submit" type="submit">
+                    <span class="p-contact__submit-text">お問い合わせ</span>
+                    <span class="p-contact__submit-icon" aria-hidden="true">
+                      <img decoding="async" loading="lazy" src="data:image/svg+xml,%3csvg%20width='35'%20height='35'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M22.4166%2017.2316C22.9229%2017.7378%2022.9229%2018.5586%2022.4166%2019.0648L15.1758%2026.3056C14.3592%2027.1223%2012.9629%2026.5439%2012.9629%2025.389V10.9074C12.9629%209.75248%2014.3592%209.17411%2015.1758%209.99073L22.4166%2017.2316Z'%20fill='white'/%3e%3c/svg%3e" alt="" width="35" height="35">
+                    </span>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  </main>
+</body>
+</html>

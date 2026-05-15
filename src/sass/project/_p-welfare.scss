@@ -23,6 +23,9 @@
 
   @include mq(md) {
     text-align: left;
+    max-width: rem(1002);
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

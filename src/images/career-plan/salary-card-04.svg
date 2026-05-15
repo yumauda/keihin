@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="212" viewBox="0 0 220 212" role="img" aria-labelledby="title">
+  <title id="title">部長 900万円から1,200万円</title>
+  <rect width="220" height="212" rx="13" fill="#4688E3"/>
+  <text x="110" y="40" fill="#fff" font-family="'Noto Sans JP', sans-serif" font-size="26" font-weight="700" text-anchor="middle">部　長</text>
+  <text x="96" y="91" fill="#fff" font-family="Futura, 'Noto Sans JP', sans-serif" font-size="54" font-weight="700" text-anchor="middle">900</text>
+  <text x="157" y="92" fill="#fff" font-family="'Noto Sans JP', sans-serif" font-size="17" font-weight="700" text-anchor="middle">万円</text>
+  <text x="110" y="124" fill="#fff" font-family="'Noto Sans JP', sans-serif" font-size="30" font-weight="800" text-anchor="middle">↕</text>
+  <text x="94" y="176" fill="#fff" font-family="Futura, 'Noto Sans JP', sans-serif" font-size="54" font-weight="700" text-anchor="middle">1,200</text>
+  <text x="176" y="177" fill="#fff" font-family="'Noto Sans JP', sans-serif" font-size="17" font-weight="700" text-anchor="middle">万円</text>
+</svg>
