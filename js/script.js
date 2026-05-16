@@ -233,10 +233,9 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   });
 
   function updateTopBtnVisibility() {
-    if (!$topBtn.length || !$mv.length) return;
-    const mvBottom = $mv.offset().top + $mv.outerHeight();
+    if (!$topBtn.length) return;
     const scrollTop = $(window).scrollTop();
-    const shouldShow = scrollTop > mvBottom;
+    const shouldShow = scrollTop > 400;
     $topBtn.toggleClass('is-visible', shouldShow);
   }
 
@@ -532,6 +531,28 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       tab.addEventListener('click', function () {
         activate(tab);
       });
+    });
+  })();
+
+  (function initScrollHints() {
+    const scrollAreas = document.querySelectorAll('.p-career__scroll');
+    if (!scrollAreas.length) return;
+
+    function sync(area) {
+      const isScrollable = area.scrollWidth > area.clientWidth + 1;
+      const hasScrolled = area.scrollLeft > 8;
+      area.classList.toggle('is-scroll-hint-hidden', !isScrollable || hasScrolled);
+    }
+
+    scrollAreas.forEach(function (area) {
+      sync(area);
+      area.addEventListener('scroll', function () {
+        sync(area);
+      }, { passive: true });
+    });
+
+    window.addEventListener('resize', function () {
+      scrollAreas.forEach(sync);
     });
   })();
 

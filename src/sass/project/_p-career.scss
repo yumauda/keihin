@@ -8,6 +8,11 @@
     padding-top: rem(138);
   }
 }
+.p-career__content {
+  max-width: rem(1020);
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .p-career__hero {
   padding-top: rem(50);
@@ -90,6 +95,9 @@
     grid-template-columns: minmax(0, rem(520)) minmax(0, 1fr);
     min-height: rem(430);
     padding-top: 0;
+    max-width: rem(1020);
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -112,6 +120,7 @@
   @include mq(md) {
     font-size: rem(38);
     line-height: 1.63;
+    white-space: nowrap;
   }
 }
 
@@ -170,9 +179,84 @@
   }
 }
 
+.p-career__scroll {
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  position: relative;
+
+  @include mq(md) {
+    overflow: visible;
+  }
+}
+
+.p-career__scroll::before,
+.p-career__scroll::after {
+  opacity: 1;
+  pointer-events: none;
+  position: absolute;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+  visibility: visible;
+  z-index: 1;
+
+  @include mq(md) {
+    display: none;
+  }
+}
+
+.p-career__scroll::before {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.08) 100%);
+  bottom: 0;
+  content: "";
+  right: 0;
+  top: 0;
+  width: rem(76);
+}
+
+.p-career__scroll::after {
+  align-items: center;
+  animation: career-scroll-hint 1.4s ease-in-out infinite;
+  background: rgba(0, 0, 0, 0.68);
+  border-radius: rem(999);
+  bottom: rem(16);
+  color: #fff;
+  content: "SCROLL  >";
+  display: inline-flex;
+  font-size: rem(11);
+  font-weight: 700;
+  height: rem(30);
+  justify-content: center;
+  letter-spacing: 0;
+  padding: 0 rem(13);
+  right: rem(14);
+}
+
+.p-career__scroll.is-scroll-hint-hidden::before,
+.p-career__scroll.is-scroll-hint-hidden::after {
+  opacity: 0;
+  visibility: hidden;
+}
+
+@keyframes career-scroll-hint {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(rem(8));
+  }
+}
+
 .p-career__chart {
   margin: 0 auto;
-  max-width: rem(1195);
+  width: rem(600);
+
+  @include mq(md){
+    max-width: rem(1195);
+    width: 100%;
+    
+  }
 }
 
 .p-career__chart img {

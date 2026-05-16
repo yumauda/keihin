@@ -3,7 +3,7 @@
 .p-welfare {
   background: #fff;
   color: #000;
-  padding-top: rem(82);
+  padding-top: rem(64);
 
   @include mq(md) {
     padding-top: rem(138);
@@ -88,7 +88,7 @@
 }
 
 .p-welfare__benefits {
-  padding: rem(18) 0 rem(72);
+  padding: rem(18) 0 rem(40);
 
   @include mq(md) {
     padding: rem(18) 0 rem(88);
@@ -114,8 +114,7 @@
 
 .p-welfare__card {
   background: #f7f7f7;
-  min-height: rem(360);
-  padding: rem(42) rem(24) rem(30);
+  padding: rem(24);
   text-align: center;
 
   @include mq(md) {

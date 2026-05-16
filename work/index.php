@@ -21,12 +21,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/styles.css?v=20260420">
+  <link rel="stylesheet" href="../css/styles.css?v=20260516">
   <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script defer src="../js/gsap.js?v=20260324"></script>
-  <script defer src="../js/script.js?v=20260330"></script>
+  <script defer src="../js/script.js?v=20260516"></script>
 </head>
 
 <body>
@@ -35,11 +35,14 @@
   <main class="p-work">
     <section class="p-work-discover">
       <div class="l-inner">
-        <div class="p-work-discover__heading">
-          <h1 class="p-work-discover__en">DISCOVER</h1>
-          <p class="p-work-discover__sub">主な仕事内容</p>
+        <div class="p-work-discover__content">
+          <div class="p-work-discover__heading">
+            <h1 class="p-work-discover__en">DISCOVER</h1>
+            <p class="p-work-discover__sub">主な仕事内容</p>
+          </div>
+          <p class="p-work-discover__lead">電気工事は現場施工だけが仕事ではありません。<br>受注から完成まで、数多くの人たちが力を合わせて一つの案件に取り組んでいます。</p>
+
         </div>
-        <p class="p-work-discover__lead">電気工事は現場施工だけが仕事ではありません。<br>受注から完成まで、数多くの人たちが力を合わせて一つの案件に取り組んでいます。</p>
 
         <ul class="p-work-discover__cards">
           <li class="p-work-discover__card">

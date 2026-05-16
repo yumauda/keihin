@@ -16,9 +16,21 @@
     padding: rem(96) 0 rem(76);
   }
 }
+.p-work-discover__content {
+  @include mq(md) {
+    max-width: rem(1020);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 .p-work-discover__heading {
   text-align: center;
+
+  @include mq(md) {
+    text-align: left;
+    width: rem(307);
+  }
 }
 
 .p-work-discover__en {
@@ -46,6 +58,8 @@
     font-size: rem(23);
     margin-top: rem(12);
     padding-top: rem(18);
+    text-align: center;
+    width: rem(307);
   }
 }
 
@@ -74,21 +88,18 @@
   @include mq(md) {
     font-size: rem(20);
     line-height: 1.75;
-    margin-top: rem(56);
-    max-width: rem(760);
+    margin-left: rem(128);
+    margin-top: rem(84);
+    max-width: rem(900);
+    text-align: left;
   }
 }
 
 .p-work-discover__cards {
   display: grid;
   gap: rem(18);
-  list-style: none;
-  margin: rem(36) auto 0;
+  margin-top: rem(36);
   max-width: rem(1196);
-
-  @include mq(sm) {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
 
   @include mq(md) {
     gap: rem(22);
@@ -100,11 +111,11 @@
 .p-work-discover__card {
   background: linear-gradient(90deg, #e1edf2 0%, #f7fafc 25.6158%, #f8f8f8 70.4434%, #e1edf2 100%);
   border-radius: rem(6);
+  padding: rem(18) rem(20) rem(24);
   display: flex;
   flex-direction: column;
   min-height: rem(430);
   overflow: hidden;
-  padding: rem(18) rem(20) rem(24);
 
   @include mq(md) {
     min-height: rem(490);
@@ -116,7 +127,6 @@
 .p-work-discover__image {
   align-items: center;
   display: flex;
-  height: rem(150);
   justify-content: center;
   margin: 0 auto;
   position: relative;
@@ -147,13 +157,22 @@
 }
 
 .p-work-discover__card-title {
-  color: #000;
+  align-items: center;
+  align-self: center;
+  background: #ff7c2b;
+  border-radius: rem(7);
+  color: #fff;
+  display: inline-flex;
   font-size: rem(22);
   font-weight: 700;
   letter-spacing: 0.02em;
-  line-height: 1.35;
+  justify-content: center;
+  line-height: 1;
   margin-top: rem(12);
+  min-height: rem(41);
+  padding: rem(8) rem(18) rem(9);
   text-align: center;
+  width: min(100%, rem(197));
 
   @include mq(md) {
     font-size: rem(24);

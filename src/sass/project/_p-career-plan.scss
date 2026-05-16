@@ -106,7 +106,7 @@
   }
 }
 
-.p-career-plan__text p + p {
+.p-career-plan__text p+p {
   margin-top: rem(12);
 
   @include mq(md) {
@@ -261,12 +261,14 @@
 
 .p-career-plan__salary-list {
   display: grid;
-  gap: rem(18);
   justify-content: center;
   margin: rem(34) auto 0;
   max-width: rem(1000);
+  grid-template-columns: 1fr 1fr;
+  gap: rem(12);
 
   @include mq(sm) {
+    gap: rem(18);
     grid-template-columns: repeat(2, rem(220));
   }
 
@@ -279,10 +281,14 @@
 
 .p-career-plan__salary-item {
   position: relative;
-  width: rem(220);
+
+  @include mq(md) {
+    width: rem(220);
+
+  }
 }
 
-.p-career-plan__salary-item + .p-career-plan__salary-item::before {
+.p-career-plan__salary-item+.p-career-plan__salary-item::before {
   @include mq(md) {
     border-bottom: rem(20) solid transparent;
     border-left: rem(20) solid #fcb98b;
@@ -353,7 +359,7 @@
   }
 }
 
-.p-career-plan__training-item + .p-career-plan__training-item::before {
+.p-career-plan__training-item+.p-career-plan__training-item::before {
   @include mq(md) {
     border-bottom: rem(18) solid transparent;
     border-left: rem(18) solid #fcb98b;

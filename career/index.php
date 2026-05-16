@@ -21,12 +21,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/styles.css?v=20260420">
+  <link rel="stylesheet" href="../css/styles.css?v=20260516">
   <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script defer src="../js/gsap.js?v=20260324"></script>
-  <script defer src="../js/script.js?v=20260330"></script>
+  <script defer src="../js/script.js?v=20260516"></script>
 </head>
 
 <body>
@@ -35,9 +35,11 @@
   <main class="p-career">
     <section class="p-career__hero">
       <div class="l-inner">
-        <div class="p-career__heading">
-          <p class="p-career__en">CAREER UP STORY</p>
-          <h1 class="p-career__sub">キャリアアップストーリー</h1>
+        <div class="p-career__content">
+          <div class="p-career__heading">
+            <p class="p-career__en">CAREER UP STORY</p>
+            <h1 class="p-career__sub">キャリアアップストーリー</h1>
+          </div>
         </div>
       </div>
 
@@ -59,9 +61,11 @@
 
     <section class="p-career__steps">
       <div class="l-inner">
-        <figure class="p-career__chart">
-          <img src="../images/career/career-step-chart.webp" alt="新卒入社から取締役副社長までのキャリアステップ" width="2691" height="1079" loading="lazy" decoding="async">
-        </figure>
+        <div class="p-career__scroll">
+          <figure class="p-career__chart">
+            <img src="../images/career/career-step-chart.webp" alt="新卒入社から取締役副社長までのキャリアステップ" width="2691" height="1079" loading="lazy" decoding="async">
+          </figure>
+        </div>
       </div>
     </section>
 
