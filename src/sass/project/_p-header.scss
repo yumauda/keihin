@@ -10,7 +10,7 @@
   top: 0;
   transition: 0.3s ease;
   width: 100%;
-  z-index: 100;
+  z-index: 99999;
 
   @include mq(md) {
     height: rem(109);
@@ -28,6 +28,8 @@
   padding-right: rem(8);
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+  z-index: 10000;
   @include mq(md){
     padding-left: rem(27);
     padding-right: rem(27);
@@ -45,6 +47,8 @@
 
 .p-header__heading {
   flex-shrink: 0;
+  position: relative;
+  z-index: 10000;
 }
 
 .p-header__logo {
@@ -62,11 +66,21 @@
   width: 100%;
 }
 
+.p-header.is-drawer-active {
+  box-shadow: none;
+}
+
+.p-header.is-drawer-active .p-header__logo svg path,
+.p-header.is-drawer-active .p-header__logo svg [fill] {
+  fill: #fff !important;
+}
+
 .p-header__menu-area {
   display: flex;
+  align-items: center;
   margin-left: auto;
 
-  @include mq(md) {
+  @media screen and (min-width: 1284px) {
     align-items: flex-end;
     flex-direction: column;
   }
@@ -75,7 +89,7 @@
 .p-header__utility {
   display: none;
 
-  @include mq(md) {
+  @media screen and (min-width: 1284px) {
     display: flex;
     justify-content: flex-end;
     padding-right: rem(162);
@@ -91,7 +105,7 @@
 .p-header__nav {
   display: none;
 
-  @include mq(md) {
+  @media screen and (min-width: 1284px) {
     display: block;
   }
 }
@@ -120,6 +134,13 @@
   display: flex;
   flex-shrink: 0;
   margin-left: rem(18);
+  margin-right: rem(13);
+  position: relative;
+  z-index: 10000;
+
+  @media screen and (min-width: 1284px) {
+    margin-right: initial;
+  }
 }
 
 .p-header__translate {
@@ -134,7 +155,7 @@
   display: none;
   padding: 0;
 
-  @include mq(md) {
+  @media screen and (min-width: 1284px) {
     display: inline-flex;
   }
 }

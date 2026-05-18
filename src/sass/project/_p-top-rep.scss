@@ -4,6 +4,7 @@
   background-color: #fff;
   padding-top: rem(40);
   padding-bottom: initial;
+  overflow-x: clip;
 
   @include mq(md) {
     padding-top: rem(64);
@@ -33,8 +34,6 @@
 }
 .p-top-rep__heading-wrap {
   text-align: center;
-
- 
 }
 .p-top-rep__heading {
   padding-bottom: rem(8);
@@ -83,7 +82,6 @@
 
   @include mq(md) {
     font-size: rem(18);
-    text-align: initial;
   }
 }
 
@@ -97,7 +95,7 @@
   margin-right: auto;
   
   @include mq(md) {
-    font-size: rem(22);
+    font-size: rem(21);
     margin-left: initial;
     margin-right: initial;
     max-width: initial;

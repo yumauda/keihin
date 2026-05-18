@@ -562,6 +562,7 @@ jQuery('.p-drawer-icon').on('click', function (e) {
   jQuery('.p-drawer-icon').toggleClass('is-active');
   jQuery('.p-drawer-content').toggleClass('is-active');
   jQuery('.p-drawer-background').toggleClass('is-active');
+  jQuery('.p-header').toggleClass('is-drawer-active');
   return false;
 });
-$('#drawer a[href]').on('click', function (event) { $('.p-drawer-icon').trigger('click') })
+$('.p-drawer-content a[href]').on('click', function (event) { $('.p-drawer-icon').trigger('click') })
