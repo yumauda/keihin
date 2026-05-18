@@ -10,21 +10,42 @@
 }
 
 .p-interview__intro {
-  background: #f2f1e9;
   padding: rem(28) 0 rem(48);
+  position: relative;
 
   @include mq(md) {
     padding: rem(118) 0 rem(100);
   }
 }
 
+.p-interview__intro::before {
+  background: #fff;
+  content: "";
+  height: rem(160);
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+
+  @include mq(md) {
+    height: rem(300);
+  }
+}
+
+.p-interview__intro>.l-inner {
+  position: relative;
+  z-index: 1;
+}
+
 .p-interview__heading {
   text-align: center;
+  width: fit-content;
 
   @include mq(md) {
     text-align: left;
     max-width: rem(1010);
-    margin: 0 auto;
+    width: fit-content;
+
   }
 }
 
@@ -34,41 +55,41 @@
   font-weight: 400;
   letter-spacing: 0;
   line-height: 1;
+  position: relative;
 
   @include mq(md) {
     font-size: rem(100);
   }
 }
 
-.p-interview__sub-title {
-  display: inline-block;
-  font-size: rem(12);
-  font-weight: 500;
-  line-height: 1.5;
-  margin-top: rem(8);
-  padding-top: rem(8);
-  position: relative;
-
-  @include mq(md) {
-    font-size: rem(25);
-    margin-top: rem(14);
-    padding-top: rem(18);
-  }
-}
-
-.p-interview__sub-title::before {
+.p-interview__title::before {
   border-top: rem(3) solid #fe4504;
   content: "";
-  left: 50%;
+  left: 0;
   position: absolute;
-  top: 0;
-  transform: translateX(-50%);
-  width: rem(150);
+  bottom: 0;
+  width: 100%;
 
   @include mq(md) {
     left: 0;
-    transform: none;
-    width: rem(320);
+  }
+}
+
+.p-interview__sub-title {
+  font-size: rem(12);
+  font-weight: 500;
+  line-height: 1.5;
+  padding-top: rem(8);
+  position: relative;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+
+  @include mq(md) {
+    text-align: initial;
+    font-size: rem(25);
+    padding-top: rem(18);
   }
 }
 
@@ -81,7 +102,7 @@
   @include mq(md) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: rem(86) rem(50);
-    margin-top: rem(70);
+    margin-top: rem(120);
   }
 }
 
@@ -283,9 +304,9 @@
   margin: 0 auto;
 }
 
-.p-interview-detail__section + .p-interview-detail__section,
-.p-interview-detail__image + .p-interview-detail__section,
-.p-interview-detail__section + .p-interview-detail__image {
+.p-interview-detail__section+.p-interview-detail__section,
+.p-interview-detail__image+.p-interview-detail__section,
+.p-interview-detail__section+.p-interview-detail__image {
   margin-top: rem(38);
 
   @include mq(md) {
@@ -432,9 +453,11 @@
   flex-direction: column;
   gap: rem(14);
   padding-left: 0;
-  transform: translate(rem(8), rem(-34));
+  transform: translate(rem(8), rem(-16));
+  margin-left: rem(-24);
 
   @include mq(md) {
+    margin-left: initial;
     gap: rem(18);
     padding-left: 0;
     position: absolute;
@@ -447,9 +470,11 @@
 }
 
 .p-interview__bubble {
-  width: rem(126);
+  width: rem(160);
+  margin-left: rem(-32);
 
   @include mq(md) {
+    margin-left: initial;
     width: 100%;
   }
 }
@@ -464,6 +489,7 @@
   font-size: rem(12);
   font-weight: 600;
   line-height: 1.55;
+  margin-left: rem(32);
 
   @include mq(md) {
     font-size: rem(18);
@@ -473,7 +499,7 @@
 }
 
 .p-interview__middle {
-  padding: rem(48) 0 rem(58);
+  padding: rem(0) 0 rem(85);
 
   @include mq(md) {
     padding: rem(98) 0 rem(118);
@@ -482,7 +508,7 @@
 
 .p-interview__middle-title {
   color: #005dc9;
-  font-size: rem(22);
+  font-size: rem(20);
   font-weight: 700;
   line-height: 1.5;
   text-align: center;
@@ -526,9 +552,11 @@
   aspect-ratio: 4 / 3;
   border-radius: rem(5);
   overflow: hidden;
-  @include mq(md){
+  width: rem(200);
+
+  @include mq(md) {
     width: rem(300);
-    
+
   }
 }
 
@@ -553,8 +581,10 @@
   font-weight: 600;
   line-height: 1.55;
   padding-left: rem(12);
+  margin-left: rem(24);
 
   @include mq(md) {
+    margin-left: initial;
     font-size: rem(18);
     padding-left: rem(18);
   }
@@ -565,6 +595,7 @@
   font-weight: 600;
   line-height: 1.75;
   margin-top: rem(12);
+  padding-bottom: rem(16);
 
   @include mq(md) {
     font-size: rem(16);
@@ -576,7 +607,7 @@
 
 .p-interview__cta {
   align-items: center;
-  background: #476ed6;
+  background: #F77423;
   border-radius: rem(999);
   box-shadow: rem(-2) rem(3) rem(6) rgba(0, 0, 0, 0.4);
   color: #fff;

@@ -105,7 +105,7 @@
 
     <section class="p-interview__middle">
       <div class="l-inner">
-        <h2 class="p-interview__middle-title">管理職や中堅社員にも話しを聞いてみました。</h2>
+        <h2 class="p-interview__middle-title">管理職や中堅社員にも<br class="u-mobile">話しを聞いてみました。</h2>
 
         <ul class="p-interview__message-cards">
           <li class="p-interview__message-card">

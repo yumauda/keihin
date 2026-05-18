@@ -2753,8 +2753,8 @@ body {
 }
 
 .p-interview__intro {
-  background: #f2f1e9;
   padding: 1.75rem 0 3rem;
+  position: relative;
 }
 @media screen and (min-width: 768px) {
   .p-interview__intro {
@@ -2762,14 +2762,35 @@ body {
   }
 }
 
+.p-interview__intro::before {
+  background: #fff;
+  content: "";
+  height: 10rem;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .p-interview__intro::before {
+    height: 18.75rem;
+  }
+}
+
+.p-interview__intro > .l-inner {
+  position: relative;
+  z-index: 1;
+}
+
 .p-interview__heading {
   text-align: center;
+  width: fit-content;
 }
 @media screen and (min-width: 768px) {
   .p-interview__heading {
     text-align: left;
     max-width: 63.125rem;
-    margin: 0 auto;
+    width: fit-content;
   }
 }
 
@@ -2779,6 +2800,7 @@ body {
   font-weight: 400;
   letter-spacing: 0;
   line-height: 1;
+  position: relative;
 }
 @media screen and (min-width: 768px) {
   .p-interview__title {
@@ -2786,37 +2808,36 @@ body {
   }
 }
 
-.p-interview__sub-title {
-  display: inline-block;
-  font-size: 0.75rem;
-  font-weight: 500;
-  line-height: 1.5;
-  margin-top: 0.5rem;
-  padding-top: 0.5rem;
-  position: relative;
+.p-interview__title::before {
+  border-top: 0.1875rem solid #fe4504;
+  content: "";
+  left: 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
-  .p-interview__sub-title {
-    font-size: 1.5625rem;
-    margin-top: 0.875rem;
-    padding-top: 1.125rem;
+  .p-interview__title::before {
+    left: 0;
   }
 }
 
-.p-interview__sub-title::before {
-  border-top: 0.1875rem solid #fe4504;
-  content: "";
-  left: 50%;
-  position: absolute;
-  top: 0;
-  transform: translateX(-50%);
-  width: 9.375rem;
+.p-interview__sub-title {
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.5;
+  padding-top: 0.5rem;
+  position: relative;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
 }
 @media screen and (min-width: 768px) {
-  .p-interview__sub-title::before {
-    left: 0;
-    transform: none;
-    width: 20rem;
+  .p-interview__sub-title {
+    text-align: initial;
+    font-size: 1.5625rem;
+    padding-top: 1.125rem;
   }
 }
 
@@ -2830,7 +2851,7 @@ body {
   .p-interview__cards {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 5.375rem 3.125rem;
-    margin-top: 4.375rem;
+    margin-top: 7.5rem;
   }
 }
 
@@ -3204,10 +3225,12 @@ body {
   flex-direction: column;
   gap: 0.875rem;
   padding-left: 0;
-  transform: translate(0.5rem, -2.125rem);
+  transform: translate(0.5rem, -1rem);
+  margin-left: -1.5rem;
 }
 @media screen and (min-width: 768px) {
   .p-interview__body {
+    margin-left: initial;
     gap: 1.125rem;
     padding-left: 0;
     position: absolute;
@@ -3220,10 +3243,12 @@ body {
 }
 
 .p-interview__bubble {
-  width: 7.875rem;
+  width: 10rem;
+  margin-left: -2rem;
 }
 @media screen and (min-width: 768px) {
   .p-interview__bubble {
+    margin-left: initial;
     width: 100%;
   }
 }
@@ -3238,6 +3263,7 @@ body {
   font-size: 0.75rem;
   font-weight: 600;
   line-height: 1.55;
+  margin-left: 2rem;
 }
 @media screen and (min-width: 768px) {
   .p-interview__profile {
@@ -3248,7 +3274,7 @@ body {
 }
 
 .p-interview__middle {
-  padding: 3rem 0 3.625rem;
+  padding: 0rem 0 5.3125rem;
 }
 @media screen and (min-width: 768px) {
   .p-interview__middle {
@@ -3258,7 +3284,7 @@ body {
 
 .p-interview__middle-title {
   color: #005dc9;
-  font-size: 1.375rem;
+  font-size: 1.25rem;
   font-weight: 700;
   line-height: 1.5;
   text-align: center;
@@ -3305,6 +3331,7 @@ body {
   aspect-ratio: 4/3;
   border-radius: 0.3125rem;
   overflow: hidden;
+  width: 12.5rem;
 }
 @media screen and (min-width: 768px) {
   .p-interview__message-image {
@@ -3334,9 +3361,11 @@ body {
   font-weight: 600;
   line-height: 1.55;
   padding-left: 0.75rem;
+  margin-left: 1.5rem;
 }
 @media screen and (min-width: 768px) {
   .p-interview__message-profile {
+    margin-left: initial;
     font-size: 1.125rem;
     padding-left: 1.125rem;
   }
@@ -3347,6 +3376,7 @@ body {
   font-weight: 600;
   line-height: 1.75;
   margin-top: 0.75rem;
+  padding-bottom: 1rem;
 }
 @media screen and (min-width: 768px) {
   .p-interview__message-text {
@@ -3359,7 +3389,7 @@ body {
 
 .p-interview__cta {
   align-items: center;
-  background: #476ed6;
+  background: #F77423;
   border-radius: 62.4375rem;
   box-shadow: -0.125rem 0.1875rem 0.375rem rgba(0, 0, 0, 0.4);
   color: #fff;
@@ -3997,6 +4027,12 @@ body {
 .p-people__title span {
   display: block;
   position: relative;
+}
+@media screen and (min-width: 768px) {
+  .p-people__title span {
+    display: inline;
+    position: static;
+  }
 }
 
 .p-people__title span::after {
