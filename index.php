@@ -128,10 +128,13 @@
       <div class="l-wide-inner">
         <div class="p-people__content">
           <div class="p-people__heading">
-            <h2 class="p-people__title">京浜電設に合うのは、こんな人です</h2>
+            <h2 class="p-people__title">
+              <span>京浜電設に合うのは、</span>
+              <span>こんな人です</span>
+            </h2>
             <span class="p-people__en">OUR PEOPLE</span>
           </div>
-          <p class="p-people__message">京浜電設は、誰にでも合う会社ではありません。</p>
+          <p class="p-people__message">京浜電設は、誰にでも合う<br class="u-mobile">会社ではありません。</p>
           <p class="p-people__lead">
             ただ、合う方にとっては大きく成長できる環境です。<br>
             実際に、未経験からスタートした社員の多くが<br>
@@ -291,7 +294,7 @@
                 </div>
                 <p class="p-top-rep__sub-title">代表メッセージ</p>
               </div>
-              <p class="p-top-rep__catch">三方よしの理念を胸に、新たな時代へ。</p>
+              <p class="p-top-rep__catch">三方よしの理念を胸に、<br class="u-mobile">新たな時代へ。</p>
               <p class="p-top-rep__description">
                 お客様と、社会とともに成長していくために<br>
                 人づくり、働く環境づくりが最も大切です。<br>
@@ -347,15 +350,18 @@
         <div class="p-top-license__content">
           <div class="p-top-license__box">
             <div class="p-top-license__heading">
-              <h2 class="p-top-license__title">社員の学生時代の専攻学部・学科・保有する資格</h2>
+              <h2 class="p-top-license__title">
+                <span>社員の学生時代の専攻学部・</span>
+                <span>学科・保有する資格</span>
+              </h2>
             </div>
             <div class="p-top-license__section">
               <h3 class="p-top-license__label">専攻学部</h3>
-              <p class="p-top-license__text">工学部・理学部・経済学部・商学部・商経学部・法学部・文学部・教育学部・社会科学部・外国語学部・<br>ネットワーク情報学部・グローバルコミュニケーション学部 他</p>
+              <p class="p-top-license__text">工学部・理学部・経済学部・商学部・商経学部・法学部・文学部・教育学部・社会科学部・外国語学部・<br class="u-desktop">ネットワーク情報学部・グローバルコミュニケーション学部 他</p>
             </div>
             <div class="p-top-license__section">
               <h3 class="p-top-license__label">専攻学科</h3>
-              <p class="p-top-license__text">電気工学科・電気科・電気工事科・電気工事技術科・電気電子学科・電気システム科・経営学科・政治学科・<br>建築学科・法律学科・心理学科・情報サイエンス学科 他</p>
+              <p class="p-top-license__text">電気工学科・電気科・電気工事科・電気工事技術科・電気電子学科・電気システム科・経営学科・政治学科・<br class="u-desktop">建築学科・法律学科・心理学科・情報サイエンス学科 他</p>
             </div>
             <div class="p-top-license__section p-top-license__section--last">
               <h3 class="p-top-license__label">社員の保有する資格</h3>
@@ -370,13 +376,14 @@
           </div>
         </div>
       </div>
-      <div class="p-top-license__loop">
-        <div class="p-top-license__loop-track">
-          <img decoding="async" loading="lazy" src="./images/top/loop.webp" alt="" width="10282" height="550">
-          <img decoding="async" loading="lazy" src="./images/top/loop.webp" alt="" width="10282" height="550" aria-hidden="true">
-        </div>
-      </div>
+
     </section>
+    <div class="p-top-license__loop">
+      <div class="p-top-license__loop-track">
+        <img decoding="async" loading="lazy" src="./images/top/loop.webp" alt="" width="10282" height="550">
+        <img decoding="async" loading="lazy" src="./images/top/loop.webp" alt="" width="10282" height="550" aria-hidden="true">
+      </div>
+    </div>
     <section class="p-top-welfare">
       <div class="l-inner">
         <div class="p-top-welfare__content">
@@ -473,7 +480,10 @@
               </a>
             </div>
             <a class="p-top-welfare__instagram" href="https://www.instagram.com/keihindensetsu_jp/" target="_blank" rel="noopener">
-              <img decoding="async" loading="lazy" src="./images/top/top-instagram.webp" alt="京浜電設株式会社（Keihindensetsu_jp）京浜電設・秋田犬の慶ちゃんの魅力を発信しています！！" width="529" height="101">
+              <picture>
+                <source srcset="./images/top/top-instagram.webp" media="(min-width: 768px)" width="1238" height="570" />
+                <img src="./images/top/top-instagram-sp.webp" alt="" width="355" height="227">
+              </picture>
             </a>
           </div>
         </div>

@@ -41,6 +41,48 @@
                         </a>
                     </div>
                 </div>
+                <button class="p-header__drawer p-drawer-icon">
+                    <span class="p-drawer-icon__bars">
+                        <span class="p-drawer-icon__bar1"></span>
+                        <span class="p-drawer-icon__bar3"></span>
+                    </span>
+                </button>
+                <div class="p-header__drawer-content p-drawer-content">
+                    <div class="p-drawer-content__items">
+                        <ul class="p-drawer-content__lists">
+                            <li class="p-drawer-content__list">
+                                <a href="/" class="p-drawer-content__link p-drawer-content__link--home">HOME</a>
+                            </li>
+                            <li class="p-drawer-content__list">
+                                <a href="/message/" class="p-drawer-content__link">代表メッセージ</a>
+                            </li>
+                            <li class="p-drawer-content__list">
+                                <a href="/work/" class="p-drawer-content__link">京浜電設の仕事</a>
+                            </li>
+                            <li class="p-drawer-content__list">
+                                <a href="/career/" class="p-drawer-content__link">キャリアアップストーリー</a>
+                            </li>
+                            <li class="p-drawer-content__list">
+                                <a href="/welfare/" class="p-drawer-content__link">福利厚生</a>
+                            </li>
+                            <li class="p-drawer-content__list">
+                                <a href="/faq/" class="p-drawer-content__link">よくある質問</a>
+                            </li>
+                            <li class="p-drawer-content__list">
+                                <a href="/recruit/" class="p-drawer-content__link">募集要項</a>
+                            </li>
+                            <li class="p-drawer-content__list">
+                                <a href="#" class="p-drawer-content__link">エントリーフォーム</a>
+                            </li>
+                            <li class="p-drawer-content__list">
+                                <a href="#" class="p-drawer-content__link">コーポレートサイト</a>
+                            </li>
+                            <li class="p-drawer-content__list">
+                                <button class="p-drawer-content__link p-drawer-content__link--button js-translate-toggle" type="button" aria-label="言語選択" aria-expanded="false" aria-controls="header-language-menu">LANGUAGE</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

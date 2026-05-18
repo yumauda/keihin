@@ -3,7 +3,7 @@
 .p-top-career {
   background-color: #F2F1E9;
   padding-top: rem(72);
-  padding-bottom: rem(72);
+  padding-bottom: rem(48);
 
   @include mq(md) {
     padding-top: rem(59);
@@ -18,16 +18,25 @@
 }
 
 .p-top-career__body {
+  display: flex;
+  flex-direction: column-reverse;
   @include mq(md) {
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
   }
 }
 
 .p-top-career__image {
+  margin-top: rem(46);
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
   @include mq(md) {
     max-width: rem(500);
+    margin-top: initial;
     width: 100%;
+    margin-left: initial;
+    margin-right: initial;
   }
 }
 
@@ -83,14 +92,14 @@
 }
 
 .p-top-career__sub-title {
-  font-size: rem(15);
+  font-size: rem(10);
   font-weight: 500;
   line-height: 1.5;
   margin-top: rem(10);
+  text-align: center;
 
   @include mq(md) {
     font-size: rem(18);
-    text-align: center;
   }
 }
 
@@ -185,17 +194,18 @@
 .p-top-career__button {
   align-items: center;
   background-color: #476ed6;
-  border-radius: rem(45);
+  border-radius: 9999px;
   box-shadow: rem(-2) rem(3) rem(6) rgba(0, 0, 0, 0.4);
   color: #fff;
   display: inline-flex;
   justify-content: center;
-  min-height: rem(56);
   padding-left: rem(24);
   padding-right: rem(8);
-  width: 100%;
-
+  width: rem(250);
+  min-height: rem(36);
+  
   @include mq(md) {
+    width: 100%;
     max-width: rem(469);
     min-height: rem(67);
     padding-left: rem(42);
@@ -204,7 +214,7 @@
 }
 
 .p-top-career__button-text {
-  font-size: rem(18);
+  font-size: rem(12);
   font-weight: 500;
   line-height: 1.4;
 
@@ -215,13 +225,13 @@
 
 .p-top-career__button-icon {
   background-color: #fff;
-  border-radius: 50%;
+  border-radius: 9999px;
   display: block;
   flex-shrink: 0;
-  height: rem(34);
+  height: rem(22);
   margin-left: rem(16);
   position: relative;
-  width: rem(34);
+  width: rem(22);
 
   @include mq(md) {
     height: rem(41);

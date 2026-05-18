@@ -293,7 +293,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     setTranslateMenuState(false);
   });
 
- 
+
   // お申し込み / お問い合わせ タブ切り替え
   const $tabs = $('.js-contact-tab');
   const $panels = $('.js-contact-panel');
@@ -557,3 +557,11 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   })();
 
 });
+jQuery('.p-drawer-icon').on('click', function (e) {
+  e.preventDefault();
+  jQuery('.p-drawer-icon').toggleClass('is-active');
+  jQuery('.p-drawer-content').toggleClass('is-active');
+  jQuery('.p-drawer-background').toggleClass('is-active');
+  return false;
+});
+$('#drawer a[href]').on('click', function (event) { $('.p-drawer-icon').trigger('click') })

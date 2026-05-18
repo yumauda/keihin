@@ -2,8 +2,8 @@
 
 .p-top-rep {
   background-color: #fff;
-  padding-top: rem(72);
-  padding-bottom: rem(72);
+  padding-top: rem(40);
+  padding-bottom: initial;
 
   @include mq(md) {
     padding-top: rem(64);
@@ -75,32 +75,46 @@
 }
 
 .p-top-rep__sub-title {
-  font-size: rem(15);
+  font-size: rem(10);
   font-weight: 500;
   line-height: 1.5;
   margin-top: rem(10);
+  text-align: center;
 
   @include mq(md) {
     font-size: rem(18);
+    text-align: initial;
   }
 }
 
 .p-top-rep__catch {
-  font-size: rem(22);
   font-weight: 600;
   line-height: 1.5;
-  margin-top: rem(40);
-
+  margin-top: rem(24);
+  font-size: rem(17);
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  
   @include mq(md) {
+    font-size: rem(22);
+    margin-left: initial;
+    margin-right: initial;
+    max-width: initial;
     margin-top: rem(47);
   }
 }
 
 .p-top-rep__description {
-  font-size: rem(16);
   font-weight: 600;
   line-height: 1.5;
-  margin-top: rem(24);
+  margin-top: rem(20);
+  font-size: rem(13);
+  @include mq(md){
+    font-size: rem(16);
+    margin-top: rem(24);
+    
+  }
 }
 
 .p-top-rep__button-wrap {
@@ -121,7 +135,7 @@
   border: rem(1.2) solid #000;
   border-radius: rem(24);
   color: #000;
-  display: inline-flex;
+  display: flex;
   height: rem(40);
   justify-content: center;
   padding-left: rem(34);
@@ -169,12 +183,17 @@
 }
 
 .p-top-rep__image {
-  margin-top: rem(40);
+  margin-top: rem(32);
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
 
   @include mq(md) {
-    margin-top: 0;
+    margin-top: initial;
     max-width: rem(500);
     width: 100%;
+    margin-left: initial;
+    margin-right: initial;
   }
 }
 

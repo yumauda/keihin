@@ -1,12 +1,13 @@
 @use "../global" as *;
 
 .p-top-license {
-  background-color: #f2f1e9;
-  padding-top: rem(72);
-  padding-bottom: rem(72);
+  padding-top: rem(24);
+  padding-bottom: rem(24);
   overflow-x: clip;
-
+  background-color: #fff;
+  
   @include mq(md) {
+    background-color: #f2f1e9;
     padding-top: rem(64);
     padding-bottom: rem(24);
   }
@@ -23,46 +24,91 @@
   border-radius: rem(15);
   padding-top: rem(36);
   padding-right: rem(24);
-  padding-bottom: rem(48);
   padding-left: rem(24);
-
+  
   @include mq(md) {
     padding-top: rem(57);
-    padding-right: rem(72);
+    padding-right: rem(64);
     padding-bottom: rem(47);
-    padding-left: rem(72);
+    padding-left: rem(64);
   }
 }
 
 .p-top-license__heading {
-  padding-bottom: rem(17);
-  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: rem(5);
+  width: min(100%, rem(250));
+
+  @include mq(md) {
+    padding-bottom: rem(17);
+    position: relative;
+    width: auto;
+  }
 }
 
 .p-top-license__heading::before {
-  border-top: rem(3) solid #f77423;
-  bottom: 0;
-  content: "";
-  left: 0;
-  position: absolute;
-  width: 100%;
+  @include mq(md) {
+    border-top: rem(3) solid #f77423;
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    width: 100%;
+  }
 }
 
 .p-top-license__title {
-  font-size: rem(28);
+  font-size: rem(19);
   font-weight: 700;
-  line-height: 1.4;
+  line-height: calc(35 / 19);
+  text-align: center;
 
   @include mq(md) {
     font-size: rem(35);
+    text-align: initial;
     line-height: 0.86;
   }
 }
 
+.p-top-license__title span {
+  display: block;
+  position: relative;
+
+  @include mq(md) {
+    display: inline;
+    position: static;
+  }
+}
+
+.p-top-license__title span::after {
+  background-color: #f77423;
+  bottom: rem(2);
+  content: "";
+  height: rem(3);
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  width: rem(247);
+
+  @include mq(md) {
+    content: none;
+  }
+}
+
+.p-top-license__title span:nth-child(2)::after {
+  width: rem(181);
+}
+
 .p-top-license__section {
-  border-top: rem(1) solid #707070;
-  margin-top: rem(32);
-  padding-top: rem(28);
+  border-top: 1px solid #707070;
+  padding-top: rem(20);
+  margin-top: rem(20);
+  @include mq(md){
+    padding-top: rem(28);
+    margin-top: rem(32);
+    
+  }
 }
 
 .p-top-license__heading+.p-top-license__section {
@@ -78,15 +124,24 @@
 }
 
 .p-top-license__label {
-  font-size: rem(22);
   font-weight: 600;
   line-height: 1.5;
+  font-size: rem(15);
+  @include mq(md){
+    font-size: rem(22);
+    
+  }
 }
 
 .p-top-license__text {
-  font-size: rem(16);
   line-height: 1.8125;
-  margin-top: rem(10);
+  font-size: rem(13);
+  margin-top: rem(6);
+  @include mq(md){
+    margin-top: rem(10);
+    font-size: rem(16);
+    
+  }
 }
 
 .p-top-license__button-wrap {
@@ -158,8 +213,9 @@
 }
 
 .p-top-license__loop {
-  margin-top: rem(40);
+  margin-top: rem(24);
   overflow: hidden;
+  background: #F2F1E9;
 
   @include mq(md) {
     margin-top: rem(48);

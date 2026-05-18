@@ -24,8 +24,8 @@
 .p-header__inner {
   height: inherit;
   max-width: rem(1344);
-  padding-left: rem(20);
-  padding-right: rem(20);
+  padding-left: rem(8);
+  padding-right: rem(8);
   margin-left: auto;
   margin-right: auto;
   @include mq(md){
@@ -232,10 +232,10 @@ body {
 .p-header__entry {
   align-items: center;
   background-color: #f77423;
-  border-radius: rem(999);
+  border-radius: 9999px;
   color: #fff;
-  display: inline-flex;
-  height: rem(38);
+  display: flex;
+  height: rem(22);
   justify-content: center;
   margin-left: rem(12);
   min-width: rem(108);
@@ -251,7 +251,7 @@ body {
 }
 
 .p-header__entry-text {
-  font-size: rem(14);
+  font-size: rem(10);
   font-weight: 700;
   line-height: 1;
 

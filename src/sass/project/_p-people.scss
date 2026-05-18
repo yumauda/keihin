@@ -1,8 +1,8 @@
 @use "../global" as *;
 
 .p-people {
-  padding-top: rem(48);
-  padding-bottom: rem(64);
+  padding-top: rem(24);
+  padding-bottom: rem(24);
 
   @include mq(md) {
     padding-top: rem(88);
@@ -18,30 +18,32 @@
   margin-left: auto;
   margin-right: auto;
   padding-bottom: rem(5);
-  position: relative;
   text-align: center;
-  width: min(100%, rem(570));
+  width: min(100%, rem(197));
+
+  @include mq(md) {
+    position: relative;
+    width: min(100%, rem(570));
+  }
 }
 
 .p-people__heading::before {
-  background-color: #f77423;
-  bottom: rem(34);
-  content: "";
-  height: rem(3);
-  left: 0;
-  position: absolute;
-  width: 100%;
-
   @include mq(md) {
+    background-color: #f77423;
     bottom: rem(47);
+    content: "";
+    height: rem(3);
+    left: 0;
+    position: absolute;
+    width: 100%;
   }
 }
 
 .p-people__title {
   color: #000;
-  font-size: rem(24);
+  font-size: rem(19);
   font-weight: 700;
-  line-height: 1.2;
+  line-height: calc(35 / 19);
   text-align: center;
 
   @include mq(md) {
@@ -51,15 +53,39 @@
   }
 }
 
+.p-people__title span {
+  display: block;
+  position: relative;
+}
+
+.p-people__title span::after {
+  background-color: #f77423;
+  bottom: rem(2);
+  content: "";
+  height: rem(3);
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  width: rem(193);
+
+  @include mq(md) {
+    content: none;
+  }
+}
+
+.p-people__title span:nth-child(2)::after {
+  width: rem(122);
+}
+
 .p-people__en {
   color: #a8a8a8;
   display: inline-block;
   font-family: $second-font-family;
-  font-size: rem(26);
+  font-size: rem(17);
   font-weight: 400;
   letter-spacing: 0.01em;
   line-height: 1;
-  margin-top: rem(20);
+  margin-top: rem(8);
 
   @include mq(md) {
     font-size: rem(32);
@@ -69,21 +95,23 @@
 
 .p-people__message {
   background-color: #4688e3;
-  border-radius: rem(5);
   box-shadow: 0 0 rem(5) rgba(255, 255, 255, 0.55);
   color: #fff;
-  font-size: rem(20);
+  font-size: rem(16);
   font-weight: 700;
   line-height: 1.5;
   margin-left: auto;
   margin-right: auto;
-  margin-top: rem(32);
-  max-width: rem(749);
+  margin-top: rem(19);
   padding: rem(14) rem(16);
   position: relative;
   text-align: center;
+  max-width: rem(226);
+  border-radius: rem(3);
 
   @include mq(md) {
+    border-radius: rem(5);
+    max-width: rem(749);
     font-size: rem(31);
     line-height: calc(49 / 31);
     margin-top: rem(31);
@@ -93,9 +121,9 @@
 }
 
 .p-people__message::after {
-  border-left: rem(13) solid transparent;
-  border-right: rem(13) solid transparent;
-  border-top: rem(22) solid #4688e3;
+  border-left: rem(7) solid transparent;
+  border-right: rem(7) solid transparent;
+  border-top: rem(14) solid #4688e3;
   content: "";
   left: 50%;
   position: absolute;
@@ -105,7 +133,7 @@
 
 .p-people__lead {
   color: #000;
-  font-size: rem(16);
+  font-size: rem(12);
   font-weight: 600;
   letter-spacing: 0.03em;
   line-height: 1.8;
@@ -125,9 +153,11 @@
 
 .p-people__cards {
   display: grid;
-  gap: rem(24);
+  gap: rem(12);
+  grid-template-columns: repeat(2, 1fr);
+
   list-style: none;
-  margin-top: rem(56);
+  margin-top: rem(24);
 
   @include mq(md) {
     gap: rem(24);
@@ -138,19 +168,33 @@
 
 .p-people__card {
   background-color: #f2f2f2;
-  border-radius: rem(10);
   color: #000;
-  min-height: rem(406);
-  padding: rem(28) rem(4) rem(20);
   text-align: center;
+  padding-top: rem(24);
+  padding-bottom: rem(16);
+  padding-left: rem(8);
+  padding-right: rem(8);
+  border-radius: rem(5);
+
+  @include mq(md) {
+    border-radius: rem(10);
+    padding: rem(28) rem(4) rem(20);
+    min-height: rem(406);
+
+  }
 }
 
 .p-people__icon {
   color: #5b92c2;
-  height: rem(80);
   margin-left: auto;
   margin-right: auto;
-  width: rem(96);
+  width: rem(80);
+
+  @include mq(md) {
+    height: rem(80);
+    width: rem(96);
+
+  }
 }
 
 .p-people__icon svg {
@@ -169,18 +213,30 @@
 }
 
 .p-people__card-title {
-  font-size: rem(19);
   font-weight: 700;
   line-height: calc(30 / 19);
-  margin-top: rem(24);
+  font-size: rem(14);
+  margin-top: rem(12);
+
+  @include mq(md) {
+    font-size: rem(19);
+    margin-top: rem(24);
+
+  }
 }
 
 .p-people__card-text {
-  font-size: rem(15);
   font-weight: 500;
   letter-spacing: 0.02em;
   line-height: calc(28 / 15);
-  margin-top: rem(17);
+  font-size: rem(12);
+  margin-top: rem(8);
+
+  @include mq(md) {
+    font-size: rem(15);
+    margin-top: rem(17);
+
+  }
 }
 
 .p-people__field {
@@ -191,15 +247,26 @@
 
 .p-people__field-label {
   color: #4688e3;
-  font-size: rem(19);
   font-weight: 700;
   line-height: calc(26 / 19);
+  font-size: rem(14);
+
+  @include mq(md) {
+    font-size: rem(19);
+
+  }
 }
 
 .p-people__field-text {
-  font-size: rem(14);
   font-weight: 600;
   letter-spacing: 0.02em;
   line-height: calc(27 / 15);
-  margin-top: rem(10);
+  font-size: rem(10);
+  margin-top: rem(6);
+
+  @include mq(md) {
+    margin-top: rem(10);
+    font-size: rem(14);
+
+  }
 }
