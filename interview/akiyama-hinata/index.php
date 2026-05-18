@@ -56,9 +56,9 @@
       <div class="l-inner">
         <article class="p-interview-detail__article">
           <section class="p-interview-detail__section">
-            <h2 class="p-interview-detail__question">京浜電設に入社を決めた理由を教えてください。</h2>
+            <h2 class="p-interview-detail__question">京浜電設に入社を決めた<br class="u-mobile">理由を教えてください。</h2>
             <p class="p-interview-detail__text">大学は文学部国文学科で、日本語や方言について学びました。就職活動では、大学時代まで実家から通っていたこともあり、就職を機に上京して新しい生活を始めたいと考えていました。そのため、東京で働けることを軸に、福利厚生や生活面のサポートが整っている会社を探していました。</p>
-            <p class="p-interview-detail__text">京浜電設を知ったきっかけは就活イベントです。建設業界には男性中心のイメージがありましたが、女性社員の方と話す機会があり、年齢の近い女性も働いていることを知って印象が変わりました。最終面接の後に先輩社員から「大変なこともあるけど、やりがいもあるし、女性社員同士で助け合っている」と聞けたことも、入社を決めた理由のひとつです。</p>
+            <p class="p-interview-detail__text">京浜電設を知ったきっかけは就活イベントです。建設業界には男性中心のイメージがありましたが、女性社員の方と話す機会があり、年齢の近い女性も働いていることを知って印象が変わりました。<span>最終面接の後に先輩社員から「大変なこともあるけど、やりがいもあるし、女性社員同士で助け合っている」と聞けたことも、入社を決めた理由のひとつです。</span></p>
           </section>
 
           <figure class="p-interview-detail__image">
@@ -82,7 +82,7 @@
 
           <section class="p-interview-detail__section">
             <h2 class="p-interview-detail__question">どんなときに、やりがいを感じますか。</h2>
-            <p class="p-interview-detail__text">工事が終わって照明が実際に点灯した瞬間です。地道な作業の積み重ねが多いですが、最後に明かりがついたとき、「自分もこの工事に関わったんだ」と実感できます。施設の方から「明るくなって良くなった」と言っていただけると、自分たちの仕事が人びとの役に立っていると感じられます。</p>
+            <p class="p-interview-detail__text">工事が終わって照明が実際に点灯した瞬間です。地道な作業の積み重ねが多いですが、最後に明かりがついたとき、<span>「自分もこの工事に関わったんだ」と実感できます。施設の方から「明るくなって良くなった」と言っていただけると、自分たちの仕事が人びとの役に立っていると感じられます。</span></p>
           </section>
 
           <section class="p-interview-detail__section">

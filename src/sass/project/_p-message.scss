@@ -10,22 +10,25 @@
 }
 
 .p-message__hero {
-  background: radial-gradient(circle at 50% 50%, #fff 0%, #e1edf2 61%, #e1edf2 100%);
+  background: #fff;
   overflow: hidden;
   padding: rem(28) 0 rem(42);
 
   @include mq(md) {
-    padding: rem(118) 0 rem(84);
+    padding: rem(118) 0 0;
   }
 }
 
 .p-message__heading {
+  margin-left: rem(25);
+  width: rem(149);
   text-align: center;
 
   @include mq(md) {
     max-width: rem(1010);
     margin: 0 auto;
     text-align: left;
+    width: auto;
   }
 }
 
@@ -63,7 +66,7 @@
   position: absolute;
   top: 0;
   transform: translateX(-50%);
-  width: rem(150);
+  width: rem(149);
 
   @include mq(md) {
     left: 0;
@@ -73,71 +76,112 @@
 }
 
 .p-message__hero-body {
-  display: flex;
-  flex-direction: column;
-  gap: rem(20);
-  margin: rem(34) auto 0;
-  max-width: rem(1010);
+  background: radial-gradient(circle at 50% 50%, #fff 0%, #e1edf2 61%, #e1edf2 100%);
+  height: rem(363);
+  margin-top: rem(24);
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  overflow: hidden;
+  padding: 0;
+  position: relative;
 
   @include mq(md) {
+    max-width: none;
+    background: none;
     display: block;
-    margin-top: rem(66);
+    margin: rem(30) calc(50% - 50vw) 0;
     min-height: rem(420);
+    padding: 0 max(rem(20), calc((100vw - #{rem(1000)}) / 2));
     position: relative;
   }
 }
 
+.p-message__hero-body::before {
+  @include mq(md) {
+    background: radial-gradient(circle at 50% 50%, #fff 0%, #e1edf2 100%);
+    content: "";
+    height: rem(420);
+    left: 50%;
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+    width: 100vw;
+  }
+}
+
 .p-message__hero-text {
-  position: relative;
+  inset: 0;
+  position: absolute;
   z-index: 1;
 
   @include mq(md) {
-    left: 0;
+    inset: auto;
+    left: max(rem(20), calc((100vw - #{rem(1000)}) / 2));
     position: absolute;
-    top: rem(96);
+    top: rem(55);
     width: rem(600);
   }
 }
 
 .p-message__title {
-  font-size: rem(22);
+  font-size: rem(17);
   font-weight: 700;
-  letter-spacing: 0.02em;
-  line-height: 1.7;
+  left: rem(25);
+  letter-spacing: 0.04em;
+  line-height: calc(29 / 17);
+  position: absolute;
+  top: rem(16);
+  width: rem(265);
 
   @include mq(md) {
     font-size: rem(38);
+    left: auto;
+    letter-spacing: 0.02em;
     line-height: 1.63;
+    position: static;
+    top: auto;
+    width: auto;
   }
 }
 
 .p-message__profile {
-  font-size: rem(13);
+  font-size: rem(12);
   font-weight: 600;
   letter-spacing: 0.03em;
-  line-height: 1.6;
-  margin-top: rem(14);
+  line-height: calc(19 / 12);
+  margin-top: 0;
+  position: absolute;
+  right: rem(0);
+  top: rem(110);
+  width: rem(80);
 
   @include mq(md) {
     font-size: rem(22);
-    line-height: 1.45;
-    margin-top: rem(36);
+    line-height: calc(26 / 22);
+    margin-top: rem(168);
+    position: static;
+    width: auto;
   }
 }
 
 .p-message__main-image {
-  align-self: center;
-  aspect-ratio: 800 / 420;
-  margin-left: rem(-26);
-  margin-right: rem(-26);
+  aspect-ratio: 494 / 259;
+  bottom: 0;
+  left: rem(-150);
   overflow: visible;
+  position: absolute;
+  width: rem(494);
 
   @include mq(md) {
+    aspect-ratio: 800 / 420;
     bottom: 0;
+    left: auto;
     margin: 0;
     position: absolute;
-    right: rem(-206);
+    right: max(rem(20), calc((100vw - #{rem(1046)}) / 2));
     width: rem(800);
+    z-index: 0;
   }
 }
 
@@ -151,6 +195,7 @@
 
 .p-message__content {
   padding: rem(42) 0 rem(64);
+  padding-top: initial;
 
   @include mq(md) {
     padding: rem(96) 0 rem(112);
@@ -160,11 +205,19 @@
 .p-message__article {
   margin: 0 auto;
   max-width: rem(1010);
+  padding-left: rem(12);
+  padding-right: rem(12);
+
+  @include mq(md) {
+    padding-left: initial;
+    padding-right: initial;
+
+  }
 }
 
-.p-message__section + .p-message__section,
-.p-message__image + .p-message__section,
-.p-message__section + .p-message__image {
+.p-message__section+.p-message__section,
+.p-message__image+.p-message__section,
+.p-message__section+.p-message__image {
   margin-top: rem(38);
 
   @include mq(md) {
@@ -196,8 +249,8 @@
   }
 }
 
-.p-message__section-title + .p-message__text,
-.p-message__text + .p-message__text {
+.p-message__section-title+.p-message__text,
+.p-message__text+.p-message__text {
   margin-top: rem(16);
 
   @include mq(md) {
@@ -208,12 +261,16 @@
 .p-message__image {
   aspect-ratio: 320 / 200;
   overflow: hidden;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
 
   @include mq(md) {
     aspect-ratio: 640 / 400;
     max-width: rem(640);
     margin-left: auto;
     margin-right: auto;
+    width: initial;
   }
 }
 
@@ -243,6 +300,10 @@
   font-size: rem(24);
   font-weight: 700;
   line-height: 1.5;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 3px solid #FE4504;
 
   @include mq(md) {
     font-size: rem(35);
@@ -250,13 +311,15 @@
 }
 
 .p-message__philosophy-lead {
-  font-size: rem(13);
+  font-size: rem(17);
   font-weight: 600;
   line-height: 1.85;
   margin-top: rem(18);
+  text-align: left;
 
   @include mq(md) {
     font-size: rem(18);
+    text-align: center;
     line-height: 1.95;
     margin-top: rem(28);
   }
@@ -284,7 +347,7 @@
 
 .p-message__philosophy-image {
   margin: 0 auto;
-  max-width: rem(249);
+  max-width: rem(300);
   order: 2;
 
   @include mq(md) {
@@ -304,12 +367,11 @@
   font-size: rem(22);
   font-weight: 700;
   line-height: 1.45;
-  text-align: center;
-
+  text-align: left;
+  
   @include mq(md) {
     font-size: rem(30);
     line-height: 1;
-    text-align: left;
   }
 }
 
@@ -371,7 +433,7 @@
 
 .p-message__cta {
   align-items: center;
-  background: #476ed6;
+  background: #F77423;
   border-radius: rem(999);
   box-shadow: rem(-2) rem(3) rem(6) rgba(0, 0, 0, 0.4);
   color: #fff;
@@ -385,11 +447,11 @@
   padding: 0 rem(58) 0 rem(18);
   position: relative;
   width: 100%;
-
+  
+  margin-top: initial;
   @include mq(md) {
     font-size: rem(20);
     height: rem(67);
-    margin-top: rem(76);
   }
 }
 
@@ -425,5 +487,14 @@
 
   @include mq(md) {
     right: rem(36);
+  }
+}
+
+.p-message__cta-wrapper {
+  padding-top: rem(32);
+  padding-bottom: rem(64);
+  @include mq(md) {
+    padding-top: rem(80);
+    padding-bottom: rem(80);
   }
 }

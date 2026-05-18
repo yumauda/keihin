@@ -65,13 +65,13 @@
           </figure>
 
           <section class="p-message__section">
-            <h2 class="p-message__section-title">リスク分散をしながら時代の波に乗っていく</h2>
+            <h2 class="p-message__section-title">リスク分散をしながら時代の波に<br class="u-mobile">乗っていく</h2>
             <p class="p-message__text">現在、京浜電設では主に三つの分野で事業を行っています。建物の電気設備に関わる工事、官公庁の公共工事、そして工場の生産ラインなどの工事です。一つの分野だけに偏るのではなく、三つの分野を時代に応じてバランスよく手がけることにより、バブル崩壊やリーマンショック、東日本大震災、新型コロナのパンデミックなど、世界と日本の危機的な状況を乗り越え、今日まで元気に事業を継続してきました。変化の激しい時代にあって、こうしたリスク分散の体制もまた、私たちの強みであるといえます。</p>
             <p class="p-message__text">私たちが常に意識しなくてはならないのは、現場の先に必ずエンドユーザーがいるということです。工事を完成させた先には、その建物や設備を実際に使う人がいます。だからこそ、その人たちが利用している未来の姿まで深く思い描いて仕事をする必要があるのです。</p>
           </section>
 
           <section class="p-message__section">
-            <h2 class="p-message__section-title">人づくり、働く環境づくりはもっとも大切</h2>
+            <h2 class="p-message__section-title">人づくり、働く環境づくりは<br class="u-mobile">もっとも大切</h2>
             <p class="p-message__text">このような思いを実践していくために、一番大切なのは「人」であると考えています。京浜電設では、人材ではなく「人財」という言葉を使っています。入社した人が「京浜電設に入ってよかった」と思える会社にしたい。そうした考えに基づき、資格取得の支援や教育制度、働きやすい環境づくりなどに取り組んでいます。</p>
             <p class="p-message__text">私自身も、最初から経営者であったわけではありません。職人として現場に入り、職長、現場代理人、営業を経験してきました。現場で働く人たちの声を聞きながら仕事をしてきたからこそ、人を大切にする会社でありたいと思っています。</p>
             <p class="p-message__text">私たちが求めているのは特別な専門知識よりも、前向きに学び続けられる人、そして人を思いやれる人です。専門知識は会社に入ってからでも身につけることができます。大切なのは、これから学び成長していこうとする姿勢です。</p>
@@ -109,9 +109,15 @@
           <img src="../images/message/message-meeting.webp" alt="経営計画発表会" width="5184" height="3888">
           <figcaption>経営計画発表会</figcaption>
         </figure>
-        <a class="p-message__cta" href="#">社会課題解決に向けて</a>
       </div>
     </section>
+    <div class="p-message__cta-wrapper">
+      <div class="l-inner">
+
+        <a class="p-message__cta" href="#">社会課題解決に向けて</a>
+      </div>
+
+    </div>
   </main>
 
   <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'); ?>

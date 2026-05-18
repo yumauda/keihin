@@ -43,7 +43,7 @@
         <div class="p-interview-detail__hero-body">
           <div class="p-interview-detail__hero-text">
             <h1 class="p-interview-detail__title">未経験から電気工事の営業に挑戦。<br>相談しながら成長できる職場。</h1>
-            <p class="p-interview-detail__profile">営業部 在職1年目<br>A.Mさん</p>
+            <p class="p-interview-detail__profile">営業部<span class="p-interview-detail__profile-space"> </span><br class="u-mobile">在職1年目<br>A.Mさん</p>
           </div>
           <figure class="p-interview-detail__main-image">
             <img src="../../images/interview/masamori-main.webp" alt="営業部 在職1年目 A.Mさん" width="2250" height="1500">
@@ -64,7 +64,7 @@
           <section class="p-interview-detail__section">
             <h2 class="p-interview-detail__question">現在は、どのような仕事を担当しているのでしょうか。</h2>
             <p class="p-interview-detail__text">営業部で、民間のお客様を中心に電気工事の提案営業を担当しています。お客様先を訪問して工事の要望を伺い、社内で工事担当や見積担当の部署と相談しながら見積書を作成し、受注につなげていくのが主な仕事です。</p>
-            <p class="p-interview-detail__text">入社当初は電気工事の知識がほとんどなく、お客様の話を聞いても実際に何を求められているのか理解するのが難しく、苦戦するときもありました。でも、工事部の方々や営業部の上司、先輩に質問すると丁寧に教えてもらえたため、少しずつ知識を身につけていくことができました。</p>
+            <p class="p-interview-detail__text">入社当初は電気工事の知識がほとんどなく、お客様の話を聞いても実際に何を求められているのか理解するのが難しく、苦戦するときもありました。でも、<span>工事部の方々や営業部の上司、先輩に質問すると丁寧に教えてもらえたため、少しずつ知識を身につけていくことができました。</span></p>
           </section>
 
           <figure class="p-interview-detail__image">
@@ -89,7 +89,7 @@
           <section class="p-interview-detail__section">
             <h2 class="p-interview-detail__question">働きやすさや職場の雰囲気について教えてください。</h2>
             <p class="p-interview-detail__text">前職と比べても仕事とプライベートのバランスは取りやすいと感じています。休日はスーパーや八百屋さんを回って食材を見比べたり、料理を作ったりするのも楽しいです。</p>
-            <p class="p-interview-detail__text">京浜電設は、相談しやすく協力しながら仕事を進められる会社です。仕事の話だけでなく雑談もしやすいため、困ったことがあっても一人で抱え込まずに進められています。未経験でも自分から話を聞き、周囲とのコミュニケーションを大切にする方であれば、成長できる環境だと思います。</p>
+            <p class="p-interview-detail__text">京浜電設は、相談しやすく協力しながら仕事を進められる会社です。仕事の話だけでなく雑談もしやすいため、<span>困ったことがあっても一人で抱え込まずに進められています。未経験でも自分から話を聞き、周囲とのコミュニケーションを大切にする方であれば、成長できる環境だと思います。</span></p>
           </section>
 
           <figure class="p-interview-detail__image">
