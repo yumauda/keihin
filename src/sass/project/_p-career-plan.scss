@@ -138,6 +138,10 @@
   font-weight: 700;
   line-height: 1.45;
   text-align: center;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 3px solid #FE4504;
 
   @include mq(md) {
     font-size: rem(35);
@@ -207,6 +211,10 @@
   font-size: rem(20);
   font-weight: 700;
   line-height: 1.45;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 3px solid #FE4504;
 
   @include mq(md) {
     font-size: rem(30);

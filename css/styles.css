@@ -404,6 +404,10 @@ select::-ms-expand {
   font-weight: 700;
   line-height: 1.45;
   text-align: center;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 3px solid #FE4504;
 }
 @media screen and (min-width: 768px) {
   .p-career-plan__section-title {
@@ -477,6 +481,10 @@ select::-ms-expand {
   font-size: 1.25rem;
   font-weight: 700;
   line-height: 1.45;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 3px solid #FE4504;
 }
 @media screen and (min-width: 768px) {
   .p-career-plan__license-title {
@@ -1776,7 +1784,7 @@ select::-ms-expand {
   top: 0;
   left: 0;
   bottom: 0;
-  background: #000;
+  background: #476ED6;
   z-index: 9998;
   visibility: hidden;
   opacity: 0;
@@ -4512,6 +4520,7 @@ body {
 .p-recruit__tabs {
   display: grid;
   gap: 0.5rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   margin: 0 auto;
   max-width: 62.3125rem;
 }
