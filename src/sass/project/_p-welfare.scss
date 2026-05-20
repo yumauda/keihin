@@ -114,6 +114,7 @@
 
 .p-welfare__card {
   background: #f7f7f7;
+  min-width: 0;
   padding: rem(24);
   text-align: center;
 
@@ -155,6 +156,8 @@
   font-weight: 500;
   line-height: 1.7;
   margin-top: rem(18);
+  min-width: 0;
+  overflow-wrap: anywhere;
   text-align: left;
 
   @include mq(md) {
@@ -165,5 +168,6 @@
 }
 
 .p-welfare__card-text--dummy {
+  overflow-wrap: anywhere;
   word-break: break-all;
 }

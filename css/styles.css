@@ -4318,7 +4318,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-top: 2rem;
-  max-width: 33.75rem;
+  max-width: 35.625rem;
   text-align: center;
   text-shadow: 0 0 0.3125rem rgb(255, 255, 255);
 }
@@ -5839,7 +5839,7 @@ body {
 }
 
 .p-top-text__content {
-  max-width: 47.625rem;
+  max-width: 48.75rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -6302,6 +6302,7 @@ body {
 
 .p-welfare__card {
   background: #f7f7f7;
+  min-width: 0;
   padding: 1.5rem;
   text-align: center;
 }
@@ -6345,6 +6346,8 @@ body {
   font-weight: 500;
   line-height: 1.7;
   margin-top: 1.125rem;
+  min-width: 0;
+  overflow-wrap: anywhere;
   text-align: left;
 }
 @media screen and (min-width: 768px) {
@@ -6356,6 +6359,7 @@ body {
 }
 
 .p-welfare__card-text--dummy {
+  overflow-wrap: anywhere;
   word-break: break-all;
 }
 
