@@ -1979,10 +1979,12 @@ select::-ms-expand {
   color: #111;
   padding-top: 5.125rem;
   overflow-x: clip;
+  padding-bottom: 2.5rem;
 }
 @media screen and (min-width: 768px) {
   .p-faq {
-    padding-top: 8.625rem;
+    padding-top: 5.125rem;
+    padding-bottom: 4.5rem;
   }
 }
 

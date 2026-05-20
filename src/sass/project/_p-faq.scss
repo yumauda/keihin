@@ -5,9 +5,11 @@
   color: #111;
   padding-top: rem(82);
   overflow-x: clip;
+  padding-bottom: rem(40);
 
   @include mq(md) {
-    padding-top: rem(138);
+    padding-top: rem(82);
+    padding-bottom: rem(72);
   }
 }
 

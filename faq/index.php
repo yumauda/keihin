@@ -46,11 +46,11 @@
       <div class="l-inner">
         <h2 class="p-faq__category-title">採用・選考について</h2>
         <div class="p-faq__list">
-          <details class="p-faq__item" open>
+          <details class="p-faq__item">
             <summary class="p-faq__question"><span class="p-faq__label" aria-hidden="true">Q</span><span class="p-faq__question-text">求める人財を教えてください</span></summary>
             <div class="p-faq__answer"><span class="p-faq__label p-faq__label--answer" aria-hidden="true">A</span><p class="p-faq__answer-text">京浜電設の経営理念である『三方よし』に共感し、その理念を具現化出来る人（具現化しようと努力する人）<br><span class="p-faq__answer-text--small">※京浜電設における『三方よし』とは：「売り手である企業」と「買い手である顧客」だけでなく、広く「社会に貢献する」という三方がよしとなる考え方</span></p></div>
           </details>
-          <details class="p-faq__item" open>
+          <details class="p-faq__item">
             <summary class="p-faq__question"><span class="p-faq__label" aria-hidden="true">Q</span><span class="p-faq__question-text">選考フローを教えてください</span></summary>
             <div class="p-faq__answer p-faq__answer--flow">
               <span class="p-faq__label p-faq__label--answer" aria-hidden="true">A</span>
@@ -127,16 +127,7 @@
       </div>
     </section>
 
-    <section class="p-work-recruit">
-      <div class="l-inner">
-        <div class="p-work-electric__cta-wrap">
-          <a class="p-work-electric__cta" href="/recruit/">
-            <span class="p-work-electric__cta-text">新卒・キャリア採用募集要項はこちら</span>
-            <span class="p-work-electric__cta-icon" aria-hidden="true"></span>
-          </a>
-        </div>
-      </div>
-    </section>
+    
   </main>
 
   <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'); ?>
