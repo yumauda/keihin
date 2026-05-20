@@ -98,7 +98,7 @@
           </figure>
         </article>
 
-        <a class="p-interview-detail__cta" href="/recruit/">
+        <a class="p-interview-detail__cta" href="/position/">
           <p class="p-interview-detail__cta-text">新卒・キャリア採用募集要項はこちら</p>
           <span class="p-interview-detail__cta-icon" aria-hidden="true">
             <svg id="グループ_11" data-name="グループ 11" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40.697 40.697">

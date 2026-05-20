@@ -63,7 +63,7 @@
                             <li class="p-header__nav-item"><a class="p-header__nav-link" href="/career/">キャリアアップストーリー</a></li>
                             <li class="p-header__nav-item"><a class="p-header__nav-link" href="/welfare/">福利厚生</a></li>
                             <li class="p-header__nav-item"><a class="p-header__nav-link" href="/faq/">よくある質問</a></li>
-                            <li class="p-header__nav-item"><a class="p-header__nav-link" href="/recruit/">募集要項</a></li>
+                            <li class="p-header__nav-item"><a class="p-header__nav-link" href="/position/">募集要項</a></li>
                         </ul>
                     </nav>
 
@@ -103,7 +103,7 @@
                                 <a href="/faq/" class="p-drawer-content__link">よくある質問</a>
                             </li>
                             <li class="p-drawer-content__list">
-                                <a href="/recruit/" class="p-drawer-content__link">募集要項</a>
+                                <a href="/position/" class="p-drawer-content__link">募集要項</a>
                             </li>
                             <li class="p-drawer-content__list">
                                 <a href="#" class="p-drawer-content__link">エントリーフォーム</a>

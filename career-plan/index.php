@@ -146,7 +146,7 @@
     <section class="p-work-recruit">
       <div class="l-inner">
         <div class="p-work-electric__cta-wrap">
-          <a class="p-work-electric__cta" href="/recruit/">
+          <a class="p-work-electric__cta" href="/position/">
             <span class="p-work-electric__cta-text">新卒・キャリア採用募集要項はこちら</span>
             <span class="p-work-electric__cta-icon" aria-hidden="true">
               <svg id="グループ_11" data-name="グループ 11" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40.697 40.697">

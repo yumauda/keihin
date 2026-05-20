@@ -122,9 +122,18 @@
     <section class="p-work-recruit">
       <div class="l-inner">
         <div class="p-work-electric__cta-wrap">
-          <a class="p-work-electric__cta" href="/recruit/">
+          <a class="p-work-electric__cta" href="/position/">
             <span class="p-work-electric__cta-text">新卒・キャリア採用募集要項はこちら</span>
-            <span class="p-work-electric__cta-icon" aria-hidden="true"></span>
+            <span class="p-work-electric__cta-icon" aria-hidden="true">
+              <svg id="グループ_11" data-name="グループ 11" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40.697 40.697">
+                <circle id="楕円形_1" data-name="楕円形 1" cx="20.348" cy="20.348" r="20.348" fill="#fff" />
+                <g id="グループ_10" data-name="グループ 10" transform="translate(9.857 14.25)">
+                  <path id="パス_26" data-name="パス 26" d="M748.647,2688.354h16.2" transform="translate(-748.647 -2681.761)" fill="none" stroke="#fe4504" stroke-width="1.5" />
+                  <path id="パス_27" data-name="パス 27" d="M755.338,2684.189c.647.616,6.745,7.047,6.745,7.047l-6.745,5.757" transform="translate(-744.748 -2684.189)" fill="none" stroke="#fe4504" stroke-width="1.5" />
+                </g>
+              </svg>
+
+            </span>
           </a>
         </div>
       </div>

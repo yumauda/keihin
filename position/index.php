@@ -14,7 +14,7 @@
   <meta property="og:title" content="募集要項 | 京浜電設株式会社 採用サイト" />
   <meta property="og:description" content="京浜電設株式会社の募集要項を掲載しています。" />
   <meta property="og:type" content="article" />
-  <meta property="og:url" content="/recruit/" />
+  <meta property="og:url" content="/position/" />
   <meta property="og:image" content="/images/common/header_logo.png" />
   <link rel="icon" type="image/png" href="/images/common/header_logo.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/images/common/header_logo.png">
@@ -98,6 +98,10 @@
                 <dd>本社（横浜市神奈川区）<br>最寄り駅：東急東横線 菊名駅・妙蓮寺駅より徒歩15分、JR横浜線 大口駅より徒歩16分<br>原則、転勤無し。</dd>
               </div>
             </dl>
+            <a class="p-recruit__entry-button" href="#">
+              <span class="p-recruit__entry-text">エントリーはこちら</span>
+              <span class="p-recruit__entry-icon" aria-hidden="true"></span>
+            </a>
           </section>
 
           <section class="p-recruit__panel p-recruit__panel--construction js-recruit-panel" id="recruit-panel-construction" role="tabpanel" aria-labelledby="recruit-tab-construction" data-recruit-panel="construction" hidden>
@@ -122,6 +126,10 @@
               <div class="p-recruit__row p-recruit__row--benefit"><dt>福利厚生</dt><dd>通勤手当、健康保険、厚生年金保険、雇用保険、労災保険、退職金制度、社宅制度</dd></div>
               <div class="p-recruit__row p-recruit__row--place"><dt>勤務地</dt><dd>本社（横浜市神奈川区）<br>最寄り駅：東急東横線 菊名駅・妙蓮寺駅より徒歩15分、JR横浜線 大口駅より徒歩16分<br>原則、転勤無し。</dd></div>
             </dl>
+            <a class="p-recruit__entry-button" href="#">
+              <span class="p-recruit__entry-text">エントリーはこちら</span>
+              <span class="p-recruit__entry-icon" aria-hidden="true"></span>
+            </a>
           </section>
 
           <section class="p-recruit__panel p-recruit__panel--sales js-recruit-panel" id="recruit-panel-sales" role="tabpanel" aria-labelledby="recruit-tab-sales" data-recruit-panel="sales" hidden>
@@ -145,6 +153,10 @@
               <div class="p-recruit__row p-recruit__row--benefit"><dt>福利厚生</dt><dd>通勤手当、健康保険、厚生年金保険、雇用保険、労災保険、退職金制度</dd></div>
               <div class="p-recruit__row p-recruit__row--place"><dt>勤務地</dt><dd>本社（横浜市神奈川区）<br>最寄り駅：東急東横線 菊名駅・妙蓮寺駅より徒歩15分、JR横浜線 大口駅より徒歩16分<br>原則、転勤無し。</dd></div>
             </dl>
+            <a class="p-recruit__entry-button" href="#">
+              <span class="p-recruit__entry-text">エントリーはこちら</span>
+              <span class="p-recruit__entry-icon" aria-hidden="true"></span>
+            </a>
           </section>
 
           <section class="p-recruit__panel p-recruit__panel--admin js-recruit-panel" id="recruit-panel-admin" role="tabpanel" aria-labelledby="recruit-tab-admin" data-recruit-panel="admin" hidden>
@@ -159,6 +171,10 @@
               <div class="p-recruit__row p-recruit__row--benefit"><dt>福利厚生</dt><dd>通勤手当、健康保険、厚生年金保険、雇用保険、労災保険、退職金制度、社宅制度</dd></div>
               <div class="p-recruit__row p-recruit__row--place"><dt>勤務地</dt><dd>本社（横浜市神奈川区）<br>原則、転勤無し。</dd></div>
             </dl>
+            <a class="p-recruit__entry-button" href="#">
+              <span class="p-recruit__entry-text">エントリーはこちら</span>
+              <span class="p-recruit__entry-icon" aria-hidden="true"></span>
+            </a>
           </section>
         </div>
       </div>

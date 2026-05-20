@@ -493,7 +493,7 @@
           </div>
           <div class="p-top-welfare__bottom">
             <div class="p-top-welfare__cta-wrap">
-              <a class="p-top-welfare__cta" href="/recruit/">
+              <a class="p-top-welfare__cta" href="/position/">
                 <span class="p-top-welfare__cta-text">新卒・キャリア採用募集要項はこちら</span>
                 <span class="p-top-welfare__cta-icon" aria-hidden="true"></span>
               </a>
