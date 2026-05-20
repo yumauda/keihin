@@ -2418,7 +2418,7 @@ select::-ms-expand {
 .p-footer__top {
   align-items: center;
   display: flex;
-  height: 3.625rem;
+  height: 2.375rem;
   justify-content: center;
   opacity: 0;
   pointer-events: none;
@@ -2428,7 +2428,7 @@ select::-ms-expand {
   bottom: 1.5rem;
   transition: opacity 0.3s ease, visibility 0.3s ease;
   visibility: hidden;
-  width: 3.625rem;
+  width: 2.375rem;
   z-index: 20;
 }
 @media screen and (min-width: 768px) {
@@ -3249,7 +3249,6 @@ body {
   .p-interview__sub-title {
     text-align: initial;
     font-size: 1.5625rem;
-    padding-top: 1.125rem;
   }
 }
 
@@ -3559,6 +3558,7 @@ body {
 .p-message {
   background: #fff;
   padding-top: 5.125rem;
+  overflow-x: clip;
 }
 @media screen and (min-width: 768px) {
   .p-message {
@@ -3573,7 +3573,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .p-message__hero {
-    padding: 7.375rem 0 0;
+    padding: 3.5rem 0 0;
   }
 }
 
@@ -3596,10 +3596,14 @@ body {
   font-size: 2.625rem;
   font-weight: 400;
   line-height: 1;
+  border-bottom: 3px solid #fe4504;
+  width: fit-content;
 }
 @media screen and (min-width: 768px) {
   .p-message__en {
     font-size: 6.25rem;
+    text-align: center;
+    width: 18.4375rem;
   }
 }
 
@@ -3608,32 +3612,17 @@ body {
   font-size: 0.75rem;
   font-weight: 500;
   line-height: 1.5;
-  margin-top: 0.5rem;
-  padding-top: 0.5rem;
   position: relative;
+  margin-top: 0.25rem;
 }
 @media screen and (min-width: 768px) {
   .p-message__sub {
-    font-size: 1.5625rem;
-    margin-top: 0.875rem;
-    padding-top: 1.125rem;
-  }
-}
-
-.p-message__sub::before {
-  border-top: 0.1875rem solid #fe4504;
-  content: "";
-  left: 50%;
-  position: absolute;
-  top: 0;
-  transform: translateX(-50%);
-  width: 9.3125rem;
-}
-@media screen and (min-width: 768px) {
-  .p-message__sub::before {
-    left: 0;
-    transform: none;
-    width: 20rem;
+    display: block;
+    font-size: 1.4375rem;
+    line-height: 1.3043478261;
+    margin-top: 1.0625rem;
+    text-align: center;
+    width: 18.4375rem;
   }
 }
 
@@ -3892,15 +3881,19 @@ body {
   font-size: 1.0625rem;
   font-weight: 600;
   line-height: 1.85;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 1.125rem;
   text-align: left;
 }
 @media screen and (min-width: 768px) {
   .p-message__philosophy-lead {
-    font-size: 1.125rem;
-    text-align: center;
-    line-height: 1.95;
+    font-size: 1.375rem;
+    font-weight: 500;
+    line-height: 1.75;
     margin-top: 1.75rem;
+    max-width: 56.25rem;
+    text-align: left;
   }
 }
 
@@ -3998,21 +3991,19 @@ body {
   width: 100%;
 }
 
-.p-message__meeting-image figcaption {
-  background: rgba(0, 0, 0, 0.55);
-  bottom: 0;
-  color: #fff;
-  font-size: 0.75rem;
+.p-message__meeting-caption {
   font-weight: 500;
-  left: 0;
-  line-height: 1;
-  padding: 0.5625rem 0.75rem;
-  position: absolute;
+  max-width: 40rem;
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+  color: #000;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (min-width: 768px) {
-  .p-message__meeting-image figcaption {
-    font-size: 0.9375rem;
-    padding: 0.75rem 1.125rem;
+  .p-message__meeting-caption {
+    font-size: 0.875rem;
+    margin-top: 0.625rem;
   }
 }
 
@@ -4026,55 +4017,20 @@ body {
   font-size: 0.875rem;
   font-weight: 500;
   height: 3.5rem;
+  align-items: center;
   justify-content: center;
   margin: 3rem auto 0;
   max-width: 29.3125rem;
-  padding: 0 3.625rem 0 1.125rem;
   position: relative;
   width: 100%;
+  gap: 1rem;
   margin-top: initial;
 }
 @media screen and (min-width: 768px) {
   .p-message__cta {
     font-size: 1.25rem;
     height: 4.1875rem;
-  }
-}
-
-.p-message__cta::after {
-  background: #fff;
-  border-radius: 50%;
-  content: "";
-  height: 2rem;
-  position: absolute;
-  right: 0.75rem;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 2rem;
-}
-@media screen and (min-width: 768px) {
-  .p-message__cta::after {
-    height: 2.5625rem;
-    right: 1.25rem;
-    width: 2.5625rem;
-  }
-}
-
-.p-message__cta::before {
-  border-right: 0.125rem solid #1571c8;
-  border-top: 0.125rem solid #1571c8;
-  content: "";
-  height: 0.5625rem;
-  position: absolute;
-  right: 1.5625rem;
-  top: 50%;
-  transform: translateY(-50%) rotate(45deg);
-  width: 0.5625rem;
-  z-index: 1;
-}
-@media screen and (min-width: 768px) {
-  .p-message__cta::before {
-    right: 2.25rem;
+    gap: 2rem;
   }
 }
 
@@ -4086,6 +4042,29 @@ body {
   .p-message__cta-wrapper {
     padding-top: 5rem;
     padding-bottom: 5rem;
+  }
+}
+
+.p-message__cta-text {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .p-message__cta-text {
+    font-size: 1.25rem;
+  }
+}
+
+.p-message__cta-icon {
+  width: 1.375rem;
+  height: 1.375rem;
+}
+@media screen and (min-width: 768px) {
+  .p-message__cta-icon {
+    width: 2.5rem;
+    height: 2.5rem;
   }
 }
 
@@ -4444,7 +4423,7 @@ body {
 }
 
 .p-recruit__hero {
-  padding: 3.125rem 0 2.375rem;
+  padding: 1.5rem 0 2.375rem;
 }
 @media screen and (min-width: 768px) {
   .p-recruit__hero {
@@ -4470,6 +4449,8 @@ body {
   font-weight: 400;
   letter-spacing: 0;
   line-height: 1;
+  border-bottom: 3px solid #fe4504;
+  width: fit-content;
 }
 @media screen and (min-width: 768px) {
   .p-recruit__en {
@@ -4494,23 +4475,6 @@ body {
   }
 }
 
-.p-recruit__sub::before {
-  border-top: 0.1875rem solid #fe4504;
-  content: "";
-  left: 50%;
-  position: absolute;
-  top: 0;
-  transform: translateX(-50%);
-  width: 18rem;
-}
-@media screen and (min-width: 768px) {
-  .p-recruit__sub::before {
-    left: 0;
-    transform: none;
-    width: 18rem;
-  }
-}
-
 .p-recruit__lead {
   font-size: 0.9375rem;
   font-weight: 600;
@@ -4532,6 +4496,21 @@ body {
 @media screen and (min-width: 768px) {
   .p-recruit__content {
     padding: 0rem 0 6.5rem;
+  }
+}
+
+.p-recruit__tab-lead {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  line-height: 1.9;
+  margin: 0 auto 1.75rem;
+  max-width: 50rem;
+}
+@media screen and (min-width: 768px) {
+  .p-recruit__tab-lead {
+    font-size: 1.25rem;
+    line-height: 1.75;
+    margin-bottom: 3.25rem;
   }
 }
 
@@ -4604,16 +4583,16 @@ body {
 
 .p-recruit__panel-title {
   display: inline-block;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 700;
   line-height: 1.35;
-  padding-bottom: 0.75rem;
+  padding-bottom: 0.375rem;
   position: relative;
 }
 @media screen and (min-width: 768px) {
   .p-recruit__panel-title {
     font-size: 1.875rem;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
   }
 }
 

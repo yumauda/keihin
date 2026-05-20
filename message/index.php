@@ -107,14 +107,25 @@
       <div class="l-inner">
         <figure class="p-message__meeting-image">
           <img src="../images/message/message-meeting.webp" alt="経営計画発表会" width="5184" height="3888">
-          <figcaption>経営計画発表会</figcaption>
         </figure>
+        <figcaption class="p-message__meeting-caption">経営計画発表会</figcaption>
       </div>
     </section>
     <div class="p-message__cta-wrapper">
       <div class="l-inner">
 
-        <a class="p-message__cta" href="#">社会課題解決に向けて</a>
+        <a class="p-message__cta" href="#">
+          <p class="p-message__cta-text">社会課題解決に向けて</p>
+          <span class="p-message__cta-icon">
+            <svg id="グループ_11" data-name="グループ 11" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40.697 40.697">
+              <circle id="楕円形_1" data-name="楕円形 1" cx="20.348" cy="20.348" r="20.348" fill="#fff" />
+              <g id="グループ_10" data-name="グループ 10" transform="translate(9.857 14.25)">
+                <path id="パス_26" data-name="パス 26" d="M748.647,2688.354h16.2" transform="translate(-748.647 -2681.761)" fill="none" stroke="#f77423" stroke-width="1.5" />
+                <path id="パス_27" data-name="パス 27" d="M755.338,2684.189c.647.616,6.745,7.047,6.745,7.047l-6.745,5.757" transform="translate(-744.748 -2684.189)" fill="none" stroke="#f77423" stroke-width="1.5" />
+              </g>
+            </svg>
+          </span>
+        </a>
       </div>
 
     </div>

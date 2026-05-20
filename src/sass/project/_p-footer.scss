@@ -146,7 +146,7 @@
 .p-footer__top {
   align-items: center;
   display: flex;
-  height: rem(58);
+  height: rem(38);
   justify-content: center;
   opacity: 0;
   pointer-events: none;
@@ -156,7 +156,7 @@
   bottom: rem(24);
   transition: opacity 0.3s ease, visibility 0.3s ease;
   visibility: hidden;
-  width: rem(58);
+  width: rem(38);
   z-index: 20;
 
   @include mq(md) {

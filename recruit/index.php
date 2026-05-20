@@ -45,6 +45,7 @@
 
     <section class="p-recruit__content">
       <div class="l-inner">
+        <p class="p-recruit__tab-lead">京浜電設では、現在以下の職種を募集しております。</p>
         <div class="p-recruit__tabs js-recruit-tabs" role="tablist" aria-label="募集区分">
           <button class="p-recruit__tab is-active js-recruit-tab" id="recruit-tab-new-graduate" type="button" role="tab" aria-selected="true" aria-controls="recruit-panel-new-graduate" data-recruit-tab="new-graduate">新卒採用</button>
           <button class="p-recruit__tab js-recruit-tab" id="recruit-tab-construction" type="button" role="tab" aria-selected="false" aria-controls="recruit-panel-construction" data-recruit-tab="construction">キャリア採用<span>（工事事業部）</span></button>
