@@ -2801,7 +2801,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .p-interview-detail__hero {
-    padding: 7.375rem 0 0;
+    padding: 3.5rem 0 0;
   }
 }
 
@@ -2882,7 +2882,7 @@ body {
   .p-interview-detail__hero-body {
     background: none;
     display: block;
-    margin: 1.875rem calc(50% - 50vw) 0;
+    margin: 3rem calc(50% - 50vw) 0;
     max-width: none;
     min-height: 26.25rem;
     padding: 0 max(1.25rem, (100vw - 62.5rem) / 2);
@@ -3032,7 +3032,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .p-interview-detail__content {
-    padding: 6rem 0 7.375rem;
+    padding: 6rem 0 5.75rem;
   }
 }
 
@@ -3137,7 +3137,7 @@ body {
   .p-interview-detail__cta {
     font-size: 1.25rem;
     height: 4.1875rem;
-    margin-top: 5.75rem;
+    margin-top: 4.5rem;
     gap: 1.5rem;
   }
 }

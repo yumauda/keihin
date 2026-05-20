@@ -15,7 +15,7 @@
   padding-top: rem(24);
 
   @include mq(md) {
-    padding: rem(118) 0 0;
+    padding: rem(56) 0 0;
   }
 }
 
@@ -91,7 +91,7 @@
   @include mq(md) {
     background: none;
     display: block;
-    margin: rem(30) calc(50% - 50vw) 0;
+    margin: rem(48) calc(50% - 50vw) 0;
     max-width: none;
     min-height: rem(420);
     padding: 0 max(rem(20), calc((100vw - #{rem(1000)}) / 2));
@@ -234,7 +234,7 @@
   padding: rem(24) 0 rem(70);
 
   @include mq(md) {
-    padding: rem(96) 0 rem(118);
+    padding: rem(96) 0 rem(92);
   }
 }
 
@@ -331,7 +331,7 @@
   @include mq(md) {
     font-size: rem(20);
     height: rem(67);
-    margin-top: rem(92);
+    margin-top: rem(72);
     gap: rem(24);
   }
 }
