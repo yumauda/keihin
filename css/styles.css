@@ -266,7 +266,7 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .p-career-plan {
-    padding-top: 8.625rem;
+    padding-top: 5.125rem;
   }
 }
 
@@ -374,6 +374,20 @@ select::-ms-expand {
   }
 }
 
+.p-career-plan__intro .p-career-plan__text {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50rem;
+}
+@media screen and (min-width: 768px) {
+  .p-career-plan__intro .p-career-plan__text {
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1.75;
+  }
+}
+
 .p-career-plan__text p + p {
   margin-top: 0.75rem;
 }
@@ -438,6 +452,10 @@ select::-ms-expand {
   z-index: 1;
 }
 
+.p-career-plan__diagram + .p-career-plan__text--wide {
+  max-width: 50rem;
+}
+
 .p-career-plan__diagram-logo {
   display: none;
 }
@@ -497,24 +515,38 @@ select::-ms-expand {
 }
 
 .p-career-plan__license-list {
-  display: flex;
+  display: grid;
   flex-wrap: wrap;
   gap: 0.625rem 1.25rem;
   justify-content: center;
   margin-top: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-career-plan__license-list {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.5rem;
+    margin-left: auto;
+    justify-content: initial;
+    margin-right: auto;
+    margin-top: 1.75rem;
+    max-width: 42.375rem;
+    row-gap: 0;
+  }
 }
 
 .p-career-plan__license-list li {
   font-size: 0.875rem;
   font-weight: 700;
   line-height: 1.5;
-  padding-left: 1.125rem;
+  padding-left: 1rem;
   position: relative;
+  text-align: left;
 }
 @media screen and (min-width: 768px) {
   .p-career-plan__license-list li {
-    font-size: 1.375rem;
-    padding-left: 1.5rem;
+    font-size: 1.25rem;
+    line-height: 2.1;
+    padding-left: 1.25rem;
   }
 }
 
@@ -525,13 +557,13 @@ select::-ms-expand {
   height: 0.5625rem;
   left: 0;
   position: absolute;
-  top: 0.55em;
+  top: 1rem;
   width: 0.5625rem;
 }
 @media screen and (min-width: 768px) {
   .p-career-plan__license-list li::before {
     height: 0.75rem;
-    top: 0.48em;
+    top: 1rem;
     width: 0.75rem;
   }
 }
@@ -634,6 +666,18 @@ select::-ms-expand {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .p-career-plan__training .p-career-plan__text--wide {
+    max-width: 63.4375rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-career-plan__training .p-career-plan__text p + p {
+    margin-top: 0;
+  }
+}
+
 .p-career-plan__training-item {
   background: #fff;
   border: 0.125rem solid #4688e3;
@@ -642,7 +686,6 @@ select::-ms-expand {
   display: flex;
   flex-direction: column;
   min-height: 24.375rem;
-  overflow: hidden;
   position: relative;
 }
 @media screen and (min-width: 768px) {
@@ -653,14 +696,17 @@ select::-ms-expand {
 
 @media screen and (min-width: 768px) {
   .p-career-plan__training-item + .p-career-plan__training-item::before {
-    border-bottom: 1.125rem solid transparent;
-    border-left: 1.125rem solid #fcb98b;
-    border-top: 1.125rem solid transparent;
+    background: url(../images/career-plan/training-item-arrow.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     content: "";
-    left: -3.0625rem;
+    left: -3.375rem;
     position: absolute;
-    top: 11.875rem;
+    top: 11.9375rem;
     z-index: 2;
+    width: 1.9375rem;
+    height: 2.25rem;
   }
 }
 
@@ -740,7 +786,7 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .p-career {
-    padding-top: 8.625rem;
+    padding-top: 5.125rem;
   }
 }
 
@@ -774,10 +820,14 @@ select::-ms-expand {
   font-weight: 400;
   letter-spacing: 0;
   line-height: 1;
+  border-bottom: 3px solid #fe4504;
+  width: fit-content;
 }
 @media screen and (min-width: 768px) {
   .p-career__en {
     font-size: 6.25rem;
+    text-align: center;
+    width: 34.8125rem;
   }
 }
 
@@ -792,26 +842,13 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .p-career__sub {
+    display: block;
     font-size: 1.4375rem;
-    margin-top: 0.75rem;
-    padding-top: 1.125rem;
-  }
-}
-
-.p-career__sub::before {
-  border-top: 0.1875rem solid #fe4504;
-  content: "";
-  left: 50%;
-  position: absolute;
-  top: 0;
-  transform: translateX(-50%);
-  width: 13.75rem;
-}
-@media screen and (min-width: 768px) {
-  .p-career__sub::before {
-    left: 0;
-    transform: none;
-    width: 19.1875rem;
+    line-height: 1.0434782609;
+    margin-top: 0.625rem;
+    padding-top: 0;
+    text-align: center;
+    width: 34.8125rem;
   }
 }
 
@@ -909,7 +946,7 @@ select::-ms-expand {
   .p-career__hero-image {
     justify-self: end;
     max-width: 50rem;
-    width: 38.75rem;
+    width: 50rem;
   }
 }
 
@@ -6275,6 +6312,10 @@ body {
   font-weight: 700;
   line-height: 1.45;
   margin-top: 0.75rem;
+  border-bottom: 3px solid #fe4504;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (min-width: 768px) {
   .p-work-electric__title {
@@ -6528,8 +6569,6 @@ body {
 }
 
 .p-work-electric__cta-icon {
-  background: #fff;
-  border-radius: 50%;
   display: block;
   flex-shrink: 0;
   height: 2.375rem;
@@ -6543,29 +6582,6 @@ body {
     margin-left: 1.5rem;
     width: 2.5625rem;
   }
-}
-
-.p-work-electric__cta-icon::before,
-.p-work-electric__cta-icon::after {
-  content: "";
-  left: 50%;
-  position: absolute;
-  top: 50%;
-}
-
-.p-work-electric__cta-icon::before {
-  background: #f77423;
-  height: 0.09375rem;
-  transform: translate(-50%, -50%);
-  width: 1.0625rem;
-}
-
-.p-work-electric__cta-icon::after {
-  border-right: 0.09375rem solid #f77423;
-  border-top: 0.09375rem solid #f77423;
-  height: 0.625rem;
-  transform: translate(0.0625rem, -50%) rotate(45deg);
-  width: 0.625rem;
 }
 
 .p-work-electric__img {
@@ -6641,6 +6657,8 @@ body {
   font-weight: 400;
   letter-spacing: 0;
   line-height: 1;
+  border-bottom: 3px solid #fe4504;
+  width: fit-content;
 }
 @media screen and (min-width: 768px) {
   .p-work-discover__en {
@@ -6653,32 +6671,15 @@ body {
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.4;
-  margin-top: 0.5rem;
-  padding-top: 0.5625rem;
   position: relative;
+  margin-top: 0.25rem;
 }
 @media screen and (min-width: 768px) {
   .p-work-discover__sub {
     font-size: 1.4375rem;
-    margin-top: 0.75rem;
-    padding-top: 1.125rem;
     text-align: center;
     width: 19.1875rem;
-  }
-}
-
-.p-work-discover__sub::before {
-  border-top: 0.1875rem solid #fe4504;
-  content: "";
-  left: 50%;
-  position: absolute;
-  top: 0;
-  transform: translateX(-50%);
-  width: 9.375rem;
-}
-@media screen and (min-width: 768px) {
-  .p-work-discover__sub::before {
-    width: 19.1875rem;
+    margin-top: 0.5rem;
   }
 }
 
@@ -6711,7 +6712,7 @@ body {
   .p-work-discover__cards {
     gap: 1.375rem;
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    margin-top: 3.5rem;
+    margin-top: 4.5rem;
   }
 }
 

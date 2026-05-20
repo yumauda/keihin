@@ -31,6 +31,10 @@
   font-weight: 700;
   line-height: 1.45;
   margin-top: rem(12);
+  border-bottom: 3px solid #fe4504;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 
   @include mq(md) {
     font-size: rem(35);
@@ -272,8 +276,6 @@
 }
 
 .p-work-electric__cta-icon {
-  background: #fff;
-  border-radius: 50%;
   display: block;
   flex-shrink: 0;
   height: rem(38);
@@ -286,29 +288,6 @@
     margin-left: rem(24);
     width: rem(41);
   }
-}
-
-.p-work-electric__cta-icon::before,
-.p-work-electric__cta-icon::after {
-  content: "";
-  left: 50%;
-  position: absolute;
-  top: 50%;
-}
-
-.p-work-electric__cta-icon::before {
-  background: #f77423;
-  height: rem(1.5);
-  transform: translate(-50%, -50%);
-  width: rem(17);
-}
-
-.p-work-electric__cta-icon::after {
-  border-right: rem(1.5) solid #f77423;
-  border-top: rem(1.5) solid #f77423;
-  height: rem(10);
-  transform: translate(rem(1), -50%) rotate(45deg);
-  width: rem(10);
 }
 
 .p-work-electric__img {

@@ -39,6 +39,8 @@
   font-weight: 400;
   letter-spacing: 0;
   line-height: 1;
+  border-bottom: 3px solid #fe4504;
+  width: fit-content;
 
   @include mq(md) {
     font-size: rem(100);
@@ -50,30 +52,14 @@
   font-size: rem(16);
   font-weight: 500;
   line-height: 1.4;
-  margin-top: rem(8);
-  padding-top: rem(9);
   position: relative;
+  margin-top: rem(4);
 
   @include mq(md) {
     font-size: rem(23);
-    margin-top: rem(12);
-    padding-top: rem(18);
     text-align: center;
     width: rem(307);
-  }
-}
-
-.p-work-discover__sub::before {
-  border-top: rem(3) solid #fe4504;
-  content: "";
-  left: 50%;
-  position: absolute;
-  top: 0;
-  transform: translateX(-50%);
-  width: rem(150);
-
-  @include mq(md) {
-    width: rem(307);
+    margin-top: rem(8);
   }
 }
 
@@ -104,7 +90,7 @@
   @include mq(md) {
     gap: rem(22);
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    margin-top: rem(56);
+    margin-top: rem(72);
   }
 }
 
