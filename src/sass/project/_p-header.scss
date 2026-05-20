@@ -2,8 +2,7 @@
 
 .p-header {
   background-color: #fff;
-  box-shadow: 0 rem(1) rem(8) rgba(0, 0, 0, 0.08);
-  height: rem(50);
+  height: rem(64);
   left: 0;
   right: 0;
   position: fixed;
@@ -51,7 +50,7 @@
 
 .p-header__logo {
   display: block;
-  width: rem(180);
+  width: rem(147);
 
   @include mq(md) {
     width: rem(334);
@@ -152,7 +151,6 @@
   align-items: center;
   display: flex;
   flex-shrink: 0;
-  margin-left: rem(18);
   margin-right: rem(13);
   position: relative;
   z-index: 10000;
@@ -281,16 +279,13 @@ body {
   display: flex;
   height: rem(22);
   justify-content: center;
-  margin-left: rem(12);
-  min-width: rem(108);
+  width: rem(101);
   padding-left: rem(18);
   padding-right: rem(18);
 
   @include mq(md) {
     height: rem(44);
-    min-width: rem(138);
-    padding-left: rem(30);
-    padding-right: rem(30);
+    width: rem(138);
   }
 }
 

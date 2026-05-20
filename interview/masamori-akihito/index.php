@@ -30,7 +30,8 @@
 </head>
 
 <body>
-  <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'); ?>
+  <!-- <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'); ?> -->
+  <?php include_once(__DIR__ . '/includes/header.php'); ?>
 
   <main class="p-interview-detail p-interview-detail--image-left">
     <section class="p-interview-detail__hero">
@@ -97,7 +98,19 @@
           </figure>
         </article>
 
-        <a class="p-interview-detail__cta" href="/recruit/">新卒・キャリア採用募集要項はこちら</a>
+        <a class="p-interview-detail__cta" href="/recruit/">
+          <p class="p-interview-detail__cta-text">新卒・キャリア採用募集要項はこちら</p>
+          <span class="p-interview-detail__cta-icon" aria-hidden="true">
+            <svg id="グループ_11" data-name="グループ 11" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40.697 40.697">
+              <circle id="楕円形_1" data-name="楕円形 1" cx="20.348" cy="20.348" r="20.348" fill="#fff" />
+              <g id="グループ_10" data-name="グループ 10" transform="translate(9.857 14.25)">
+                <path id="パス_26" data-name="パス 26" d="M748.647,2688.354h16.2" transform="translate(-748.647 -2681.761)" fill="none" stroke="#f77423" stroke-width="1.5" />
+                <path id="パス_27" data-name="パス 27" d="M755.338,2684.189c.647.616,6.745,7.047,6.745,7.047l-6.745,5.757" transform="translate(-744.748 -2684.189)" fill="none" stroke="#f77423" stroke-width="1.5" />
+              </g>
+            </svg>
+
+          </span>
+        </a>
       </div>
     </section>
   </main>

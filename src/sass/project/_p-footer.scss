@@ -145,8 +145,6 @@
 
 .p-footer__top {
   align-items: center;
-  background: #737373;
-  border-radius: 50%;
   display: flex;
   height: rem(58);
   justify-content: center;
@@ -172,27 +170,6 @@
   pointer-events: auto;
   visibility: visible;
 }
-
-.p-footer__top::before {
-  border-left: rem(2) solid #fff;
-  border-top: rem(2) solid #fff;
-  content: "";
-  height: rem(17);
-  transform: rotate(45deg) translate(rem(3), rem(3));
-  width: rem(17);
-}
-
-.p-footer__top::after {
-  background: #fff;
-  content: "";
-  height: rem(26);
-  left: 50%;
-  position: absolute;
-  top: rem(16);
-  transform: translateX(-50%);
-  width: rem(2);
-}
-
 .p-footer__copy {
   align-items: center;
   background-color: #535353;

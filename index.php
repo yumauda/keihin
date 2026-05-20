@@ -9,7 +9,7 @@
   <title>京浜電設株式会社 採用サイト | 働く仲間の声・キャリア・福利厚生</title>
   <meta name="description" content="京浜電設株式会社の採用サイトです。働く仲間の声、代表メッセージ、キャリアアップストーリー、福利厚生、募集要項などを掲載しています。" />
   <meta name="keywords" content="京浜電設,京浜電設株式会社,採用サイト,新卒採用,中途採用,電気工事,福利厚生,キャリアアップ" />
-  <meta name="robots" content="index,follow" />
+  <meta name="robots" content="noindex,nofollow" />
   <meta name="theme-color" content="#005D97" />
   <!-- ogp -->
   <meta property="og:locale" content="ja_JP" />
@@ -42,6 +42,7 @@
 <body>
 
   <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'); ?>
+  <!-- <?php include_once(__DIR__ . '/includes/header.php'); ?> -->
 
   <main>
     <section class="p-mv">
@@ -766,6 +767,7 @@
 
   </main>
   <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'); ?>
+  <!-- <?php include_once(__DIR__ . '/includes/footer.php'); ?> -->
 
 
 </body>

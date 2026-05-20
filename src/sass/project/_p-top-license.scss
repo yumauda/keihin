@@ -7,7 +7,6 @@
   background-color: #fff;
   
   @include mq(md) {
-    background-color: #f2f1e9;
     padding-top: rem(64);
     padding-bottom: rem(24);
   }

@@ -34,7 +34,7 @@
 
   <main class="p-interview">
     <section class="p-interview__intro">
-      <div class="l-inner">
+      <div class="l-inner l-interview-inner">
         <div class="p-interview__heading">
           <h1 class="p-interview__title">INTERVIEW</h1>
           <p class="p-interview__sub-title">働く仲間の言葉</p>
@@ -43,24 +43,24 @@
         <ul class="p-interview__cards">
           <li class="p-interview__card">
             <a class="p-interview__card-link" href="/interview/akiyama-hinata/">
-            <figure class="p-interview__image">
-              <img src="../images/interview/interview-h-a.webp" alt="工事事業部 在職1年目 H.Aさん" width="2250" height="1500">
-            </figure>
-            <div class="p-interview__body">
-              <figure class="p-interview__bubble"><img src="../images/interview/bubble-h-a.svg" alt="文系出身の私が知った 街に明かりを灯す喜び" width="252" height="98"></figure>
-              <p class="p-interview__profile">工事事業部<br>在職1年目<br>H.Aさん</p>
-            </div>
+              <figure class="p-interview__image">
+                <img src="../images/interview/interview-h-a.webp" alt="工事事業部 在職1年目 H.Aさん" width="2250" height="1500">
+              </figure>
+              <div class="p-interview__body">
+                <figure class="p-interview__bubble"><img src="../images/interview/bubble-h-a.svg" alt="文系出身の私が知った 街に明かりを灯す喜び" width="252" height="98"></figure>
+                <p class="p-interview__profile">工事事業部<br>在職1年目<br>H.Aさん</p>
+              </div>
             </a>
           </li>
           <li class="p-interview__card">
             <a class="p-interview__card-link" href="/interview/masamori-akihito/">
-            <figure class="p-interview__image">
-              <img src="../images/interview/interview-a-m.webp" alt="営業部 営業 在職1年目 A.Mさん" width="2250" height="1500">
-            </figure>
-            <div class="p-interview__body">
-              <figure class="p-interview__bubble"><img src="../images/interview/bubble-a-m.svg" alt="異業種からの挑戦でも 相談しながら成長できる！" width="276" height="99"></figure>
-              <p class="p-interview__profile">営業部 営業<br>在職1年目<br>A.Mさん</p>
-            </div>
+              <figure class="p-interview__image">
+                <img src="../images/interview/interview-a-m.webp" alt="営業部 営業 在職1年目 A.Mさん" width="2250" height="1500">
+              </figure>
+              <div class="p-interview__body">
+                <figure class="p-interview__bubble"><img src="../images/interview/bubble-a-m.svg" alt="異業種からの挑戦でも 相談しながら成長できる！" width="276" height="99"></figure>
+                <p class="p-interview__profile">営業部 営業<br>在職1年目<br>A.Mさん</p>
+              </div>
             </a>
           </li>
           <li class="p-interview__card">
@@ -135,7 +135,7 @@
               <p class="p-interview__message-text">広報から経営企画へ、一歩ずつキャリアを広げています。挑戦を後押ししてくれる環境で、一緒に未来を考えましょう！</p>
             </div>
           </li>
-          
+
           <li class="p-interview__message-card">
             <figure class="p-interview__message-image">
               <img src="../images/interview/interview-n-i.webp" alt="工事事業部 施工管理 N.Iさん" width="2250" height="1500">
@@ -147,7 +147,19 @@
           </li>
         </ul>
 
-        <a class="p-interview__cta" href="/recruit/">新卒・キャリア採用募集要項はこちら</a>
+        <a class="p-interview__cta" href="/recruit/">
+          <p class="p-interview__cta-text">新卒・キャリア採用募集要項はこちら</p>
+          <span class="p-interview__cta-icon" aria-hidden="true">
+            <svg id="グループ_11" data-name="グループ 11" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40.697 40.697">
+              <circle id="楕円形_1" data-name="楕円形 1" cx="20.348" cy="20.348" r="20.348" fill="#fff" />
+              <g id="グループ_10" data-name="グループ 10" transform="translate(9.857 14.25)">
+                <path id="パス_26" data-name="パス 26" d="M748.647,2688.354h16.2" transform="translate(-748.647 -2681.761)" fill="none" stroke="#f77423" stroke-width="1.5" />
+                <path id="パス_27" data-name="パス 27" d="M755.338,2684.189c.647.616,6.745,7.047,6.745,7.047l-6.745,5.757" transform="translate(-744.748 -2684.189)" fill="none" stroke="#f77423" stroke-width="1.5" />
+              </g>
+            </svg>
+
+          </span>
+        </a>
       </div>
     </section>
   </main>
