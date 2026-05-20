@@ -277,7 +277,16 @@
           <div class="p-top-number__button-wrap">
             <a class="p-top-number__button" href="/work/">
               <span class="p-top-number__button-text">京浜電設の仕事を見る</span>
-              <span class="p-top-number__button-icon" aria-hidden="true"></span>
+              <span class="p-top-number__button-icon" aria-hidden="true">
+                <svg id="グループ_11" data-name="グループ 11" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41.358 41.358">
+                  <circle id="楕円形_1" data-name="楕円形 1" cx="20.679" cy="20.679" r="20.679" fill="#fff" />
+                  <g id="グループ_10" data-name="グループ 10" transform="translate(10.897 14.482)">
+                    <path id="パス_26" data-name="パス 26" d="M748.647,2688.354h16.467" transform="translate(-748.647 -2681.654)" fill="none" stroke="#1571c8" stroke-width="2" />
+                    <path id="パス_27" data-name="パス 27" d="M755.338,2684.189c.658.626,6.855,7.162,6.855,7.162l-6.855,5.85" transform="translate(-745.456 -2684.189)" fill="none" stroke="#1571c8" stroke-width="2" />
+                  </g>
+                </svg>
+
+              </span>
             </a>
           </div>
         </div>
@@ -339,7 +348,16 @@
           <div class="p-top-career__button-wrap">
             <a class="p-top-career__button" href="/career-plan/">
               <span class="p-top-career__button-text">キャリアプランを見る</span>
-              <span class="p-top-career__button-icon" aria-hidden="true"></span>
+              <span class="p-top-career__button-icon" aria-hidden="true">
+                <svg id="グループ_11" data-name="グループ 11" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41.358 41.358">
+                  <circle id="楕円形_1" data-name="楕円形 1" cx="20.679" cy="20.679" r="20.679" fill="#fff" />
+                  <g id="グループ_10" data-name="グループ 10" transform="translate(10.897 14.482)">
+                    <path id="パス_26" data-name="パス 26" d="M748.647,2688.354h16.467" transform="translate(-748.647 -2681.654)" fill="none" stroke="#1571c8" stroke-width="2" />
+                    <path id="パス_27" data-name="パス 27" d="M755.338,2684.189c.658.626,6.855,7.162,6.855,7.162l-6.855,5.85" transform="translate(-745.456 -2684.189)" fill="none" stroke="#1571c8" stroke-width="2" />
+                  </g>
+                </svg>
+
+              </span>
             </a>
           </div>
         </div>

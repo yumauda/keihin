@@ -23,17 +23,15 @@
 
 .p-header__inner {
   height: inherit;
-  max-width: rem(1344);
   padding-left: rem(8);
   padding-right: rem(8);
   margin-left: auto;
   margin-right: auto;
   position: relative;
   z-index: 10000;
-  @include mq(md){
+  @media screen and (min-width: 1284px) {
     padding-left: rem(27);
     padding-right: rem(27);
-    
   }
 }
 
@@ -81,8 +79,11 @@
   margin-left: auto;
 
   @media screen and (min-width: 1284px) {
-    align-items: flex-end;
-    flex-direction: column;
+    display: block;
+    flex: 1;
+    height: 100%;
+    margin-left: rem(40);
+    position: relative;
   }
 }
 
@@ -92,7 +93,10 @@
   @media screen and (min-width: 1284px) {
     display: flex;
     justify-content: flex-end;
-    padding-right: rem(162);
+    padding-right: 0;
+    position: absolute;
+    right: rem(170);
+    top: rem(23);
   }
 }
 
@@ -100,6 +104,10 @@
   align-items: center;
   display: flex;
   justify-content: flex-end;
+
+  @media screen and (min-width: 1284px) {
+    height: 100%;
+  }
 }
 
 .p-header__nav {
@@ -107,26 +115,37 @@
 
   @media screen and (min-width: 1284px) {
     display: block;
+    position: absolute;
+    right: rem(170);
+    top: rem(65);
+    width: max-content;
   }
 }
 
 .p-header__nav-list {
   align-items: center;
   display: flex;
+  flex-wrap: nowrap;
+  gap: rem(14);
   list-style: none;
-}
+  white-space: nowrap;
 
-.p-header__nav-item + .p-header__nav-item {
-  margin-left: rem(18);
+  @media screen and (min-width: 1400px) {
+    gap: rem(23);
+    height: 100%;
+  }
 }
 
 .p-header__nav-link {
   color: #000;
   display: inline-block;
-  font-size: rem(13);
+  font-size: rem(12);
   font-weight: 500;
   line-height: 1.4;
-  text-shadow: 0 0 rem(5) rgba(255, 255, 255, 1);
+
+  @media screen and (min-width: 1400px) {
+    font-size: rem(13);
+  }
 }
 
 .p-header__actions {
@@ -139,7 +158,11 @@
   z-index: 10000;
 
   @media screen and (min-width: 1284px) {
-    margin-right: initial;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
 

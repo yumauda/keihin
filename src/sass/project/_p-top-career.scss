@@ -21,6 +21,7 @@
 .p-top-career__body {
   display: flex;
   flex-direction: column-reverse;
+
   @include mq(md) {
     flex-direction: row;
     justify-content: space-between;
@@ -32,6 +33,7 @@
   width: 100vw;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
+
   @include mq(md) {
     max-width: rem(500);
     margin-top: initial;
@@ -60,25 +62,10 @@
   position: relative;
   text-align: center;
 
-  @include mq(md) {
-  }
+
 }
 
-.p-top-career__heading::before {
-  border-top: rem(3) solid #f77423;
-  content: "";
-  left: 50%;
-  position: absolute;
-  bottom: 0;
-  transform: translateX(-50%);
-  width: rem(220);
 
-  @include mq(md) {
-    left: 0;
-    transform: none;
-    width: rem(405);
-  }
-}
 
 .p-top-career__title {
   font-family: "Bebas Neue", sans-serif;
@@ -86,6 +73,8 @@
   font-weight: 400;
   letter-spacing: 0.03em;
   line-height: 1;
+  border-bottom: 3px solid #f77423;
+  display: inline-block;
 
   @include mq(md) {
     font-size: rem(68);
@@ -198,19 +187,16 @@
   border-radius: 9999px;
   box-shadow: rem(-2) rem(3) rem(6) rgba(0, 0, 0, 0.4);
   color: #fff;
-  display: inline-flex;
+  display: flex;
   justify-content: center;
-  padding-left: rem(24);
-  padding-right: rem(8);
   width: rem(250);
   min-height: rem(36);
-  
+  position: relative;
+
   @include mq(md) {
     width: 100%;
     max-width: rem(469);
     min-height: rem(67);
-    padding-left: rem(42);
-    padding-right: rem(10);
   }
 }
 
@@ -225,50 +211,15 @@
 }
 
 .p-top-career__button-icon {
-  background-color: #fff;
-  border-radius: 9999px;
-  display: block;
-  flex-shrink: 0;
-  height: rem(22);
-  margin-left: rem(16);
-  position: relative;
+  position: absolute;
+  right: rem(12);
+  top: 50%;
+  transform: translateY(-50%);
   width: rem(22);
-
+  height: rem(22);
   @include mq(md) {
-    height: rem(41);
-    margin-left: rem(46);
     width: rem(41);
-  }
-}
-
-.p-top-career__button-icon::before {
-  border-right: rem(2) solid #1571c8;
-  border-top: rem(2) solid #1571c8;
-  content: "";
-  height: rem(9);
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translate(-65%, -50%) rotate(45deg);
-  width: rem(9);
-
-  @include mq(md) {
-    height: rem(12);
-    width: rem(12);
-  }
-}
-
-.p-top-career__button-icon::after {
-  background-color: #1571c8;
-  content: "";
-  height: rem(2);
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translate(-60%, -50%);
-  width: rem(12);
-
-  @include mq(md) {
-    width: rem(16);
+    height: rem(41);
+    right: rem(20);
   }
 }
