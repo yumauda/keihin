@@ -22,13 +22,15 @@
 }
 
 .p-faq__heading {
+  margin-left: rem(25);
   text-align: center;
+  width: fit-content;
 
   @include mq(md) {
+    margin-left: 0;
     text-align: left;
     max-width: rem(1002);
-    margin-left: auto;
-    margin-right: auto;
+    width: fit-content;
   }
 }
 
@@ -37,14 +39,26 @@
   display: flex;
   gap: rem(6);
   font-family: $second-font-family;
-  font-size: rem(58);
+  font-size: rem(42);
   font-weight: 400;
+  justify-content: center;
   letter-spacing: 0;
   line-height: 1;
+  position: relative;
 
   @include mq(md) {
     font-size: rem(100);
+    justify-content: flex-start;
   }
+}
+
+.p-faq__en::before {
+  border-top: rem(3) solid #fe4504;
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  width: 100%;
 }
 
 .p-faq__amp {
@@ -54,32 +68,24 @@
 
 .p-faq__sub {
   display: inline-block;
-  font-size: rem(16);
+  font-size: rem(12);
   font-weight: 500;
-  line-height: 1.4;
+  line-height: 1.5;
   position: relative;
   padding-top: rem(8);
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
 
   @include mq(md) {
-    font-size: rem(23);
-    padding-top: rem(12);
-   
+    font-size: rem(25);
+    text-align: initial;
   }
 }
 
 .p-faq__sub::before {
-  border-top: 3px solid #fe4504;
-  content: "";
-  left: 50%;
-  position: absolute;
-  top: 0;
-  transform: translateX(-50%);
-  width: 100%;
-
-  @include mq(md) {
-    left: 0;
-    transform: none;
-  }
+  content: none;
 }
 
 .p-faq__lead {

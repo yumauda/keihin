@@ -43,7 +43,7 @@
 
         <div class="p-interview-detail__hero-body">
           <div class="p-interview-detail__hero-text">
-            <h1 class="p-interview-detail__title">大阪から上京して京浜電設へ。<br>文系出身の私が電気工事の仕事を<br class="u-desktop">選んだ理由。</h1>
+            <h1 class="p-interview-detail__title">大阪から上京して京浜電設へ。<br>文系出身の私が電気工事の仕事を<br>選んだ理由。</h1>
             <p class="p-interview-detail__profile">工事事業部 在職1年目<br>H.Aさん</p>
           </div>
           <figure class="p-interview-detail__main-image">

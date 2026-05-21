@@ -25,9 +25,12 @@
 }
 
 .p-work-discover__heading {
+  margin-left: rem(25);
   text-align: center;
+  width: fit-content;
 
   @include mq(md) {
+    margin-left: 0;
     text-align: left;
     width: rem(307);
   }

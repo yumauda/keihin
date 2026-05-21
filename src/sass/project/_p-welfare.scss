@@ -19,13 +19,16 @@
 }
 
 .p-welfare__heading {
+  margin-left: rem(25);
   text-align: center;
+  width: fit-content;
 
   @include mq(md) {
+    margin-left: auto;
     text-align: left;
     max-width: rem(1002);
-    margin-left: auto;
     margin-right: auto;
+    width: auto;
   }
 }
 

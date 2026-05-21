@@ -67,6 +67,8 @@
 }
 
 .p-message__hero-body {
+  --message-sp-frame-left: calc(50% - #{rem(160)});
+
   background: radial-gradient(circle at 50% 50%, #fff 0%, #e1edf2 61%, #e1edf2 100%);
   height: rem(363);
   margin-top: rem(24);
@@ -118,7 +120,7 @@
 .p-message__title {
   font-size: rem(17);
   font-weight: 700;
-  left: rem(25);
+  left: calc(var(--message-sp-frame-left) + #{rem(25)});
   letter-spacing: 0.04em;
   line-height: calc(29 / 17);
   position: absolute;
@@ -143,7 +145,8 @@
   line-height: calc(19 / 12);
   margin-top: 0;
   position: absolute;
-  right: rem(0);
+  right: auto;
+  left: calc(var(--message-sp-frame-left) + #{rem(243)});
   top: rem(110);
   width: rem(80);
 
@@ -159,7 +162,7 @@
 .p-message__main-image {
   aspect-ratio: 494 / 259;
   bottom: 0;
-  left: rem(-150);
+  left: calc(var(--message-sp-frame-left) - #{rem(198)});
   overflow: visible;
   position: absolute;
   width: rem(494);

@@ -20,6 +20,7 @@
 }
 
 .p-interview-detail__heading {
+  margin-left: rem(25);
   text-align: center;
   width: fit-content;
 
@@ -78,6 +79,8 @@
 }
 
 .p-interview-detail__hero-body {
+  --interview-detail-sp-frame-left: calc(50% - #{rem(160)});
+
   background: radial-gradient(circle at 50% 50%, #fff 0%, #e1edf2 61%, #e1edf2 100%);
   height: rem(363);
   margin: rem(34) auto 0;
@@ -96,6 +99,7 @@
     min-height: rem(420);
     padding: 0 max(rem(20), calc((100vw - #{rem(1000)}) / 2));
     position: relative;
+    width: 100vw;
   }
 }
 
@@ -149,7 +153,7 @@
 .p-interview-detail__title {
   font-size: rem(17);
   font-weight: 700;
-  left: rem(25);
+  left: calc(var(--interview-detail-sp-frame-left) + #{rem(25)});
   letter-spacing: 0.04em;
   line-height: calc(29 / 17);
   position: absolute;
@@ -180,7 +184,8 @@
   line-height: calc(19 / 12);
   margin-top: 0;
   position: absolute;
-  right: rem(15);
+  right: auto;
+  left: calc(var(--interview-detail-sp-frame-left) + #{rem(243)});
   top: rem(110);
   width: rem(62);
 
@@ -216,7 +221,7 @@
 .p-interview-detail__main-image {
   aspect-ratio: 481 / 252;
   bottom: 0;
-  left: rem(-203);
+  left: calc(var(--interview-detail-sp-frame-left) - #{rem(203)});
   overflow: hidden;
   position: absolute;
   width: rem(481);

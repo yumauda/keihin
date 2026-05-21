@@ -19,13 +19,16 @@
 }
 
 .p-recruit__heading {
+  margin-left: rem(25);
   text-align: center;
+  width: fit-content;
 
   @include mq(md) {
     margin-left: auto;
     margin-right: auto;
     max-width: rem(1000);
     text-align: left;
+    width: auto;
   }
 }
 
