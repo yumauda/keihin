@@ -96,6 +96,7 @@
     position: absolute;
     right: rem(170);
     top: rem(23);
+    z-index: 10002;
   }
 }
 
@@ -166,6 +167,7 @@
 
 .p-header__translate {
   position: relative;
+  z-index: 10002;
 }
 
 .p-header__language {
@@ -232,6 +234,7 @@
   right: 0;
   top: calc(100% + #{rem(10)});
   width: rem(110);
+  z-index: 10003;
 }
 
 .p-header__language-option {

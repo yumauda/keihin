@@ -14,7 +14,7 @@
   <meta property="og:title" content="働く仲間の声 | 京浜電設株式会社 採用サイト" />
   <meta property="og:description" content="京浜電設株式会社で働く社員の声をご紹介します。" />
   <meta property="og:type" content="article" />
-  <meta property="og:url" content="/interview/" />
+  <meta property="og:url" content="/recruit/interview/" />
   <meta property="og:image" content="/images/common/header_logo.png" />
   <link rel="icon" type="image/png" href="/images/common/header_logo.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/images/common/header_logo.png">
@@ -30,7 +30,8 @@
 </head>
 
 <body>
-  <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'); ?>
+  <?php // ローカル環境用: include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'); ?>
+  <?php include_once(__DIR__ . '/../includes/header.php'); ?>
 
   <main class="p-interview">
     <section class="p-interview__intro">
@@ -42,7 +43,7 @@
 
         <ul class="p-interview__cards">
           <li class="p-interview__card">
-            <a class="p-interview__card-link" href="/interview/akiyama-hinata/">
+            <a class="p-interview__card-link" href="/recruit/interview/akiyama-hinata/">
               <figure class="p-interview__image">
                 <img src="../images/interview/interview-h-a.webp" alt="工事事業部 在職1年目 H.Aさん" width="2250" height="1500">
               </figure>
@@ -53,7 +54,7 @@
             </a>
           </li>
           <li class="p-interview__card">
-            <a class="p-interview__card-link" href="/interview/masamori-akihito/">
+            <a class="p-interview__card-link" href="/recruit/interview/masamori-akihito/">
               <figure class="p-interview__image">
                 <img src="../images/interview/interview-a-m.webp" alt="営業部 営業 在職1年目 A.Mさん" width="2250" height="1500">
               </figure>
@@ -147,7 +148,7 @@
           </li>
         </ul>
 
-        <a class="p-interview__cta" href="/position/">
+        <a class="p-interview__cta" href="/recruit/position/">
           <p class="p-interview__cta-text">新卒・キャリア採用募集要項はこちら</p>
           <span class="p-interview__cta-icon" aria-hidden="true">
             <svg id="グループ_11" data-name="グループ 11" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40.697 40.697">
@@ -164,7 +165,8 @@
     </section>
   </main>
 
-  <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'); ?>
+  <?php // ローカル環境用: include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'); ?>
+  <?php include_once(__DIR__ . '/../includes/footer.php'); ?>
 </body>
 
 </html>

@@ -41,8 +41,8 @@
 
 <body>
 
-  <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'); ?>
-  <!-- <?php include_once(__DIR__ . '/includes/header.php'); ?> -->
+  <?php // ローカル環境用: include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'); ?>
+  <?php include_once(__DIR__ . '/includes/header.php'); ?>
 
   <main>
     <section class="p-mv">
@@ -80,7 +80,7 @@
           </div>
           <ul class="p-top-interview__cards">
             <li class="p-top-interview__card">
-              <a class="p-top-interview__card-link" href="/interview/">
+              <a class="p-top-interview__card-link" href="/recruit/interview/">
                 <figure class="p-top-interview__image">
                   <img decoding="async" loading="lazy" src="./images/common/top-interview-card-01.webp" alt="総務部 N.Kさん" width="274" height="283">
                 </figure>
@@ -89,7 +89,7 @@
               </a>
             </li>
             <li class="p-top-interview__card">
-              <a class="p-top-interview__card-link" href="/interview/">
+              <a class="p-top-interview__card-link" href="/recruit/interview/">
                 <figure class="p-top-interview__image">
                   <img decoding="async" loading="lazy" src="./images/common/top-interview-card-02.webp" alt="工事事業部 S.Sさん" width="274" height="283">
                 </figure>
@@ -98,7 +98,7 @@
               </a>
             </li>
             <li class="p-top-interview__card">
-              <a class="p-top-interview__card-link" href="/interview/">
+              <a class="p-top-interview__card-link" href="/recruit/interview/">
                 <figure class="p-top-interview__image">
                   <img decoding="async" loading="lazy" src="./images/common/top-interview-card-03.webp" alt="営業部 A.Mさん" width="274" height="283">
                 </figure>
@@ -107,7 +107,7 @@
               </a>
             </li>
             <li class="p-top-interview__card">
-              <a class="p-top-interview__card-link" href="/interview/">
+              <a class="p-top-interview__card-link" href="/recruit/interview/">
                 <figure class="p-top-interview__image">
                   <img decoding="async" loading="lazy" src="./images/common/top-interview-card-04.webp" alt="総務部 S.Hさん" width="274" height="283">
                 </figure>
@@ -117,7 +117,7 @@
             </li>
           </ul>
           <div class="p-top-interview__button-wrap">
-            <a class="p-top-interview__button" href="/interview/">
+            <a class="p-top-interview__button" href="/recruit/interview/">
               <span class="p-top-interview__button-text">MORE</span>
               <span class="p-top-interview__button-icon" aria-hidden="true"></span>
             </a>
@@ -276,7 +276,7 @@
             </li>
           </ul>
           <div class="p-top-number__button-wrap">
-            <a class="p-top-number__button" href="/work/">
+            <a class="p-top-number__button" href="/recruit/work/">
               <span class="p-top-number__button-text">京浜電設の仕事を見る</span>
               <span class="p-top-number__button-icon" aria-hidden="true">
                 <svg id="グループ_11" data-name="グループ 11" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41.358 41.358">
@@ -311,7 +311,7 @@
                 一緒に、夢のある未来を描いていきましょう。
               </p>
               <div class="p-top-rep__button-wrap">
-                <a class="p-top-rep__button" href="/message/">
+                <a class="p-top-rep__button" href="/recruit/message/">
                   <span class="p-top-rep__button-text">MORE</span>
                   <span class="p-top-rep__button-icon" aria-hidden="true"></span>
                 </a>
@@ -339,7 +339,7 @@
               <p class="p-top-career__sub-title">キャリアアップストーリー</p>
               <p class="p-top-career__catch">会社と自らの夢の実現に向けて<br>工事の現場から副社長になるまで。</p>
               <div class="p-top-career__more-wrap">
-                <a class="p-top-career__more" href="/career/">
+                <a class="p-top-career__more" href="/recruit/career/">
                   <span class="p-top-career__more-text">MORE</span>
                   <span class="p-top-career__more-icon" aria-hidden="true"></span>
                 </a>
@@ -347,7 +347,7 @@
             </div>
           </div>
           <div class="p-top-career__button-wrap">
-            <a class="p-top-career__button" href="/career-plan/">
+            <a class="p-top-career__button" href="/recruit/career-plan/">
               <span class="p-top-career__button-text">キャリアプランを見る</span>
               <span class="p-top-career__button-icon" aria-hidden="true">
                 <svg id="グループ_11" data-name="グループ 11" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41.358 41.358">
@@ -486,14 +486,14 @@
             </li>
           </ul>
           <div class="p-top-welfare__more-wrap">
-            <a class="p-top-welfare__more" href="/welfare/">
+            <a class="p-top-welfare__more" href="/recruit/welfare/">
               <span class="p-top-welfare__more-text">MORE</span>
               <span class="p-top-welfare__more-icon" aria-hidden="true"></span>
             </a>
           </div>
           <div class="p-top-welfare__bottom">
             <div class="p-top-welfare__cta-wrap">
-              <a class="p-top-welfare__cta" href="/position/">
+              <a class="p-top-welfare__cta" href="/recruit/position/">
                 <span class="p-top-welfare__cta-text">新卒・キャリア採用募集要項はこちら</span>
                 <span class="p-top-welfare__cta-icon" aria-hidden="true"></span>
               </a>
@@ -766,8 +766,8 @@
     </section> -->
 
   </main>
-  <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'); ?>
-  <!-- <?php include_once(__DIR__ . '/includes/footer.php'); ?> -->
+  <?php // ローカル環境用: include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'); ?>
+  <?php include_once(__DIR__ . '/includes/footer.php'); ?>
 
 
 </body>

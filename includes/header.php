@@ -2,7 +2,7 @@
     <div class="p-header__inner">
         <div class="p-header__content">
             <div class="p-header__heading">
-                <a class="p-header__logo" href="/">
+                <a class="p-header__logo" href="/recruit/">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 148.703 17.687">
                         <g id="グループ_12443" data-name="グループ 12443" transform="translate(-9.297 -15.598)">
                             <g id="logo" transform="translate(9.297 15.514)">
@@ -57,13 +57,13 @@
                 <div class="p-header__bottom">
                     <nav class="p-header__nav" aria-label="グローバルナビゲーション">
                         <ul class="p-header__nav-list">
-                            <li class="p-header__nav-item"><a class="p-header__nav-link" href="/interview/">働く仲間の声</a></li>
-                            <li class="p-header__nav-item"><a class="p-header__nav-link" href="/message/">代表メッセージ</a></li>
-                            <li class="p-header__nav-item"><a class="p-header__nav-link" href="/work/">京浜電設の仕事</a></li>
-                            <li class="p-header__nav-item"><a class="p-header__nav-link" href="/career/">キャリアアップストーリー</a></li>
-                            <li class="p-header__nav-item"><a class="p-header__nav-link" href="/welfare/">福利厚生</a></li>
-                            <li class="p-header__nav-item"><a class="p-header__nav-link" href="/faq/">よくある質問</a></li>
-                            <li class="p-header__nav-item"><a class="p-header__nav-link" href="/position/">募集要項</a></li>
+                            <li class="p-header__nav-item"><a class="p-header__nav-link" href="/recruit/interview/">働く仲間の声</a></li>
+                            <li class="p-header__nav-item"><a class="p-header__nav-link" href="/recruit/message/">代表メッセージ</a></li>
+                            <li class="p-header__nav-item"><a class="p-header__nav-link" href="/recruit/work/">京浜電設の仕事</a></li>
+                            <li class="p-header__nav-item"><a class="p-header__nav-link" href="/recruit/career/">キャリアアップストーリー</a></li>
+                            <li class="p-header__nav-item"><a class="p-header__nav-link" href="/recruit/welfare/">福利厚生</a></li>
+                            <li class="p-header__nav-item"><a class="p-header__nav-link" href="/recruit/faq/">よくある質問</a></li>
+                            <li class="p-header__nav-item"><a class="p-header__nav-link" href="/recruit/position/">募集要項</a></li>
                         </ul>
                     </nav>
 
@@ -85,25 +85,25 @@
                     <div class="p-drawer-content__items">
                         <ul class="p-drawer-content__lists">
                             <li class="p-drawer-content__list">
-                                <a href="/" class="p-drawer-content__link p-drawer-content__link--home">HOME</a>
+                                <a href="/recruit/" class="p-drawer-content__link p-drawer-content__link--home">HOME</a>
                             </li>
                             <li class="p-drawer-content__list">
-                                <a href="/message/" class="p-drawer-content__link">代表メッセージ</a>
+                                <a href="/recruit/message/" class="p-drawer-content__link">代表メッセージ</a>
                             </li>
                             <li class="p-drawer-content__list">
-                                <a href="/work/" class="p-drawer-content__link">京浜電設の仕事</a>
+                                <a href="/recruit/work/" class="p-drawer-content__link">京浜電設の仕事</a>
                             </li>
                             <li class="p-drawer-content__list">
-                                <a href="/career/" class="p-drawer-content__link">キャリアアップストーリー</a>
+                                <a href="/recruit/career/" class="p-drawer-content__link">キャリアアップストーリー</a>
                             </li>
                             <li class="p-drawer-content__list">
-                                <a href="/welfare/" class="p-drawer-content__link">福利厚生</a>
+                                <a href="/recruit/welfare/" class="p-drawer-content__link">福利厚生</a>
                             </li>
                             <li class="p-drawer-content__list">
-                                <a href="/faq/" class="p-drawer-content__link">よくある質問</a>
+                                <a href="/recruit/faq/" class="p-drawer-content__link">よくある質問</a>
                             </li>
                             <li class="p-drawer-content__list">
-                                <a href="/position/" class="p-drawer-content__link">募集要項</a>
+                                <a href="/recruit/position/" class="p-drawer-content__link">募集要項</a>
                             </li>
                             <li class="p-drawer-content__list">
                                 <a href="#" class="p-drawer-content__link">エントリーフォーム</a>

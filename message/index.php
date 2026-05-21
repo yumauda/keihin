@@ -14,7 +14,7 @@
   <meta property="og:title" content="代表メッセージ | 京浜電設株式会社 採用サイト" />
   <meta property="og:description" content="京浜電設株式会社 代表取締役 福島佳孝から、三方よしの理念と採用に込めた想いをお伝えします。" />
   <meta property="og:type" content="article" />
-  <meta property="og:url" content="/message/" />
+  <meta property="og:url" content="/recruit/message/" />
   <meta property="og:image" content="/images/message/message-president.webp" />
   <link rel="icon" type="image/png" href="/images/common/header_logo.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/images/common/header_logo.png">
@@ -30,7 +30,8 @@
 </head>
 
 <body>
-  <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'); ?>
+  <?php // ローカル環境用: include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'); ?>
+  <?php include_once(__DIR__ . '/../includes/header.php'); ?>
 
   <main class="p-message">
     <section class="p-message__hero">
@@ -131,7 +132,8 @@
     </div>
   </main>
 
-  <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'); ?>
+  <?php // ローカル環境用: include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'); ?>
+  <?php include_once(__DIR__ . '/../includes/footer.php'); ?>
 </body>
 
 </html>

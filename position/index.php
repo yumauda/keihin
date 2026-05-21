@@ -14,7 +14,7 @@
   <meta property="og:title" content="募集要項 | 京浜電設株式会社 採用サイト" />
   <meta property="og:description" content="京浜電設株式会社の募集要項を掲載しています。" />
   <meta property="og:type" content="article" />
-  <meta property="og:url" content="/position/" />
+  <meta property="og:url" content="/recruit/position/" />
   <meta property="og:image" content="/images/common/header_logo.png" />
   <link rel="icon" type="image/png" href="/images/common/header_logo.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/images/common/header_logo.png">
@@ -30,7 +30,8 @@
 </head>
 
 <body>
-  <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'); ?>
+  <?php // ローカル環境用: include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'); ?>
+  <?php include_once(__DIR__ . '/../includes/header.php'); ?>
 
   <main class="p-recruit">
     <section class="p-recruit__hero">
@@ -181,7 +182,8 @@
     </section>
   </main>
 
-  <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'); ?>
+  <?php // ローカル環境用: include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'); ?>
+  <?php include_once(__DIR__ . '/../includes/footer.php'); ?>
 </body>
 
 </html>

@@ -14,7 +14,7 @@
   <meta property="og:title" content="正盛 あきひとさん | 働く仲間の声" />
   <meta property="og:description" content="未経験から電気工事の営業に挑戦。相談しながら成長できる職場。" />
   <meta property="og:type" content="article" />
-  <meta property="og:url" content="/interview/masamori-akihito/" />
+  <meta property="og:url" content="/recruit/interview/masamori-akihito/" />
   <meta property="og:image" content="/images/interview/masamori-main.webp" />
   <link rel="icon" type="image/png" href="/images/common/header_logo.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/images/common/header_logo.png">
@@ -30,8 +30,8 @@
 </head>
 
 <body>
-  <!-- <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'); ?> -->
-  <?php include_once(__DIR__ . '/includes/header.php'); ?>
+  <?php // ローカル環境用: include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'); ?>
+  <?php include_once(__DIR__ . '/../../includes/header.php'); ?>
 
   <main class="p-interview-detail p-interview-detail--image-left">
     <section class="p-interview-detail__hero">
@@ -98,7 +98,7 @@
           </figure>
         </article>
 
-        <a class="p-interview-detail__cta" href="/position/">
+        <a class="p-interview-detail__cta" href="/recruit/position/">
           <p class="p-interview-detail__cta-text">新卒・キャリア採用募集要項はこちら</p>
           <span class="p-interview-detail__cta-icon" aria-hidden="true">
             <svg id="グループ_11" data-name="グループ 11" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40.697 40.697">
@@ -115,7 +115,8 @@
     </section>
   </main>
 
-  <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'); ?>
+  <?php // ローカル環境用: include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'); ?>
+  <?php include_once(__DIR__ . '/../../includes/footer.php'); ?>
 </body>
 
 </html>

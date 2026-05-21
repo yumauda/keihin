@@ -2612,6 +2612,7 @@ select::-ms-expand {
     position: absolute;
     right: 10.625rem;
     top: 1.4375rem;
+    z-index: 10002;
   }
 }
 
@@ -2687,6 +2688,7 @@ select::-ms-expand {
 
 .p-header__translate {
   position: relative;
+  z-index: 10002;
 }
 
 .p-header__language {
@@ -2754,6 +2756,7 @@ select::-ms-expand {
   right: 0;
   top: calc(100% + 0.625rem);
   width: 6.875rem;
+  z-index: 10003;
 }
 
 .p-header__language-option {
@@ -2966,8 +2969,14 @@ body {
 
 @media screen and (min-width: 768px) {
   .p-interview-detail--image-left .p-interview-detail__hero-text {
-    left: 37.5625rem;
-    width: 40.125rem;
+    --interview-detail-text-left: 37.5625rem;
+    left: var(--interview-detail-text-left);
+    width: min(40.125rem, 100vw - var(--interview-detail-text-left) - 1.5rem);
+  }
+}
+@media screen and (min-width: 1600px) {
+  .p-interview-detail--image-left .p-interview-detail__hero-text {
+    --interview-detail-text-left: calc((100vw - 90rem) / 2 + 37.5625rem);
   }
 }
 
@@ -2989,6 +2998,12 @@ body {
     position: static;
     top: auto;
     width: auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1245px) {
+  .p-interview-detail--image-left .p-interview-detail__title {
+    font-size: 2rem;
+    line-height: 1.55;
   }
 }
 
@@ -3016,6 +3031,13 @@ body {
 @media screen and (min-width: 768px) {
   .p-interview-detail--image-left .p-interview-detail__profile {
     margin-top: 8.25rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1245px) {
+  .p-interview-detail--image-left .p-interview-detail__profile {
+    font-size: 1.25rem;
+    line-height: 1.35;
+    margin-top: 6.25rem;
   }
 }
 
@@ -3055,6 +3077,11 @@ body {
   .p-interview-detail--image-left .p-interview-detail__main-image {
     margin-left: calc(max(1.25rem, (100vw - 62.5rem) / 2) * -1);
     margin-right: auto;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .p-interview-detail--image-left .p-interview-detail__main-image {
+    margin-left: -13.75rem;
   }
 }
 

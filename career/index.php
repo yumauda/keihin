@@ -14,7 +14,7 @@
   <meta property="og:title" content="キャリアアップストーリー | 京浜電設株式会社 採用サイト" />
   <meta property="og:description" content="京浜電設株式会社 取締役副社長 菊池佑弥のキャリアアップストーリーをご紹介します。" />
   <meta property="og:type" content="article" />
-  <meta property="og:url" content="/career/" />
+  <meta property="og:url" content="/recruit/career/" />
   <meta property="og:image" content="/images/career/career-hero.webp" />
   <link rel="icon" type="image/png" href="/images/common/header_logo.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/images/common/header_logo.png">
@@ -30,7 +30,8 @@
 </head>
 
 <body>
-  <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'); ?>
+  <?php // ローカル環境用: include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'); ?>
+  <?php include_once(__DIR__ . '/../includes/header.php'); ?>
 
   <main class="p-career">
     <section class="p-career__hero">
@@ -115,7 +116,7 @@
     <section class="p-work-recruit">
       <div class="l-inner">
         <div class="p-work-electric__cta-wrap">
-          <a class="p-work-electric__cta p-work-electric__cta--career" href="/career-plan/">
+          <a class="p-work-electric__cta p-work-electric__cta--career" href="/recruit/career-plan/">
             <span class="p-work-electric__cta-text">キャリアプラン</span>
             <span class="p-work-electric__cta-icon" aria-hidden="true">
               <svg id="グループ_11" data-name="グループ 11" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41.358 41.358">
@@ -133,7 +134,8 @@
     </section>
   </main>
 
-  <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'); ?>
+  <?php // ローカル環境用: include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'); ?>
+  <?php include_once(__DIR__ . '/../includes/footer.php'); ?>
 </body>
 
 </html>

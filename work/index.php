@@ -14,7 +14,7 @@
   <meta property="og:title" content="京浜電設の仕事 | 京浜電設株式会社 採用サイト" />
   <meta property="og:description" content="京浜電設株式会社の主な仕事内容と、電気が届くまでの流れをご紹介します。" />
   <meta property="og:type" content="article" />
-  <meta property="og:url" content="/work/" />
+  <meta property="og:url" content="/recruit/work/" />
   <meta property="og:image" content="/images/common/header_logo.png" />
   <link rel="icon" type="image/png" href="/images/common/header_logo.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/images/common/header_logo.png">
@@ -30,7 +30,8 @@
 </head>
 
 <body>
-  <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'); ?>
+  <?php // ローカル環境用: include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'); ?>
+  <?php include_once(__DIR__ . '/../includes/header.php'); ?>
 
   <main class="p-work">
     <section class="p-work-discover">
@@ -122,7 +123,7 @@
     <section class="p-work-recruit">
       <div class="l-inner">
         <div class="p-work-electric__cta-wrap">
-          <a class="p-work-electric__cta" href="/position/">
+          <a class="p-work-electric__cta" href="/recruit/position/">
             <span class="p-work-electric__cta-text">新卒・キャリア採用募集要項はこちら</span>
             <span class="p-work-electric__cta-icon" aria-hidden="true">
               <svg id="グループ_11" data-name="グループ 11" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40.697 40.697">
@@ -140,7 +141,8 @@
     </section>
   </main>
 
-  <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'); ?>
+  <?php // ローカル環境用: include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'); ?>
+  <?php include_once(__DIR__ . '/../includes/footer.php'); ?>
 </body>
 
 </html>
