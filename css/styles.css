@@ -1915,6 +1915,37 @@ select::-ms-expand {
   cursor: pointer;
 }
 
+.p-drawer-content__language-menu {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  margin-top: 0.25rem;
+}
+
+.p-drawer-content__language-menu[hidden] {
+  display: none;
+}
+
+.p-drawer-content__language-option {
+  appearance: none;
+  background: rgba(255, 255, 255, 0.16);
+  border: 0.0625rem solid rgba(255, 255, 255, 0.48);
+  border-radius: 9999px;
+  color: #fff;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1;
+  min-width: 4.75rem;
+  padding: 0.5rem 0.625rem;
+}
+
+.p-drawer-content__language-option.is-current {
+  background: #fff;
+  color: #476ED6;
+}
+
 .p-drawer-content__sns {
   display: flex;
   margin-top: 3.125rem;

@@ -42,7 +42,7 @@
             <div class="p-header__menu-area">
                 <div class="p-header__utility">
                     <div class="p-header__translate js-translate" translate="no">
-                        <button class="p-header__language js-translate-toggle" type="button" aria-label="言語選択" aria-expanded="false" aria-controls="header-language-menu">
+                        <button class="p-header__language js-translate-toggle" type="button" aria-label="言語選択" aria-expanded="false" aria-controls="header-language-menu" data-translate-menu="header-language-menu">
                             <span class="p-header__language-icon" aria-hidden="true"></span>
                             <span class="p-header__language-text">LANGUAGE ▼</span>
                         </button>
@@ -112,7 +112,11 @@
                                 <a href="#" class="p-drawer-content__link">コーポレートサイト</a>
                             </li>
                             <li class="p-drawer-content__list">
-                                <button class="p-drawer-content__link p-drawer-content__link--button js-translate-toggle" type="button" aria-label="言語選択" aria-expanded="false" aria-controls="header-language-menu">LANGUAGE</button>
+                                <button class="p-drawer-content__link p-drawer-content__link--button js-translate-toggle" type="button" aria-label="言語選択" aria-expanded="false" aria-controls="drawer-language-menu" data-translate-menu="drawer-language-menu">LANGUAGE</button>
+                                <div class="p-drawer-content__language-menu js-translate-menu" id="drawer-language-menu" hidden>
+                                    <button class="p-drawer-content__language-option js-translate-option" type="button" data-lang="ja">日本語</button>
+                                    <button class="p-drawer-content__language-option js-translate-option" type="button" data-lang="en">English</button>
+                                </div>
                             </li>
                         </ul>
                     </div>

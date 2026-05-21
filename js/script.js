@@ -36,10 +36,20 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     }
   }
 
-  function setTranslateMenuState(isOpen) {
+  function setTranslateMenuState(isOpen, menuId) {
     if (!$translateMenu.length || !$translateToggle.length) return;
-    $translateToggle.attr('aria-expanded', isOpen ? 'true' : 'false');
-    $translateMenu.prop('hidden', !isOpen);
+
+    $translateToggle.attr('aria-expanded', 'false');
+    $translateMenu.prop('hidden', true);
+
+    if (!isOpen) return;
+
+    const targetMenuId = menuId || $translateToggle.first().attr('aria-controls');
+    const $targetToggle = $translateToggle.filter('[aria-controls="' + targetMenuId + '"]');
+    const $targetMenu = $('#' + targetMenuId);
+
+    $targetToggle.attr('aria-expanded', 'true');
+    $targetMenu.prop('hidden', false);
   }
 
   function getTranslateCombo() {
@@ -265,13 +275,23 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   }
 
   $translateToggle.on('click', function () {
-    const isOpen = $translateToggle.attr('aria-expanded') === 'true';
-    setTranslateMenuState(!isOpen);
+    const $toggle = $(this);
+    const menuId = $toggle.data('translate-menu') || $toggle.attr('aria-controls');
+    const isOpen = $toggle.attr('aria-expanded') === 'true';
+    setTranslateMenuState(!isOpen, menuId);
   });
 
   $translateOptions.on('click', function () {
+    const isDrawerTranslate = $(this).closest('.p-drawer-content').length > 0;
     const lang = $(this).data('lang');
     setTranslateMenuState(false);
+
+    if (isDrawerTranslate) {
+      $('.p-drawer-icon').removeClass('is-active');
+      $('.p-drawer-content').removeClass('is-active');
+      $('.p-drawer-background').removeClass('is-active');
+      $('.p-header').removeClass('is-drawer-active');
+    }
 
     if (lang === 'en') {
       syncTranslateUi('en');
@@ -290,6 +310,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   $(document).on('click', function (e) {
     if (!$translate.length) return;
     if ($translate.get(0).contains(e.target)) return;
+    if ($(e.target).closest('.js-translate-toggle, .js-translate-menu').length) return;
     setTranslateMenuState(false);
   });
 
