@@ -23,12 +23,10 @@
 }
 
 .p-career__heading {
-  margin-left: rem(25);
   text-align: center;
   width: fit-content;
 
   @include mq(md) {
-    margin-left: 0;
     text-align: left;
     width: auto;
   }

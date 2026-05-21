@@ -19,12 +19,10 @@
 }
 
 .p-career-plan__heading {
-  margin-left: rem(25);
   text-align: center;
   width: fit-content;
 
   @include mq(md) {
-    margin-left: 0;
     text-align: left;
     width: auto;
   }
@@ -151,7 +149,7 @@
 }
 
 .p-career-plan__section-title {
-  font-size: rem(25);
+  font-size: rem(20);
   font-weight: 700;
   line-height: 1.45;
   text-align: center;
@@ -283,7 +281,7 @@
   height: rem(9);
   left: 0;
   position: absolute;
-  top: rem(16);
+  top: rem(7);
   width: rem(9);
 
   @include mq(md) {
@@ -438,6 +436,8 @@
   height: rem(58);
   justify-content: center;
   line-height: 1;
+  border-top-left-radius: rem(13);
+  border-top-right-radius: rem(13);
 
   @include mq(md) {
     font-size: rem(26);

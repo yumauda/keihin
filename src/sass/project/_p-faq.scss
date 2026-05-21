@@ -22,12 +22,10 @@
 }
 
 .p-faq__heading {
-  margin-left: rem(25);
   text-align: center;
   width: fit-content;
 
   @include mq(md) {
-    margin-left: 0;
     text-align: left;
     max-width: rem(1002);
     width: fit-content;
@@ -246,7 +244,7 @@
 }
 
 .p-faq__question-text {
-  font-size: rem(18);
+  font-size: rem(16);
   font-weight: 600;
   line-height: 1.55;
 

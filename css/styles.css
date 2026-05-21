@@ -280,13 +280,11 @@ select::-ms-expand {
 }
 
 .p-career-plan__heading {
-  margin-left: 1.5625rem;
   text-align: center;
   width: fit-content;
 }
 @media screen and (min-width: 768px) {
   .p-career-plan__heading {
-    margin-left: 0;
     text-align: left;
     width: auto;
   }
@@ -422,7 +420,7 @@ select::-ms-expand {
 }
 
 .p-career-plan__section-title {
-  font-size: 1.5625rem;
+  font-size: 1.25rem;
   font-weight: 700;
   line-height: 1.45;
   text-align: center;
@@ -561,7 +559,7 @@ select::-ms-expand {
   height: 0.5625rem;
   left: 0;
   position: absolute;
-  top: 1rem;
+  top: 0.4375rem;
   width: 0.5625rem;
 }
 @media screen and (min-width: 768px) {
@@ -724,6 +722,8 @@ select::-ms-expand {
   height: 3.625rem;
   justify-content: center;
   line-height: 1;
+  border-top-left-radius: 0.8125rem;
+  border-top-right-radius: 0.8125rem;
 }
 @media screen and (min-width: 768px) {
   .p-career-plan__training-month {
@@ -810,13 +810,11 @@ select::-ms-expand {
 }
 
 .p-career__heading {
-  margin-left: 1.5625rem;
   text-align: center;
   width: fit-content;
 }
 @media screen and (min-width: 768px) {
   .p-career__heading {
-    margin-left: 0;
     text-align: left;
     width: auto;
   }
@@ -2037,13 +2035,11 @@ select::-ms-expand {
 }
 
 .p-faq__heading {
-  margin-left: 1.5625rem;
   text-align: center;
   width: fit-content;
 }
 @media screen and (min-width: 768px) {
   .p-faq__heading {
-    margin-left: 0;
     text-align: left;
     max-width: 62.625rem;
     width: fit-content;
@@ -2274,7 +2270,7 @@ select::-ms-expand {
 }
 
 .p-faq__question-text {
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 600;
   line-height: 1.55;
 }
@@ -2893,7 +2889,6 @@ body {
 }
 
 .p-interview-detail__heading {
-  margin-left: 1.5625rem;
   text-align: center;
   width: fit-content;
 }
@@ -3310,13 +3305,11 @@ body {
 }
 
 .p-interview__heading {
-  margin-left: 1.5625rem;
   text-align: center;
   width: fit-content;
 }
 @media screen and (min-width: 768px) {
   .p-interview__heading {
-    margin-left: 0;
     text-align: left;
     max-width: 63.125rem;
     width: fit-content;
@@ -3695,7 +3688,6 @@ body {
 }
 
 .p-message__heading {
-  margin-left: 1.5625rem;
   width: 9.3125rem;
   text-align: center;
 }
@@ -4551,7 +4543,6 @@ body {
 }
 
 .p-recruit__heading {
-  margin-left: 1.5625rem;
   text-align: center;
   width: fit-content;
 }
@@ -6282,7 +6273,6 @@ body {
 }
 
 .p-welfare__heading {
-  margin-left: 1.5625rem;
   text-align: center;
   width: fit-content;
 }
@@ -6812,13 +6802,11 @@ body {
 }
 
 .p-work-discover__heading {
-  margin-left: 1.5625rem;
   text-align: center;
   width: fit-content;
 }
 @media screen and (min-width: 768px) {
   .p-work-discover__heading {
-    margin-left: 0;
     text-align: left;
     width: 19.1875rem;
   }
