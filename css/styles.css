@@ -4181,7 +4181,13 @@ body {
 
 .p-mv {
   overflow-x: clip;
-  padding-top: 6.8125rem;
+  height: 25rem;
+}
+@media screen and (min-width: 768px) {
+  .p-mv {
+    padding-top: 6.8125rem;
+    height: initial;
+  }
 }
 
 .p-mv__content {
@@ -4192,25 +4198,40 @@ body {
   width: 100vw;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
+  height: 25rem;
+}
+@media screen and (min-width: 768px) {
+  .p-mv__img {
+    height: initial;
+  }
 }
 
 .p-mv__img img {
   width: 100%;
-  height: auto;
+  height: inherit;
   object-fit: cover;
-  object-position: center;
+  aspect-ratio: 320/400;
+  object-fit: cover;
+  object-position: 78% 80%;
+}
+@media screen and (min-width: 768px) {
+  .p-mv__img img {
+    height: auto;
+    aspect-ratio: initial;
+    object-position: center;
+  }
 }
 
 .p-mv__title {
   color: #fff;
   font-family: "Futura", "Noto Sans JP", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 700;
   left: 1.25rem;
   letter-spacing: 0.45em;
   line-height: 1.7;
   position: absolute;
-  top: 7.5rem;
+  top: 13.75rem;
 }
 @media screen and (min-width: 768px) {
   .p-mv__title {
@@ -4223,12 +4244,17 @@ body {
 }
 
 .p-mv__logo {
-  max-width: 56.5rem;
   position: absolute;
-  width: 100%;
   left: 0;
   bottom: 1.25rem;
   z-index: 2;
+  width: 17.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-mv__logo {
+    max-width: 56.5rem;
+    width: 100%;
+  }
 }
 
 .p-mv__logo img {
@@ -4432,6 +4458,19 @@ body {
     border-radius: 0.625rem;
     padding: 1.75rem 0.25rem 1.25rem;
     min-height: 25.375rem;
+  }
+}
+
+.p-people__card:nth-child(5) {
+  grid-column: 1/-1;
+  justify-self: center;
+  width: calc((100% - 0.75rem) / 2);
+}
+@media screen and (min-width: 768px) {
+  .p-people__card:nth-child(5) {
+    grid-column: auto;
+    justify-self: auto;
+    width: auto;
   }
 }
 

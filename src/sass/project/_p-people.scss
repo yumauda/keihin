@@ -189,6 +189,18 @@
   }
 }
 
+.p-people__card:nth-child(5) {
+  grid-column: 1 / -1;
+  justify-self: center;
+  width: calc((100% - #{rem(12)}) / 2);
+
+  @include mq(md) {
+    grid-column: auto;
+    justify-self: auto;
+    width: auto;
+  }
+}
+
 .p-people__icon {
   color: #5b92c2;
   margin-left: auto;

@@ -16,7 +16,7 @@
   <meta property="og:site_name" content="京浜電設株式会社 採用サイト" />
   <meta property="og:title" content="京浜電設株式会社 採用サイト | 働く仲間の声・キャリア・福利厚生" />
   <meta property="og:description" content="京浜電設株式会社の採用情報を掲載。働く仲間の声、代表メッセージ、キャリア、福利厚生、募集要項をご覧いただけます。" />
-  <meta property="og:type" content="article" />
+  <meta property="og:type" content="website" />
   <meta property="og:url" content="./" />
   <meta property="og:image" content="./images/common/header_logo.png" />
   <meta name="twitter:card" content="summary_large_image" />
@@ -30,7 +30,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/styles.css?v=20260520">
+  <link rel="stylesheet" href="./css/styles.css?v=20260521">
   <!-- JavaScript -->
   <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>

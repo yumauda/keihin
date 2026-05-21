@@ -2,7 +2,12 @@
 
 .p-mv {
   overflow-x: clip;
-  padding-top: rem(109);
+  height: rem(400);
+  
+  @include mq(md) {
+    padding-top: rem(109);
+    height: initial;
+  }
 }
 
 .p-mv__content {
@@ -13,24 +18,38 @@
   width: 100vw;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
+  height: rem(400);
+  @include mq(md) {
+    height: initial;
+  }
 }
+
 .p-mv__img img {
   width: 100%;
-  height: auto;
+  height: inherit;
   object-fit: cover;
-  object-position: center;
+  aspect-ratio: 320 / 400;
+  object-fit: cover;
+  object-position: 78% 80%;
+  
+  @include mq(md) {
+    height: auto;
+    aspect-ratio: initial;
+    object-position: center;
+
+  }
 }
 
 .p-mv__title {
   color: #fff;
   font-family: "Futura", $base-font-family;
-  font-size: rem(24);
+  font-size: rem(20);
   font-weight: 700;
   left: rem(20);
   letter-spacing: 0.45em;
   line-height: 1.7;
   position: absolute;
-  top: rem(120);
+  top: rem(220);
 
   @include mq(md) {
     font-size: rem(35);
@@ -43,12 +62,16 @@
 }
 
 .p-mv__logo {
-  max-width: rem(904);
   position: absolute;
-  width: 100%;
   left: 0;
   bottom: rem(20);
   z-index: 2;
+  width: rem(280);
+  @include mq(md){
+    max-width: rem(904);
+    width: 100%;
+    
+  }
 }
 
 .p-mv__logo img {
