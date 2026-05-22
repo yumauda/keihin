@@ -4194,6 +4194,16 @@ body {
   position: relative;
 }
 
+.js-mv-img {
+  --mv-mask-progress: 0%;
+  mask-image: linear-gradient(90deg, #000 0%, #000 calc(var(--mv-mask-progress) - 14%), rgba(0, 0, 0, 0) var(--mv-mask-progress));
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%;
+  -webkit-mask-image: linear-gradient(90deg, #000 0%, #000 calc(var(--mv-mask-progress) - 14%), rgba(0, 0, 0, 0) var(--mv-mask-progress));
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+}
+
 .p-mv__img {
   width: 100vw;
   margin-left: calc(50% - 50vw);

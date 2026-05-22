@@ -30,13 +30,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/styles.css?v=20260521">
+  <link rel="stylesheet" href="./css/styles.css?v=20260522">
   <!-- JavaScript -->
   <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  <script defer src="./js/gsap.js?v=20260324"></script>
-  <script defer src="./js/script.js?v=20260516"></script>
+  <script defer src="./js/gsap.js?v=20260325"></script>
+  <script defer src="./js/script.js?v=20260517"></script>
 </head>
 
 <body>
@@ -48,11 +48,11 @@
     <section class="p-mv">
       <div class="l-wide-inner">
         <div class="p-mv__content">
-          <figure class="p-mv__img">
+          <figure class="p-mv__img js-mv-img">
             <img src="./images/top/mv_img.webp" alt="働く未来のためにともに育とう。" width="1400" height="746">
           </figure>
-          <h1 class="p-mv__title">輝く未来のために<br>ともに育とう。</h1>
-          <figure class="p-mv__logo">
+          <h1 class="p-mv__title js-single-word">輝く未来のために<br>ともに育とう。</h1>
+          <figure class="p-mv__logo js-mv-logo">
             <img decoding="async" loading="lazy" src="./images/top/mv_logo.png" alt="grow to glow" width="904" height="241">
           </figure>
         </div>
@@ -64,9 +64,9 @@
       <div class="l-inner">
         <div class="p-top-text__content">
           <h2 class="p-top-text__title">
-            <span class="p-top-text__line">私たちといっしょに</span>
-            <span class="p-top-text__line">あなたのキャリアを実現しませんか。</span>
-            <span class="p-top-text__line">70年経ったいまも、伸び盛りの会社です。</span>
+            <span class="p-top-text__line js-blur-word">私たちといっしょに</span>
+            <span class="p-top-text__line js-blur-word">あなたのキャリアを実現しませんか。</span>
+            <span class="p-top-text__line js-blur-word">70年経ったいまも、伸び盛りの会社です。</span>
           </h2>
         </div>
       </div>
@@ -75,11 +75,11 @@
       <div class="l-inner p-top-interview__inner">
         <div class="p-top-interview__content">
           <div class="p-top-interview__heading">
-            <h2 class="p-top-interview__title">INTERVIEW</h2>
-            <p class="p-top-interview__sub-title">働く仲間の言葉</p>
+            <h2 class="p-top-interview__title js-each-word">INTERVIEW</h2>
+            <p class="p-top-interview__sub-title js-blur-word">働く仲間の言葉</p>
           </div>
           <ul class="p-top-interview__cards">
-            <li class="p-top-interview__card">
+            <li class="p-top-interview__card js-blur-word">
               <a class="p-top-interview__card-link" href="/recruit/interview/">
                 <figure class="p-top-interview__image">
                   <img decoding="async" loading="lazy" src="./images/common/top-interview-card-01.webp" alt="総務部 N.Kさん" width="274" height="283">
@@ -88,7 +88,7 @@
                 <p class="p-top-interview__name">総務部　N.Kさん</p>
               </a>
             </li>
-            <li class="p-top-interview__card">
+            <li class="p-top-interview__card js-blur-word">
               <a class="p-top-interview__card-link" href="/recruit/interview/">
                 <figure class="p-top-interview__image">
                   <img decoding="async" loading="lazy" src="./images/common/top-interview-card-02.webp" alt="工事事業部 S.Sさん" width="274" height="283">
@@ -97,7 +97,7 @@
                 <p class="p-top-interview__name">工事事業部　S.Sさん</p>
               </a>
             </li>
-            <li class="p-top-interview__card">
+            <li class="p-top-interview__card js-blur-word">
               <a class="p-top-interview__card-link" href="/recruit/interview/">
                 <figure class="p-top-interview__image">
                   <img decoding="async" loading="lazy" src="./images/common/top-interview-card-03.webp" alt="営業部 A.Mさん" width="274" height="283">
@@ -106,7 +106,7 @@
                 <p class="p-top-interview__name">営業部　A.Mさん</p>
               </a>
             </li>
-            <li class="p-top-interview__card">
+            <li class="p-top-interview__card js-blur-word">
               <a class="p-top-interview__card-link" href="/recruit/interview/">
                 <figure class="p-top-interview__image">
                   <img decoding="async" loading="lazy" src="./images/common/top-interview-card-04.webp" alt="総務部 S.Hさん" width="274" height="283">
@@ -129,20 +129,22 @@
       <div class="l-wide-inner">
         <div class="p-people__content">
           <div class="p-people__heading">
-            <h2 class="p-people__title">
+            <h2 class="p-people__title js-blur-word">
               <span>京浜電設に合うのは、</span>
               <span>こんな人です</span>
             </h2>
-            <span class="p-people__en">OUR PEOPLE</span>
+            <span class="p-people__en js-each-word">OUR PEOPLE</span>
           </div>
-          <p class="p-people__message">京浜電設は、誰にでも合う<br class="u-mobile">会社ではありません。</p>
-          <p class="p-people__lead">
+          <div class="p-people__message-wrapper">
+            <p class="p-people__message js-submit">京浜電設は、誰にでも合う<br class="u-mobile">会社ではありません。</p>
+          </div>
+          <p class="p-people__lead js-blur-word">
             ただ、合う方にとっては大きく成長できる環境です。<br>
             実際に、未経験からスタートした社員の多くが<br>
             現場で経験を積みながら成長しています。
           </p>
           <ul class="p-people__cards">
-            <li class="p-people__card">
+            <li class="p-people__card js-blur-word">
               <div class="p-people__icon" aria-hidden="true">
                 <svg viewBox="0 0 96 80" role="img">
                   <path d="M15 18h27c6 0 10 4 10 10v34c0-6-4-10-10-10H15V18Z" />
@@ -157,7 +159,7 @@
                 <p class="p-people__field-text">先輩や職人に聞きながら<br>仕事を覚えていきます</p>
               </div>
             </li>
-            <li class="p-people__card">
+            <li class="p-people__card js-blur-word">
               <div class="p-people__icon" aria-hidden="true">
                 <svg viewBox="0 0 96 80" role="img">
                   <path d="M33 12h30v14H33V12Z" />
@@ -172,7 +174,7 @@
                 <p class="p-people__field-text">一つひとつの作業を積み上げる<br>仕事です</p>
               </div>
             </li>
-            <li class="p-people__card">
+            <li class="p-people__card js-blur-word">
               <div class="p-people__icon" aria-hidden="true">
                 <svg viewBox="0 0 96 80" role="img">
                   <circle cx="48" cy="18" r="10" />
@@ -190,7 +192,7 @@
                 <p class="p-people__field-text">チームで連携しながら<br>現場を進めていきます</p>
               </div>
             </li>
-            <li class="p-people__card">
+            <li class="p-people__card js-blur-word">
               <div class="p-people__icon" aria-hidden="true">
                 <svg viewBox="0 0 96 80" role="img">
                   <path d="M48 10 74 20v20c0 17-11 30-26 38-15-8-26-21-26-38V20l26-10Z" />
@@ -204,7 +206,7 @@
                 <p class="p-people__field-text">完成したときに<br>成果が形として残ります</p>
               </div>
             </li>
-            <li class="p-people__card">
+            <li class="p-people__card js-blur-word">
               <div class="p-people__icon" aria-hidden="true">
                 <svg viewBox="0 0 96 80" role="img">
                   <path d="M16 66h64" />
@@ -231,51 +233,51 @@
       <div class="l-inner">
         <div class="p-top-number__content">
           <div class="p-top-number__heading">
-            <h2 class="p-top-number__title">数字で見る京浜電設</h2>
+            <h2 class="p-top-number__title js-blur-word">数字で見る京浜電設</h2>
           </div>
           <ul class="p-top-number__cards">
-            <li class="p-top-number__card">
+            <li class="p-top-number__card js-blur-word">
               <figure class="p-top-number__image">
                 <img decoding="async" loading="lazy" src="./images/common/top-number-card-01.png" alt="会社創業74年" width="224" height="243">
               </figure>
             </li>
-            <li class="p-top-number__card">
+            <li class="p-top-number__card js-blur-word">
               <figure class="p-top-number__image">
                 <img decoding="async" loading="lazy" src="./images/common/top-number-card-02.png" alt="従業員数66名" width="224" height="243">
               </figure>
             </li>
-            <li class="p-top-number__card">
+            <li class="p-top-number__card js-blur-word">
               <figure class="p-top-number__image">
                 <img decoding="async" loading="lazy" src="./images/common/top-number-card-03.png" alt="3年以内の新卒採用人数00人" width="224" height="243">
               </figure>
             </li>
-            <li class="p-top-number__card">
+            <li class="p-top-number__card js-blur-word">
               <figure class="p-top-number__image">
                 <img decoding="async" loading="lazy" src="./images/common/top-number-card-04.png" alt="平均年齢40歳" width="224" height="243">
               </figure>
             </li>
-            <li class="p-top-number__card">
+            <li class="p-top-number__card js-blur-word">
               <figure class="p-top-number__image">
                 <img decoding="async" loading="lazy" src="./images/common/top-number-card-05.png" alt="平均勤続年数6.6年" width="224" height="243">
               </figure>
             </li>
-            <li class="p-top-number__card">
+            <li class="p-top-number__card js-blur-word">
               <figure class="p-top-number__image">
                 <img decoding="async" loading="lazy" src="./images/common/top-number-card-06.png" alt="男女比13対7" width="224" height="243">
               </figure>
             </li>
-            <li class="p-top-number__card">
+            <li class="p-top-number__card js-blur-word">
               <figure class="p-top-number__image">
                 <img decoding="async" loading="lazy" src="./images/common/top-number-card-07.png" alt="年間休日123日" width="224" height="243">
               </figure>
             </li>
-            <li class="p-top-number__card">
+            <li class="p-top-number__card js-blur-word">
               <figure class="p-top-number__image">
                 <img decoding="async" loading="lazy" src="./images/common/top-number-card-08.png" alt="社員の年代別比率" width="224" height="243">
               </figure>
             </li>
           </ul>
-          <div class="p-top-number__button-wrap">
+          <div class="p-top-number__button-wrap js-blur-word">
             <a class="p-top-number__button" href="/recruit/work/">
               <span class="p-top-number__button-text">京浜電設の仕事を見る</span>
               <span class="p-top-number__button-icon" aria-hidden="true">
@@ -296,28 +298,28 @@
     <section class="p-top-rep">
       <div class="l-inner">
         <div class="p-top-rep__content">
-          <div class="p-top-rep__body">
+          <div class="p-top-rep__body js-column">
             <div class="p-top-rep__text">
               <div class="p-top-rep__heading-wrap">
                 <div class="p-top-rep__heading">
-                  <h2 class="p-top-rep__title">MESSAGE</h2>
+                  <h2 class="p-top-rep__title js-each-word">MESSAGE</h2>
                 </div>
-                <p class="p-top-rep__sub-title">代表メッセージ</p>
+                <p class="p-top-rep__sub-title js-blur-word">代表メッセージ</p>
               </div>
-              <p class="p-top-rep__catch">三方よしの理念を胸に、<br class="u-mobile">新たな時代へ。</p>
-              <p class="p-top-rep__description">
+              <p class="p-top-rep__catch js-blur-word">三方よしの理念を胸に、<br class="u-mobile">新たな時代へ。</p>
+              <p class="p-top-rep__description js-blur-word">
                 お客様と、社会とともに成長していくために<br>
                 人づくり、働く環境づくりが最も大切です。<br>
                 一緒に、夢のある未来を描いていきましょう。
               </p>
-              <div class="p-top-rep__button-wrap">
+              <div class="p-top-rep__button-wrap js-blur-word">
                 <a class="p-top-rep__button" href="/recruit/message/">
                   <span class="p-top-rep__button-text">MORE</span>
                   <span class="p-top-rep__button-icon" aria-hidden="true"></span>
                 </a>
               </div>
             </div>
-            <figure class="p-top-rep__image">
+            <figure class="p-top-rep__image js-submit">
               <img decoding="async" loading="lazy" src="./images/top/top-rep-message.webp" alt="代表メッセージ" width="500" height="352">
             </figure>
           </div>
@@ -328,17 +330,17 @@
     <section class="p-top-career">
       <div class="l-inner">
         <div class="p-top-career__content">
-          <div class="p-top-career__body">
-            <figure class="p-top-career__image">
+          <div class="p-top-career__body js-column">
+            <figure class="p-top-career__image js-submit">
               <img decoding="async" loading="lazy" src="./images/top/top-career-story.webp" alt="キャリアアップストーリー" width="500" height="352">
             </figure>
             <div class="p-top-career__text">
               <div class="p-top-career__heading">
-                <h2 class="p-top-career__title">CAREER UP STORY</h2>
+                <h2 class="p-top-career__title js-each-word">CAREER UP STORY</h2>
               </div>
-              <p class="p-top-career__sub-title">キャリアアップストーリー</p>
-              <p class="p-top-career__catch">会社と自らの夢の実現に向けて<br>工事の現場から副社長になるまで。</p>
-              <div class="p-top-career__more-wrap">
+              <p class="p-top-career__sub-title js-blur-word">キャリアアップストーリー</p>
+              <p class="p-top-career__catch js-blur-word">会社と自らの夢の実現に向けて<br>工事の現場から副社長になるまで。</p>
+              <div class="p-top-career__more-wrap js-blur-word">
                 <a class="p-top-career__more" href="/recruit/career/">
                   <span class="p-top-career__more-text">MORE</span>
                   <span class="p-top-career__more-icon" aria-hidden="true"></span>
@@ -346,7 +348,7 @@
               </div>
             </div>
           </div>
-          <div class="p-top-career__button-wrap">
+          <div class="p-top-career__button-wrap js-blur-word">
             <a class="p-top-career__button" href="/recruit/career-plan/">
               <span class="p-top-career__button-text">キャリアプランを見る</span>
               <span class="p-top-career__button-icon" aria-hidden="true">
@@ -364,7 +366,7 @@
         </div>
       </div>
     </section>
-    <section class="p-top-license">
+    <section class="p-top-license js-blur-word">
       <div class="l-inner">
         <div class="p-top-license__content">
           <div class="p-top-license__box">
@@ -407,98 +409,98 @@
       <div class="l-inner">
         <div class="p-top-welfare__content">
           <div class="p-top-welfare__heading">
-            <h2 class="p-top-welfare__title">OUR BENEFITS</h2>
+            <h2 class="p-top-welfare__title js-each-word">OUR BENEFITS</h2>
           </div>
-          <p class="p-top-welfare__sub-title">働く人を支える福利厚生制度</p>
-          <p class="p-top-welfare__description">ワークライフバランスを大切に、社員が夢を持っていきいきと働ける環境づくりのために、さまざまな制度をご用意しています。</p>
+          <p class="p-top-welfare__sub-title js-blur-word">働く人を支える福利厚生制度</p>
+          <p class="p-top-welfare__description js-blur-word">ワークライフバランスを大切に、社員が夢を持っていきいきと働ける環境づくりのために、さまざまな制度をご用意しています。</p>
           <ul class="p-top-welfare__grid">
-            <li class="p-top-welfare__card">
+            <li class="p-top-welfare__card js-blur-word">
               <figure class="p-top-welfare__card-image">
                 <img decoding="async" loading="lazy" src="./images/top/top-welfare-icon-01.webp" alt="" width="96" height="78">
               </figure>
               <p class="p-top-welfare__card-title">社宅制度</p>
             </li>
-            <li class="p-top-welfare__card">
+            <li class="p-top-welfare__card js-blur-word">
               <figure class="p-top-welfare__card-image">
                 <img decoding="async" loading="lazy" src="./images/top/top-welfare-icon-02.webp" alt="" width="104" height="81">
               </figure>
               <p class="p-top-welfare__card-title">健康診断</p>
             </li>
-            <li class="p-top-welfare__card">
+            <li class="p-top-welfare__card js-blur-word">
               <figure class="p-top-welfare__card-image">
                 <img decoding="async" loading="lazy" src="./images/top/top-welfare-icon-03.webp" alt="" width="124" height="81">
               </figure>
               <p class="p-top-welfare__card-title">社内イベント</p>
             </li>
-            <li class="p-top-welfare__card">
+            <li class="p-top-welfare__card js-blur-word">
               <figure class="p-top-welfare__card-image">
                 <img decoding="async" loading="lazy" src="./images/top/top-welfare-icon-04.webp" alt="" width="124" height="81">
               </figure>
               <p class="p-top-welfare__card-title">資格検定取得支援</p>
             </li>
-            <li class="p-top-welfare__card">
+            <li class="p-top-welfare__card js-blur-word">
               <figure class="p-top-welfare__card-image">
                 <img decoding="async" loading="lazy" src="./images/top/top-welfare-icon-05.webp" alt="" width="118" height="86">
               </figure>
               <p class="p-top-welfare__card-title">通勤交通費支給</p>
             </li>
-            <li class="p-top-welfare__card">
+            <li class="p-top-welfare__card js-blur-word">
               <figure class="p-top-welfare__card-image">
                 <img decoding="async" loading="lazy" src="./images/top/top-welfare-icon-06.webp" alt="" width="67" height="80">
               </figure>
               <p class="p-top-welfare__card-title">永年勤続制度</p>
             </li>
-            <li class="p-top-welfare__card">
+            <li class="p-top-welfare__card js-blur-word">
               <figure class="p-top-welfare__card-image">
                 <img decoding="async" loading="lazy" src="./images/top/top-welfare-icon-07.webp" alt="" width="81" height="77">
               </figure>
               <p class="p-top-welfare__card-title">貸与品</p>
             </li>
-            <li class="p-top-welfare__card">
+            <li class="p-top-welfare__card js-blur-word">
               <figure class="p-top-welfare__card-image">
                 <img decoding="async" loading="lazy" src="./images/top/top-welfare-icon-08.webp" alt="" width="126" height="98">
               </figure>
               <p class="p-top-welfare__card-title">創立記念日(5/10)</p>
             </li>
-            <li class="p-top-welfare__card">
+            <li class="p-top-welfare__card js-blur-word">
               <figure class="p-top-welfare__card-image">
                 <img decoding="async" loading="lazy" src="./images/top/top-welfare-icon-09.webp" alt="" width="114" height="74">
               </figure>
               <p class="p-top-welfare__card-title">慶弔見舞金制度</p>
             </li>
-            <li class="p-top-welfare__card">
+            <li class="p-top-welfare__card js-blur-word">
               <figure class="p-top-welfare__card-image">
                 <img decoding="async" loading="lazy" src="./images/top/top-welfare-icon-10.webp" alt="" width="113" height="80">
               </figure>
               <p class="p-top-welfare__card-title">MBA取得</p>
             </li>
-            <li class="p-top-welfare__card">
+            <li class="p-top-welfare__card js-blur-word">
               <figure class="p-top-welfare__card-image">
                 <img decoding="async" loading="lazy" src="./images/top/top-welfare-icon-11.webp" alt="" width="90" height="86">
               </figure>
               <p class="p-top-welfare__card-title">奨学金</p>
             </li>
-            <li class="p-top-welfare__card">
+            <li class="p-top-welfare__card js-blur-word">
               <figure class="p-top-welfare__card-image">
                 <img decoding="async" loading="lazy" src="./images/top/top-welfare-icon-12.webp" alt="" width="83" height="64">
               </figure>
               <p class="p-top-welfare__card-title">リファラル採用</p>
             </li>
           </ul>
-          <div class="p-top-welfare__more-wrap">
+          <div class="p-top-welfare__more-wrap js-blur-word">
             <a class="p-top-welfare__more" href="/recruit/welfare/">
               <span class="p-top-welfare__more-text">MORE</span>
               <span class="p-top-welfare__more-icon" aria-hidden="true"></span>
             </a>
           </div>
           <div class="p-top-welfare__bottom">
-            <div class="p-top-welfare__cta-wrap">
+            <div class="p-top-welfare__cta-wrap js-blur-word">
               <a class="p-top-welfare__cta" href="/recruit/position/">
                 <span class="p-top-welfare__cta-text">新卒・キャリア採用募集要項はこちら</span>
                 <span class="p-top-welfare__cta-icon" aria-hidden="true"></span>
               </a>
             </div>
-            <a class="p-top-welfare__instagram" href="https://www.instagram.com/keihindensetsu_jp/" target="_blank" rel="noopener">
+            <a class="p-top-welfare__instagram js-blur-word" href="https://www.instagram.com/keihindensetsu_jp/" target="_blank" rel="noopener">
               <picture>
                 <source srcset="./images/top/top-instagram.webp" media="(min-width: 768px)" width="1238" height="570" />
                 <img src="./images/top/top-instagram-sp.webp" alt="" width="355" height="227">
