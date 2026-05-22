@@ -1,46 +1,172 @@
 gsap.registerPlugin(ScrollTrigger);
 
+
+const opening = gsap.timeline();
+const singleWordTargets = document.querySelectorAll(".js-single-word");
+
+const getOpeningLogoCenterOffset = () => {
+    const logo = document.querySelector(".js-opening-logo");
+
+    if (!logo) {
+        return { x: 0, y: 0 };
+    }
+
+    const rect = logo.getBoundingClientRect();
+    const logoCenterX = rect.left + rect.width / 2;
+    const logoCenterY = rect.top + rect.height / 2;
+
+    return {
+        x: window.innerWidth / 2 - logoCenterX,
+        y: window.innerHeight / 2 - logoCenterY,
+    };
+};
+
+singleWordTargets.forEach((target) => {
+    const fragment = document.createDocumentFragment();
+
+    target.childNodes.forEach((node) => {
+        if (node.nodeType === Node.TEXT_NODE) {
+            Array.from(node.textContent).forEach((char) => {
+                const span = document.createElement("span");
+                span.className = "js-single-char";
+                span.textContent = char;
+                span.style.display = "inline-block";
+                fragment.appendChild(span);
+            });
+            return;
+        }
+
+        fragment.appendChild(node.cloneNode(true));
+    });
+
+    target.replaceChildren(fragment);
+});
+
+
+
 var webStorage = function () {
     if (sessionStorage.getItem('access')) {
-        gsap.set(".js-single-char", {
-            opacity: 1,
-            y: 0,
+        gsap.set(".p-loading", {
+            display: "none",
         });
-        gsap.set(".js-mv-logo", {
+        gsap.set(".p-main", {
             opacity: 1,
-            filter: "blur(0px)",
-            y: 0,
         });
+        gsap.set(".p-header", {
+            opacity: 1,
+        });
+       
         gsap.set(".js-mv-img", {
             opacity: 1,
             "--mv-mask-progress": "115%",
         });
+        gsap.set(".js-mv-logo", {
+            opacity: 1,
+        });
+
 
     } else {
         sessionStorage.setItem('access', 0);
 
-        const opening = gsap.timeline();
-        const singleWordTargets = document.querySelectorAll(".js-single-word");
+        //最初ふわっと青背景現れる
 
-        singleWordTargets.forEach((target) => {
-            const fragment = document.createDocumentFragment();
+        opening.fromTo(".p-loading", {
+            opacity: 0,
+        }, {
+            opacity: 1,
+            duration: 1.2,
+            ease: "power2.inOut",
+        });
+        opening.to(".p-header", {
+            opacity: 1,
+            duration: 1.2,
+            ease: "power2.inOut",
+        });
+        opening.to(".p-main", {
+            opacity: 1,
+            duration: 1.0,
+            ease: "power2.inOut",
+        });
+        //白いロゴだけが現れる
+        const openingLogoOffset = getOpeningLogoCenterOffset();
 
-            target.childNodes.forEach((node) => {
-                if (node.nodeType === Node.TEXT_NODE) {
-                    Array.from(node.textContent).forEach((char) => {
-                        const span = document.createElement("span");
-                        span.className = "js-single-char";
-                        span.textContent = char;
-                        span.style.display = "inline-block";
-                        fragment.appendChild(span);
-                    });
-                    return;
-                }
+        opening.fromTo(".p-loading__logo", {
+            x: openingLogoOffset.x,
+            y: openingLogoOffset.y,
+        }, {
+            x: 0,
+            y: 0,
+            duration: 1.2,
+            ease: "power2.inOut",
+        }, "-=1.5");
 
-                fragment.appendChild(node.cloneNode(true));
-            });
+        opening.fromTo(".js-opening-logo", {
+            scale: 3.5,
+            transformOrigin: "50% 50%",
+        }, {
+            scale: 1,
+            duration: 1.2,
+            ease: "power2.inOut",
+        }, "<");
 
-            target.replaceChildren(fragment);
+        //文字のところがふわっと現れる
+        opening.fromTo(".js-opening-logo-text", {
+            opacity: 0,
+        }, {
+            opacity: 1,
+            duration: 0.8,
+            stagger: 0.05,
+            ease: "power2.inOut",
+        });
+
+
+        //recruitの文字だけ一文字ずつ
+
+        opening.fromTo(".js-opening-logo-recruit", {
+            opacity: 0,
+            y: 10,
+            filter: "blur(10px)",
+        }, {
+            opacity: 1,
+            y: 0,
+            filter: "blur(0px)",
+            duration: 1.2,
+            ease: "power2.inOut",
+        }, "-=0.8");
+
+        //recruitの文字だけオレンジになる
+        opening.fromTo(".js-opening-logo-color", {
+            fill: "#fff",
+        }, {
+            fill: "#f77423",
+            duration: 1.2,
+            ease: "power2.inOut",
+        });
+
+        //ロゴ全体がちょっと上に移動
+        opening.to(".p-loading__logo", {
+            y: -44,
+            duration: 1.0,
+            ease: "power2.inOut",
+        });
+
+        //Grow to Glowの文字が現れる
+        opening.fromTo(".p-loading__grow", {
+            opacity: 0,
+            y: 12,
+        }, {
+            opacity: 1,
+            y: 0,
+            duration: 1.2,
+            ease: "power2.inOut",
+        }, "-=0.35");
+
+        opening.to(".p-loading", {
+            opacity: 0,
+            duration: 1.0,
+        });
+        opening.to(".p-loading", {
+            display: "none",
         });
 
         opening.fromTo(".js-mv-img", {
@@ -52,7 +178,9 @@ var webStorage = function () {
             stagger: 0.2,
             ease: "power2.inOut",
             duration: 1.2,
-        });
+        }, "-=1.0");
+
+
 
         opening.fromTo(".js-single-char", {
             opacity: 0,
@@ -63,7 +191,7 @@ var webStorage = function () {
             stagger: 0.08,
             ease: "power2.inOut",
             duration: 1.0,
-        }, "-=0.5");
+        });
 
         opening.fromTo(".js-mv-logo", {
             opacity: 0,
@@ -75,8 +203,7 @@ var webStorage = function () {
             y: 0,
             ease: "power2.inOut",
             duration: 1.0,
-        }, "-=0.8");
-
+        });
 
     }
 }
@@ -250,7 +377,7 @@ columns.forEach((column) => {
         column,
         {
             justifyContent: 'flex-start',
-           
+
         },
         {
             justifyContent: 'space-between',
