@@ -1831,6 +1831,7 @@ select::-ms-expand {
   font-weight: 500;
   line-height: 1;
   text-transform: uppercase;
+  color: #000;
 }
 
 .p-drawer-content {
