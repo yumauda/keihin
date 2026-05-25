@@ -31,19 +31,19 @@
   display: inline-block;
   color: #000;
   font-family: "Bebas Neue", sans-serif;
-  font-size: rem(48);
+  font-size: rem(52);
   font-weight: 400;
   letter-spacing: 0.08em;
   line-height: 1;
 
   @include mq(md) {
-    font-size: rem(70);
+    font-size: rem(74);
   }
 }
 
 .p-top-welfare__sub-title {
   color: #000;
-  font-size: rem(10);
+  font-size: rem(14);
   font-weight: 500;
   line-height: 1.5;
   margin-top: rem(10);
@@ -51,7 +51,7 @@
   letter-spacing: 0.1em;
 
   @include mq(md) {
-    font-size: rem(16);
+    font-size: rem(20);
   }
 }
 
@@ -148,7 +148,7 @@
   justify-content: center;
   padding-left: rem(34);
   padding-right: rem(8);
-  width: rem(157);
+  width: rem(180);
 }
 
 .p-top-welfare__more-text {

@@ -2477,7 +2477,7 @@ select::-ms-expand {
 .p-footer__nav-link {
   color: #fff;
   display: inline-block;
-  font-size: 0.625rem;
+  font-size: 0.8125rem;
   font-weight: 500;
   line-height: 2.6;
   padding-left: 0.75rem;
@@ -4401,7 +4401,7 @@ body {
   margin-right: auto;
   padding-bottom: 0.3125rem;
   text-align: center;
-  width: min(100%, 12.3125rem);
+  width: min(100%, 15.625rem);
 }
 @media screen and (min-width: 768px) {
   .p-people__heading {
@@ -4424,14 +4424,14 @@ body {
 
 .p-people__title {
   color: #000;
-  font-size: 1.1875rem;
+  font-size: 1.4375rem;
   font-weight: 700;
   line-height: 1.8421052632;
   text-align: center;
 }
 @media screen and (min-width: 768px) {
   .p-people__title {
-    font-size: 2.1875rem;
+    font-size: 2.4375rem;
     line-height: 0.8571428571;
     text-align: left;
   }
@@ -4472,7 +4472,7 @@ body {
   color: #a8a8a8;
   display: inline-block;
   font-family: "Bebas Neue", sans-serif;
-  font-size: 1.0625rem;
+  font-size: 1.3125rem;
   font-weight: 400;
   letter-spacing: 0.01em;
   line-height: 1;
@@ -4480,7 +4480,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .p-people__en {
-    font-size: 2rem;
+    font-size: 2.25rem;
     margin-top: 1.5rem;
   }
 }
@@ -4489,7 +4489,7 @@ body {
   background-color: #4688e3;
   box-shadow: 0 0 0.3125rem rgba(255, 255, 255, 0.55);
   color: #fff;
-  font-size: 1rem;
+  font-size: 1.125rem;
   font-weight: 700;
   line-height: 1.5;
   margin-left: auto;
@@ -4498,7 +4498,7 @@ body {
   padding: 0.875rem 1rem;
   position: relative;
   text-align: center;
-  max-width: 14.125rem;
+  max-width: 17.5rem;
   border-radius: 0.1875rem;
 }
 @media screen and (min-width: 768px) {
@@ -5093,7 +5093,7 @@ body {
 
 .p-top-career__title {
   font-family: "Bebas Neue", sans-serif;
-  font-size: 3rem;
+  font-size: 3.25rem;
   font-weight: 400;
   letter-spacing: 0.03em;
   line-height: 1;
@@ -5102,12 +5102,12 @@ body {
 }
 @media screen and (min-width: 768px) {
   .p-top-career__title {
-    font-size: 4.25rem;
+    font-size: 4.5rem;
   }
 }
 
 .p-top-career__sub-title {
-  font-size: 0.625rem;
+  font-size: 0.875rem;
   font-weight: 500;
   line-height: 1.5;
   margin-top: 0.625rem;
@@ -5115,7 +5115,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .p-top-career__sub-title {
-    font-size: 1.125rem;
+    font-size: 1.375rem;
   }
 }
 
@@ -5157,7 +5157,7 @@ body {
   justify-content: center;
   padding-left: 2.125rem;
   padding-right: 0.5rem;
-  width: 9.8125rem;
+  width: 11.25rem;
 }
 
 .p-top-career__more-text {
@@ -5287,20 +5287,20 @@ body {
 
 .p-top-interview__title {
   font-family: "Bebas Neue", sans-serif;
-  font-size: 2.5rem;
+  font-size: 2.75rem;
   font-weight: 400;
   letter-spacing: 0.03em;
   line-height: 1;
 }
 @media screen and (min-width: 768px) {
   .p-top-interview__title {
-    font-size: 4.375rem;
+    font-size: 4.625rem;
   }
 }
 
 .p-top-interview__sub-title {
   display: inline-block;
-  font-size: 0.6875rem;
+  font-size: 0.9375rem;
   font-weight: 500;
   line-height: 1.5;
   position: relative;
@@ -5310,7 +5310,7 @@ body {
   .p-top-interview__sub-title {
     margin-top: 0.75rem;
     padding-top: 0.875rem;
-    font-size: 1.125rem;
+    font-size: 1.375rem;
   }
 }
 
@@ -5425,12 +5425,12 @@ body {
   padding-left: 2.125rem;
   padding-right: 0.5rem;
   position: relative;
-  width: 8.75rem;
+  width: 11.25rem;
   height: 2.1875rem;
 }
 @media screen and (min-width: 768px) {
   .p-top-interview__button {
-    width: 9.8125rem;
+    width: 11.25rem;
     height: 2.5rem;
   }
 }
@@ -5912,7 +5912,7 @@ body {
 
 .p-top-rep__title {
   font-family: "Bebas Neue", sans-serif;
-  font-size: 3rem;
+  font-size: 3.25rem;
   font-weight: 400;
   letter-spacing: 0.03em;
   line-height: 1;
@@ -5921,19 +5921,19 @@ body {
 }
 @media screen and (min-width: 768px) {
   .p-top-rep__title {
-    font-size: 4.375rem;
+    font-size: 4.625rem;
   }
 }
 
 .p-top-rep__sub-title {
-  font-size: 0.625rem;
+  font-size: 0.875rem;
   font-weight: 500;
   line-height: 1.5;
   text-align: center;
 }
 @media screen and (min-width: 768px) {
   .p-top-rep__sub-title {
-    font-size: 1.125rem;
+    font-size: 1.375rem;
   }
 }
 
@@ -5960,7 +5960,7 @@ body {
   font-weight: 600;
   line-height: 1.5;
   margin-top: 1.25rem;
-  font-size: 0.8125rem;
+  font-size: 1rem;
 }
 @media screen and (min-width: 768px) {
   .p-top-rep__description {
@@ -5993,7 +5993,7 @@ body {
   justify-content: center;
   padding-left: 2.125rem;
   padding-right: 0.5rem;
-  width: 9.8125rem;
+  width: 11.25rem;
 }
 
 .p-top-rep__button-text {
@@ -6122,20 +6122,20 @@ body {
   display: inline-block;
   color: #000;
   font-family: "Bebas Neue", sans-serif;
-  font-size: 3rem;
+  font-size: 3.25rem;
   font-weight: 400;
   letter-spacing: 0.08em;
   line-height: 1;
 }
 @media screen and (min-width: 768px) {
   .p-top-welfare__title {
-    font-size: 4.375rem;
+    font-size: 4.625rem;
   }
 }
 
 .p-top-welfare__sub-title {
   color: #000;
-  font-size: 0.625rem;
+  font-size: 0.875rem;
   font-weight: 500;
   line-height: 1.5;
   margin-top: 0.625rem;
@@ -6144,7 +6144,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .p-top-welfare__sub-title {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 }
 
@@ -6246,7 +6246,7 @@ body {
   justify-content: center;
   padding-left: 2.125rem;
   padding-right: 0.5rem;
-  width: 9.8125rem;
+  width: 11.25rem;
 }
 
 .p-top-welfare__more-text {

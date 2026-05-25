@@ -69,7 +69,7 @@
 
 .p-top-career__title {
   font-family: "Bebas Neue", sans-serif;
-  font-size: rem(48);
+  font-size: rem(52);
   font-weight: 400;
   letter-spacing: 0.03em;
   line-height: 1;
@@ -77,19 +77,19 @@
   display: inline-block;
 
   @include mq(md) {
-    font-size: rem(68);
+    font-size: rem(72);
   }
 }
 
 .p-top-career__sub-title {
-  font-size: rem(10);
+  font-size: rem(14);
   font-weight: 500;
   line-height: 1.5;
   margin-top: rem(10);
   text-align: center;
 
   @include mq(md) {
-    font-size: rem(18);
+    font-size: rem(22);
   }
 }
 
@@ -129,7 +129,7 @@
   justify-content: center;
   padding-left: rem(34);
   padding-right: rem(8);
-  width: rem(157);
+  width: rem(180);
 }
 
 .p-top-career__more-text {
