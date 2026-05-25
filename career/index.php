@@ -25,8 +25,8 @@
   <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  <script defer src="../js/gsap.js?v=20260324"></script>
-  <script defer src="../js/script.js?v=20260516"></script>
+  <script defer src="../js/gsap.js?v=20260525"></script>
+  <script defer src="../js/script.js?v=20260525"></script>
 </head>
 
 <body>
@@ -74,7 +74,7 @@
       <div class="l-inner">
         <article class="p-career__article-inner">
           <section class="p-career__section">
-            <h2 class="p-career__section-title">私は2012年、<br class="u-mobile">新卒として京浜電設へ<br class="u-mobile">入社しました。</h2>
+            <h2 class="p-career__text">私は2012年、<br class="u-mobile">新卒として京浜電設へ<br class="u-mobile">入社しました。</h2>
             <p class="p-career__text">私は秋田で生まれ育ち、幼い頃から、大工として会社を築き上げた父の背中を見てきました。現場で働く職人たちの姿は私にとって常に身近な存在であり、いつしか「自分も経営の立場で組織を支える挑戦がしたい」という想いが自然と芽生えていました。<br>一方で、用意された道を進むのではなく、一度都会に出て自分自身の力で挑戦し、成長したいという気持ちも強く持っていました。</p>
             <p class="p-career__text">就職活動の際、その想いを当時の副社長(現社長)に率直に伝えたことを、今でも鮮明に覚えています。<br>副社長は、「京浜電設にはガラスの天井はない。挑戦したい者には、等しくチャンスがある。経営者にもなれる」と、真正面から受け止めてくださいました。</p>
             <p class="p-career__text">年齢や立場ではなく、志を見てくれる会社がある。<br>その言葉に背中を押され、「この会社で自分の可能性に挑戦したい」と心を決めました。</p>

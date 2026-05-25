@@ -80,7 +80,7 @@
   @include mq(md) {
     display: flex;
     flex-shrink: 0;
-    gap: min(rem(55), calc(55 / 1440) * 100vw);
+    gap: min(rem(48), calc(48 / 1440) * 100vw);
     margin-left: rem(126);
     margin-top: rem(8);
     order: 2;
@@ -91,13 +91,13 @@
   list-style: none;
 
   @include mq(md) {
-    width: rem(190);
+    width: rem(180);
   }
 }
 
 .p-footer__nav:nth-child(2) {
   @include mq(md) {
-    width: rem(230);
+    width: rem(238);
   }
 }
 

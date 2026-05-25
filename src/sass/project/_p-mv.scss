@@ -1,21 +1,23 @@
 @use "../global" as *;
 
 .p-mv {
+  background-color: #e5e5e5;
   overflow-x: clip;
-  height: rem(400);
+  height: rem(745);
   
   @include mq(md) {
     padding-top: rem(109);
-    height: initial;
+    height: rem(854);
   }
 }
 
 .p-mv__content {
+  min-height: inherit;
   position: relative;
 }
 
 .js-mv-img {
-  --mv-mask-progress: 0%;
+  --mv-mask-progress: 115%;
   mask-image: linear-gradient(
     90deg,
     #000 0%,

@@ -25,8 +25,8 @@
   <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  <script defer src="../../js/gsap.js?v=20260324"></script>
-  <script defer src="../../js/script.js?v=20260516"></script>
+  <script defer src="../../js/gsap.js?v=20260525"></script>
+  <script defer src="../../js/script.js?v=20260525"></script>
 </head>
 
 <body>

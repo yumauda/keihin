@@ -25,8 +25,8 @@
   <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  <script defer src="../js/gsap.js?v=20260324"></script>
-  <script defer src="../js/script.js?v=20260516"></script>
+  <script defer src="../js/gsap.js?v=20260525"></script>
+  <script defer src="../js/script.js?v=20260525"></script>
 </head>
 
 <body>
@@ -101,7 +101,7 @@
       </div>
     </section>
 
-    <section class="p-career-plan__training">
+    <!-- <section class="p-career-plan__training">
       <div class="l-inner">
         <h2 class="p-career-plan__section-title">研修制度について</h2>
         <h3 class="p-career-plan__training-title">新人研修スケジュールの例</h3>
@@ -142,7 +142,7 @@
           <p>資格取得は人事評価にもつながりますので、ぜひ積極的に資格取得にチャレンジください。</p>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section class="p-work-recruit">
       <div class="l-inner">

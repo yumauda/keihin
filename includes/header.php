@@ -57,12 +57,14 @@
                 <div class="p-header__bottom">
                     <nav class="p-header__nav" aria-label="グローバルナビゲーション">
                         <ul class="p-header__nav-list">
+                            <li class="p-header__nav-item"><a class="p-header__nav-link" href="/recruit/">HOME</a></li>
                             <li class="p-header__nav-item"><a class="p-header__nav-link" href="/recruit/interview/">働く仲間の声</a></li>
-                            <li class="p-header__nav-item"><a class="p-header__nav-link" href="/recruit/message/">代表メッセージ</a></li>
                             <li class="p-header__nav-item"><a class="p-header__nav-link" href="/recruit/work/">京浜電設の仕事</a></li>
+                            <li class="p-header__nav-item"><a class="p-header__nav-link" href="/recruit/message/">代表メッセージ</a></li>
                             <li class="p-header__nav-item"><a class="p-header__nav-link" href="/recruit/career/">キャリアアップストーリー</a></li>
+                            <li class="p-header__nav-item"><a class="p-header__nav-link" href="#">研修制度</a></li>
                             <li class="p-header__nav-item"><a class="p-header__nav-link" href="/recruit/welfare/">福利厚生</a></li>
-                            <li class="p-header__nav-item"><a class="p-header__nav-link" href="/recruit/faq/">よくある質問</a></li>
+                            <li class="p-header__nav-item"><a class="p-header__nav-link" href="/recruit/faq/">FAQ</a></li>
                             <li class="p-header__nav-item"><a class="p-header__nav-link" href="/recruit/position/">募集要項</a></li>
                         </ul>
                     </nav>
@@ -85,7 +87,10 @@
                     <div class="p-drawer-content__items">
                         <ul class="p-drawer-content__lists">
                             <li class="p-drawer-content__list">
-                                <a href="/recruit/" class="p-drawer-content__link p-drawer-content__link--home">HOME</a>
+                                <a href="/recruit/" class="p-drawer-content__link">HOME</a>
+                            </li>
+                            <li class="p-drawer-content__list">
+                                <a href="/recruit/interview/" class="p-drawer-content__link">働く仲間の声</a>
                             </li>
                             <li class="p-drawer-content__list">
                                 <a href="/recruit/message/" class="p-drawer-content__link">代表メッセージ</a>
@@ -97,19 +102,16 @@
                                 <a href="/recruit/career/" class="p-drawer-content__link">キャリアアップストーリー</a>
                             </li>
                             <li class="p-drawer-content__list">
+                                <a href="#" class="p-drawer-content__link">研修制度</a>
+                            </li>
+                            <li class="p-drawer-content__list">
                                 <a href="/recruit/welfare/" class="p-drawer-content__link">福利厚生</a>
                             </li>
                             <li class="p-drawer-content__list">
-                                <a href="/recruit/faq/" class="p-drawer-content__link">よくある質問</a>
+                                <a href="/recruit/faq/" class="p-drawer-content__link">FAQ（よくある質問）</a>
                             </li>
                             <li class="p-drawer-content__list">
                                 <a href="/recruit/position/" class="p-drawer-content__link">募集要項</a>
-                            </li>
-                            <li class="p-drawer-content__list">
-                                <a href="#" class="p-drawer-content__link">エントリーフォーム</a>
-                            </li>
-                            <li class="p-drawer-content__list">
-                                <a href="#" class="p-drawer-content__link">コーポレートサイト</a>
                             </li>
                             <li class="p-drawer-content__list">
                                 <button class="p-drawer-content__link p-drawer-content__link--button js-translate-toggle" type="button" aria-label="言語選択" aria-expanded="false" aria-controls="drawer-language-menu" data-translate-menu="drawer-language-menu">LANGUAGE</button>

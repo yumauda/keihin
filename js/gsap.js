@@ -21,29 +21,6 @@ const getOpeningLogoCenterOffset = () => {
     };
 };
 
-singleWordTargets.forEach((target) => {
-    const fragment = document.createDocumentFragment();
-
-    target.childNodes.forEach((node) => {
-        if (node.nodeType === Node.TEXT_NODE) {
-            Array.from(node.textContent).forEach((char) => {
-                const span = document.createElement("span");
-                span.className = "js-single-char";
-                span.textContent = char;
-                span.style.display = "inline-block";
-                fragment.appendChild(span);
-            });
-            return;
-        }
-
-        fragment.appendChild(node.cloneNode(true));
-    });
-
-    target.replaceChildren(fragment);
-});
-
-
-
 var webStorage = function () {
     if (sessionStorage.getItem('access')) {
         gsap.set(".p-loading", {
@@ -182,13 +159,12 @@ var webStorage = function () {
 
 
 
-        opening.fromTo(".js-single-char", {
+        opening.fromTo(singleWordTargets, {
             opacity: 0,
             y: 10,
         }, {
             opacity: 1,
             y: 0,
-            stagger: 0.08,
             ease: "power2.inOut",
             duration: 1.0,
         });
@@ -207,7 +183,8 @@ var webStorage = function () {
 
     }
 }
-webStorage();
+// 一時的にローディング演出を停止
+// webStorage();
 
 
 let opacityWords = document.querySelectorAll('.js-opacity-word');
@@ -236,13 +213,11 @@ blurWords.forEach((blurWord) => {
         blurWord,
         {
             opacity: 0,
-            filter: "blur(14px)",
             y: 18,
             scale: 0.96,
         },
         {
             opacity: 1,
-            filter: "blur(0px)",
             y: 0,
             scale: 1,
             duration: 1.1,
@@ -257,27 +232,8 @@ blurWords.forEach((blurWord) => {
 let jsEachWords = document.querySelectorAll('.js-each-word');
 
 jsEachWords.forEach((jsEachWord) => {
-    const fragment = document.createDocumentFragment();
-
-    jsEachWord.childNodes.forEach((node) => {
-        if (node.nodeType === Node.TEXT_NODE) {
-            Array.from(node.textContent).forEach((char) => {
-                const span = document.createElement("span");
-                span.className = "js-each-char";
-                span.textContent = char === " " ? "\u00a0" : char;
-                span.style.display = "inline-block";
-                fragment.appendChild(span);
-            });
-            return;
-        }
-
-        fragment.appendChild(node.cloneNode(true));
-    });
-
-    jsEachWord.replaceChildren(fragment);
-
     gsap.fromTo(
-        jsEachWord.querySelectorAll('.js-each-char'),
+        jsEachWord,
         {
             opacity: 0,
             y: 18,
@@ -287,7 +243,6 @@ jsEachWords.forEach((jsEachWord) => {
             opacity: 1,
             y: 0,
             scale: 1,
-            stagger: 0.06,
             duration: 1,
             ease: 'power2.inOut',
             scrollTrigger: {

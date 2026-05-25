@@ -35,8 +35,8 @@
   <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  <script defer src="./js/gsap.js?v=20260325"></script>
-  <script defer src="./js/script.js?v=20260517"></script>
+  <script defer src="./js/gsap.js?v=20260525"></script>
+  <script defer src="./js/script.js?v=20260525"></script>
 </head>
 
 <body>
@@ -45,6 +45,7 @@
   ?>
   <?php include_once(__DIR__ . '/includes/header.php'); ?>
 
+  <!-- 一時的にローディングを停止
   <div class="p-loading">
     <div class="p-loading__content">
       <div class="p-loading__logo">
@@ -86,10 +87,12 @@
       </div>
     </div>
   </div>
+  -->
   <main class="p-main">
     <section class="p-mv">
       <div class="l-wide-inner">
         <div class="p-mv__content">
+          <!-- 一時的にFV要素を停止
           <figure class="p-mv__img js-mv-img">
             <img src="./images/top/mv_img.webp" alt="働く未来のためにともに育とう。" width="1400" height="746">
           </figure>
@@ -97,6 +100,7 @@
           <figure class="p-mv__logo js-mv-logo">
             <img src="./images/top/mv_logo.png" alt="grow to glow" width="904" height="241">
           </figure>
+          -->
         </div>
 
 

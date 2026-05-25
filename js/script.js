@@ -18,6 +18,14 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   let pendingTranslateLang = null;
 
   function getCurrentTranslateLang() {
+    try {
+      const storedLang = localStorage.getItem(TRANSLATE_STORAGE_KEY);
+      if (storedLang === 'en' || storedLang === 'ja') return storedLang;
+    } catch (e) {
+      // ignore
+    }
+
+    if (document.cookie.indexOf('googtrans=/ja/en') !== -1) return 'en';
     return 'ja';
   }
 
@@ -73,6 +81,26 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     });
   }
 
+  function setTranslateCookies(lang) {
+    const translateValue = lang === 'en' ? '/ja/en' : '/ja/ja';
+    const hostname = window.location.hostname;
+    const domains = [hostname, '.' + hostname];
+    const expires = 'Fri, 31 Dec 9999 23:59:59 GMT';
+
+    document.cookie = 'googtrans=' + translateValue + '; expires=' + expires + '; path=/';
+
+    if (hostname.indexOf('.') !== -1) {
+      const parts = hostname.split('.');
+      for (let i = 1; i < parts.length - 1; i++) {
+        domains.push('.' + parts.slice(i).join('.'));
+      }
+    }
+
+    domains.forEach(function (domain) {
+      document.cookie = 'googtrans=' + translateValue + '; expires=' + expires + '; path=/; domain=' + domain;
+    });
+  }
+
   function resetTranslateToJapanese() {
     clearTranslateCookies();
     try {
@@ -87,6 +115,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     if (!combo) return false;
     combo.value = 'en';
     combo.dispatchEvent(new Event('change'));
+    setTranslateCookies('en');
     syncTranslateUi('en');
     return true;
   }
@@ -270,8 +299,16 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   });
 
   if ($translate.length) {
-    resetTranslateToJapanese();
-    syncTranslateUi(getCurrentTranslateLang());
+    const initialTranslateLang = getCurrentTranslateLang();
+    syncTranslateUi(initialTranslateLang);
+
+    if (initialTranslateLang === 'en') {
+      pendingTranslateLang = 'en';
+      setTranslateCookies('en');
+      ensureTranslateScript();
+    } else {
+      resetTranslateToJapanese();
+    }
   }
 
   $translateToggle.on('click', function () {
@@ -295,6 +332,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
     if (lang === 'en') {
       syncTranslateUi('en');
+      setTranslateCookies('en');
       pendingTranslateLang = 'en';
       if (!applyEnglishTranslation()) {
         ensureTranslateScript();
