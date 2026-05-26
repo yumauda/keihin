@@ -13,7 +13,7 @@
 .p-message__hero {
   background: #fff;
   overflow: hidden;
-  padding: rem(28) 0 rem(42);
+  padding: rem(50) 0 rem(42);
 
   @include mq(md) {
     padding: rem(56) 0 0;
@@ -34,7 +34,7 @@
 
 .p-message__en {
   font-family: $second-font-family;
-  font-size: rem(42);
+  font-size: rem(52);
   font-weight: 400;
   line-height: 1;
   border-bottom: 3px solid #fe4504;
@@ -117,7 +117,7 @@
 }
 
 .p-message__title {
-  font-size: rem(17);
+  font-size: rem(20);
   font-weight: 700;
   left: calc(var(--message-sp-frame-left) + #{rem(25)});
   letter-spacing: 0.04em;
@@ -231,7 +231,7 @@
 }
 
 .p-message__text {
-  font-size: rem(13);
+  font-size: rem(16);
   font-weight: 400;
   letter-spacing: 0.02em;
   line-height: 1.85;

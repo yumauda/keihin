@@ -128,7 +128,7 @@
             <li class="p-top-interview__card js-blur-word">
               <a class="p-top-interview__card-link" href="/recruit/interview/">
                 <figure class="p-top-interview__image">
-                  <img decoding="async" loading="lazy" src="./images/common/top-interview-card-01.webp" alt="総務部 N.Kさん" width="274" height="283">
+                  <img decoding="async" loading="lazy" src="./images/top/top-interview-card-01.webp" alt="総務部 N.Kさん" width="274" height="283">
                 </figure>
                 <p class="p-top-interview__card-title">次は私が採用を通じて<br>誰かの縁をつなぎたい</p>
                 <p class="p-top-interview__name">総務部　N.Kさん</p>
@@ -137,7 +137,7 @@
             <li class="p-top-interview__card js-blur-word">
               <a class="p-top-interview__card-link" href="/recruit/interview/">
                 <figure class="p-top-interview__image">
-                  <img decoding="async" loading="lazy" src="./images/common/top-interview-card-02.webp" alt="工事事業部 S.Sさん" width="274" height="283">
+                  <img decoding="async" loading="lazy" src="./images/top/top-interview-card-02.webp" alt="工事事業部 S.Sさん" width="274" height="283">
                 </figure>
                 <p class="p-top-interview__card-title">情報系の知識をベースに<br>ステップアップを実感！</p>
                 <p class="p-top-interview__name">工事事業部　S.Sさん</p>
@@ -146,7 +146,7 @@
             <li class="p-top-interview__card js-blur-word">
               <a class="p-top-interview__card-link" href="/recruit/interview/">
                 <figure class="p-top-interview__image">
-                  <img decoding="async" loading="lazy" src="./images/common/top-interview-card-03.webp" alt="営業部 A.Mさん" width="274" height="283">
+                  <img decoding="async" loading="lazy" src="./images/top/top-interview-card-03.webp" alt="営業部 A.Mさん" width="274" height="283">
                 </figure>
                 <p class="p-top-interview__card-title">異業種からの挑戦でも<br>相談しながら成長できる！</p>
                 <p class="p-top-interview__name">営業部　A.Mさん</p>
@@ -155,7 +155,7 @@
             <li class="p-top-interview__card js-blur-word">
               <a class="p-top-interview__card-link" href="/recruit/interview/">
                 <figure class="p-top-interview__image">
-                  <img decoding="async" loading="lazy" src="./images/common/top-interview-card-04.webp" alt="総務部 S.Hさん" width="274" height="283">
+                  <img decoding="async" loading="lazy" src="./images/top/top-interview-card-04.webp" alt="総務部 S.Hさん" width="274" height="283">
                 </figure>
                 <p class="p-top-interview__card-title">私をきちんと見てくれる<br>そんな会社で働く心地よさ</p>
                 <p class="p-top-interview__name">総務部　S.Hさん</p>

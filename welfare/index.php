@@ -21,7 +21,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/styles.css?v=20260516">
+  <link rel="stylesheet" href="../css/styles.css?v=20260520">
   <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
@@ -73,7 +73,7 @@
             <p class="p-welfare__card-text">公共交通機関を利用する場合、通勤交通費を全額支給します。（社内規定あり）<br>バイク、自転車での通勤も可能です。</p>
           </li>
           <li class="p-welfare__card">
-            <figure class="p-welfare__icon"><img src="../images/welfare/welfare-icon-long-service.webp" alt="" width="1487" height="1775" loading="lazy" decoding="async"></figure>
+            <figure class="p-welfare__icon"><img src="../images/top/top-welfare-icon-06.webp" alt="" width="115" height="115" loading="lazy" decoding="async"></figure>
             <h2 class="p-welfare__card-title">永年勤続制度</h2>
             <p class="p-welfare__card-text">勤続20年・30年を迎えた社員には、会社より表彰状および記念品を贈呈しています。</p>
           </li>

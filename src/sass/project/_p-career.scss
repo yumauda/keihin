@@ -106,7 +106,7 @@
 }
 
 .p-career__catch {
-  font-size: rem(24);
+  font-size: rem(20);
   font-weight: 700;
   letter-spacing: 0.04em;
   line-height: 1.65;
@@ -154,8 +154,8 @@
 
   @include mq(md) {
     justify-self: end;
-    max-width: rem(800);
-    width: rem(800);
+    max-width: rem(430);
+    width: 100%;
   }
 }
 
@@ -244,7 +244,7 @@
 
 .p-career__chart {
   margin: 0 auto;
-  width: rem(600);
+  width: rem(800);
 
   @include mq(md){
     max-width: rem(1195);
@@ -296,8 +296,8 @@
 }
 
 .p-career__text {
-  font-size: rem(14);
-  font-weight: 500;
+  font-size: rem(16);
+  font-weight: 400;
   letter-spacing: 0.02em;
   line-height: 1.9;
 

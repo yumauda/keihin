@@ -5,7 +5,7 @@
   padding-bottom: rem(24);
   overflow-x: clip;
   background-color: #fff;
-  
+
   @include mq(md) {
     padding-top: rem(64);
     padding-bottom: rem(24);
@@ -24,7 +24,7 @@
   padding-top: rem(36);
   padding-right: rem(24);
   padding-left: rem(24);
-  
+
   @include mq(md) {
     padding-top: rem(57);
     padding-right: rem(64);
@@ -37,7 +37,8 @@
   margin-left: auto;
   margin-right: auto;
   padding-bottom: rem(5);
-  width: min(100%, rem(250));
+  width: fit-content;
+  position: relative;
 
   @include mq(md) {
     padding-bottom: rem(17);
@@ -58,7 +59,7 @@
 }
 
 .p-top-license__title {
-  font-size: rem(19);
+  font-size: rem(22);
   font-weight: 700;
   line-height: calc(35 / 19);
   text-align: center;
@@ -88,7 +89,7 @@
   left: 50%;
   position: absolute;
   transform: translateX(-50%);
-  width: rem(247);
+  width: rem(270);
 
   @include mq(md) {
     content: none;
@@ -96,17 +97,23 @@
 }
 
 .p-top-license__title span:nth-child(2)::after {
-  width: rem(181);
+  width: rem(206);
+
+  @include mq(md) {
+
+    width: rem(181);
+  }
 }
 
 .p-top-license__section {
   border-top: 1px solid #707070;
   padding-top: rem(20);
   margin-top: rem(20);
-  @include mq(md){
+
+  @include mq(md) {
     padding-top: rem(28);
     margin-top: rem(32);
-    
+
   }
 }
 
@@ -126,9 +133,10 @@
   font-weight: 600;
   line-height: 1.5;
   font-size: rem(15);
-  @include mq(md){
+
+  @include mq(md) {
     font-size: rem(22);
-    
+
   }
 }
 
@@ -136,10 +144,11 @@
   line-height: 1.8125;
   font-size: rem(13);
   margin-top: rem(6);
-  @include mq(md){
+
+  @include mq(md) {
     margin-top: rem(10);
     font-size: rem(16);
-    
+
   }
 }
 

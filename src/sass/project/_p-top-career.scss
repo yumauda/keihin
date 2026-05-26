@@ -192,12 +192,11 @@
   color: #fff;
   display: flex;
   justify-content: center;
-  width: rem(250);
+  width: 100%;
   min-height: rem(36);
   position: relative;
 
   @include mq(md) {
-    width: 100%;
     max-width: rem(469);
     min-height: rem(67);
   }

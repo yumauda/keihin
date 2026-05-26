@@ -22,7 +22,7 @@
             </ul>
 
             <ul class="p-footer__nav">
-                <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="#">社員の主な出身校・専攻学部・学科</a></li>
+                <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="/recruit/education/">社員の主な出身校・専攻学部・学科</a></li>
                 <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="/recruit/welfare/">福利厚生</a></li>
                 <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="/recruit/faq/">FAQ（よくある質問）</a></li>
                 <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="/recruit/position/">募集要項</a></li>
