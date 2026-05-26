@@ -78,104 +78,74 @@
 }
 
 .p-interview-detail__hero-body {
-  --interview-detail-sp-frame-left: calc(50% - #{rem(160)});
-
-  background: radial-gradient(circle at 50% 50%, #fff 0%, #e1edf2 61%, #e1edf2 100%);
-  height: rem(363);
+  background: radial-gradient(circle at 50% 50%, #fff 0%, #e1edf2 100%);
+  display: flex;
+  flex-direction: column;
+  gap: rem(18);
+  justify-content: flex-end;
   margin: rem(34) auto 0;
   overflow: hidden;
-  padding: 0;
-  position: relative;
+  padding: rem(20) rem(20) 0;
   width: 100vw;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
 
   @include mq(md) {
-    background: none;
-    display: block;
+    align-items: stretch;
+    flex-direction: row;
+    gap: rem(52);
+    height: rem(420);
+    justify-content: center;
     margin: rem(48) calc(50% - 50vw) 0;
     max-width: none;
-    min-height: rem(420);
-    padding: 0 max(rem(20), calc((100vw - #{rem(1000)}) / 2));
-    position: relative;
+    padding: 0 rem(20);
     width: 100vw;
   }
 }
 
-.p-interview-detail__hero-body::before {
+.p-interview-detail--image-left .p-interview-detail__hero-body {
   @include mq(md) {
-    background: radial-gradient(circle at 50% 50%, #fff 0%, #e1edf2 100%);
-    content: "";
-    height: rem(420);
-    left: 50%;
-    position: absolute;
-    top: 0;
-    transform: translateX(-50%);
-    width: 100vw;
+    flex-direction: row-reverse;
   }
 }
 
 .p-interview-detail__hero-text {
-  // inset: 0;
-  // position: absolute;
-  z-index: 1;
-  max-width: rem(600);
   margin-left: auto;
   margin-right: auto;
+  max-width: rem(600);
+  width: 100%;
+  z-index: 1;
 
   @include mq(md) {
-    inset: auto;
-    left: max(rem(20), calc((100vw - #{rem(1000)}) / 2));
-    position: absolute;
-    top: rem(60);
-    width: rem(593);
+    align-self: center;
+    flex: 0 1 rem(593);
     margin-left: initial;
-    max-width: initial;
     margin-right: initial;
-    z-index: 1;
+    max-width: rem(593);
   }
 }
 
 .p-interview-detail--image-left .p-interview-detail__hero-text {
   @include mq(md) {
-    --interview-detail-text-left: #{rem(601)};
-
-    left: var(--interview-detail-text-left);
-    width: min(#{rem(642)}, calc(100vw - var(--interview-detail-text-left) - #{rem(24)}));
-  }
-
-  @media screen and (min-width: 1600px) {
-    --interview-detail-text-left: calc((100vw - #{rem(1440)}) / 2 + #{rem(601)});
+    flex-basis: rem(650);
+    max-width: rem(650);
   }
 }
 
 .p-interview-detail__title {
   font-size: rem(19);
   font-weight: 700;
-  // left: calc(var(--interview-detail-sp-frame-left) + #{rem(25)});
   letter-spacing: 0.04em;
   line-height: calc(29 / 17);
-  // position: absolute;
-  // top: rem(16);
-  padding-top: rem(24);
-  padding-left: rem(20);
-  padding-right: rem(20);
 
   @include mq(md) {
-    padding-top: initial;
-    padding-left: initial;
-    padding-right: initial;
     font-size: rem(38);
-    left: auto;
     letter-spacing: 0.02em;
     line-height: 1.63;
-    position: static;
-    top: auto;
-    width: auto;
   }
 
   .p-interview-detail--image-left & {
-    @media screen and (min-width: 768px) and (max-width: 1245px) {
+    @media screen and (min-width: 768px) and (max-width: 1100px) {
       font-size: rem(32);
       line-height: 1.55;
     }
@@ -187,19 +157,12 @@
   font-weight: 600;
   letter-spacing: 0.03em;
   line-height: calc(19 / 12);
-  margin-top: 0;
-  position: absolute;
-  right: auto;
-  left: calc(var(--interview-detail-sp-frame-left) + #{rem(243)});
-  top: rem(110);
-  width: rem(62);
+  margin-top: rem(18);
 
   @include mq(md) {
     font-size: rem(22);
     line-height: calc(30 / 22);
     margin-top: rem(80);
-    position: static;
-    width: auto;
   }
 }
 
@@ -224,42 +187,37 @@
 }
 
 .p-interview-detail__main-image {
-  // bottom: 0;
-  // left: calc(var(--interview-detail-sp-frame-left) - #{rem(203)});
-  // overflow: hidden;
-  // position: absolute;
-  // width: rem(481);
+  flex: 0 0 auto;
+  margin: 0 auto;
   max-width: rem(330);
-
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
 
   @include mq(md) {
-    bottom: auto;
-    left: auto;
-    position: relative;
-    margin-left: auto;
-    margin-right: initial;
+    align-self: flex-end;
+    flex: 0 0 rem(431);
+    margin: 0;
     max-width: rem(431);
     z-index: 0;
   }
 }
 
 .p-interview-detail--image-left .p-interview-detail__main-image {
-
   @include mq(md) {
-    margin-left: rem(-72);
-    
+    flex-basis: rem(431);
   }
 }
 
 .p-interview-detail__main-image img {
   display: block;
-  height: auto;
+  height: rem(260);
   width: 100%;
   object-fit: cover;
-  object-position: center center;
+  object-position: center top;
+
+  @include mq(md) {
+    height: auto;
+    object-position: center center;
+  }
 }
 
 .p-interview-detail__content {
