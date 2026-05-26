@@ -435,7 +435,7 @@
               <p class="p-top-license__text">1級施工管理・2級施工管理・第一種電気工事士・第二種電気工事士 他</p>
             </div>
             <div class="p-top-license__button-wrap">
-              <a class="p-top-license__button" href="#">
+              <a class="p-top-license__button" href="/recruit/education/">
                 <span class="p-top-license__button-text">出身校などについてもっと見る</span>
                 <span class="p-top-license__button-icon" aria-hidden="true"></span>
               </a>

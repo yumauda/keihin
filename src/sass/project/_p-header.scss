@@ -2,7 +2,7 @@
 
 .p-header {
   background-color: #fff;
-  height: rem(48);
+  height: rem(70);
   left: 0;
   right: 0;
   position: fixed;
@@ -302,9 +302,9 @@ body {
   border-radius: 9999px;
   color: #fff;
   display: flex;
-  height: rem(24);
+  height: rem(32);
   justify-content: center;
-  width: rem(112);
+  width: rem(124);
   padding-left: rem(14);
   padding-right: rem(14);
 
@@ -322,7 +322,7 @@ body {
 }
 
 .p-header__entry-text {
-  font-size: rem(10);
+  font-size: rem(14);
   font-weight: 700;
   line-height: 1;
 
