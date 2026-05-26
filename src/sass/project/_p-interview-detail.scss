@@ -137,9 +137,10 @@
   font-weight: 700;
   letter-spacing: 0.04em;
   line-height: calc(29 / 17);
+  white-space: nowrap;
 
   @include mq(md) {
-    font-size: rem(38);
+    font-size: rem(36);
     letter-spacing: 0.02em;
     line-height: 1.63;
   }
@@ -162,19 +163,19 @@
   @include mq(md) {
     font-size: rem(22);
     line-height: calc(30 / 22);
-    margin-top: rem(80);
+    margin-top: rem(64);
   }
 }
 
 .p-interview-detail--image-left .p-interview-detail__profile {
   @include mq(md) {
-    margin-top: rem(132);
+    margin-top: rem(64);
   }
 
   @media screen and (min-width: 768px) and (max-width: 1245px) {
     font-size: rem(20);
     line-height: 1.35;
-    margin-top: rem(100);
+    margin-top: rem(64);
   }
 }
 

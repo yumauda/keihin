@@ -65,22 +65,26 @@
             </a>
           </li>
           <li class="p-interview__card">
-            <figure class="p-interview__image">
-              <img src="../images/interview/interview-s-h.webp" alt="総務部 総務人事課 在職1年目 S.Hさん" width="2250" height="1500">
-            </figure>
-            <div class="p-interview__body">
-              <figure class="p-interview__bubble"><img src="../images/interview/bubble-s-h.svg" alt="私をきちんと見てくれる そんな会社で働く心地よさ" width="273" height="95"></figure>
-              <p class="p-interview__profile">総務部 総務人事課<br>在職1年目<br>S.Hさん</p>
-            </div>
+            <a class="p-interview__card-link" href="/recruit/interview/horikawa-s-h/">
+              <figure class="p-interview__image">
+                <img src="../images/interview/interview-s-h.webp" alt="総務部 総務人事課 在職1年目 S.Hさん" width="2250" height="1500">
+              </figure>
+              <div class="p-interview__body">
+                <figure class="p-interview__bubble"><img src="../images/interview/bubble-s-h.svg" alt="私をきちんと見てくれる そんな会社で働く心地よさ" width="273" height="95"></figure>
+                <p class="p-interview__profile">総務部 総務人事課<br>在職1年目<br>S.Hさん</p>
+              </div>
+            </a>
           </li>
           <li class="p-interview__card">
-            <figure class="p-interview__image">
-              <img src="../images/interview/interview-k-n.webp" alt="総務部 経理課 在職1年目 K.Nさん" width="1500" height="2250">
-            </figure>
-            <div class="p-interview__body">
-              <figure class="p-interview__bubble"><img src="../images/interview/bubble-k-n.svg" alt="数字のパズルを解きながら 専門性を高めていきたい" width="274" height="100"></figure>
-              <p class="p-interview__profile">総務部 経理課<br>在職1年目<br>K.Nさん</p>
-            </div>
+            <a class="p-interview__card-link" href="/recruit/interview/nagaoka-kanako/">
+              <figure class="p-interview__image">
+                <img src="../images/interview/interview-k-n.webp" alt="総務部 経理課 在職1年目 K.Nさん" width="1500" height="2250">
+              </figure>
+              <div class="p-interview__body">
+                <figure class="p-interview__bubble"><img src="../images/interview/bubble-k-n.svg" alt="数字のパズルを解きながら 専門性を高めていきたい" width="274" height="100"></figure>
+                <p class="p-interview__profile">総務部 経理課<br>在職1年目<br>K.Nさん</p>
+              </div>
+            </a>
           </li>
           <li class="p-interview__card">
             <figure class="p-interview__image">

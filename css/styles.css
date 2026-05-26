@@ -3236,10 +3236,11 @@ body {
   font-weight: 700;
   letter-spacing: 0.04em;
   line-height: 1.7058823529;
+  white-space: nowrap;
 }
 @media screen and (min-width: 768px) {
   .p-interview-detail__title {
-    font-size: 2.375rem;
+    font-size: 2.25rem;
     letter-spacing: 0.02em;
     line-height: 1.63;
   }
@@ -3262,20 +3263,20 @@ body {
   .p-interview-detail__profile {
     font-size: 1.375rem;
     line-height: 1.3636363636;
-    margin-top: 5rem;
+    margin-top: 4rem;
   }
 }
 
 @media screen and (min-width: 768px) {
   .p-interview-detail--image-left .p-interview-detail__profile {
-    margin-top: 8.25rem;
+    margin-top: 4rem;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1245px) {
   .p-interview-detail--image-left .p-interview-detail__profile {
     font-size: 1.25rem;
     line-height: 1.35;
-    margin-top: 6.25rem;
+    margin-top: 4rem;
   }
 }
 
