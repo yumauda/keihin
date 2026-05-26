@@ -183,11 +183,11 @@
 
   @include mq(md) {
     margin-left: initial;
-    gap: rem(18);
+    gap: rem(50);
     padding-left: 0;
     position: absolute;
     right: rem(-22);
-    top: 50%;
+    top: 65%;
     transform: translateY(-84%);
     width: rem(252);
     z-index: 1;

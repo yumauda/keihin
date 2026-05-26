@@ -116,8 +116,8 @@
 }
 
 .p-interview-detail__hero-text {
-  inset: 0;
-  position: absolute;
+  // inset: 0;
+  // position: absolute;
   z-index: 1;
   max-width: rem(600);
   margin-left: auto;
@@ -152,13 +152,19 @@
 .p-interview-detail__title {
   font-size: rem(19);
   font-weight: 700;
-  left: calc(var(--interview-detail-sp-frame-left) + #{rem(25)});
+  // left: calc(var(--interview-detail-sp-frame-left) + #{rem(25)});
   letter-spacing: 0.04em;
   line-height: calc(29 / 17);
-  position: absolute;
-  top: rem(16);
+  // position: absolute;
+  // top: rem(16);
+  padding-top: rem(24);
+  padding-left: rem(20);
+  padding-right: rem(20);
 
   @include mq(md) {
+    padding-top: initial;
+    padding-left: initial;
+    padding-right: initial;
     font-size: rem(38);
     left: auto;
     letter-spacing: 0.02em;
@@ -218,43 +224,42 @@
 }
 
 .p-interview-detail__main-image {
-  aspect-ratio: 481 / 252;
-  bottom: 0;
-  left: calc(var(--interview-detail-sp-frame-left) - #{rem(203)});
-  overflow: hidden;
-  position: absolute;
-  width: rem(481);
+  // bottom: 0;
+  // left: calc(var(--interview-detail-sp-frame-left) - #{rem(203)});
+  // overflow: hidden;
+  // position: absolute;
+  // width: rem(481);
+  max-width: rem(330);
+
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 
   @include mq(md) {
-    aspect-ratio: 800 / 420;
     bottom: auto;
     left: auto;
     position: relative;
     margin-left: auto;
-    width: rem(800);
+    margin-right: initial;
+    max-width: rem(431);
     z-index: 0;
   }
 }
 
 .p-interview-detail--image-left .p-interview-detail__main-image {
-  left: 0;
 
   @include mq(md) {
-    margin-left: calc(max(#{rem(20)}, (100vw - #{rem(1000)}) / 2) * -1);
-    margin-right: auto;
-  }
-
-  @media screen and (min-width: 1600px) {
-    margin-left: rem(-220);
+    margin-left: rem(-72);
+    
   }
 }
 
 .p-interview-detail__main-image img {
   display: block;
-  height: 100%;
-  object-fit: contain;
-  object-position: center bottom;
+  height: auto;
   width: 100%;
+  object-fit: cover;
+  object-position: center center;
 }
 
 .p-interview-detail__content {

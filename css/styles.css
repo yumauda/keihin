@@ -1749,7 +1749,7 @@ select::-ms-expand {
   align-items: center;
   justify-content: center;
 }
-@media screen and (min-width: 1284px) {
+@media screen and (min-width: 1210px) {
   .p-drawer-icon {
     display: none;
   }
@@ -1803,7 +1803,7 @@ select::-ms-expand {
   width: 1.25rem;
   display: flex;
 }
-@media screen and (min-width: 1284px) {
+@media screen and (min-width: 1210px) {
   .p-drawer-icon__bar1 {
     width: 1.75rem;
   }
@@ -1816,7 +1816,7 @@ select::-ms-expand {
   width: 1.25rem;
   display: flex;
 }
-@media screen and (min-width: 1284px) {
+@media screen and (min-width: 1210px) {
   .p-drawer-icon__bar2 {
     width: 1.75rem;
   }
@@ -2779,7 +2779,7 @@ select::-ms-expand {
   position: relative;
   z-index: 10000;
 }
-@media screen and (min-width: 1284px) {
+@media screen and (min-width: 1210px) {
   .p-header__inner {
     padding-left: 1.75rem;
     padding-right: 1.5625rem;
@@ -2822,7 +2822,7 @@ select::-ms-expand {
   background-color: #476ed6;
   box-shadow: none;
 }
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: 1209px) {
   .p-header.is-drawer-active {
     height: 2.875rem;
   }
@@ -2838,7 +2838,7 @@ select::-ms-expand {
   align-items: center;
   margin-left: auto;
 }
-@media screen and (min-width: 1284px) {
+@media screen and (min-width: 1210px) {
   .p-header__menu-area {
     display: block;
     flex: 1;
@@ -2851,7 +2851,7 @@ select::-ms-expand {
 .p-header__utility {
   display: none;
 }
-@media screen and (min-width: 1284px) {
+@media screen and (min-width: 1210px) {
   .p-header__utility {
     display: flex;
     justify-content: flex-end;
@@ -2869,7 +2869,7 @@ select::-ms-expand {
   justify-content: flex-end;
   width: 100%;
 }
-@media screen and (min-width: 1284px) {
+@media screen and (min-width: 1210px) {
   .p-header__bottom {
     height: 100%;
   }
@@ -2878,7 +2878,7 @@ select::-ms-expand {
 .p-header__nav {
   display: none;
 }
-@media screen and (min-width: 1180px) {
+@media screen and (min-width: 1210px) {
   .p-header__nav {
     display: block;
     position: absolute;
@@ -2891,7 +2891,7 @@ select::-ms-expand {
 .p-header__drawer {
   margin-left: 0.625rem;
 }
-@media screen and (min-width: 1284px) {
+@media screen and (min-width: 1210px) {
   .p-header__drawer {
     display: none;
   }
@@ -2933,7 +2933,7 @@ select::-ms-expand {
   position: relative;
   z-index: 10000;
 }
-@media screen and (min-width: 1284px) {
+@media screen and (min-width: 1210px) {
   .p-header__actions {
     margin: 0;
     position: absolute;
@@ -2957,7 +2957,7 @@ select::-ms-expand {
   padding: 0;
   width: 7.5rem;
 }
-@media screen and (min-width: 1284px) {
+@media screen and (min-width: 1210px) {
   .p-header__language {
     display: inline-flex;
   }
@@ -3073,7 +3073,7 @@ body {
   }
 }
 
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: 1209px) {
   .p-header.is-drawer-active .p-header__entry {
     height: 1.375rem;
     width: 6.3125rem;
@@ -3213,8 +3213,6 @@ body {
 }
 
 .p-interview-detail__hero-text {
-  inset: 0;
-  position: absolute;
   z-index: 1;
   max-width: 37.5rem;
   margin-left: auto;
@@ -3250,14 +3248,17 @@ body {
 .p-interview-detail__title {
   font-size: 1.1875rem;
   font-weight: 700;
-  left: calc(var(--interview-detail-sp-frame-left) + 1.5625rem);
   letter-spacing: 0.04em;
   line-height: 1.7058823529;
-  position: absolute;
-  top: 1rem;
+  padding-top: 1.5rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 @media screen and (min-width: 768px) {
   .p-interview-detail__title {
+    padding-top: initial;
+    padding-left: initial;
+    padding-right: initial;
     font-size: 2.375rem;
     left: auto;
     letter-spacing: 0.02em;
@@ -3319,46 +3320,35 @@ body {
 }
 
 .p-interview-detail__main-image {
-  aspect-ratio: 481/252;
-  bottom: 0;
-  left: calc(var(--interview-detail-sp-frame-left) - 12.6875rem);
-  overflow: hidden;
-  position: absolute;
-  width: 30.0625rem;
+  max-width: 20.625rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (min-width: 768px) {
   .p-interview-detail__main-image {
-    aspect-ratio: 800/420;
     bottom: auto;
     left: auto;
     position: relative;
     margin-left: auto;
-    width: 50rem;
+    margin-right: initial;
+    max-width: 26.9375rem;
     z-index: 0;
   }
 }
 
-.p-interview-detail--image-left .p-interview-detail__main-image {
-  left: 0;
-}
 @media screen and (min-width: 768px) {
   .p-interview-detail--image-left .p-interview-detail__main-image {
-    margin-left: calc(max(1.25rem, (100vw - 62.5rem) / 2) * -1);
-    margin-right: auto;
-  }
-}
-@media screen and (min-width: 1600px) {
-  .p-interview-detail--image-left .p-interview-detail__main-image {
-    margin-left: -13.75rem;
+    margin-left: -4.5rem;
   }
 }
 
 .p-interview-detail__main-image img {
   display: block;
-  height: 100%;
-  object-fit: contain;
-  object-position: center bottom;
+  height: auto;
   width: 100%;
+  object-fit: cover;
+  object-position: center center;
 }
 
 .p-interview-detail__content {
@@ -3681,11 +3671,11 @@ body {
 @media screen and (min-width: 768px) {
   .p-interview__body {
     margin-left: initial;
-    gap: 1.125rem;
+    gap: 3.125rem;
     padding-left: 0;
     position: absolute;
     right: -1.375rem;
-    top: 50%;
+    top: 65%;
     transform: translateY(-84%);
     width: 15.75rem;
     z-index: 1;

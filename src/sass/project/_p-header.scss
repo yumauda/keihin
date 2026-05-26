@@ -29,7 +29,7 @@
   margin-right: auto;
   position: relative;
   z-index: 10000;
-  @media screen and (min-width: 1284px) {
+  @media screen and (min-width: 1210px) {
     padding-left: rem(28);
     padding-right: rem(25);
   }
@@ -70,7 +70,7 @@
   background-color: #476ed6;
   box-shadow: none;
 
-  @media screen and (max-width: 1279px) {
+  @media screen and (max-width: 1209px) {
     height: rem(46);
   }
 }
@@ -89,7 +89,7 @@
   align-items: center;
   margin-left: auto;
 
-  @media screen and (min-width: 1284px) {
+  @media screen and (min-width: 1210px) {
     display: block;
     flex: 1;
     height: 100%;
@@ -101,7 +101,7 @@
 .p-header__utility {
   display: none;
 
-  @media screen and (min-width: 1284px) {
+  @media screen and (min-width: 1210px) {
     display: flex;
     justify-content: flex-end;
     padding-right: 0;
@@ -118,7 +118,7 @@
   justify-content: flex-end;
   width: 100%;
 
-  @media screen and (min-width: 1284px) {
+  @media screen and (min-width: 1210px) {
     height: 100%;
   }
 }
@@ -126,7 +126,7 @@
 .p-header__nav {
   display: none;
 
-  @media screen and (min-width: 1180px) {
+  @media screen and (min-width: 1210px) {
     display: block;
     position: absolute;
     right: rem(18);
@@ -138,7 +138,7 @@
 .p-header__drawer {
   margin-left: rem(10);
 
-  @media screen and (min-width: 1284px) {
+  @media screen and (min-width: 1210px) {
     display: none;
   }
 }
@@ -177,7 +177,7 @@
   position: relative;
   z-index: 10000;
 
-  @media screen and (min-width: 1284px) {
+  @media screen and (min-width: 1210px) {
     margin: 0;
     position: absolute;
     right: rem(13);
@@ -200,7 +200,7 @@
   padding: 0;
   width: rem(120);
 
-  @media screen and (min-width: 1284px) {
+  @media screen and (min-width: 1210px) {
     display: inline-flex;
   }
 }
@@ -315,7 +315,7 @@ body {
 }
 
 .p-header.is-drawer-active .p-header__entry {
-  @media screen and (max-width: 1279px) {
+  @media screen and (max-width: 1209px) {
     height: rem(22);
     width: rem(101);
   }

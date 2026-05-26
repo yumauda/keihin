@@ -21,7 +21,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/styles.css?v=20260516">
+  <link rel="stylesheet" href="../css/styles.css?v=20260525">
   <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
@@ -34,7 +34,7 @@
   <?php include_once(__DIR__ . '/../includes/header.php'); ?>
 
   <main class="p-interview">
-    <section class="p-interview__intro">
+  <section class="p-interview__intro">
       <div class="l-inner l-interview-inner">
         <div class="p-interview__heading">
           <h1 class="p-interview__title">INTERVIEW</h1>
