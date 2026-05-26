@@ -130,6 +130,9 @@
   padding-left: rem(34);
   padding-right: rem(8);
   width: rem(180);
+  @include mq(md){
+   width: rem(220); 
+  }
 }
 
 .p-top-career__more-text {

@@ -19,11 +19,10 @@
   margin-right: auto;
   padding-bottom: rem(5);
   text-align: center;
-  width: min(100%, rem(250));
+  width: fit-content;
 
   @include mq(md) {
     position: relative;
-    width: min(100%, rem(570));
   }
 }
 

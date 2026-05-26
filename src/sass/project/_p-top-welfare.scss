@@ -149,10 +149,13 @@
   padding-left: rem(34);
   padding-right: rem(8);
   width: rem(180);
+  @include mq(md){
+   width: rem(220); 
+  }
 }
 
 .p-top-welfare__more-text {
-  font-size: rem(12.5);
+  font-size: rem(12);
   font-weight: 500;
   line-height: 1;
 }

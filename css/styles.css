@@ -4401,12 +4401,11 @@ body {
   margin-right: auto;
   padding-bottom: 0.3125rem;
   text-align: center;
-  width: min(100%, 15.625rem);
+  width: fit-content;
 }
 @media screen and (min-width: 768px) {
   .p-people__heading {
     position: relative;
-    width: min(100%, 35.625rem);
   }
 }
 
@@ -5159,6 +5158,11 @@ body {
   padding-right: 0.5rem;
   width: 11.25rem;
 }
+@media screen and (min-width: 768px) {
+  .p-top-career__more {
+    width: 13.75rem;
+  }
+}
 
 .p-top-career__more-text {
   font-size: 0.78125rem;
@@ -5430,7 +5434,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .p-top-interview__button {
-    width: 11.25rem;
+    width: 13.75rem;
     height: 2.5rem;
   }
 }
@@ -5645,7 +5649,7 @@ body {
 .p-top-license__button {
   align-items: center;
   background-color: #fff;
-  border: 0.075rem solid #000;
+  border: 1px solid #000;
   border-radius: 1.5rem;
   color: #000;
   display: inline-flex;
@@ -5657,7 +5661,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .p-top-license__button {
-    max-width: 15.125rem;
+    max-width: 16.25rem;
   }
 }
 
@@ -5995,6 +5999,11 @@ body {
   padding-right: 0.5rem;
   width: 11.25rem;
 }
+@media screen and (min-width: 768px) {
+  .p-top-rep__button {
+    width: 13.75rem;
+  }
+}
 
 .p-top-rep__button-text {
   font-size: 0.78125rem;
@@ -6083,7 +6092,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .p-top-text__title {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 
@@ -6248,9 +6257,14 @@ body {
   padding-right: 0.5rem;
   width: 11.25rem;
 }
+@media screen and (min-width: 768px) {
+  .p-top-welfare__more {
+    width: 13.75rem;
+  }
+}
 
 .p-top-welfare__more-text {
-  font-size: 0.78125rem;
+  font-size: 0.75rem;
   font-weight: 500;
   line-height: 1;
 }
