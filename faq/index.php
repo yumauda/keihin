@@ -7,7 +7,7 @@
   <meta name="format-detection" content="telephone=no" />
   <title>よくある質問 | 京浜電設株式会社 採用サイト</title>
   <meta name="description" content="京浜電設株式会社の採用に関するよくある質問を掲載しています。選考、配属、働き方、福利厚生、入社後の研修についてご確認いただけます。" />
-  <meta name="robots" content="index,follow" />
+  <meta name="robots" content="noindex,nofollow" />
   <meta name="theme-color" content="#005D97" />
   <meta property="og:locale" content="ja_JP" />
   <meta property="og:site_name" content="京浜電設株式会社 採用サイト" />

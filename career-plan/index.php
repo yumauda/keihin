@@ -7,7 +7,7 @@
   <meta name="format-detection" content="telephone=no" />
   <title>キャリアプラン | 京浜電設株式会社 採用サイト</title>
   <meta name="description" content="京浜電設株式会社のキャリアプランをご紹介します。資格取得、年収モデル、研修制度など、入社後の成長ステップを掲載しています。" />
-  <meta name="robots" content="index,follow" />
+  <meta name="robots" content="noindex,nofollow" />
   <meta name="theme-color" content="#005D97" />
   <meta property="og:locale" content="ja_JP" />
   <meta property="og:site_name" content="京浜電設株式会社 採用サイト" />

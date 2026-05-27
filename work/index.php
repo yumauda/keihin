@@ -7,7 +7,7 @@
   <meta name="format-detection" content="telephone=no" />
   <title>京浜電設の仕事 | 京浜電設株式会社 採用サイト</title>
   <meta name="description" content="京浜電設株式会社の主な仕事内容と、電気が届くまでの流れをご紹介します。" />
-  <meta name="robots" content="index,follow" />
+  <meta name="robots" content="noindex,nofollow" />
   <meta name="theme-color" content="#005D97" />
   <meta property="og:locale" content="ja_JP" />
   <meta property="og:site_name" content="京浜電設株式会社 採用サイト" />

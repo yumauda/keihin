@@ -30,7 +30,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/styles.css?v=20260523">
+  <link rel="stylesheet" href="./css/styles.css?v=20260524">
   <!-- JavaScript -->
   <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
@@ -126,7 +126,7 @@
           </div>
           <ul class="p-top-interview__cards">
             <li class="p-top-interview__card js-blur-word">
-              <a class="p-top-interview__card-link" href="/recruit/interview/">
+              <a class="p-top-interview__card-link" href="/recruit/interview/kurahashi-naho/">
                 <figure class="p-top-interview__image">
                   <img decoding="async" loading="lazy" src="./images/top/top-interview-card-01.webp" alt="総務部 N.Kさん" width="274" height="283">
                 </figure>
@@ -135,7 +135,7 @@
               </a>
             </li>
             <li class="p-top-interview__card js-blur-word">
-              <a class="p-top-interview__card-link" href="/recruit/interview/">
+              <a class="p-top-interview__card-link" href="/recruit/interview/suzuki-shogo/">
                 <figure class="p-top-interview__image">
                   <img decoding="async" loading="lazy" src="./images/top/top-interview-card-02.webp" alt="工事事業部 S.Sさん" width="274" height="283">
                 </figure>
@@ -144,7 +144,7 @@
               </a>
             </li>
             <li class="p-top-interview__card js-blur-word">
-              <a class="p-top-interview__card-link" href="/recruit/interview/">
+              <a class="p-top-interview__card-link" href="/recruit/interview/masamori-akihito/">
                 <figure class="p-top-interview__image">
                   <img decoding="async" loading="lazy" src="./images/top/top-interview-card-03.webp" alt="営業部 A.Mさん" width="274" height="283">
                 </figure>
@@ -153,7 +153,7 @@
               </a>
             </li>
             <li class="p-top-interview__card js-blur-word">
-              <a class="p-top-interview__card-link" href="/recruit/interview/">
+              <a class="p-top-interview__card-link" href="/recruit/interview/horikawa-s-h/">
                 <figure class="p-top-interview__image">
                   <img decoding="async" loading="lazy" src="./images/top/top-interview-card-04.webp" alt="総務部 S.Hさん" width="274" height="283">
                 </figure>

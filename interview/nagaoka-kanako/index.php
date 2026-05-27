@@ -7,7 +7,7 @@
   <meta name="format-detection" content="telephone=no" />
   <title>長岡 かなこさん | 働く仲間の声 | 京浜電設株式会社 採用サイト</title>
   <meta name="description" content="京浜電設株式会社で働く総務部 在職1年目 K.Nさんのインタビューです。" />
-  <meta name="robots" content="index,follow" />
+  <meta name="robots" content="noindex,nofollow" />
   <meta name="theme-color" content="#005D97" />
   <meta property="og:locale" content="ja_JP" />
   <meta property="og:site_name" content="京浜電設株式会社 採用サイト" />
@@ -58,8 +58,7 @@
         <article class="p-interview-detail__article">
           <section class="p-interview-detail__section">
             <h2 class="p-interview-detail__question">これまでのご経歴と、京浜電設に入社された背景を教えてください。</h2>
-            <p class="p-interview-detail__text">大学は経済学部で、簿記や会社法などを学びました。新卒で入社した会社では、レジャー業界への興味と経理の仕事の両方に関わりたいと考え、遊園地で現場業務と総務業務を担当していました。しかし、現場と事務の両方を担当する中で残業が増え、経理の専門性を高めたいと思うようになり、会計事務所へ転職。税務の知識を学びながら法人だけでなく個人の会計にも関わる経験を積みました。</p>
-            <p class="p-interview-detail__text">京浜電設の選考で印象に残っているのは、面接で経理課長とお話ししたときのことです。女性で裏表がなく、相談しやすそうだと感じ「この方のもとで働けたらいいな」と思えたことが入社を決めた理由のひとつです。</p>
+            <p class="p-interview-detail__text">大学は経済学部で、簿記や会社法などを学びました。新卒で入社した会社では、レジャー業界への興味と経理の仕事の両方に関わりたいと考え、遊園地で現場業務と総務業務を担当していました。しかし、現場と事務の両方を担当する中で残業が増え、経理の専門性を高めたいと思うようになり、会計事務所へ転職。税務の知識を学びながら法人だけでなく個人の会計にも関わる経験を積みました。<br>京浜電設の選考で印象に残っているのは、面接で経理課長とお話ししたときのことです。女性で裏表がなく、相談しやすそうだと感じ「この方のもとで働けたらいいな」と思えたことが入社を決めた理由のひとつです。</p>
           </section>
 
           <section class="p-interview-detail__section">

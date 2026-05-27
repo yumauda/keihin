@@ -7,7 +7,7 @@
   <meta name="format-detection" content="telephone=no" />
   <title>代表メッセージ | 京浜電設株式会社 採用サイト</title>
   <meta name="description" content="京浜電設株式会社 代表取締役 福島佳孝から、三方よしの理念と採用に込めた想いをお伝えします。" />
-  <meta name="robots" content="index,follow" />
+  <meta name="robots" content="noindex,nofollow" />
   <meta name="theme-color" content="#005D97" />
   <meta property="og:locale" content="ja_JP" />
   <meta property="og:site_name" content="京浜電設株式会社 採用サイト" />

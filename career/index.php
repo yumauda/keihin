@@ -7,7 +7,7 @@
   <meta name="format-detection" content="telephone=no" />
   <title>キャリアアップストーリー | 京浜電設株式会社 採用サイト</title>
   <meta name="description" content="京浜電設株式会社 取締役副社長 菊池佑弥のキャリアアップストーリーをご紹介します。現場で培った経験を、次の時代へつなぐ歩みです。" />
-  <meta name="robots" content="index,follow" />
+  <meta name="robots" content="noindex,nofollow" />
   <meta name="theme-color" content="#005D97" />
   <meta property="og:locale" content="ja_JP" />
   <meta property="og:site_name" content="京浜電設株式会社 採用サイト" />

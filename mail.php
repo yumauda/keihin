@@ -307,6 +307,7 @@ else if($confirmDsp == 1){
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 <meta name="format-detection" content="telephone=no">
+<meta name="robots" content="noindex,nofollow">
 <title>確認画面</title>
 <style type="text/css">
 /* 自由に編集下さい */
@@ -402,6 +403,7 @@ if(($jumpPage == 0 && $sendmail == 1) || ($jumpPage == 0 && ($confirmDsp == 0 &&
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 <meta name="format-detection" content="telephone=no">
+<meta name="robots" content="noindex,nofollow">
 <title>完了画面</title>
 </head>
 <body>

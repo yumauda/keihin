@@ -7,7 +7,7 @@
   <meta name="format-detection" content="telephone=no" />
   <title>社員の主な出身校・専攻学部・学科 | 京浜電設株式会社 採用サイト</title>
   <meta name="description" content="京浜電設株式会社で活躍する社員の主な出身校、専攻学部、専攻学科をご紹介します。専門知識や技術は入社後でも身につけられます。" />
-  <meta name="robots" content="index,follow" />
+  <meta name="robots" content="noindex,nofollow" />
   <meta name="theme-color" content="#005D97" />
   <meta property="og:locale" content="ja_JP" />
   <meta property="og:site_name" content="京浜電設株式会社 採用サイト" />

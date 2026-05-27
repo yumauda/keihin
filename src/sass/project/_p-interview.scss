@@ -95,7 +95,7 @@
 
 .p-interview__cards {
   display: grid;
-  gap: rem(18);
+  gap: rem(64);
   margin: rem(32) auto 0;
   max-width: rem(1010);
   position: relative;
@@ -110,6 +110,7 @@
     padding-bottom: rem(72);
   }
 }
+
 .p-interview__cards::before {
   background: #F2F1E9;
   content: "";
@@ -123,26 +124,30 @@
 }
 
 .p-interview__card {
-  align-items: center;
+  // align-items: center;
   background: linear-gradient(90deg, #e1edf2 0%, #fcfcfc 52%, #e1edf2 100%);
   border-radius: rem(5);
-  display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(rem(110), 0.8fr);
-  min-height: rem(160);
+  // display: grid;
+  // grid-template-columns: minmax(0, 1.2fr) minmax(rem(110), 0.8fr);
   overflow: visible;
   padding: 0 rem(12) 0 0;
   position: relative;
 
   @include mq(md) {
     display: block;
-    min-height: rem(260);
-    padding: 0 rem(26) 0 0;
+    padding-right: rem(26);
+    padding-top: rem(28);
   }
 }
 
 .p-interview__card-link {
   color: inherit;
-  display: contents;
+  display: flex;
+  justify-content: center;
+
+  @include mq(md) {
+    justify-content: initial;
+  }
 }
 
 .p-interview__card:nth-child(2n) {
@@ -155,42 +160,37 @@
   align-self: stretch;
   border-radius: rem(5);
   overflow: hidden;
+  max-width: rem(150);
+
+  width: 100%;
 
   @include mq(md) {
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: rem(300);
+    max-width: rem(252);
   }
 }
 
 .p-interview__image img {
   display: block;
-  height: 100%;
-  object-fit: cover;
   width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
 }
 
 .p-interview__body {
   align-items: flex-start;
   display: flex;
   flex-direction: column;
-  gap: rem(14);
   padding-left: 0;
-  transform: translate(rem(8), rem(-16));
-  margin-left: rem(-24);
+  gap: rem(12);
+  margin-top: rem(-24);
+  margin-left: rem(24);
 
   @include mq(md) {
-    margin-left: initial;
-    gap: rem(50);
-    padding-left: 0;
-    position: absolute;
-    right: rem(-22);
-    top: 65%;
-    transform: translateY(-84%);
-    width: rem(252);
-    z-index: 1;
+    gap: rem(40);
+    margin-left: rem(-24);
+    margin-top: rem(-44);
+
   }
 }
 
@@ -214,7 +214,7 @@
   font-size: rem(12);
   font-weight: 600;
   line-height: 1.55;
-  margin-left: rem(32);
+  margin-left: rem(16);
 
   @include mq(md) {
     font-size: rem(18);
@@ -257,47 +257,38 @@
 }
 
 .p-interview__message-card {
-  align-items: self-end;
   background: linear-gradient(90deg, #e1edf2 0%, #fcfcfc 52%, #e1edf2 100%);
   border-radius: rem(5);
-  display: grid;
-  grid-template-columns: minmax(rem(130), 0.88fr) minmax(0, 1fr);
-  min-height: rem(160);
-  overflow: hidden;
-  padding: rem(10) rem(10) 0 0;
+  padding-top: rem(24);
+  padding-right: rem(16);
+}
 
-  @include mq(md) {
-    align-items: initial;
-    grid-template-columns: rem(220) 1fr;
-    min-height: rem(240);
-    padding: rem(20) rem(20) 0 0;
-  }
+.p-interview__message-card-link {
+  display: flex;
+  justify-content: space-between;
 }
 
 .p-interview__message-image {
-  aspect-ratio: 4 / 3;
-  border-radius: rem(5);
-  overflow: hidden;
-  width: rem(200);
+  max-width: rem(150);
 
   @include mq(md) {
-    width: rem(300);
-
+    max-width: rem(210);
+    width: 100%;
   }
 }
 
 .p-interview__message-image img {
   display: block;
-  height: 100%;
-  object-fit: cover;
   width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
 }
 
 .p-interview__message-body {
-  padding-left: rem(14);
-
   @include mq(md) {
-    padding-left: rem(28);
+    max-width: rem(231);
+    width: 100%;
   }
 }
 

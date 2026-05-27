@@ -7,7 +7,7 @@
   <meta name="format-detection" content="telephone=no" />
   <title>働く仲間の声 | 京浜電設株式会社 採用サイト</title>
   <meta name="description" content="京浜電設株式会社で働く社員の声をご紹介します。新卒・中途入社の社員、管理職や中堅社員の言葉を掲載しています。" />
-  <meta name="robots" content="index,follow" />
+  <meta name="robots" content="noindex,nofollow" />
   <meta name="theme-color" content="#005D97" />
   <meta property="og:locale" content="ja_JP" />
   <meta property="og:site_name" content="京浜電設株式会社 採用サイト" />
@@ -21,7 +21,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/styles.css?v=20260525">
+  <link rel="stylesheet" href="../css/styles.css?v=20260527">
   <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
@@ -30,11 +30,12 @@
 </head>
 
 <body>
-  <?php // ローカル環境用: include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'); ?>
+  <?php // ローカル環境用: include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'); 
+  ?>
   <?php include_once(__DIR__ . '/../includes/header.php'); ?>
 
   <main class="p-interview">
-  <section class="p-interview__intro">
+    <section class="p-interview__intro">
       <div class="l-inner l-interview-inner">
         <div class="p-interview__heading">
           <h1 class="p-interview__title">INTERVIEW</h1>
@@ -87,22 +88,26 @@
             </a>
           </li>
           <li class="p-interview__card">
-            <figure class="p-interview__image">
-              <img src="../images/interview/interview-n-k.webp" alt="人事総務課 在職2年目 N.Kさん" width="2250" height="1500">
-            </figure>
-            <div class="p-interview__body">
-              <figure class="p-interview__bubble"><img src="../images/interview/bubble-n-k.svg" alt="次は私が採用を通じて 誰かの縁をつなぎたい" width="252" height="98"></figure>
-              <p class="p-interview__profile">人事総務課<br>在職2年目<br>N.Kさん</p>
-            </div>
+            <a class="p-interview__card-link" href="/recruit/interview/kurahashi-naho/">
+              <figure class="p-interview__image">
+                <img src="../images/interview/interview-n-k.webp" alt="人事総務課 在職2年目 N.Kさん" width="2250" height="1500">
+              </figure>
+              <div class="p-interview__body">
+                <figure class="p-interview__bubble"><img src="../images/interview/bubble-n-k.svg" alt="次は私が採用を通じて 誰かの縁をつなぎたい" width="252" height="98"></figure>
+                <p class="p-interview__profile">人事総務課<br>在職2年目<br>N.Kさん</p>
+              </div>
+            </a>
           </li>
           <li class="p-interview__card">
-            <figure class="p-interview__image">
-              <img src="../images/interview/interview-s-s.webp" alt="工事事業部 第4課 在職3年目 S.Sさん" width="1500" height="2250">
-            </figure>
-            <div class="p-interview__body">
-              <figure class="p-interview__bubble"><img src="../images/interview/bubble-s-s.svg" alt="情報系の知識をベースに ステップアップを実感！" width="257" height="95"></figure>
-              <p class="p-interview__profile">工事事業部 第4課<br>在職3年目<br>S.Sさん</p>
-            </div>
+            <a class="p-interview__card-link" href="/recruit/interview/suzuki-shogo/">
+              <figure class="p-interview__image">
+                <img src="../images/interview/interview-s-s.webp" alt="工事事業部 第4課 在職3年目 S.Sさん" width="1500" height="2250">
+              </figure>
+              <div class="p-interview__body">
+                <figure class="p-interview__bubble"><img src="../images/interview/bubble-s-s.svg" alt="情報系の知識をベースに ステップアップを実感！" width="257" height="95"></figure>
+                <p class="p-interview__profile">工事事業部 第4課<br>在職3年目<br>S.Sさん</p>
+              </div>
+            </a>
           </li>
         </ul>
       </div>
@@ -114,41 +119,49 @@
 
         <ul class="p-interview__message-cards">
           <li class="p-interview__message-card">
-            <figure class="p-interview__message-image">
-              <img src="../images/interview/interview-t-s.webp" alt="営業部 営業部長 T.Sさん" width="1500" height="2250">
-            </figure>
-            <div class="p-interview__message-body">
-              <p class="p-interview__message-profile">営業部 営業部長<br>T.Sさん</p>
-              <p class="p-interview__message-text">30年の経験を次世代へ。若い人たちの声に耳を傾けながら新たな成長フェーズを支える力になっていきます。</p>
-            </div>
+            <a class="p-interview__message-card-link" href="/recruit/interview/saito-takayuki/">
+              <figure class="p-interview__message-image">
+                <img src="../images/interview/interview-t-s.webp" alt="営業部 営業部長 T.Sさん" width="1500" height="2250">
+              </figure>
+              <div class="p-interview__message-body">
+                <p class="p-interview__message-profile">営業部 営業部長<br>T.Sさん</p>
+                <p class="p-interview__message-text">30年の経験を次世代へ。若い人たちの声に耳を傾けながら新たな成長フェーズを支える力になっていきます。</p>
+              </div>
+            </a>
           </li>
           <li class="p-interview__message-card">
-            <figure class="p-interview__message-image">
-              <img src="../images/interview/interview-m-s.webp" alt="営業部 積算 M.Sさん" width="2250" height="1500">
-            </figure>
-            <div class="p-interview__message-body">
-              <p class="p-interview__message-profile">営業部 積算<br>M.Sさん</p>
-              <p class="p-interview__message-text">一つひとつの数字を積み上げ、仲間の現場を支える。みんなで「ありがとう」を共有できる職場です。</p>
-            </div>
+            <a class="p-interview__message-card-link" href="/recruit/interview/sunagawa-machiko/">
+              <figure class="p-interview__message-image">
+                <img src="../images/interview/interview-m-s.webp" alt="営業部 積算 M.Sさん" width="2250" height="1500">
+              </figure>
+              <div class="p-interview__message-body">
+                <p class="p-interview__message-profile">営業部 積算<br>M.Sさん</p>
+                <p class="p-interview__message-text">一つひとつの数字を積み上げ、仲間の現場を支える。みんなで「ありがとう」を共有できる職場です。</p>
+              </div>
+            </a>
           </li>
           <li class="p-interview__message-card">
-            <figure class="p-interview__message-image">
-              <img src="../images/interview/interview-a-s.webp" alt="経営企画室 A.Sさん" width="2250" height="1500">
-            </figure>
-            <div class="p-interview__message-body">
-              <p class="p-interview__message-profile">経営企画室<br>A.Sさん</p>
-              <p class="p-interview__message-text">広報から経営企画へ、一歩ずつキャリアを広げています。挑戦を後押ししてくれる環境で、一緒に未来を考えましょう！</p>
-            </div>
+            <a class="p-interview__message-card-link" href="/recruit/interview/saito-anju/">
+              <figure class="p-interview__message-image">
+                <img src="../images/interview/interview-a-s.webp" alt="経営企画室 A.Sさん" width="2250" height="1500">
+              </figure>
+              <div class="p-interview__message-body">
+                <p class="p-interview__message-profile">経営企画室<br>A.Sさん</p>
+                <p class="p-interview__message-text">広報から経営企画へ、一歩ずつキャリアを広げています。挑戦を後押ししてくれる環境で、一緒に未来を考えましょう！</p>
+              </div>
+            </a>
           </li>
 
           <li class="p-interview__message-card">
-            <figure class="p-interview__message-image">
-              <img src="../images/interview/interview-n-i.webp" alt="工事事業部 施工管理 N.Iさん" width="2250" height="1500">
-            </figure>
-            <div class="p-interview__message-body">
-              <p class="p-interview__message-profile">工事事業部 施工管理<br>N.Iさん</p>
-              <p class="p-interview__message-text">史学科出身の私も、いまは社会インフラを支えるプロ。あなたも、一生モノのスキルを身につけませんか？</p>
-            </div>
+            <a class="p-interview__message-card-link" href="/recruit/interview/iwabuchi/">
+              <figure class="p-interview__message-image">
+                <img src="../images/interview/interview-n-i.webp" alt="工事事業部 施工管理 N.Iさん" width="2250" height="1500">
+              </figure>
+              <div class="p-interview__message-body">
+                <p class="p-interview__message-profile">工事事業部 施工管理<br>N.Iさん</p>
+                <p class="p-interview__message-text">史学科出身の私も、いまは社会インフラを支えるプロ。あなたも、一生モノのスキルを身につけませんか？</p>
+              </div>
+            </a>
           </li>
         </ul>
 
@@ -169,7 +182,8 @@
     </section>
   </main>
 
-  <?php // ローカル環境用: include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'); ?>
+  <?php // ローカル環境用: include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'); 
+  ?>
   <?php include_once(__DIR__ . '/../includes/footer.php'); ?>
 </body>
 

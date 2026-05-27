@@ -7,7 +7,7 @@
   <meta name="format-detection" content="telephone=no" />
   <title>堀川さん | 働く仲間の声 | 京浜電設株式会社 採用サイト</title>
   <meta name="description" content="京浜電設株式会社で働く総務部 在職1年目 S.Hさんのインタビューです。" />
-  <meta name="robots" content="index,follow" />
+  <meta name="robots" content="noindex,nofollow" />
   <meta name="theme-color" content="#005D97" />
   <meta property="og:locale" content="ja_JP" />
   <meta property="og:site_name" content="京浜電設株式会社 採用サイト" />

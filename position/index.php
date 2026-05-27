@@ -7,7 +7,7 @@
   <meta name="format-detection" content="telephone=no" />
   <title>募集要項 | 京浜電設株式会社 採用サイト</title>
   <meta name="description" content="京浜電設株式会社の募集要項を掲載しています。新卒採用、キャリア採用の職種、募集要項、雇用形態、給与、勤務時間、休日、福利厚生、勤務地をご確認いただけます。" />
-  <meta name="robots" content="index,follow" />
+  <meta name="robots" content="noindex,nofollow" />
   <meta name="theme-color" content="#005D97" />
   <meta property="og:locale" content="ja_JP" />
   <meta property="og:site_name" content="京浜電設株式会社 採用サイト" />
@@ -163,19 +163,15 @@
           <section class="p-recruit__panel p-recruit__panel--admin js-recruit-panel" id="recruit-panel-admin" role="tabpanel" aria-labelledby="recruit-tab-admin" data-recruit-panel="admin" hidden>
             <h2 class="p-recruit__panel-title">キャリア採用（総務部）募集要項</h2>
             <dl class="p-recruit__table">
-              <div class="p-recruit__row p-recruit__row--job"><dt>職種</dt><dd>総務職</dd></div>
-              <div class="p-recruit__row p-recruit__row--description"><dt>募集要項</dt><dd><p>採用、人事労務、庶務、社内制度運用など、会社を支える管理部門業務を担当していただきます。経験や適性に応じて担当領域を決定します。</p></dd></div>
-              <div class="p-recruit__row p-recruit__row--type"><dt>雇用形態</dt><dd>正社員</dd></div>
-              <div class="p-recruit__row p-recruit__row--salary"><dt>給与</dt><dd>経験・能力を考慮のうえ、当社規定により決定します。<br>昇給：年1回（業績により変動）<br>賞与：年2回（7月、12月）（業績により変動）</dd></div>
-              <div class="p-recruit__row p-recruit__row--hours"><dt>勤務時間</dt><dd>8:00～17:30 （7時間55分/休憩95分）</dd></div>
-              <div class="p-recruit__row p-recruit__row--holiday"><dt>休日</dt><dd>年間休日：124日、完全週休二日制（土曜日、日曜日）、国民の祝日、年末年始、特別休暇（慶弔等）、設立記念日5月10日、その他会社の指定する日</dd></div>
-              <div class="p-recruit__row p-recruit__row--benefit"><dt>福利厚生</dt><dd>通勤手当、健康保険、厚生年金保険、雇用保険、労災保険、退職金制度、社宅制度</dd></div>
-              <div class="p-recruit__row p-recruit__row--place"><dt>勤務地</dt><dd>本社（横浜市神奈川区）<br>原則、転勤無し。</dd></div>
+              <div class="p-recruit__row p-recruit__row--job"><dt>職種</dt><dd></dd></div>
+              <div class="p-recruit__row p-recruit__row--description"><dt>募集要項</dt><dd></dd></div>
+              <div class="p-recruit__row p-recruit__row--type"><dt>雇用形態</dt><dd></dd></div>
+              <div class="p-recruit__row p-recruit__row--salary"><dt>給与</dt><dd></dd></div>
+              <div class="p-recruit__row p-recruit__row--hours"><dt>勤務時間</dt><dd></dd></div>
+              <div class="p-recruit__row p-recruit__row--holiday"><dt>休日</dt><dd></dd></div>
+              <div class="p-recruit__row p-recruit__row--benefit"><dt>福利厚生</dt><dd></dd></div>
+              <div class="p-recruit__row p-recruit__row--place"><dt>勤務地</dt><dd></dd></div>
             </dl>
-            <a class="p-recruit__entry-button" href="#">
-              <span class="p-recruit__entry-text">エントリーはこちら</span>
-              <span class="p-recruit__entry-icon" aria-hidden="true"></span>
-            </a>
           </section>
         </div>
       </div>

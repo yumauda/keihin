@@ -99,13 +99,10 @@
 
 .p-welfare__grid {
   display: grid;
-  gap: rem(28);
   margin: 0 auto;
   max-width: rem(1002);
-
-  @include mq(sm) {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: rem(12);
 
   @include mq(md) {
     column-gap: rem(25);
@@ -117,7 +114,7 @@
 .p-welfare__card {
   background: #f7f7f7;
   min-width: 0;
-  padding: rem(24);
+  padding: rem(12);
   text-align: center;
 
   @include mq(md) {
@@ -127,10 +124,15 @@
 }
 
 .p-welfare__icon {
-  max-width: rem(115);
+  max-width: rem(80);
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+
+  @include mq(md) {
+    max-width: rem(115);
+
+  }
 }
 
 .p-welfare__icon img {
@@ -141,10 +143,10 @@
 }
 
 .p-welfare__card-title {
-  font-size: rem(20);
+  font-size: rem(18);
   font-weight: 700;
   line-height: 1.5;
-  margin-top: rem(28);
+  margin-top: rem(12);
 
   @include mq(md) {
     font-size: rem(25);

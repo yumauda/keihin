@@ -7,7 +7,7 @@
   <meta name="format-detection" content="telephone=no" />
   <title>福利厚生 | 京浜電設株式会社 採用サイト</title>
   <meta name="description" content="京浜電設株式会社の福利厚生制度をご紹介します。社宅制度、健康診断、社内イベント、資格取得支援など、働く人を支える制度を掲載しています。" />
-  <meta name="robots" content="index,follow" />
+  <meta name="robots" content="noindex,nofollow" />
   <meta name="theme-color" content="#005D97" />
   <meta property="og:locale" content="ja_JP" />
   <meta property="og:site_name" content="京浜電設株式会社 採用サイト" />
@@ -21,7 +21,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/styles.css?v=20260520">
+  <link rel="stylesheet" href="../css/styles.css?v=20260527">
   <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
