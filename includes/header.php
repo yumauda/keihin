@@ -70,7 +70,7 @@
                     </nav>
 
                     <div class="p-header__actions">
-                        <a class="p-header__entry" href="#">
+                        <a class="p-header__entry" href="/recruit/entry/">
                             <span class="p-header__entry-text">エントリー</span>
                         </a>
                     </div>
@@ -112,6 +112,9 @@
                             </li>
                             <li class="p-drawer-content__list">
                                 <a href="/recruit/position/" class="p-drawer-content__link">募集要項</a>
+                            </li>
+                            <li class="p-drawer-content__list">
+                                <a href="/recruit/entry/" class="p-drawer-content__link">エントリー</a>
                             </li>
                             <li class="p-drawer-content__list">
                                 <button class="p-drawer-content__link p-drawer-content__link--button js-translate-toggle" type="button" aria-label="言語選択" aria-expanded="false" aria-controls="drawer-language-menu" data-translate-menu="drawer-language-menu">LANGUAGE</button>

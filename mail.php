@@ -1,795 +1,507 @@
-<?php header("Content-Type:text/html;charset=utf-8"); ?>
-<?php //error_reporting(E_ALL | E_STRICT);
-##-----------------------------------------------------------------------------------------------------------------##
-#
-#  PHPメールプログラム　フリー版 ver2.0.4 最終更新日2024/05/24
-#　改造や改変は自己責任で行ってください。
-#	
-#  HP: http://www.php-factory.net/
-#
-#  重要！！サイトでチェックボックスを使用する場合のみですが。。。
-#  チェックボックスを使用する場合はinputタグに記述するname属性の値を必ず配列の形にしてください。
-#  例　name="当サイトをしったきっかけ[]"  として下さい。
-#  nameの値の最後に[と]を付ける。じゃないと複数の値を取得できません！
-#
-##-----------------------------------------------------------------------------------------------------------------##
-if (version_compare(PHP_VERSION, '5.1.0', '>=')) {//PHP5.1.0以上の場合のみタイムゾーンを定義
-	date_default_timezone_set('Asia/Tokyo');//タイムゾーンの設定（日本以外の場合には適宜設定ください）
-}
-/*-------------------------------------------------------------------------------------------------------------------
-* ★以下設定時の注意点　
-* ・値（=の後）は数字以外の文字列（一部を除く）はダブルクオーテーション「"」、または「'」で囲んでいます。
-* ・これをを外したり削除したりしないでください。後ろのセミコロン「;」も削除しないください。
-* ・また先頭に「$」が付いた文字列は変更しないでください。数字の1または0で設定しているものは必ず半角数字で設定下さい。
-* ・メールアドレスのname属性の値が「Email」ではない場合、以下必須設定箇所の「$Email」の値も変更下さい。
-* ・name属性の値に半角スペースは使用できません。
-*以上のことを間違えてしまうとプログラムが動作しなくなりますので注意下さい。
--------------------------------------------------------------------------------------------------------------------*/
-
-
-//---------------------------　必須設定　必ず設定してください　-----------------------
-
-//サイトのトップページのURL　※デフォルトでは送信完了後に「トップページへ戻る」ボタンが表示され、そのリンク先です。
-$site_top = "./";
-
-//管理者のメールアドレス（送信先） ※メールを受け取るメールアドレス(複数指定する場合は「,」で区切ってください 例 $to = "aa@aa.aa,bb@bb.bb";)
-$to = "infoydm@yamatanedm.co.jp,sales@kyokuto-ymt.jp";
-
-//送信元（差出人）メールアドレス（管理者宛て、及びユーザー宛メールの送信元（差出人）メールアドレスです）
-//必ず実在するメールアドレスでかつ出来る限り設置先サイトのドメインと同じドメインのメールアドレスとしてください（でないと「なりすまし」扱いされます）
-//管理者宛てメールの返信先（reply）はユーザーが入力したメールアドレスになりますので返信時はユーザーのメールアドレスが送信先に設定されます）
-$from = "no-reply@yamatanedm.co.jp";
-
-//管理者宛メールの送信元（差出人）にユーザーが入力したメールアドレスを表示する(する=1, しない=0)
-//ユーザーのメールアドレスを含めることでメーラー上で管理しやすくなる機能です。
-//例 example@gmail.com <from@sample.jp>（example@gmail.comがユーザーメールアドレス、from@sample.jpが↑の$fromで設定したメールアドレスです）
-$from_add = 0;
-
-//フォームのメールアドレス入力箇所のname属性の値（name="○○"　の○○部分）
-$Email = "email";
-//---------------------------　必須設定　ここまで　------------------------------------
-
-
-//---------------------------　セキュリティ、スパム防止のための設定　------------------------------------
-
-//スパム防止のためのリファラチェック（フォーム側とこのファイルが同一ドメインであるかどうかのチェック）(する=1, しない=0)
-//※有効にするにはこのファイルとフォームのページが同一ドメイン内にある必要があります
-$Referer_check = 1;
-
-//リファラチェックを「する」場合のドメイン ※設置するサイトのドメインを指定して下さい。
-//もしこの設定が間違っている場合は送信テストですぐに気付けます。
-$Referer_check_domain = "yamatanedm.co.jp";
-
-/*セッションによるワンタイムトークン（CSRF対策、及びスパム防止）(する=1, しない=0)
-※ただし、この機能を使う場合は↓の送信確認画面の表示が必須です。（デフォルトではON（1）になっています）
-※【重要】ガラケーは機種によってはクッキーが使えないためガラケーの利用も想定してる場合は「0」（OFF）にして下さい（PC、スマホは問題ないです）*/
-$useToken = 1;
-//---------------------------　セキュリティ、スパム防止のための設定　ここまで　------------------------------------
-
-
-//---------------------- 任意設定　以下は必要に応じて設定してください ------------------------
-
-// Bccで送るメールアドレス(複数指定する場合は「,」で区切ってください 例 $BccMail = "aa@aa.aa,bb@bb.bb";)
-$BccMail = "";
-
-// 管理者宛に送信されるメールのタイトル（件名）
-$subject = "ホームページのお問い合わせ";
-
-// 送信確認画面の表示(する=1, しない=0)
-$confirmDsp = 0;
-
-// 送信完了後に自動的に指定のページ(サンクスページなど)に移動する(する=1, しない=0)
-// CV率を解析したい場合などはサンクスページを別途用意し、URLをこの下の項目で指定してください。
-// 0にすると、デフォルトの送信完了画面が表示されます。
-$jumpPage = 1;
-
-// 送信完了後に表示するページURL（上記で1を設定した場合のみ）※httpから始まるURLで指定ください。（相対パスでも基本的には問題ないです）
-$thanksPage = "http://xxx.xxxxxxxxx/thanks.html";
-
-// 必須入力項目を設定する(する=1, しない=0)
-$requireCheck = 1;
-
-/* 必須入力項目(入力フォームで指定したname属性の値を指定してください。（上記で1を設定した場合のみ）
-値はシングルクォーテーションで囲み、複数の場合はカンマで区切ってください。フォーム側と順番を合わせると良いです。 
-配列の形「name="○○[]"」の場合には必ず後ろの[]を取ったものを指定して下さい。*/
-$require = array('company','email');
-
-
-//----------------------------------------------------------------------
-//  自動返信メール設定(START)
-//----------------------------------------------------------------------
-
-// 差出人に送信内容確認メール（自動返信メール）を送る(送る=1, 送らない=0)
-// 送る場合は、フォーム側のメール入力欄のname属性の値が上記「$Email」で指定した値と同じである必要があります
-$remail = 1;
-
-//自動返信メールの送信者欄に表示される名前　※あなたの名前や会社名など（もし自動返信メールの送信者名が文字化けする場合ここは空にしてください）
-$refrom_name = "";
-
-// 差出人に送信確認メールを送る場合のメールのタイトル（上記で1を設定した場合のみ）
-$re_subject = "送信ありがとうございました";
-
-//フォーム側の「名前」箇所のname属性の値　※自動返信メールの「○○様」の表示で使用します。
-//指定しない、または存在しない場合は、○○様と表示されないだけです。あえて無効にしてもOK
-$dsp_name = 'ご担当者名';
-
-//自動返信メールの冒頭の文言 ※日本語部分のみ変更可
-$remail_text = <<< TEXT
-
-お問い合わせありがとうございました。
-早急にご返信致しますので今しばらくお待ちください。
-
-送信内容は以下になります。
-
-TEXT;
-
-// LP用署名（本文末尾に付与）※自動返信メールVer2準拠
-$lpSignature = <<< FOOTER
-──────────────────────
-はこScanサービスセンター
-(株式会社 ヤマタネドキュメントマネジメント）
-──────────────────────
-
-FOOTER;
-
-
-//自動返信メールに署名（フッター）を表示(する=1, しない=0)※管理者宛にも表示されます。
-$mailFooterDsp = 0;
-
-//上記で「1」を選択時に表示する署名（フッター）（FOOTER～FOOTER;の間に記述してください）
-$mailSignature = <<< FOOTER
-
-──────────────────────
-株式会社○○○○　佐藤太郎
-〒150-XXXX 東京都○○区○○ 　○○ビル○F　
-TEL：03- XXXX - XXXX 　FAX：03- XXXX - XXXX
-携帯：090- XXXX - XXXX 　
-E-mail:xxxx@xxxx.com
-URL: http://www.php-factory.net/
-──────────────────────
-
-FOOTER;
-
-
-//----------------------------------------------------------------------
-//  自動返信メール設定(END)
-//----------------------------------------------------------------------
-
-//メールアドレスの形式チェックを行うかどうか。(する=1, しない=0)
-//※デフォルトは「する」。特に理由がなければ変更しないで下さい。メール入力欄のname属性の値が上記「$Email」で指定した値である必要があります。
-$mail_check = 1;
-
-//全角英数字→半角変換を行うかどうか。(する=1, しない=0)
-$hankaku = 0;
-
-//全角英数字→半角変換を行う項目のname属性の値（name="○○"の「○○」部分）
-//※複数の場合にはカンマで区切って下さい。（上記で「1」を指定した場合のみ有効）
-//配列の形「name="○○[]"」の場合には必ず後ろの[]を取ったものを指定して下さい。
-$hankaku_array = array('電話番号','金額');
-
-//-fオプションによるエンベロープFrom（Return-Path）の設定(する=1, しない=0)　
-//※宛先不明（間違いなどで存在しないアドレス）の場合に 管理者宛に「Mail Delivery System」から「Undelivered Mail Returned to Sender」というメールが届きます。
-//サーバーによっては稀にこの設定が必須の場合もあります。
-//設置サーバーでPHPがセーフモードで動作している場合は使用できませんので送信時にエラーが出たりメールが届かない場合は「0」（OFF）として下さい。
-$use_envelope = 0;
-
-//機種依存文字の変換
-/*たとえば㈱（かっこ株）や①（丸1）、その他特殊な記号や特殊な漢字などは変換できずに「？」と表示されます。それを回避するための機能です。
-確認画面表示時に置換処理されます。「変換前の文字」が「変換後の文字」に変換され、送信メール内でも変換された状態で送信されます。（たとえば「㈱」の場合、「（株）」に変換されます） 
-必要に応じて自由に追加して下さい。ただし、変換前の文字と変換後の文字の順番と数は必ず合わせる必要がありますのでご注意下さい。*/
-
-//変換前の文字
-$replaceStr['before'] = array('①','②','③','④','⑤','⑥','⑦','⑧','⑨','⑩','№','㈲','㈱','髙');
-//変換後の文字
-$replaceStr['after'] = array('(1)','(2)','(3)','(4)','(5)','(6)','(7)','(8)','(9)','(10)','No.','（有）','（株）','高');
-
-//------------------------------- 任意設定ここまで ---------------------------------------------
-
-
-// 以下の変更は知識のある方のみ自己責任でお願いします。
-
-//----------------------------------------------------------------------
-//  関数実行、変数初期化
-//----------------------------------------------------------------------
-//トークンチェック用のセッションスタート
-if($useToken == 1 && $confirmDsp == 1){
-	session_name('PHPMAILFORMSYSTEM');
-	session_start();
-}
-$encode = "UTF-8";//このファイルの文字コード定義（変更不可）
-if(isset($_GET)) $_GET = sanitize($_GET);//NULLバイト除去//
-if(isset($_POST)) $_POST = sanitize($_POST);//NULLバイト除去//
-if(isset($_COOKIE)) $_COOKIE = sanitize($_COOKIE);//NULLバイト除去//
-if($encode == 'SJIS') $_POST = sjisReplace($_POST,$encode);//Shift-JISの場合に誤変換文字の置換実行
-
-// ハニーポット（スパム対策）
-if(isset($_POST['_honey']) && $_POST['_honey'] !== ''){
-	exit;
-}
-
-// form_typeのバリデーション（想定外の投稿は弾く）
-if(empty($_POST['form_type']) || ($_POST['form_type'] !== 'apply' && $_POST['form_type'] !== 'inquiry')){
-	exit('不正な送信です');
-}
-
-// リファラチェックの対象ドメインは実行環境のホストに合わせる（Local/本番でズレにくくする）
-if(!empty($_SERVER['HTTP_HOST'])){
-	$Referer_check_domain = $_SERVER['HTTP_HOST'];
-}
-
-$funcRefererCheck = refererCheck($Referer_check,$Referer_check_domain);//リファラチェック実行
-
-// LP用：フォーム種別に応じて件名/サンクスURLを切替
-$lpFormType = '';
-if(isset($_POST['form_type'])) {
-	$lpFormType = $_POST['form_type'];
-	// フォーム種別ごとにサーバー側必須項目を設定
-	if($lpFormType === 'apply') {
-		$require = array('会社名','郵便番号','住所','電話番号','ご担当者名','email','箱数','冊数','合計金額','同意（仕様）','同意（個人情報）');
-	}elseif($lpFormType === 'inquiry') {
-		$require = array('会社名','郵便番号','住所','電話番号','ご担当者名','email','同意（個人情報）');
-	}
-	if($lpFormType === 'apply') {
-		$subject = 'かんたん箱スキャンからお申込み';
-		$re_subject = '【かんたんはこスキャン】お申込みを受け付けました';
-			$thanksPage = './?sent=apply';
-	}elseif($lpFormType === 'inquiry') {
-		$subject = 'かんたん箱スキャンからお問い合わせ';
-		$re_subject = '【かんたんはこスキャン】お問い合わせを受け付けました';
-			$thanksPage = './?sent=inquiry';
-	}
-}
-
-//変数初期化
-$sendmail = 0;
-$empty_flag = 0;
-$post_mail = '';
-$errm ='';
-$header ='';
-
-if($requireCheck == 1) {
-	$requireResArray = requireCheck($require);//必須チェック実行し返り値を受け取る
-	$errm = $requireResArray['errm'];
-	$empty_flag = $requireResArray['empty_flag'];
-}
-//メールアドレスチェック
-if(empty($errm)){
-	foreach($_POST as $key=>$val) {
-		if($val == "confirm_submit") $sendmail = 1;
-		if($key == $Email) $post_mail = h($val);
-		if($key == $Email && $mail_check == 1 && !empty($val)){
-			if(!checkMail($val)){
-				$errm .= "<p class=\"error_messe\">【".$key."】はメールアドレスの形式が正しくありません。</p>\n";
-				$empty_flag = 1;
-			}
-		}
-	}
-}
-  
-if(($confirmDsp == 0 || $sendmail == 1) && $empty_flag != 1){
-	
-	//トークンチェック（CSRF対策）※確認画面がONの場合のみ実施
-	if($useToken == 1 && $confirmDsp == 1){
-		if(empty($_SESSION['mailform_token']) || ($_SESSION['mailform_token'] !== $_POST['mailform_token'])){
-			exit('ページ遷移が不正です');
-		}
-		if(isset($_SESSION['mailform_token'])) unset($_SESSION['mailform_token']);//トークン破棄
-		if(isset($_POST['mailform_token'])) unset($_POST['mailform_token']);//トークン破棄
-	}
-	
-	//差出人に届くメールをセット
-	if($remail == 1) {
-		$userBody = mailToUser($_POST,$dsp_name,$remail_text,$mailFooterDsp,$mailSignature,$encode);
-		$reheader = userHeader($refrom_name,$from,$encode);
-		$re_subject = "=?iso-2022-jp?B?".base64_encode(mb_convert_encoding($re_subject,"JIS",$encode))."?=";
-	}
-	//管理者宛に届くメールをセット
-	$adminBody = mailToAdmin($_POST,$subject,$mailFooterDsp,$mailSignature,$encode,$confirmDsp);
-	$header = adminHeader($post_mail,$BccMail);
-	$subject = "=?iso-2022-jp?B?".base64_encode(mb_convert_encoding($subject,"JIS",$encode))."?=";
-	
-	//-fオプションによるエンベロープFrom（Return-Path）の設定(safe_modeがOFFの場合かつ上記設定がONの場合のみ実施)
-	if($use_envelope == 0){
-		mail($to,$subject,$adminBody,$header);
-		if($remail == 1 && !empty($post_mail)) mail($post_mail,$re_subject,$userBody,$reheader);
-	}else{
-		mail($to,$subject,$adminBody,$header,'-f'.$from);
-		if($remail == 1 && !empty($post_mail)) mail($post_mail,$re_subject,$userBody,$reheader,'-f'.$from);
-	}
-}
-else if($confirmDsp == 1){ 
-
-/*　▼▼▼送信確認画面のレイアウト※編集可　オリジナルのデザインも適用可能▼▼▼　*/
-?>
-<!DOCTYPE HTML>
-<html lang="ja">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-<meta name="format-detection" content="telephone=no">
-<meta name="robots" content="noindex,nofollow">
-<title>確認画面</title>
-<style type="text/css">
-/* 自由に編集下さい */
-#formWrap {
-	width:700px;
-	margin:0 auto;
-	color:#555;
-	line-height:120%;
-	font-size:90%;
-}
-table.formTable{
-	width:100%;
-	margin:0 auto;
-	border-collapse:collapse;
-}
-table.formTable td,table.formTable th{
-	border:1px solid #ccc;
-	padding:10px;
-}
-table.formTable th{
-	width:30%;
-	font-weight:normal;
-	background:#efefef;
-	text-align:left;
-}
-p.error_messe{
-	margin:5px 0;
-	color:red;
-}
-/*　簡易版レスポンシブ用CSS（必要最低限のみとしています。ブレークポイントも含め自由に設定下さい）　*/
-@media screen and (max-width:572px) {
-#formWrap {
-	width:95%;
-	margin:0 auto;
-}
-table.formTable th, table.formTable td {
-	width:auto;
-	display:block;
-}
-table.formTable th {
-	margin-top:5px;
-	border-bottom:0;
-}
-form input[type="submit"], form input[type="reset"], form input[type="button"] {
-	display:block;
-	width:100%;
-	height:40px;
-}
-}
-</style>
-</head>
-<body>
-
-<!-- ▲ Headerやその他コンテンツなど　※自由に編集可 ▲-->
-
-<!-- ▼************ 送信内容表示部　※編集は自己責任で ************ ▼-->
-<div id="formWrap">
-<?php if($empty_flag == 1){ ?>
-<div align="center">
-<h4>入力にエラーがあります。下記をご確認の上「戻る」ボタンにて修正をお願い致します。</h4>
-<?php echo $errm; ?><br /><br /><input type="button" value=" 前画面に戻る " onClick="history.back()">
-</div>
-<?php }else{ ?>
-<h3>確認画面</h3>
-<p align="center">以下の内容で間違いがなければ、「送信する」ボタンを押してください。</p>
-<form action="<?php echo h($_SERVER['SCRIPT_NAME']); ?>" method="POST">
-<table class="formTable">
-<?php echo confirmOutput($_POST);//入力内容を表示?>
-</table>
-<p align="center"><input type="hidden" name="mail_set" value="confirm_submit">
-<input type="hidden" name="httpReferer" value="<?php echo h($_SERVER['HTTP_REFERER']);?>">
-<input type="submit" value="　送信する　">
-<input type="button" value="前画面に戻る" onClick="history.back()"></p>
-</form>
-<?php } ?>
-</div><!-- /formWrap -->
-<!-- ▲ *********** 送信内容確認部　※編集は自己責任で ************ ▲-->
-
-<!-- ▼ Footerその他コンテンツなど　※編集可 ▼-->
-</body>
-</html>
 <?php
-/* ▲▲▲送信確認画面のレイアウト　※オリジナルのデザインも適用可能▲▲▲　*/
+session_name('KEIHIN_ENTRY_FORM');
+session_start();
+
+mb_language('Japanese');
+mb_internal_encoding('UTF-8');
+
+$adminTo = getenv('ENTRY_MAIL_TO') ?: 'xxxxxxxxxx@xxx.xxx';
+$fromAddress = getenv('ENTRY_MAIL_FROM') ?: 'xxxxxxxxxx@xxx.xxx';
+$entryUrl = '/recruit/entry/';
+$tmpDir = __DIR__ . '/tmp';
+
+$fields = [
+  'job_type' => '応募区分',
+  'last_name' => '姓',
+  'first_name' => '名',
+  'last_kana' => 'セイ',
+  'first_kana' => 'メイ',
+  'age' => '年齢',
+  'zip' => '郵便番号',
+  'prefecture' => '都道府県',
+  'city' => '市町村',
+  'street' => '丁目番地',
+  'building' => '建物名・号室',
+  'tel' => 'TEL',
+  'email' => 'E-mail',
+  'email_confirm' => '確認用E-mail',
+  'message' => '自由記入欄',
+  'source' => '京浜電設を知ったきっかけ',
+];
+
+$required = ['job_type', 'last_name', 'first_name', 'last_kana', 'first_kana', 'tel', 'email', 'email_confirm'];
+$fileFields = [
+  'resume' => '履歴書',
+  'career_file' => '職務経歴書',
+];
+
+function h($value)
+{
+  return htmlspecialchars((string)$value, ENT_QUOTES, 'UTF-8');
 }
 
-if(($jumpPage == 0 && $sendmail == 1) || ($jumpPage == 0 && ($confirmDsp == 0 && $sendmail == 0))) { 
+function requestValue($key)
+{
+  return isset($_POST[$key]) ? trim((string)$_POST[$key]) : '';
+}
 
-/* ▼▼▼送信完了画面のレイアウト　編集可 ※送信完了後に指定のページに移動しない場合のみ表示▼▼▼　*/
-?>
-<!DOCTYPE HTML>
+function sameOriginReferer($requireEntryPage = false)
+{
+  if (empty($_SERVER['HTTP_REFERER']) || empty($_SERVER['HTTP_HOST'])) {
+    return false;
+  }
+
+  $referer = parse_url($_SERVER['HTTP_REFERER']);
+  if (empty($referer['host'])) {
+    return false;
+  }
+
+  $refererHost = $referer['host'] . (isset($referer['port']) ? ':' . $referer['port'] : '');
+  if (strcasecmp($refererHost, $_SERVER['HTTP_HOST']) !== 0) {
+    return false;
+  }
+
+  if ($requireEntryPage) {
+    $path = $referer['path'] ?? '';
+    return strpos($path, '/entry/') !== false || strpos($path, '/recruit/entry/') !== false;
+  }
+
+  return true;
+}
+
+function validToken()
+{
+  return !empty($_POST['entry_token'])
+    && !empty($_SESSION['entry_form_token'])
+    && hash_equals($_SESSION['entry_form_token'], (string)$_POST['entry_token']);
+}
+
+function spamErrors()
+{
+  $errors = [];
+
+  if (requestValue('company_url') !== '') {
+    $errors[] = '送信内容を受け付けできませんでした。';
+  }
+
+  $startedAt = (int)requestValue('form_started_at');
+  if ($startedAt > 0 && time() - $startedAt < 3) {
+    $errors[] = '送信までの時間が短すぎます。入力内容をご確認ください。';
+  }
+
+  $message = requestValue('message');
+  if (preg_match_all('/https?:\\/\\//i', $message) > 2 || preg_match('/<\\s*(a|script|iframe|object|embed)\\b/i', $message)) {
+    $errors[] = '自由記入欄に使用できない内容が含まれています。';
+  }
+
+  if (!empty($_SESSION['entry_last_send']) && time() - (int)$_SESSION['entry_last_send'] < 20) {
+    $errors[] = '連続送信はできません。しばらく時間をおいてからお試しください。';
+  }
+
+  return $errors;
+}
+
+function validateInput($required)
+{
+  $errors = [];
+
+  foreach ($required as $key) {
+    if (requestValue($key) === '') {
+      $errors[] = '必須項目が未入力です。';
+      break;
+    }
+  }
+
+  $email = requestValue('email');
+  if ($email !== '' && !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    $errors[] = 'E-mailの形式が正しくありません。';
+  }
+
+  if ($email !== requestValue('email_confirm')) {
+    $errors[] = 'E-mailと確認用E-mailが一致していません。';
+  }
+
+  $tel = requestValue('tel');
+  if ($tel !== '' && !preg_match('/\\A[0-9\\-]+\\z/', $tel)) {
+    $errors[] = 'TELは半角数字とハイフンのみで入力してください。';
+  }
+
+  $age = requestValue('age');
+  if ($age !== '' && (!ctype_digit($age) || (int)$age < 15 || (int)$age > 80)) {
+    $errors[] = '年齢は15から80までの半角数字で入力してください。';
+  }
+
+  return $errors;
+}
+
+function saveUpload($field, $label, $tmpDir)
+{
+  if (empty($_FILES[$field]) || !isset($_FILES[$field]['error'])) {
+    return [null, "{$label}を選択してください。"];
+  }
+
+  $file = $_FILES[$field];
+  if ($file['error'] !== UPLOAD_ERR_OK) {
+    return [null, "{$label}を選択してください。"];
+  }
+
+  if ($file['size'] > 5 * 1024 * 1024) {
+    return [null, "{$label}は5MB以内のファイルを選択してください。"];
+  }
+
+  $original = basename((string)$file['name']);
+  $extension = strtolower(pathinfo($original, PATHINFO_EXTENSION));
+  $allowed = ['pdf', 'doc', 'docx', 'xls', 'xlsx', 'jpg', 'jpeg', 'png'];
+  if (!in_array($extension, $allowed, true)) {
+    return [null, "{$label}はPDF、Word、Excel、JPG、PNG形式でアップロードしてください。"];
+  }
+
+  if (!is_dir($tmpDir)) {
+    mkdir($tmpDir, 0755, true);
+  }
+
+  $safeName = bin2hex(random_bytes(16)) . '_' . $field . '.' . $extension;
+  $destination = $tmpDir . '/' . $safeName;
+  if (!move_uploaded_file($file['tmp_name'], $destination)) {
+    return [null, "{$label}のアップロードに失敗しました。"];
+  }
+
+  return [[
+    'path' => $destination,
+    'name' => $original,
+    'type' => mime_content_type($destination) ?: 'application/octet-stream',
+  ], null];
+}
+
+function collectPostedData($fields)
+{
+  $data = [];
+  foreach ($fields as $key => $label) {
+    $data[$key] = requestValue($key);
+  }
+  return $data;
+}
+
+function renderHead($title)
+{
+  ?>
+<!DOCTYPE html>
 <html lang="ja">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-<meta name="format-detection" content="telephone=no">
-<meta name="robots" content="noindex,nofollow">
-<title>完了画面</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <title><?php echo h($title); ?> | 京浜電設株式会社 採用サイト</title>
+  <meta name="description" content="京浜電設株式会社 採用サイトの応募フォームです。" />
+  <meta name="robots" content="noindex,nofollow" />
+  <meta name="theme-color" content="#005D97" />
+  <link rel="icon" type="image/png" href="/recruit/images/common/header_logo.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/recruit/images/common/header_logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=20260527">
+  <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script defer src="js/gsap.js?v=20260525"></script>
+  <script defer src="js/script.js?v=20260525"></script>
 </head>
+
 <body>
-<div align="center">
-<?php if($empty_flag == 1){ ?>
-<h4>入力にエラーがあります。下記をご確認の上「戻る」ボタンにて修正をお願い致します。</h4>
-<div style="color:red"><?php echo $errm; ?></div>
-<br /><br /><input type="button" value=" 前画面に戻る " onClick="history.back()">
-</div>
-</body>
-</html>
-<?php }else{ ?>
-送信ありがとうございました。<br />
-送信は正常に完了しました。<br /><br />
-<a href="<?php echo $site_top ;?>">トップページへ戻る&raquo;</a>
-</div>
-<?php copyright(); ?>
-<!--  CV率を計測する場合ここにAnalyticsコードを貼り付け -->
-</body>
-</html>
-<?php 
-/* ▲▲▲送信完了画面のレイアウト 編集可 ※送信完了後に指定のページに移動しない場合のみ表示▲▲▲　*/
+<?php include_once(__DIR__ . '/includes/header.php'); ?>
+<?php
+}
+
+function renderFoot()
+{
+  include_once(__DIR__ . '/includes/footer.php');
+  echo "</body>\n</html>\n";
+}
+
+function renderEntryHero($heading)
+{
+  ?>
+  <main class="p-entry">
+    <section class="p-entry__hero">
+      <div class="l-inner">
+        <div class="p-entry__heading">
+          <p class="p-entry__en">ENTRY FORM</p>
+          <h1 class="p-entry__sub"><?php echo h($heading); ?></h1>
+        </div>
+      </div>
+    </section>
+<?php
+}
+
+function renderErrors($errors)
+{
+  if (!$errors) {
+    return;
+  }
+  echo '<div class="p-entry__error"><ul>';
+  foreach (array_unique($errors) as $error) {
+    echo '<li>' . h($error) . '</li>';
+  }
+  echo '</ul></div>';
+}
+
+function renderErrorPage($errors, $entryUrl)
+{
+  renderHead('応募フォーム エラー');
+  renderEntryHero('応募フォーム');
+  ?>
+    <section class="p-entry__content">
+      <div class="l-inner">
+        <?php renderErrors($errors); ?>
+        <div class="p-entry__actions">
+          <a class="p-entry__button p-entry__button--link" href="<?php echo h($entryUrl); ?>">入力画面へ戻る</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <?php
+  renderFoot();
+}
+
+function renderConfirm($data, $fields, $uploads)
+{
+  renderHead('応募フォーム 確認');
+  renderEntryHero('応募フォーム 確認');
+  ?>
+    <section class="p-entry__content">
+      <div class="l-inner">
+        <p class="p-entry__message">入力内容をご確認のうえ、問題がなければ送信ボタンを押してください。</p>
+        <div class="p-entry__confirm">
+          <table class="p-entry__confirm-table">
+            <tbody>
+              <tr><th>氏名</th><td><?php echo h($data['last_name'] . ' ' . $data['first_name']); ?></td></tr>
+              <tr><th>フリガナ</th><td><?php echo h($data['last_kana'] . ' ' . $data['first_kana']); ?></td></tr>
+              <?php foreach ($fields as $key => $label) : ?>
+                <?php if (in_array($key, ['last_name', 'first_name', 'last_kana', 'first_kana', 'email_confirm'], true)) continue; ?>
+                <tr><th><?php echo h($label); ?></th><td><?php echo nl2br(h($data[$key])); ?></td></tr>
+              <?php endforeach; ?>
+              <?php foreach ($uploads as $key => $file) : ?>
+                <tr><th><?php echo h($GLOBALS['fileFields'][$key]); ?></th><td><?php echo h($file['name']); ?></td></tr>
+              <?php endforeach; ?>
+            </tbody>
+          </table>
+        </div>
+
+        <form class="p-entry__confirm-form" action="mail.php" method="post">
+          <input type="hidden" name="mode" value="send">
+          <input type="hidden" name="entry_token" value="<?php echo h($_POST['entry_token'] ?? ''); ?>">
+          <?php foreach ($data as $key => $value) : ?>
+            <input type="hidden" name="<?php echo h($key); ?>" value="<?php echo h($value); ?>">
+          <?php endforeach; ?>
+          <?php foreach ($uploads as $key => $file) : ?>
+            <input type="hidden" name="<?php echo h($key); ?>_tmp" value="<?php echo h($file['path']); ?>">
+            <input type="hidden" name="<?php echo h($key); ?>_name" value="<?php echo h($file['name']); ?>">
+            <input type="hidden" name="<?php echo h($key); ?>_type" value="<?php echo h($file['type']); ?>">
+          <?php endforeach; ?>
+          <div class="p-entry__actions">
+            <button class="p-entry__button p-entry__button--submit" type="submit">送信する</button>
+            <button class="p-entry__button p-entry__button--back" type="button" onclick="history.back();">戻る</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <?php
+  renderFoot();
+}
+
+function buildBody($data, $fields)
+{
+  $lines = [];
+  $lines[] = "京浜電設 採用サイトより応募がありました。";
+  $lines[] = "";
+  $lines[] = "----------------------------------------";
+  $lines[] = "応募内容";
+  $lines[] = "----------------------------------------";
+  $lines[] = "氏名: " . $data['last_name'] . ' ' . $data['first_name'];
+  $lines[] = "フリガナ: " . $data['last_kana'] . ' ' . $data['first_kana'];
+
+  foreach ($fields as $key => $label) {
+    if (in_array($key, ['last_name', 'first_name', 'last_kana', 'first_kana', 'email_confirm'], true)) {
+      continue;
+    }
+    $lines[] = $label . ': ' . ($data[$key] ?? '');
+  }
+
+  return implode("\n", $lines) . "\n";
+}
+
+function sendMultipartMail($to, $subject, $body, $from, $replyTo, $attachments)
+{
+  $boundary = 'entry_' . bin2hex(random_bytes(16));
+  $headers = [];
+  $headers[] = 'From: ' . $from;
+  if (filter_var($replyTo, FILTER_VALIDATE_EMAIL)) {
+    $headers[] = 'Reply-To: ' . $replyTo;
+  }
+  $headers[] = 'MIME-Version: 1.0';
+  $headers[] = 'Content-Type: multipart/mixed; boundary="' . $boundary . '"';
+
+  $message = "--{$boundary}\n";
+  $message .= "Content-Type: text/plain; charset=UTF-8\n";
+  $message .= "Content-Transfer-Encoding: 8bit\n\n";
+  $message .= $body . "\n";
+
+  foreach ($attachments as $file) {
+    $content = chunk_split(base64_encode(file_get_contents($file['path'])));
+    $encodedName = mb_encode_mimeheader($file['name'], 'UTF-8');
+    $message .= "--{$boundary}\n";
+    $message .= 'Content-Type: ' . $file['type'] . '; name="' . $encodedName . "\"\n";
+    $message .= "Content-Transfer-Encoding: base64\n";
+    $message .= 'Content-Disposition: attachment; filename="' . $encodedName . "\"\n\n";
+    $message .= $content . "\n";
+  }
+
+  $message .= "--{$boundary}--";
+
+  return mb_send_mail($to, $subject, $message, implode("\n", $headers));
+}
+
+function sendReceiptMail($to, $from, $data)
+{
+  if (!filter_var($to, FILTER_VALIDATE_EMAIL)) {
+    return false;
+  }
+
+  $name = trim($data['last_name'] . ' ' . $data['first_name']);
+  $subject = '【京浜電設 採用サイト】応募を受け付けました';
+  $body = $name . " 様\n\n";
+  $body .= "この度は京浜電設株式会社へご応募いただき、誠にありがとうございます。\n";
+  $body .= "以下の内容で応募を受け付けました。\n";
+  $body .= "担当者が内容を確認し、折り返しご連絡いたします。\n\n";
+  $body .= "応募区分: " . ($data['job_type'] ?? '') . "\n";
+  $body .= "氏名: " . $name . "\n";
+  $body .= "E-mail: " . ($data['email'] ?? '') . "\n\n";
+  $body .= "※このメールは送信専用です。お心当たりがない場合は破棄してください。\n";
+
+  $headers = [];
+  $headers[] = 'From: ' . $from;
+  $headers[] = 'MIME-Version: 1.0';
+  $headers[] = 'Content-Type: text/plain; charset=UTF-8';
+  $headers[] = 'Content-Transfer-Encoding: 8bit';
+
+  return mb_send_mail($to, $subject, $body, implode("\n", $headers));
+}
+
+function cleanTempFiles($attachments)
+{
+  foreach ($attachments as $file) {
+    if (!empty($file['path']) && is_file($file['path'])) {
+      unlink($file['path']);
+    }
   }
 }
-//確認画面無しの場合の表示、指定のページに移動する設定の場合、エラーチェックで問題が無ければ指定ページヘリダイレクト
-else if(($jumpPage == 1 && $sendmail == 1) || $confirmDsp == 0) { 
-	if($empty_flag == 1){ ?>
-<div align="center"><h4>入力にエラーがあります。下記をご確認の上「戻る」ボタンにて修正をお願い致します。</h4><div style="color:red"><?php echo $errm; ?></div><br /><br /><input type="button" value=" 前画面に戻る " onClick="history.back()"></div>
-<?php 
-	}else{ header("Location: ".$thanksPage); }
+
+function validateTempAttachment($key, $label, $tmpDir)
+{
+  $path = requestValue($key . '_tmp');
+  $name = requestValue($key . '_name');
+  $type = requestValue($key . '_type') ?: 'application/octet-stream';
+  $realTmp = realpath($tmpDir);
+  $realPath = $path ? realpath($path) : false;
+
+  if (!$realTmp || !$realPath || strpos($realPath, $realTmp) !== 0 || !is_file($realPath)) {
+    return [null, "{$label}の一時ファイルを確認できませんでした。再度入力してください。"];
+  }
+
+  return [[
+    'path' => $realPath,
+    'name' => $name ?: basename($realPath),
+    'type' => $type,
+  ], null];
 }
 
-// 以下の変更は知識のある方のみ自己責任でお願いします。
-
-//----------------------------------------------------------------------
-//  関数定義(START)
-//----------------------------------------------------------------------
-function checkMail($str){
-	$mailaddress_array = explode('@',$str);
-	if(preg_match("/^[\.!#%&\-_0-9a-zA-Z\?\/\+]+\@[!#%&\-_0-9a-zA-Z]+(\.[!#%&\-_0-9a-zA-Z]+)+$/", "$str") && count($mailaddress_array) ==2){
-		return true;
-	}else{
-		return false;
-	}
-}
-function h($string) {
-	global $encode;
-	return htmlspecialchars($string, ENT_QUOTES,$encode);
-}
-function sanitize($arr){
-	if(is_array($arr)){
-		return array_map('sanitize',$arr);
-	}
-	return str_replace("\0","",$arr);
-}
-//Shift-JISの場合に誤変換文字の置換関数
-function sjisReplace($arr,$encode){
-	foreach($arr as $key => $val){
-		$key = str_replace('＼','ー',$key);
-		$resArray[$key] = $val;
-	}
-	return $resArray;
-}
-//送信メールにPOSTデータをセットする関数
-function postToMail($arr){
-	global $hankaku,$hankaku_array;
-	$resArray = '';
-	foreach($arr as $key => $val) {
-		$out = '';
-		if(is_array($val)){
-			foreach($val as $key02 => $item){ 
-				//連結項目の処理
-				if(is_array($item)){
-					$out .= connect2val($item);
-				}else{
-					$out .= $item . ', ';
-				}
-			}
-			$out = rtrim($out,', ');
-			
-		}else{ $out = $val; }//チェックボックス（配列）追記ここまで
-		
-		if (version_compare(PHP_VERSION, '5.1.0', '<=')) {//PHP5.1.0以下の場合のみ実行（7.4でget_magic_quotes_gpcが非推奨になったため）
-			if(get_magic_quotes_gpc()) { $out = stripslashes($out); }
-		}
-		
-		//全角→半角変換
-		if($hankaku == 1){
-			$out = zenkaku2hankaku($key,$out,$hankaku_array);
-		}
-		if($out != "confirm_submit" && $key != "httpReferer") {
-			$resArray .= "【 ".h($key)." 】 ".h($out)."\n";
-		}
-	}
-	return $resArray;
-}
-//確認画面の入力内容出力用関数
-function confirmOutput($arr){
-	global $hankaku,$hankaku_array,$useToken,$confirmDsp,$replaceStr;
-	$html = '';
-	foreach($arr as $key => $val) {
-		$out = '';
-		if(is_array($val)){
-			foreach($val as $key02 => $item){ 
-				//連結項目の処理
-				if(is_array($item)){
-					$out .= connect2val($item);
-				}else{
-					$out .= $item . ', ';
-				}
-			}
-			$out = rtrim($out,', ');
-			
-		}else{ $out = $val; }//チェックボックス（配列）追記ここまで
-		
-		if (version_compare(PHP_VERSION, '5.1.0', '<=')) {//PHP5.1.0以下の場合のみ実行（7.4でget_magic_quotes_gpcが非推奨になったため）
-			if(get_magic_quotes_gpc()) { $out = stripslashes($out); }
-		}
-		
-		//全角→半角変換
-		if($hankaku == 1){
-			$out = zenkaku2hankaku($key,$out,$hankaku_array);
-		}
-		
-		$out = nl2br(h($out));//※追記 改行コードを<br>タグに変換
-		$key = h($key);
-		$out = str_replace($replaceStr['before'], $replaceStr['after'], $out);//機種依存文字の置換処理
-		
-		$html .= "<tr><th>".$key."</th><td>".$out;
-		$html .= '<input type="hidden" name="'.$key.'" value="'.str_replace(array("<br />","<br>"),"",$out).'" />';
-		$html .= "</td></tr>\n";
-	}
-	//トークンをセット
-	if($useToken == 1 && $confirmDsp == 1){
-		$token = sha1(uniqid(mt_rand(), true));
-		$_SESSION['mailform_token'] = $token;
-		$html .= '<input type="hidden" name="mailform_token" value="'.$token.'" />';
-	}
-	
-	return $html;
+function renderThanks()
+{
+  renderHead('応募フォーム 完了');
+  renderEntryHero('応募フォーム 完了');
+  ?>
+    <section class="p-entry__content">
+      <div class="l-inner">
+        <p class="p-entry__message">ご応募ありがとうございました。<br>送信内容を確認のうえ、担当者より折り返しご連絡いたします。</p>
+        <div class="p-entry__actions">
+          <a class="p-entry__button p-entry__button--link" href="/recruit/">トップへ戻る</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <?php
+  renderFoot();
 }
 
-//全角→半角変換
-function zenkaku2hankaku($key,$out,$hankaku_array){
-	global $encode;
-	if(is_array($hankaku_array) && function_exists('mb_convert_kana')){
-		foreach($hankaku_array as $hankaku_array_val){
-			if($key == $hankaku_array_val){
-				$out = mb_convert_kana($out,'a',$encode);
-			}
-		}
-	}
-	return $out;
-}
-//配列連結の処理
-function connect2val($arr){
-	$out = '';
-	foreach($arr as $key => $val){
-		if($key === 0 || $val == ''){//配列が未記入（0）、または内容が空のの場合には連結文字を付加しない（型まで調べる必要あり）
-			$key = '';
-		}elseif(strpos($key,"円") !== false && $val != '' && preg_match("/^[0-9]+$/",$val)){
-			$val = number_format($val);//金額の場合には3桁ごとにカンマを追加
-		}
-		$out .= $val . $key;
-	}
-	return $out;
+$mode = requestValue('mode');
+
+if ($_SERVER['REQUEST_METHOD'] !== 'POST' || !in_array($mode, ['confirm', 'send'], true)) {
+  header('Location: ' . $entryUrl);
+  exit;
 }
 
-//管理者宛送信メールヘッダ
-function adminHeader($post_mail,$BccMail){
-	global $from,$from_add;
-	$header="From: ";
-	if(!empty($post_mail) && $from_add == 1){
-		$header .= mb_encode_mimeheader('"'.$post_mail.'"')." <".$from.">\n";
-	}else{
-		$header .= $from."\n";
-	}
-	if($BccMail != '') {
-	  $header.="Bcc: $BccMail\n";
-	}
-	if(!empty($post_mail)) {
-		$header.="Reply-To: ".$post_mail."\n";
-	}
-	$header.="Content-Type:text/plain;charset=iso-2022-jp\nX-Mailer: PHP/".phpversion();
-	return $header;
-}
-//管理者宛送信メールボディ
-function mailToAdmin($arr,$subject,$mailFooterDsp,$mailSignature,$encode,$confirmDsp){
-	global $lpSignature;
-	$type = isset($arr['form_type']) ? $arr['form_type'] : '';
-	$sentAt = date("Y/m/d (D) H:i:s", time());
-	$pageUrl = '';
-	if(!empty($arr['page_url'])) {
-		$pageUrl = $arr['page_url'];
-	}else{
-		$pageUrl = ($confirmDsp != 1) ? @$_SERVER['HTTP_REFERER'] : @$arr['httpReferer'];
-	}
-
-	$company = isset($arr['会社名']) ? $arr['会社名'] : '';
-	$zip = isset($arr['郵便番号']) ? $arr['郵便番号'] : '';
-	$address = isset($arr['住所']) ? $arr['住所'] : '';
-	$tel = isset($arr['電話番号']) ? $arr['電話番号'] : '';
-	$name = isset($arr['ご担当者名']) ? $arr['ご担当者名'] : '';
-	$email = isset($arr['email']) ? $arr['email'] : '';
-
-	$adminBody = '';
-	if($type === 'inquiry') {
-		$preferred = isset($arr['ご連絡のご希望']) ? $arr['ご連絡のご希望'] : '';
-		$message = isset($arr['お問い合わせ内容']) ? $arr['お問い合わせ内容'] : '';
-
-		$adminBody .= "「かんたん箱スキャンからお問い合わせ」がありました\n\n";
-		$adminBody .= "＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\n\n";
-		$adminBody .= "【 会社名 】 ".$company."\n";
-		$adminBody .= "【 住所 】　〒".$zip."　　　　　\n";
-		$adminBody .= $address."\n";
-		$adminBody .= "【 電話番号】".$tel."\n";
-		$adminBody .= "【 ご担当者名 】".$name."　　 \n";
-		$adminBody .= "【 メールアドレス 】 ".$email."\n";
-		$adminBody .= "【 ご連絡のご希望】 ".$preferred."\n";
-		$adminBody .= "【 お問い合わせ内容 】　\n";
-		$adminBody .= $message."\n\n\n";
-		$adminBody .= "＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\n";
-		$adminBody .= "送信された日時：".$sentAt."\n";
-		$adminBody .= "問い合わせのページURL：".$pageUrl."\n\n";
-		$adminBody .= $lpSignature;
-	}
-	else { // apply (default)
-		$boxes = isset($arr['箱数']) ? $arr['箱数'] : '';
-		$books = isset($arr['冊数']) ? $arr['冊数'] : '';
-		$total = isset($arr['合計金額']) ? $arr['合計金額'] : '';
-
-		$adminBody .= "「かんたん箱スキャンからお申込み」がありました\n\n";
-		$adminBody .= "＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\n\n";
-		$adminBody .= "【 会社名 】 ".$company."\n";
-		$adminBody .= "【 住所 】　〒".$zip."　　　　　\n";
-		$adminBody .= $address."\n";
-		$adminBody .= "【 電話番号】".$tel."\n";
-		$adminBody .= "【 ご担当者名 】".$name."　　 \n";
-		$adminBody .= "【 メールアドレス 】 ".$email."\n";
-		$adminBody .= "【 箱数 】 ".$boxes."\n";
-		$adminBody .= "【 冊数 】 ".$books."\n";
-		$adminBody .= "【 合計金額 】".$total."\n\n\n";
-		$adminBody .= "＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\n";
-		$adminBody .= "送信された日時：".$sentAt."\n";
-		$adminBody .= "お申込みのページURL：".$pageUrl."\n\n";
-		$adminBody .= $lpSignature;
-	}
-
-	return mb_convert_encoding($adminBody,"JIS",$encode);
+if (!sameOriginReferer($mode === 'confirm')) {
+  renderErrorPage(['不正なページ遷移です。応募フォームから再度入力してください。'], $entryUrl);
+  exit;
 }
 
-//ユーザ宛送信メールヘッダ
-function userHeader($refrom_name,$to,$encode){
-	$reheader = "From: ";
-	if(!empty($refrom_name)){
-		$default_internal_encode = mb_internal_encoding();
-		if($default_internal_encode != $encode){
-			mb_internal_encoding($encode);
-		}
-		$reheader .= mb_encode_mimeheader($refrom_name)." <".$to.">\nReply-To: ".$to;
-	}else{
-		$reheader .= "$to\nReply-To: ".$to;
-	}
-	$reheader .= "\nContent-Type: text/plain;charset=iso-2022-jp\nX-Mailer: PHP/".phpversion();
-	return $reheader;
+if (!validToken()) {
+  renderErrorPage(['セッションの有効期限が切れました。応募フォームから再度入力してください。'], $entryUrl);
+  exit;
 }
-//ユーザ宛送信メールボディ
-function mailToUser($arr,$dsp_name,$remail_text,$mailFooterDsp,$mailSignature,$encode){
-	global $lpSignature;
-	$type = isset($arr['form_type']) ? $arr['form_type'] : '';
-	$sentAt = date("Y/m/d (D) H:i:s", time());
 
-	$company = isset($arr['会社名']) ? $arr['会社名'] : '';
-	$zip = isset($arr['郵便番号']) ? $arr['郵便番号'] : '';
-	$address = isset($arr['住所']) ? $arr['住所'] : '';
-	$tel = isset($arr['電話番号']) ? $arr['電話番号'] : '';
-	$name = isset($arr['ご担当者名']) ? $arr['ご担当者名'] : '';
-	$email = isset($arr['email']) ? $arr['email'] : '';
+$data = collectPostedData($fields);
+$errors = array_merge(validateInput($required), spamErrors());
 
-	$userBody = '';
-	if($name !== '') $userBody .= $name." 様\n\n";
+if ($mode === 'confirm') {
+  $uploads = [];
+  foreach ($fileFields as $key => $label) {
+    [$file, $error] = saveUpload($key, $label, $tmpDir);
+    if ($error) {
+      $errors[] = $error;
+    } else {
+      $uploads[$key] = $file;
+    }
+  }
 
-	if($type === 'inquiry') {
-		$preferred = isset($arr['ご連絡のご希望']) ? $arr['ご連絡のご希望'] : '';
-		$message = isset($arr['お問い合わせ内容']) ? $arr['お問い合わせ内容'] : '';
+  if ($errors) {
+    cleanTempFiles($uploads);
+    renderErrorPage($errors, $entryUrl);
+    exit;
+  }
 
-		$userBody .= "お問い合わせいただきありがとうございます。\n";
-		$userBody .= "下記の内容で受け付けをいたしました。\n\n";
-		$userBody .= "順次ご案内いたしますので、今しばらくお待ちください。\n";
-		$userBody .= "＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\n\n";
-		$userBody .= "【 会社名 】 ".$company."\n";
-		$userBody .= "【 住所 】　〒".$zip."　　　　　\n";
-		$userBody .= $address."\n";
-		$userBody .= "【 電話番号】".$tel."\n";
-		$userBody .= "【 ご担当者名 】".$name."　　 \n";
-		$userBody .= "【 メールアドレス 】 ".$email."\n";
-		$userBody .= "【 ご連絡のご希望】 ".$preferred."\n";
-		$userBody .= "【 お問い合わせ内容 】　\n";
-		$userBody .= $message."\n\n\n";
-		$userBody .= "＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\n\n";
-		$userBody .= "送信日時：".$sentAt."\n\n";
-		$userBody .= $lpSignature;
-	}
-	else { // apply (default)
-		$boxes = isset($arr['箱数']) ? $arr['箱数'] : '';
-		$books = isset($arr['冊数']) ? $arr['冊数'] : '';
-		$total = isset($arr['合計金額']) ? $arr['合計金額'] : '';
-
-		$userBody .= "お申込みいただきありがとうございます。\n";
-		$userBody .= "下記の内容で受け付けをいたしました。\n\n";
-		$userBody .= "順次ご案内いたしますので、今しばらくお待ちください。\n";
-		$userBody .= "＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\n\n";
-		$userBody .= "【 会社名 】 ".$company."\n";
-		$userBody .= "【 住所 】　〒".$zip."　　　　　\n";
-		$userBody .= $address."\n";
-		$userBody .= "【 電話番号】".$tel."\n";
-		$userBody .= "【 ご担当者名 】".$name."　　 \n";
-		$userBody .= "【 メールアドレス 】 ".$email."\n";
-		$userBody .= "【 箱数 】 ".$boxes."\n";
-		$userBody .= "【 冊数 】 ".$books."\n";
-		$userBody .= "【 合計金額 】　".$total."\n\n";
-		$userBody .= "＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\n\n";
-		$userBody .= "送信日時：".$sentAt."\n\n";
-		$userBody .= $lpSignature;
-	}
-
-	return mb_convert_encoding($userBody,"JIS",$encode);
+  renderConfirm($data, $fields, $uploads);
+  exit;
 }
-//必須チェック関数
-function requireCheck($require){
-	$res['errm'] = '';
-	$res['empty_flag'] = 0;
-	foreach($require as $requireVal){
-		$existsFalg = '';
-		foreach($_POST as $key => $val) {
-			if($key == $requireVal) {
-				
-				//連結指定の項目（配列）のための必須チェック
-				if(is_array($val)){
-					$connectEmpty = 0;
-					foreach($val as $kk => $vv){
-						if(is_array($vv)){
-							foreach($vv as $kk02 => $vv02){
-								if($vv02 == ''){
-									$connectEmpty++;
-								}
-							}
-						}
-						
-					}
-					if($connectEmpty > 0){
-						$res['errm'] .= "<p class=\"error_messe\">【".h($key)."】は必須項目です。</p>\n";
-						$res['empty_flag'] = 1;
-					}
-				}
-				//デフォルト必須チェック
-				elseif($val == ''){
-					$res['errm'] .= "<p class=\"error_messe\">【".h($key)."】は必須項目です。</p>\n";
-					$res['empty_flag'] = 1;
-				}
-				
-				$existsFalg = 1;
-				break;
-			}
-			
-		}
-		if($existsFalg != 1){
-				$res['errm'] .= "<p class=\"error_messe\">【".$requireVal."】が未選択です。</p>\n";
-				$res['empty_flag'] = 1;
-		}
-	}
-	
-	return $res;
+
+$attachments = [];
+foreach ($fileFields as $key => $label) {
+  [$file, $error] = validateTempAttachment($key, $label, $tmpDir);
+  if ($error) {
+    $errors[] = $error;
+  } else {
+    $attachments[$key] = $file;
+  }
 }
-//リファラチェック
-function refererCheck($Referer_check,$Referer_check_domain){
-	if($Referer_check == 1 && !empty($Referer_check_domain)){
-		if(empty($_SERVER['HTTP_REFERER']) || strpos($_SERVER['HTTP_REFERER'],$Referer_check_domain) === false){
-			return exit('<p align="center">リファラチェックエラー。フォームページのドメインとこのファイルのドメインが一致しません</p>');
-		}
-	}
+
+if ($errors) {
+  renderErrorPage($errors, $entryUrl);
+  exit;
 }
-function copyright(){
-	echo '<a style="display:block;text-align:center;margin:15px 0;font-size:11px;color:#aaa;text-decoration:none" href="http://www.php-factory.net/" target="_blank">- PHP工房 -</a>';
+
+$subject = '【京浜電設 採用サイト】応募フォームより送信がありました';
+$body = buildBody($data, $fields);
+
+if (!sendMultipartMail($adminTo, $subject, $body, $fromAddress, $data['email'], $attachments)) {
+  renderErrorPage(['送信に失敗しました。時間をおいて再度お試しください。'], $entryUrl);
+  exit;
 }
-//----------------------------------------------------------------------
-//  関数定義(END)
-//----------------------------------------------------------------------
-?>
+
+sendReceiptMail($data['email'], $fromAddress, $data);
+$_SESSION['entry_last_send'] = time();
+unset($_SESSION['entry_form_token']);
+cleanTempFiles($attachments);
+renderThanks();
