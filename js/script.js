@@ -465,6 +465,35 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     setActiveTab(nextTab);
   });
 
+  // Entry form file inputs
+  (function initEntryFileFields() {
+    const fields = document.querySelectorAll('.p-entry__file-field');
+    if (!fields.length) return;
+
+    fields.forEach(function (field) {
+      const input = field.querySelector('.js-entry-file');
+      const name = field.querySelector('.p-entry__file-name span');
+      const clear = field.querySelector('.js-entry-file-clear');
+      if (!input || !name || !clear) return;
+
+      const defaultText = name.textContent;
+
+      function sync() {
+        const file = input.files && input.files[0] ? input.files[0] : null;
+        name.textContent = file ? file.name : defaultText;
+        clear.disabled = !file;
+      }
+
+      input.addEventListener('change', sync);
+      clear.addEventListener('click', function () {
+        input.value = '';
+        sync();
+      });
+
+      sync();
+    });
+  })();
+
   // FAQ details 開閉アニメーション
   (function initFaqDetailsAnimation() {
     const items = document.querySelectorAll('.p-faq__item');

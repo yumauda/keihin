@@ -156,14 +156,24 @@ $prefectures = [
           <div class="p-entry__row">
             <div class="p-entry__label">履歴書<span class="p-entry__required">必須</span></div>
             <div class="p-entry__control">
-              <input class="p-entry__file" type="file" name="resume" accept=".pdf,.doc,.docx,.xls,.xlsx,.jpg,.jpeg,.png" required>
+              <div class="p-entry__file-field">
+                <input class="p-entry__file js-entry-file" id="entry-resume" type="file" name="resume" accept=".pdf,.doc,.docx,.xls,.xlsx,.jpg,.jpeg,.png" required>
+                <label class="p-entry__file-name" for="entry-resume"><span>ファイル選択‥</span></label>
+                <label class="p-entry__file-browse" for="entry-resume">参照</label>
+                <button class="p-entry__file-clear js-entry-file-clear" type="button">取消</button>
+              </div>
             </div>
           </div>
 
           <div class="p-entry__row">
             <div class="p-entry__label">職務経歴書<span class="p-entry__required">必須</span></div>
             <div class="p-entry__control">
-              <input class="p-entry__file" type="file" name="career_file" accept=".pdf,.doc,.docx,.xls,.xlsx,.jpg,.jpeg,.png" required>
+              <div class="p-entry__file-field">
+                <input class="p-entry__file js-entry-file" id="entry-career-file" type="file" name="career_file" accept=".pdf,.doc,.docx,.xls,.xlsx,.jpg,.jpeg,.png" required>
+                <label class="p-entry__file-name" for="entry-career-file"><span>ファイル選択‥</span></label>
+                <label class="p-entry__file-browse" for="entry-career-file">参照</label>
+                <button class="p-entry__file-clear js-entry-file-clear" type="button">取消</button>
+              </div>
             </div>
           </div>
 

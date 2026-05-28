@@ -7,10 +7,10 @@
 }
 
 .p-entry__hero {
-  padding: 110px 0 52px;
+  padding: rem(110) 0 rem(52);
 
   @include mq("md") {
-    padding: 178px 0 86px;
+    padding: rem(178) 0 rem(86);
   }
 }
 
@@ -20,15 +20,15 @@
   text-align: center;
 
   @include mq("md") {
-    margin: 0 0 0 162px;
+    margin: 0 0 0 rem(162);
   }
 }
 
 .p-entry__en {
   position: relative;
-  padding-bottom: 14px;
+  padding-bottom: rem(14);
   font-family: "Bebas Neue", sans-serif;
-  font-size: 58px;
+  font-size: rem(58);
   font-weight: 400;
   line-height: 0.86;
   letter-spacing: 0;
@@ -38,104 +38,104 @@
     right: 0;
     bottom: 0;
     left: 0;
-    height: 3px;
+    height: rem(3);
     content: "";
     background: #ff3f16;
   }
 
   @include mq("md") {
-    font-size: 88px;
+    font-size: rem(88);
   }
 }
 
 .p-entry__sub {
-  margin-top: 15px;
-  font-size: 17px;
+  margin-top: rem(15);
+  font-size: rem(17);
   font-weight: 700;
   line-height: 1.4;
 
   @include mq("md") {
-    font-size: 21px;
+    font-size: rem(21);
   }
 }
 
 .p-entry__content {
-  padding-bottom: 48px;
+  padding-bottom: rem(48);
 
   @include mq("md") {
-    padding-bottom: 76px;
+    padding-bottom: rem(76);
   }
 }
 
 .p-entry__lead {
-  max-width: 823px;
+  max-width: rem(823);
   margin: 0 auto;
-  font-size: 15px;
+  font-size: rem(15);
   font-weight: 700;
   line-height: 1.9;
 
   p + p {
-    margin-top: 28px;
+    margin-top: rem(28);
   }
 
   @include mq("md") {
-    font-size: 19px;
+    font-size: rem(19);
     line-height: 2;
 
     p + p {
-      margin-top: 39px;
+      margin-top: rem(39);
     }
   }
 }
 
 .p-entry__form {
-  max-width: 1192px;
-  margin: 42px auto 0;
-  padding: 28px 18px 34px;
-  border: 1px solid #777;
+  max-width: rem(1192);
+  margin: rem(42) auto 0;
+  padding: rem(28) rem(18) rem(34);
+  border: rem(1) solid #777;
 
   @include mq("md") {
-    margin-top: 74px;
-    padding: 67px 91px 66px;
+    margin-top: rem(74);
+    padding: rem(67) rem(91) rem(66);
   }
 }
 
 .p-entry__row {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 9px;
+  gap: rem(9);
   align-items: start;
 
   & + & {
-    margin-top: 20px;
+    margin-top: rem(20);
   }
 
   @include mq("md") {
-    grid-template-columns: 206px minmax(0, 1fr);
-    gap: 22px;
+    grid-template-columns: rem(206) minmax(0, 1fr);
+    gap: rem(22);
 
     & + & {
-      margin-top: 16px;
+      margin-top: rem(16);
     }
   }
 }
 
 .p-entry__row--textarea {
-  margin-top: 23px;
+  margin-top: rem(23);
 }
 
 .p-entry__label {
   display: flex;
-  gap: 14px;
+  gap: rem(14);
   align-items: center;
   min-height: 0;
-  font-size: 15px;
+  font-size: rem(15);
   font-weight: 800;
   line-height: 1.4;
 
   @include mq("md") {
-    min-height: 37px;
-    font-size: 18px;
+    min-height: rem(37);
+    font-size: rem(18);
   }
 }
 
@@ -151,15 +151,15 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 43px;
-  min-height: 22px;
-  padding: 2px 8px 3px;
+  min-width: rem(43);
+  min-height: rem(22);
+  padding: rem(2) rem(8) rem(3);
   color: #fff;
-  font-size: 13px;
+  font-size: rem(13);
   font-weight: 700;
   line-height: 1;
   background: #0788ff;
-  border-radius: 4px;
+  border-radius: rem(4);
 }
 
 .p-entry__control {
@@ -239,11 +239,11 @@
 .p-entry__name-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  gap: rem(10);
 
   @include mq("md") {
-    grid-template-columns: minmax(0, 245px) minmax(0, 245px);
-    gap: 26px;
+    grid-template-columns: minmax(0, rem(245)) minmax(0, rem(245));
+    gap: rem(26);
   }
 }
 
@@ -253,10 +253,10 @@
   width: 100%;
   color: #111;
   font: inherit;
-  font-size: 16px;
+  font-size: rem(16);
   font-weight: 500;
   background: #fff;
-  border: 1px solid #999;
+  border: rem(1) solid #999;
   border-radius: 0;
 
   &::placeholder {
@@ -266,24 +266,24 @@
 
 .p-entry__input,
 .p-entry__select {
-  height: 37px;
-  padding: 5px 18px;
+  height: rem(37);
+  padding: rem(5) rem(18);
 }
 
 .p-entry__age {
   display: flex;
-  gap: 20px;
+  gap: rem(20);
   align-items: center;
 
   .p-entry__input {
-    max-width: 245px;
+    max-width: rem(245);
     text-align: center;
   }
 }
 
 .p-entry__address {
   display: grid;
-  gap: 12px;
+  gap: rem(12);
 }
 
 .p-entry__zip {
@@ -331,49 +331,108 @@
 }
 
 .p-entry__help {
-  margin-top: 7px;
-  font-size: 12px;
+  margin-top: rem(7);
+  font-size: rem(12);
   font-weight: 700;
   line-height: 1.6;
 
   @include mq("md") {
-    font-size: 14px;
+    font-size: rem(14);
   }
 }
 
 .p-entry__file {
+  position: absolute;
+  width: rem(1);
+  height: rem(1);
+  margin: rem(-1);
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+}
+
+.p-entry__file-field {
+  display: grid;
   width: 100%;
-  min-height: 37px;
+  max-width: rem(781);
+  height: rem(40);
+  grid-template-columns: minmax(0, 1fr) rem(60) rem(52);
+  background: #fff;
+  border: rem(1) solid #707070;
+}
+
+.p-entry__file-name {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  padding: 0 rem(19);
   color: #111;
+  font-size: rem(17);
+  font-weight: 600;
+  line-height: rem(30);
+  cursor: pointer;
+
+  span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+.p-entry__file-browse,
+.p-entry__file-clear {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  height: 100%;
+  color: #333;
   font: inherit;
-  font-size: 16px;
-  font-weight: 700;
+  font-size: rem(16);
+  font-weight: 500;
+  line-height: 1;
+  border: 0;
+  border-left: rem(1) solid #cfd8dc;
+  background: #eef3f7;
+}
+
+.p-entry__file-browse {
+  cursor: pointer;
+}
+
+.p-entry__file-clear {
+  cursor: pointer;
+
+  &:disabled {
+    color: #999;
+    cursor: default;
+  }
 }
 
 .p-entry__textarea {
-  min-height: 186px;
-  padding: 10px 14px;
+  min-height: rem(186);
+  padding: rem(10) rem(14);
   resize: vertical;
 }
 
 .p-entry__trigger {
   display: flex;
   flex-wrap: wrap;
-  gap: 18px 36px;
-  padding-top: 6px;
+  gap: rem(18) rem(36);
+  padding-top: rem(6);
 }
 
 .p-entry__actions {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 14px;
-  margin-top: 34px;
+  gap: rem(14);
+  margin-top: rem(34);
 
   @include mq("md") {
     flex-direction: row;
-    gap: 33px;
-    margin-top: 44px;
+    gap: rem(33);
+    margin-top: rem(44);
   }
 }
 
@@ -382,9 +441,9 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  min-height: 54px;
+  min-height: rem(54);
   color: #fff;
-  font-size: 16px;
+  font-size: rem(16);
   font-weight: 800;
   line-height: 1.3;
   border: 0;
@@ -396,9 +455,9 @@
   }
 
   @include mq("md") {
-    width: 257px;
-    min-height: 64px;
-    font-size: 20px;
+    width: rem(257);
+    min-height: rem(64);
+    font-size: rem(20);
   }
 }
 
@@ -417,61 +476,61 @@
 }
 
 .p-entry__bottom-note {
-  max-width: 1068px;
-  margin: 38px auto 0;
-  font-size: 14px;
+  max-width: rem(1068);
+  margin: rem(38) auto 0;
+  font-size: rem(14);
   font-weight: 700;
   line-height: 2;
 
   @include mq("md") {
-    margin-top: 74px;
-    font-size: 18px;
+    margin-top: rem(74);
+    font-size: rem(18);
   }
 }
 
 .p-entry__honeypot {
   position: absolute;
-  left: -9999px;
-  width: 1px;
-  height: 1px;
+  left: rem(-9999);
+  width: rem(1);
+  height: rem(1);
   overflow: hidden;
 }
 
 .p-entry__error {
-  max-width: 823px;
-  margin: 0 auto 36px;
-  padding: 18px 22px;
+  max-width: rem(823);
+  margin: 0 auto rem(36);
+  padding: rem(18) rem(22);
   color: #b00020;
-  font-size: 16px;
+  font-size: rem(16);
   font-weight: 700;
   line-height: 1.8;
-  border: 1px solid #f2a4b1;
+  border: rem(1) solid #f2a4b1;
   background: #fff6f8;
 }
 
 .p-entry__confirm {
-  max-width: 980px;
-  margin: 42px auto 0;
+  max-width: rem(980);
+  margin: rem(42) auto 0;
 
   @include mq("md") {
-    margin-top: 72px;
+    margin-top: rem(72);
   }
 }
 
 .p-entry__confirm-table {
   width: 100%;
-  border-top: 1px solid #999;
+  border-top: rem(1) solid #999;
 
   tr {
-    border-bottom: 1px solid #999;
+    border-bottom: rem(1) solid #999;
   }
 
   th,
   td {
     display: block;
     width: 100%;
-    padding: 13px 14px;
-    font-size: 14px;
+    padding: rem(13) rem(14);
+    font-size: rem(14);
     font-weight: 700;
     line-height: 1.8;
     text-align: left;
@@ -487,26 +546,26 @@
     td {
       display: table-cell;
       width: auto;
-      padding: 20px 24px;
-      font-size: 16px;
+      padding: rem(20) rem(24);
+      font-size: rem(16);
     }
 
     th {
-      width: 260px;
+      width: rem(260);
     }
   }
 }
 
 .p-entry__message {
-  max-width: 823px;
+  max-width: rem(823);
   margin: 0 auto;
-  font-size: 15px;
+  font-size: rem(15);
   font-weight: 700;
   line-height: 2;
   text-align: left;
 
   @include mq("md") {
-    font-size: 18px;
+    font-size: rem(18);
     text-align: center;
   }
 }

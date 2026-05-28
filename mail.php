@@ -5,7 +5,7 @@ session_start();
 mb_language('Japanese');
 mb_internal_encoding('UTF-8');
 
-$adminTo = getenv('ENTRY_MAIL_TO') ?: 'xxxxxxxxxx@xxx.xxx';
+$adminTo = getenv('ENTRY_MAIL_TO') ?: 'firststep.yumauda@gmail.com';
 $fromAddress = getenv('ENTRY_MAIL_FROM') ?: 'xxxxxxxxxx@xxx.xxx';
 $entryUrl = '/recruit/entry/';
 $tmpDir = __DIR__ . '/tmp';
@@ -336,6 +336,8 @@ function buildBody($data, $fields)
 function sendMultipartMail($to, $subject, $body, $from, $replyTo, $attachments)
 {
   $boundary = 'entry_' . bin2hex(random_bytes(16));
+  $encodedSubject = mb_encode_mimeheader($subject, 'ISO-2022-JP');
+  $encodedBody = mb_convert_encoding($body, 'ISO-2022-JP', 'UTF-8');
   $headers = [];
   $headers[] = 'From: ' . $from;
   if (filter_var($replyTo, FILTER_VALIDATE_EMAIL)) {
@@ -345,13 +347,13 @@ function sendMultipartMail($to, $subject, $body, $from, $replyTo, $attachments)
   $headers[] = 'Content-Type: multipart/mixed; boundary="' . $boundary . '"';
 
   $message = "--{$boundary}\n";
-  $message .= "Content-Type: text/plain; charset=UTF-8\n";
-  $message .= "Content-Transfer-Encoding: 8bit\n\n";
-  $message .= $body . "\n";
+  $message .= "Content-Type: text/plain; charset=ISO-2022-JP\n";
+  $message .= "Content-Transfer-Encoding: 7bit\n\n";
+  $message .= $encodedBody . "\n";
 
   foreach ($attachments as $file) {
     $content = chunk_split(base64_encode(file_get_contents($file['path'])));
-    $encodedName = mb_encode_mimeheader($file['name'], 'UTF-8');
+    $encodedName = mb_encode_mimeheader($file['name'], 'ISO-2022-JP');
     $message .= "--{$boundary}\n";
     $message .= 'Content-Type: ' . $file['type'] . '; name="' . $encodedName . "\"\n";
     $message .= "Content-Transfer-Encoding: base64\n";
@@ -361,33 +363,51 @@ function sendMultipartMail($to, $subject, $body, $from, $replyTo, $attachments)
 
   $message .= "--{$boundary}--";
 
-  return mb_send_mail($to, $subject, $message, implode("\n", $headers));
+  return mail($to, $encodedSubject, $message, implode("\n", $headers));
 }
 
-function sendReceiptMail($to, $from, $data)
+function sendReceiptMail($to, $from, $data, $fields)
 {
   if (!filter_var($to, FILTER_VALIDATE_EMAIL)) {
     return false;
   }
 
   $name = trim($data['last_name'] . ' ' . $data['first_name']);
-  $subject = '【京浜電設 採用サイト】応募を受け付けました';
+  $subject = '【京浜電設株式会社】ご応募を受け付けました';
   $body = $name . " 様\n\n";
-  $body .= "この度は京浜電設株式会社へご応募いただき、誠にありがとうございます。\n";
-  $body .= "以下の内容で応募を受け付けました。\n";
-  $body .= "担当者が内容を確認し、折り返しご連絡いたします。\n\n";
-  $body .= "応募区分: " . ($data['job_type'] ?? '') . "\n";
+  $body .= "この度は京浜電設株式会社の採用サイトよりご応募いただき、誠にありがとうございます。\n";
+  $body .= "以下の内容で応募を受け付けました。\n\n";
+  $body .= "お送りいただいた内容を確認のうえ、採用担当者より順次ご連絡いたします。\n";
+  $body .= "内容によってはご返信までにお時間をいただく場合がございますので、あらかじめご了承ください。\n\n";
+  $body .= "----------------------------------------\n";
+  $body .= "受付内容\n";
+  $body .= "----------------------------------------\n";
   $body .= "氏名: " . $name . "\n";
-  $body .= "E-mail: " . ($data['email'] ?? '') . "\n\n";
-  $body .= "※このメールは送信専用です。お心当たりがない場合は破棄してください。\n";
+  $body .= "フリガナ: " . trim(($data['last_kana'] ?? '') . ' ' . ($data['first_kana'] ?? '')) . "\n";
+
+  foreach ($fields as $key => $label) {
+    if (in_array($key, ['last_name', 'first_name', 'last_kana', 'first_kana', 'email_confirm'], true)) {
+      continue;
+    }
+    $body .= $label . ': ' . ($data[$key] ?? '') . "\n";
+  }
+
+  $body .= "\n";
+  $body .= "----------------------------------------\n";
+  $body .= "京浜電設株式会社 採用担当\n";
+  $body .= "----------------------------------------\n\n";
+  $body .= "※このメールは送信専用の自動返信メールです。\n";
+  $body .= "※本メールにお心当たりがない場合は、お手数ですが破棄してください。\n";
+  $encodedSubject = mb_encode_mimeheader($subject, 'ISO-2022-JP');
+  $encodedBody = mb_convert_encoding($body, 'ISO-2022-JP', 'UTF-8');
 
   $headers = [];
   $headers[] = 'From: ' . $from;
   $headers[] = 'MIME-Version: 1.0';
-  $headers[] = 'Content-Type: text/plain; charset=UTF-8';
-  $headers[] = 'Content-Transfer-Encoding: 8bit';
+  $headers[] = 'Content-Type: text/plain; charset=ISO-2022-JP';
+  $headers[] = 'Content-Transfer-Encoding: 7bit';
 
-  return mb_send_mail($to, $subject, $body, implode("\n", $headers));
+  return mail($to, $encodedSubject, $encodedBody, implode("\n", $headers));
 }
 
 function cleanTempFiles($attachments)
@@ -500,7 +520,7 @@ if (!sendMultipartMail($adminTo, $subject, $body, $fromAddress, $data['email'], 
   exit;
 }
 
-sendReceiptMail($data['email'], $fromAddress, $data);
+sendReceiptMail($data['email'], $fromAddress, $data, $fields);
 $_SESSION['entry_last_send'] = time();
 unset($_SESSION['entry_form_token']);
 cleanTempFiles($attachments);
