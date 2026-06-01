@@ -6,7 +6,7 @@ mb_language('Japanese');
 mb_internal_encoding('UTF-8');
 
 $adminTo = getenv('ENTRY_MAIL_TO') ?: 'firststep.yumauda@gmail.com';
-$fromAddress = getenv('ENTRY_MAIL_FROM') ?: 'xxxxxxxxxx@xxx.xxx';
+$fromAddress = getenv('ENTRY_MAIL_FROM') ?: 'info@kdcg.co.jp';
 $entryUrl = '/recruit/entry/';
 $tmpDir = __DIR__ . '/tmp';
 
@@ -124,6 +124,14 @@ function validateInput($required)
   $tel = requestValue('tel');
   if ($tel !== '' && !preg_match('/\\A[0-9\\-]+\\z/', $tel)) {
     $errors[] = 'TELは半角数字とハイフンのみで入力してください。';
+  }
+
+  foreach (['last_kana', 'first_kana'] as $key) {
+    $kana = requestValue($key);
+    if ($kana !== '' && !preg_match('/\\A[ァ-ヶー・　\\s]+\\z/u', $kana)) {
+      $errors[] = 'フリガナは全角カタカナで入力してください。';
+      break;
+    }
   }
 
   $age = requestValue('age');

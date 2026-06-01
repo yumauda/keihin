@@ -4,58 +4,75 @@
   color: #111;
   font-family: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", "YuGothic", Arial, sans-serif;
   letter-spacing: 0;
+  padding-top: rem(64);
+
+  @include mq("md") {
+    padding-top: rem(138);
+  }
 }
 
 .p-entry__hero {
-  padding: rem(110) 0 rem(52);
+  padding: rem(50) 0 rem(52);
 
   @include mq("md") {
-    padding: rem(178) 0 rem(86);
+    padding: rem(96) 0 rem(70);
   }
 }
 
 .p-entry__heading {
   width: fit-content;
-  margin: 0 auto;
   text-align: center;
 
   @include mq("md") {
-    margin: 0 0 0 rem(162);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: rem(1002);
+    text-align: left;
+    width: auto;
   }
 }
 
 .p-entry__en {
-  position: relative;
-  padding-bottom: rem(14);
-  font-family: "Bebas Neue", sans-serif;
-  font-size: rem(58);
+  font-family: $second-font-family;
+  font-size: rem(52);
   font-weight: 400;
-  line-height: 0.86;
+  line-height: 1;
   letter-spacing: 0;
 
-  &::after {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    height: rem(3);
-    content: "";
-    background: #ff3f16;
-  }
-
   @include mq("md") {
-    font-size: rem(88);
+    font-size: rem(100);
   }
 }
 
 .p-entry__sub {
-  margin-top: rem(15);
-  font-size: rem(17);
-  font-weight: 700;
+  display: inline-block;
+  font-size: rem(16);
+  font-weight: 500;
   line-height: 1.4;
+  margin-top: rem(8);
+  padding-top: rem(9);
+  position: relative;
 
   @include mq("md") {
-    font-size: rem(21);
+    font-size: rem(23);
+    margin-top: rem(12);
+    padding-top: rem(18);
+  }
+}
+
+.p-entry__sub::before {
+  border-top: rem(3) solid #fe4504;
+  content: "";
+  left: 50%;
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+  width: rem(220);
+
+  @include mq("md") {
+    left: 0;
+    transform: none;
+    width: rem(307);
   }
 }
 
@@ -473,6 +490,19 @@
 .p-entry__button--link {
   text-decoration: none;
   background: #ff6f1c;
+}
+
+.p-entry__form-error {
+  margin: rem(16) auto 0;
+  color: #ff0000;
+  font-size: rem(14);
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+
+  @include mq("md") {
+    font-size: rem(16);
+  }
 }
 
 .p-entry__bottom-note {

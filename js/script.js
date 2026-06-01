@@ -196,18 +196,26 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     return normalized.replace(/[^\d]/g, '').slice(0, 7);
   }
 
-  function fetchAddressByZip(zip) {
+  function fetchAddressDataByZip(zip) {
     if (zipAddressCache[zip]) return zipAddressCache[zip];
     zipAddressCache[zip] = $.getJSON('https://zipcloud.ibsnet.co.jp/api/search?callback=?', { zipcode: zip })
       .then(function (data) {
         if (!data || data.status !== 200 || !data.results || !data.results.length) return null;
-        const r = data.results[0];
-        return (r.address1 || '') + (r.address2 || '') + (r.address3 || '');
+        return data.results[0];
       })
       .catch(function () {
         return null;
       });
     return zipAddressCache[zip];
+  }
+
+  function formatZipAddress(address) {
+    if (!address) return '';
+    return (address.address1 || '') + (address.address2 || '') + (address.address3 || '');
+  }
+
+  function fetchAddressByZip(zip) {
+    return fetchAddressDataByZip(zip).then(formatZipAddress);
   }
 
   function initZipAutoFill(zipSelector, addressSelector) {
@@ -224,6 +232,50 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         const current = String($addr.val() || '').trim();
         if (current !== '') return;
         $addr.val(address).trigger('input');
+      });
+    }
+
+    $zip.on('input change blur', function () {
+      if (timer) window.clearTimeout(timer);
+      timer = window.setTimeout(run, 250);
+    });
+  }
+
+  function initEntryZipAutoFill() {
+    const $form = $('.p-entry__form');
+    const $zip = $form.find('input[name="zip"]');
+    const $prefecture = $form.find('select[name="prefecture"]');
+    const $city = $form.find('input[name="city"]');
+    if (!$zip.length || !$prefecture.length || !$city.length) return;
+
+    let timer = null;
+    let lastAutoCity = '';
+
+    function setIfAutoOrEmpty($field, value, lastAutoValue) {
+      const current = String($field.val() || '').trim();
+      if (current !== '' && current !== lastAutoValue) return false;
+      $field.val(value).trigger('change').trigger('input');
+      return true;
+    }
+
+    function run() {
+      const zip = normalizeZip($zip.val());
+      if (zip.length !== 7) return;
+      $zip.val(zip);
+
+      fetchAddressDataByZip(zip).then(function (address) {
+        if (!address) return;
+
+        const prefecture = address.address1 || '';
+        const city = (address.address2 || '') + (address.address3 || '');
+
+        if (prefecture) {
+          setIfAutoOrEmpty($prefecture, prefecture, prefecture);
+        }
+
+        if (city && setIfAutoOrEmpty($city, city, lastAutoCity)) {
+          lastAutoCity = city;
+        }
       });
     }
 
@@ -261,6 +313,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
   initZipAutoFill('#apply-zip', '#apply-address');
   initZipAutoFill('#inq-zip', '#inq-address');
+  initEntryZipAutoFill();
 
   $('#contact-panel-inquiry .p-contact__form, #contact-panel-apply .p-contact__form').on('submit', function () {
     try {
@@ -491,6 +544,66 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       });
 
       sync();
+    });
+  })();
+
+  // Entry form validation
+  (function initEntryValidation() {
+    const form = document.querySelector('.p-entry__form');
+    if (!form) return;
+
+    const kanaInputs = form.querySelectorAll('input[name="last_kana"], input[name="first_kana"]');
+    const error = form.querySelector('.js-entry-form-error');
+    const kanaPattern = /^[ァ-ヶー・　\s]+$/u;
+    const kanaMessage = 'フリガナは全角カタカナで入力してください。';
+
+    function showError(message) {
+      if (!error) return;
+      error.textContent = message;
+      error.hidden = false;
+    }
+
+    function clearError() {
+      if (!error) return;
+      error.textContent = '';
+      error.hidden = true;
+    }
+
+    function validateKana(input) {
+      const value = input.value.trim();
+      const isValid = value === '' || kanaPattern.test(value);
+      input.setCustomValidity(isValid ? '' : kanaMessage);
+      return isValid;
+    }
+
+    kanaInputs.forEach(function (input) {
+      input.addEventListener('input', function () {
+        validateKana(input);
+        const invalidKana = Array.from(kanaInputs).find(function (kanaInput) {
+          return !validateKana(kanaInput);
+        });
+
+        if (!invalidKana) {
+          clearError();
+        }
+      });
+
+      input.addEventListener('blur', function () {
+        validateKana(input);
+      });
+    });
+
+    form.addEventListener('submit', function (e) {
+      const invalidKana = Array.from(kanaInputs).find(function (input) {
+        return !validateKana(input);
+      });
+
+      if (!invalidKana) return;
+
+      e.preventDefault();
+      showError(kanaMessage);
+      invalidKana.reportValidity();
+      invalidKana.focus();
     });
   })();
 

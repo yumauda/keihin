@@ -42,12 +42,12 @@ $prefectures = [
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/styles.css?v=20260527">
+  <link rel="stylesheet" href="../css/styles.css?v=20260601">
   <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script defer src="../js/gsap.js?v=20260525"></script>
-  <script defer src="../js/script.js?v=20260525"></script>
+  <script defer src="../js/script.js?v=20260601"></script>
 </head>
 
 <body>
@@ -198,6 +198,7 @@ $prefectures = [
             <button class="p-entry__button p-entry__button--submit" type="submit">確認用画面へ</button>
             <button class="p-entry__button p-entry__button--reset" type="reset">リセット</button>
           </div>
+          <p class="p-entry__form-error js-entry-form-error" role="alert" aria-live="polite" hidden></p>
         </form>
 
         <p class="p-entry__bottom-note">※フォーム送信後は「メールアドレス」に記入されたメールアドレスに送信確認のメールが届きます。送信確認のメールが届かない場合は、メールアドレスの入力が間違っている場合があります。また、迷惑メールフォルダに入っている場合もありますので、そちらもご確認ください。</p>

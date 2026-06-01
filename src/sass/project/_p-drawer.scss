@@ -117,8 +117,10 @@
   opacity: 0;
   transition: 0.3s;
   padding: rem(58) rem(32) rem(40);
+  overflow-y: auto;
 
   @include mq(md) {
+    overflow-y: initial;
     padding: rem(104) rem(32) rem(40);
   }
 }
