@@ -7,7 +7,10 @@ mb_internal_encoding('UTF-8');
 
 $adminTo = getenv('ENTRY_MAIL_TO') ?: 'firststep.yumauda@gmail.com';
 $fromAddress = getenv('ENTRY_MAIL_FROM') ?: 'info@kdcg.co.jp';
-$entryUrl = '/recruit/entry/';
+$siteOrigin = 'https://dev.kdcg.co.jp';
+$siteBasePath = '/recruit';
+$homeUrl = $siteBasePath . '/';
+$entryUrl = $siteBasePath . '/entry/';
 $tmpDir = __DIR__ . '/tmp';
 
 $fields = [
@@ -45,28 +48,32 @@ function requestValue($key)
   return isset($_POST[$key]) ? trim((string)$_POST[$key]) : '';
 }
 
-function sameOriginReferer($requireEntryPage = false)
+function sameOriginReferer($allowedPaths = [])
 {
-  if (empty($_SERVER['HTTP_REFERER']) || empty($_SERVER['HTTP_HOST'])) {
+  global $siteOrigin;
+
+  if (empty($_SERVER['HTTP_REFERER'])) {
     return false;
   }
 
   $referer = parse_url($_SERVER['HTTP_REFERER']);
-  if (empty($referer['host'])) {
+  $allowed = parse_url($siteOrigin);
+  if (empty($referer['scheme']) || empty($referer['host']) || empty($allowed['scheme']) || empty($allowed['host'])) {
     return false;
   }
 
-  $refererHost = $referer['host'] . (isset($referer['port']) ? ':' . $referer['port'] : '');
-  if (strcasecmp($refererHost, $_SERVER['HTTP_HOST']) !== 0) {
+  if (strcasecmp($referer['scheme'], $allowed['scheme']) !== 0 || strcasecmp($referer['host'], $allowed['host']) !== 0) {
     return false;
   }
 
-  if ($requireEntryPage) {
-    $path = $referer['path'] ?? '';
-    return strpos($path, '/entry/') !== false || strpos($path, '/recruit/entry/') !== false;
+  $path = rtrim($referer['path'] ?? '', '/') . '/';
+  foreach ($allowedPaths as $allowedPath) {
+    if ($path === rtrim($allowedPath, '/') . '/') {
+      return true;
+    }
   }
 
-  return true;
+  return false;
 }
 
 function validToken()
@@ -448,6 +455,8 @@ function validateTempAttachment($key, $label, $tmpDir)
 
 function renderThanks()
 {
+  global $homeUrl;
+
   renderHead('応募フォーム 完了');
   renderEntryHero('応募フォーム 完了');
   ?>
@@ -455,7 +464,7 @@ function renderThanks()
       <div class="l-inner">
         <p class="p-entry__message">ご応募ありがとうございました。<br>送信内容を確認のうえ、担当者より折り返しご連絡いたします。</p>
         <div class="p-entry__actions">
-          <a class="p-entry__button p-entry__button--link" href="/recruit/">トップへ戻る</a>
+          <a class="p-entry__button p-entry__button--link" href="<?php echo h($homeUrl); ?>">トップへ戻る</a>
         </div>
       </div>
     </section>
@@ -471,7 +480,8 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST' || !in_array($mode, ['confirm', 'send'
   exit;
 }
 
-if (!sameOriginReferer($mode === 'confirm')) {
+$allowedRefererPaths = $mode === 'confirm' ? [$entryUrl] : [$siteBasePath . '/mail.php'];
+if (!sameOriginReferer($allowedRefererPaths)) {
   renderErrorPage(['不正なページ遷移です。応募フォームから再度入力してください。'], $entryUrl);
   exit;
 }
