@@ -48,56 +48,56 @@
         <ul class="p-work-discover__cards">
           <li class="p-work-discover__card">
             <div class="p-work-discover__visual" aria-hidden="true">
-              <img decoding="async" loading="lazy" src="../images/work/work-management.webp" alt="施工管理" width="180" height="180">
+              <img decoding="async" loading="lazy" src="../images/work/work-management.webp" alt="施工管理" width="230" height="183" loading="lazy" decoding="async">
             </div>
             <h2 class="p-work-discover__card-title">施工管理</h2>
             <p class="p-work-discover__text">電気工事を行うためには、まず営業活動からはじまります。民間工事や公共工事の受注活動が営業の仕事です。受注から工事完了、請求、入金まで一貫して関わるのも特徴で、顧客との長期的な信頼関係を築きながら、工事の円滑な進行をサポートする役割を担っています。</p>
           </li>
           <li class="p-work-discover__card">
             <div class="p-work-discover__visual" aria-hidden="true">
-              <img decoding="async" loading="lazy" src="../images/work/work-site.webp" alt="現場施工" width="180" height="180">
+              <img decoding="async" loading="lazy" src="../images/work/work-site.webp" alt="現場施工" width="230" height="183" loading="lazy" decoding="async">
             </div>
             <h2 class="p-work-discover__card-title">現場施工</h2>
             <p class="p-work-discover__text">材料搬入や、工具を使って実際に現場で工事を行う仕事です。建物や施設の電気設備を設計通りに施工し、安全に電気を供給しています。工事を行うには専門的な知識と技術が必要で、資格の種類によって、施工できる工事範囲も異なります。</p>
           </li>
           <li class="p-work-discover__card">
             <div class="p-work-discover__visual" aria-hidden="true">
-              <img decoding="async" loading="lazy" src="../images/work/work-sales.webp" alt="営業" width="180" height="180">
+              <img decoding="async" loading="lazy" src="../images/work/work-sales.webp" alt="営業" width="230" height="183" loading="lazy" decoding="async">
             </div>
             <h2 class="p-work-discover__card-title">営　業</h2>
             <p class="p-work-discover__text">電気工事を行うためには、まず営業活動からはじまります。民間工事や公共工事の受注活動が営業の仕事です。受注から工事完了、請求、入金まで一貫して関わるのも特徴で、顧客との長期的な信頼関係を築きながら、工事の円滑な進行をサポートする役割を担っています。</p>
           </li>
           <li class="p-work-discover__card">
             <div class="p-work-discover__visual" aria-hidden="true">
-              <img decoding="async" loading="lazy" src="../images/work/work-estimate.webp" alt="積算・見積" width="180" height="180">
+              <img decoding="async" loading="lazy" src="../images/work/work-estimate.webp" alt="積算・見積" width="230" height="183" loading="lazy" decoding="async">
             </div>
             <h2 class="p-work-discover__card-title">積算・見積</h2>
             <p class="p-work-discover__text">工事を始める前に工事にかかる費用を算出し、見積書を作成する仕事です。図面や設計書をもとに、機器費・材料費・労務費・現場経費など全体の工事にかかる金額を算出します。この費用をもとに、発注者は施工を依頼するかどうかを判断するため、重要な役割を担っています。</p>
           </li>
           <li class="p-work-discover__card">
             <div class="p-work-discover__visual" aria-hidden="true">
-              <img src="../images/work/work-planning.webp" alt="" width="1042" height="1008" loading="lazy" decoding="async">
+              <img src="../images/work/work-planning.webp" alt="経営企画室" width="230" height="183" loading="lazy" decoding="async">
             </div>
             <h2 class="p-work-discover__card-title">経営企画室</h2>
             <p class="p-work-discover__text">経営企画室は、会社の将来を考える部署として、経営目標の整理や計画づくり、数値データのまとめ・分析、各部署との調整やプロジェクトのサポートを行いながら、会社全体がよりよい方向に進むための意思決定を支える仕事です。</p>
           </li>
           <li class="p-work-discover__card">
             <div class="p-work-discover__visual" aria-hidden="true">
-              <img src="../images/work/work-hr.webp" alt="" width="1024" height="1024" loading="lazy" decoding="async">
+              <img src="../images/work/work-hr.webp" alt="総務・人事" width="230" height="183" loading="lazy" decoding="async">
             </div>
             <h2 class="p-work-discover__card-title">総務・人事</h2>
             <p class="p-work-discover__text">総務・人事は、採用活動や新しい仲間を迎えるサポートをはじめ、社内イベントの運営、社員が安心して働ける環境づくり、社会保険手続きや勤怠管理・年末調整などの労務業務、そして就業規則の改訂や社内設備・備品の管理まで、会社を支える幅広い役割を担う仕事です。</p>
           </li>
           <li class="p-work-discover__card">
             <div class="p-work-discover__visual" aria-hidden="true">
-              <img src="../images/work/work-accounting.webp" alt="" width="644" height="644" loading="lazy" decoding="async">
+              <img src="../images/work/work-accounting.webp" alt="経理" width="230" height="183" loading="lazy" decoding="async">
             </div>
             <h2 class="p-work-discover__card-title">経理</h2>
             <p class="p-work-discover__text">経理は、日々の仕訳入力や支払・請求管理をはじめ、月次・年次決算、経費精算、税務対応などを通じて、会社のお金の流れを正確に管理し、経営を支える重要な役割を担う仕事です。</p>
           </li>
           <li class="p-work-discover__card">
             <div class="p-work-discover__visual" aria-hidden="true">
-              <img decoding="async" loading="lazy" src="../images/work/work-system.webp" alt="情報システム" width="180" height="180">
+              <img decoding="async" loading="lazy" src="../images/work/work-system.webp" alt="情報システム" width="230" height="183">
             </div>
             <h2 class="p-work-discover__card-title">情報システム</h2>
             <p class="p-work-discover__text">社内SEとして会社のITを支える仕事です。パソコンやシステムに関する社内からの相談対応をはじめ、新しいシステムの導入、社内ネットワークやサーバーの管理、業務を効率化するための仕組みづくりや自動化、社内ツールの運用を通じて、DX（デジタル化）を推進しています。</p>
