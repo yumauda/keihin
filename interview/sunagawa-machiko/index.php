@@ -52,7 +52,7 @@
         <article class="p-interview-detail__article">
           <section class="p-interview-detail__section">
             <h2 class="p-interview-detail__question">京浜電設に入社しようと思ったきっかけを教えてください。</h2>
-            <p class="p-interview-detail__text">大学では商学部観光マネジメント学科で観光について学び、就職活動ではホテル業界を志望していました。京浜電設を知ったきっかけは、就職活動中に参加した合同面接会です。もともとは馴染みのない業界でしたが、選考の中で社長と話したときの雰囲気が印象に残りました。「ここで挑戦してみよう」との思いが強くなり、入社を決めました。</p>
+            <p class="p-interview-detail__text">大学では商学部観光マネジメント学科で観光について学び、就職活動ではホテル業界を志望していました。京浜電設を知ったきっかけは、就職活動中に参加した合同面接会です。もともとは馴染みのない業界でしたが、選考の中で社長と話たときの雰囲気が印象に残りました。「ここで挑戦してみよう」との思いが強くなり、入社を決めました。</p>
           </section>
           <section class="p-interview-detail__section">
             <h2 class="p-interview-detail__question">京浜電設ではどのような仕事を担当していますか。</h2>

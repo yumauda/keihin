@@ -30,7 +30,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/styles.css?v=20260524">
+  <link rel="stylesheet" href="./css/styles.css?v=20260604">
   <!-- JavaScript -->
   <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
@@ -214,7 +214,7 @@
                 </svg>
               </div>
               <h3 class="p-people__card-title">コツコツ<br>積み重なれる方</h3>
-              <p class="p-people__card-text">すぐに結果が出なくても、積み上げが力になる仕事です。</p>
+              <p class="p-people__card-text">すぐに結果が出なくても、<br>積み上げが力になる仕事です。</p>
               <div class="p-people__field">
                 <p class="p-people__field-label">現場では</p>
                 <p class="p-people__field-text">一つひとつの作業を積み上げる<br>仕事です</p>
@@ -232,7 +232,7 @@
                 </svg>
               </div>
               <h3 class="p-people__card-title">人との関わりを<br>大切にできる方</h3>
-              <p class="p-people__card-text">現場はチーム戦。声を掛け合い、支え合うことで仕事が進みます。</p>
+              <p class="p-people__card-text">現場はチーム戦。声を掛け合い、<br>支え合うことで仕事が進みます。</p>
               <div class="p-people__field">
                 <p class="p-people__field-label">現場では</p>
                 <p class="p-people__field-text">チームで連携しながら<br>現場を進めていきます</p>
@@ -246,7 +246,7 @@
                 </svg>
               </div>
               <h3 class="p-people__card-title">手応えのある<br>仕事が好きな方</h3>
-              <p class="p-people__card-text">自分の関わった工事が形になり、街のインフラとして残ります。</p>
+              <p class="p-people__card-text">自分の関わった工事が形になり、<br>街のインフラとして残ります。</p>
               <div class="p-people__field">
                 <p class="p-people__field-label">現場では</p>
                 <p class="p-people__field-text">完成したときに<br>成果が形として残ります</p>
@@ -265,7 +265,7 @@
                 </svg>
               </div>
               <h3 class="p-people__card-title">成長したい<br>気持ちがある方</h3>
-              <p class="p-people__card-text">資格取得や研修を会社が支え、本人の意思に応えていきます。</p>
+              <p class="p-people__card-text">資格取得や研修を会社が支え、<br>本人の意思に応えていきます。</p>
               <div class="p-people__field">
                 <p class="p-people__field-label">現場では</p>
                 <p class="p-people__field-text">未経験からでも<br>挑戦できる環境があります</p>

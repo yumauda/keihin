@@ -44,10 +44,10 @@
         <div class="p-interview-detail__hero-body">
           <div class="p-interview-detail__hero-text">
             <h1 class="p-interview-detail__title">遊園地、会計事務所を経て京浜電設へ。<br>専門性を高めて経理として成長したい。</h1>
-            <p class="p-interview-detail__profile">総務部 在職1年目<br>K.Nさん</p>
+            <p class="p-interview-detail__profile">総務部 在職2年目<br>K.Nさん</p>
           </div>
           <figure class="p-interview-detail__main-image">
-            <img src="../../images/interview/nagaoka-main.webp" alt="総務部 在職1年目 K.Nさん" width="431" height="420">
+            <img src="../../images/interview/nagaoka-main.webp" alt="総務部 在職2年目 K.Nさん" width="431" height="420">
           </figure>
         </div>
       </div>
@@ -58,7 +58,7 @@
         <article class="p-interview-detail__article">
           <section class="p-interview-detail__section">
             <h2 class="p-interview-detail__question">これまでのご経歴と、京浜電設に入社された背景を教えてください。</h2>
-            <p class="p-interview-detail__text">大学は経済学部で、簿記や会社法などを学びました。新卒で入社した会社では、レジャー業界への興味と経理の仕事の両方に関わりたいと考え、遊園地で現場業務と総務業務を担当していました。しかし、現場と事務の両方を担当する中で残業が増え、経理の専門性を高めたいと思うようになり、会計事務所へ転職。税務の知識を学びながら法人だけでなく個人の会計にも関わる経験を積みました。<br>京浜電設の選考で印象に残っているのは、面接で経理課長とお話ししたときのことです。女性で裏表がなく、相談しやすそうだと感じ「この方のもとで働けたらいいな」と思えたことが入社を決めた理由のひとつです。</p>
+            <p class="p-interview-detail__text">大学は経済学部で、簿記や会社法などを学びました。新卒で入社した会社では、レジャー業界への興味と経理の仕事の両方に関わりたいと考え、遊園地で現場業務と総務業務を担当していました。しかし、現場と事務の両方を担当する中で残業が増え、経理の専門性を高めたいと思うようになり、会計事務所へ転職。税務の知識を学びながら法人だけでなく個人の会計にも関わる経験を積みました。<br>京浜電設の選考で印象に残っているのは、面接で経理課長とお話したときのことです。女性で裏表がなく、相談しやすそうだと感じ「この方のもとで働けたらいいな」と思えたことが入社を決めた理由のひとつです。</p>
           </section>
 
           <section class="p-interview-detail__section">

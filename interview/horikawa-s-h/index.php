@@ -44,10 +44,10 @@
         <div class="p-interview-detail__hero-body">
           <div class="p-interview-detail__hero-text">
             <h1 class="p-interview-detail__title">人柄をきちんと見てくれる会社で<br>働く心地よさ。<br>社内の働きやすさを<br class="u-mobile">支える総務人事。</h1>
-            <p class="p-interview-detail__profile">総務部 在職1年目<br>S.Hさん</p>
+            <p class="p-interview-detail__profile">総務部 在職2年目<br>S.Hさん</p>
           </div>
           <figure class="p-interview-detail__main-image">
-            <img src="../../images/interview/horikawa-main.webp" alt="総務部 在職1年目 S.Hさん" width="431" height="420">
+            <img src="../../images/interview/horikawa-main.webp" alt="総務部 在職2年目 S.Hさん" width="431" height="420">
           </figure>
         </div>
       </div>

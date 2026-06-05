@@ -21,7 +21,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/styles.css?v=20260527">
+  <link rel="stylesheet" href="../css/styles.css?v=20260604">
   <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
@@ -65,7 +65,7 @@
           <li class="p-welfare__card">
             <figure class="p-welfare__icon"><img src="../images/top/top-welfare-icon-04.webp" alt="" width="124" height="81" loading="lazy" decoding="async"></figure>
             <h2 class="p-welfare__card-title">資格検定取得支援</h2>
-            <p class="p-welfare__card-text">会社の技術力向上と従業員の資格取得を目的に社内講習会や実技指導などを行っています。資格に応じて受験料、交通費、資格取得祝金を支給します。資格の重要度や難易度に応じて最大5万円を支給！</p>
+            <p class="p-welfare__card-text">資格取得を積極的に支援しています。 講習・実技指導に加え、 受験料や祝金（最大5万円）を支給します。</p>
           </li>
           <li class="p-welfare__card">
             <figure class="p-welfare__icon"><img src="../images/top/top-welfare-icon-05.webp" alt="" width="118" height="86" loading="lazy" decoding="async"></figure>
@@ -95,17 +95,17 @@
           <li class="p-welfare__card">
             <figure class="p-welfare__icon"><img src="../images/top/top-welfare-icon-10.webp" alt="" width="113" height="80" loading="lazy" decoding="async"></figure>
             <h2 class="p-welfare__card-title">MBA取得</h2>
-            <p class="p-welfare__card-text p-welfare__card-text--dummy">○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○</p>
+            <p class="p-welfare__card-text p-welfare__card-text--dummy">社員の成長を支援するため、 MBA取得などの自己研鑽をサポート。 学び続ける意欲を会社が応援します。</p>
           </li>
           <li class="p-welfare__card">
             <figure class="p-welfare__icon"><img src="../images/top/top-welfare-icon-11.webp" alt="" width="90" height="86" loading="lazy" decoding="async"></figure>
             <h2 class="p-welfare__card-title">奨学金</h2>
-            <p class="p-welfare__card-text p-welfare__card-text--dummy">○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○</p>
+            <p class="p-welfare__card-text p-welfare__card-text--dummy">奨学金の返済負担を軽減するため、 一定条件を満たした社員に対して 返済支援制度を設けています。</p>
           </li>
           <li class="p-welfare__card">
             <figure class="p-welfare__icon"><img src="../images/top/top-welfare-icon-12.webp" alt="" width="83" height="64" loading="lazy" decoding="async"></figure>
             <h2 class="p-welfare__card-title">リファラル採用</h2>
-            <p class="p-welfare__card-text p-welfare__card-text--dummy">○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○</p>
+            <p class="p-welfare__card-text p-welfare__card-text--dummy">社員紹介による採用を推進しています。 信頼できる人財の採用を促進し、 社員には紹介インセンティブを支給します。（最大30万円）</p>
           </li>
         </ul>
       </div>

@@ -46,44 +46,44 @@
           <li class="p-interview__card">
             <a class="p-interview__card-link" href="/recruit/interview/akiyama-hinata/">
               <figure class="p-interview__image">
-                <img src="../images/interview/interview-h-a.webp" alt="工事事業部 在職1年目 H.Aさん" width="2250" height="1500">
+                <img src="../images/interview/interview-h-a.webp" alt="工事事業部 在職2年目 H.Aさん" width="2250" height="1500">
               </figure>
               <div class="p-interview__body">
                 <figure class="p-interview__bubble"><img src="../images/interview/bubble-h-a.svg" alt="文系出身の私が知った 街に明かりを灯す喜び" width="252" height="98"></figure>
-                <p class="p-interview__profile">工事事業部<br>在職1年目<br>H.Aさん</p>
+                <p class="p-interview__profile">工事事業部<br>在職2年目<br>H.Aさん</p>
               </div>
             </a>
           </li>
           <li class="p-interview__card">
             <a class="p-interview__card-link" href="/recruit/interview/masamori-akihito/">
               <figure class="p-interview__image">
-                <img src="../images/interview/interview-a-m.webp" alt="営業部 営業 在職1年目 A.Mさん" width="2250" height="1500">
+                <img src="../images/interview/interview-a-m.webp" alt="営業部 営業 在職2年目 A.Mさん" width="2250" height="1500">
               </figure>
               <div class="p-interview__body">
                 <figure class="p-interview__bubble"><img src="../images/interview/bubble-a-m.svg" alt="異業種からの挑戦でも 相談しながら成長できる！" width="276" height="99"></figure>
-                <p class="p-interview__profile">営業部 営業<br>在職1年目<br>A.Mさん</p>
+                <p class="p-interview__profile">営業部 営業<br>在職2年目<br>A.Mさん</p>
               </div>
             </a>
           </li>
           <li class="p-interview__card">
             <a class="p-interview__card-link" href="/recruit/interview/horikawa-s-h/">
               <figure class="p-interview__image">
-                <img src="../images/interview/interview-s-h.webp" alt="総務部 総務人事課 在職1年目 S.Hさん" width="2250" height="1500">
+                <img src="../images/interview/interview-s-h.webp" alt="総務部 総務人事課 在職2年目 S.Hさん" width="2250" height="1500">
               </figure>
               <div class="p-interview__body">
                 <figure class="p-interview__bubble"><img src="../images/interview/bubble-s-h.svg" alt="私をきちんと見てくれる そんな会社で働く心地よさ" width="273" height="95"></figure>
-                <p class="p-interview__profile">総務部 総務人事課<br>在職1年目<br>S.Hさん</p>
+                <p class="p-interview__profile">総務部 総務人事課<br>在職2年目<br>S.Hさん</p>
               </div>
             </a>
           </li>
           <li class="p-interview__card">
             <a class="p-interview__card-link" href="/recruit/interview/nagaoka-kanako/">
               <figure class="p-interview__image">
-                <img src="../images/interview/interview-k-n.webp" alt="総務部 経理課 在職1年目 K.Nさん" width="1500" height="2250">
+                <img src="../images/interview/interview-k-n.webp" alt="総務部 経理課 在職2年目 K.Nさん" width="1500" height="2250">
               </figure>
               <div class="p-interview__body">
                 <figure class="p-interview__bubble"><img src="../images/interview/bubble-k-n.svg" alt="数字のパズルを解きながら 専門性を高めていきたい" width="274" height="100"></figure>
-                <p class="p-interview__profile">総務部 経理課<br>在職1年目<br>K.Nさん</p>
+                <p class="p-interview__profile">総務部 経理課<br>在職2年目<br>K.Nさん</p>
               </div>
             </a>
           </li>
@@ -115,7 +115,7 @@
 
     <section class="p-interview__middle">
       <div class="l-inner">
-        <h2 class="p-interview__middle-title">管理職や中堅社員にも<br class="u-mobile">話しを聞いてみました。</h2>
+        <h2 class="p-interview__middle-title">管理職や中堅社員にも<br class="u-mobile">話を聞いてみました。</h2>
 
         <ul class="p-interview__message-cards">
           <li class="p-interview__message-card">

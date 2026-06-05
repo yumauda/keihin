@@ -67,7 +67,7 @@ $career_path_img = '../../images/interview/saito-anju-career-path.webp';
             <p class="p-interview-detail__text">入社当初は、立ち上がったばかりの広報担当として社内報の充実やホームページ、SNSのリニューアルに取り組みました。工事が終わった後に現場の社員へ取材を行い、どのような工事を行ったのかを社内報やホームページ上で共有するなど、社内外に会社の取り組みを伝えてきました。</p>
             <p class="p-interview-detail__text">その後はCSR活動や認証取得にも関わるようになり、地域貢献活動やイベントへの協力など、会社の取り組みを整理して発信する仕事にも携わっています。現在は経営企画室に所属し、広報業務に加えて人事評価制度の整備や社内研修、全社プロジェクトの運営などにも関わっています。</p>
           </section>
-          <figure class="p-interview-detail__image" style="aspect-ratio:1000/350;max-width:1000px;"><img src="<?php echo $career_path_img; ?>" alt="A.Sさんのキャリアパス" width="1000" height="350" style="object-fit:contain;"></figure>
+          <figure class="p-interview-detail__image p-interview-detail__image--career-path"><img src="<?php echo $career_path_img; ?>" alt="A.Sさんのキャリアパス" width="1000" height="350" style="object-fit:contain;"></figure>
           <section class="p-interview-detail__section">
             <h2 class="p-interview-detail__question">現在取り組まれている学びについても教えてください。</h2>
             <p class="p-interview-detail__text">経営企画の仕事に携わる中で、経営や組織運営について学びたいと考えるようになりました。現在はビジネススクールに通い、MBA取得に向けて学んでいます。ビジネススクールではビジネスコンペに参加する機会があり、チームで課題解決の提案を行った結果、準優勝という結果を残すことができました。<span>仕事と学業の両立は大変な面もありますが、会社から学びの機会を後押ししてもらえたからこそ挑戦できた経験だと感じています。今後は学んだ内容を業務にも活かしていきたいと考えています。</span></p>

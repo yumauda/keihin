@@ -270,11 +270,9 @@
 }
 
 .p-interview-detail__image {
-  aspect-ratio: 320 / 200;
   overflow: hidden;
 
   @include mq(md) {
-    aspect-ratio: 640 / 400;
     max-width: rem(640);
     margin-left: auto;
     margin-right: auto;
@@ -290,7 +288,6 @@
 }
 
 .p-interview-detail__image--square {
-  aspect-ratio: 1 / 1;
 
   @include mq(md) {
     max-width: rem(401);
@@ -333,4 +330,7 @@
     width: rem(40);
     height: rem(40);
   }
+}
+.p-interview-detail__image--career-path {
+  max-width: 100%;
 }

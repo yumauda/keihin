@@ -44,10 +44,10 @@
         <div class="p-interview-detail__hero-body">
           <div class="p-interview-detail__hero-text">
             <h1 class="p-interview-detail__title">未経験から電気工事の営業に挑戦。<br>相談しながら成長できる職場。</h1>
-            <p class="p-interview-detail__profile">営業部<span class="p-interview-detail__profile-space"> </span><br class="u-mobile">在職1年目<br>A.Mさん</p>
+            <p class="p-interview-detail__profile">営業部<span class="p-interview-detail__profile-space"> </span><br class="u-mobile">在職2年目<br>A.Mさん</p>
           </div>
           <figure class="p-interview-detail__main-image">
-            <img src="../../images/interview/masamori-main.webp" alt="営業部 在職1年目 A.Mさん" width="2250" height="1500">
+            <img src="../../images/interview/masamori-main.webp" alt="営業部 在職2年目 A.Mさん" width="2250" height="1500">
           </figure>
         </div>
       </div>

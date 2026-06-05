@@ -249,8 +249,8 @@
   margin-top: rem(8);
 
   @include mq(md) {
-    font-size: rem(15);
     margin-top: rem(17);
+    font-size: min(rem(15), calc(15 / 1440) * 100vw);
 
   }
 }
@@ -282,7 +282,7 @@
 
   @include mq(md) {
     margin-top: rem(10);
-    font-size: rem(14);
+    font-size: min(rem(14), calc(14 / 1440) * 100vw);
 
   }
 }
