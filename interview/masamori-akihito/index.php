@@ -5,13 +5,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <meta name="format-detection" content="telephone=no" />
-  <title>正盛 あきひとさん | 働く仲間の声 | 京浜電設株式会社 採用サイト</title>
+  <title>A.Mさん | 働く仲間の声 | 京浜電設株式会社 採用サイト</title>
   <meta name="description" content="京浜電設株式会社で働く営業部 在職1年目 A.Mさんのインタビューです。" />
   <meta name="robots" content="noindex,nofollow" />
   <meta name="theme-color" content="#005D97" />
   <meta property="og:locale" content="ja_JP" />
   <meta property="og:site_name" content="京浜電設株式会社 採用サイト" />
-  <meta property="og:title" content="正盛 あきひとさん | 働く仲間の声" />
+  <meta property="og:title" content="A.Mさん | 働く仲間の声" />
   <meta property="og:description" content="未経験から電気工事の営業に挑戦。相談しながら成長できる職場。" />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="/recruit/interview/masamori-akihito/" />

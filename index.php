@@ -526,12 +526,12 @@
               </figure>
               <p class="p-top-welfare__card-title">奨学金</p>
             </li>
-            <li class="p-top-welfare__card js-blur-word">
+            <!-- <li class="p-top-welfare__card js-blur-word">
               <figure class="p-top-welfare__card-image">
                 <img decoding="async" loading="lazy" src="./images/top/top-welfare-icon-12.webp" alt="" width="83" height="64">
               </figure>
               <p class="p-top-welfare__card-title">リファラル採用</p>
-            </li>
+            </li> -->
           </ul>
           <div class="p-top-welfare__more-wrap js-blur-word">
             <a class="p-top-welfare__more" href="/recruit/welfare/">

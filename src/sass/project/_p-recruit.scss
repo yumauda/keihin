@@ -112,7 +112,8 @@
 
   @include mq(md) {
     gap: rem(32);
-    grid-template-columns: repeat(4, rem(225));
+    grid-template-columns: repeat(2, rem(225));
+    place-content: center;
   }
 }
 

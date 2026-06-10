@@ -8,13 +8,13 @@ $career_path_img = '../../images/interview/saito-anju-career-path.webp';
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <meta name="format-detection" content="telephone=no" />
-  <title>齊藤 あんじゅさん | 働く仲間の声 | 京浜電設株式会社 採用サイト</title>
+  <title>A.Sさん | 働く仲間の声 | 京浜電設株式会社 採用サイト</title>
   <meta name="description" content="京浜電設株式会社で働く経営企画室 A.Sさんのインタビューです。" />
   <meta name="robots" content="noindex,nofollow" />
   <meta name="theme-color" content="#005D97" />
   <meta property="og:locale" content="ja_JP" />
   <meta property="og:site_name" content="京浜電設株式会社 採用サイト" />
-  <meta property="og:title" content="齊藤 あんじゅさん | 働く仲間の声" />
+  <meta property="og:title" content="A.Sさん | 働く仲間の声" />
   <meta property="og:description" content="広報として入社し、経営企画へ。MBA取得を目指して広がるキャリア。" />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="/recruit/interview/saito-anju/" />
@@ -55,22 +55,22 @@ $career_path_img = '../../images/interview/saito-anju-career-path.webp';
         <article class="p-interview-detail__article">
           <section class="p-interview-detail__section">
             <h2 class="p-interview-detail__question">これまでのご経歴と、転職を考えたきっかけを教えてください。</h2>
-            <p class="p-interview-detail__text">百貨店での販売や営業、化粧品メーカーでの広報など、さまざまな仕事を経験してきました。転職を考えたきっかけは、前職で広報を担当していたときのことです。化粧品の広報は、すでにファンがいる商品やブランドの魅力を伝える仕事が中心でしたが、「会社そのものや事業の価値を発信する広報」にも興味を持つようになりました。</p>
+            <p class="p-interview-detail__text">前職では化粧品メーカーでの広報・PR として主に商品 PR やマーケティングに関わる仕事をしていました。転職を考えたきっかけは、広報としての幅を広げたいと感じたことでした。化粧品の広報は、すでにファンがいる商品やブランドの魅力を伝える仕事が中心でしたが、「会社そのものや事業の価値を発信する広報」にも興味を持っていました。</p>
           </section>
           <section class="p-interview-detail__section">
             <h2 class="p-interview-detail__question">どのようなきっかけで京浜電設を知りましたか。</h2>
-            <p class="p-interview-detail__text">京浜電設の求人を見つけ、会社の取り組みや事業の価値を伝えていく広報に関われる点に魅力を感じ応募しました。創業<span>70年という歴史のある会社ですが、将来に向けて新しいことにも取り組もうとしている姿勢を感じ、「ここで働いてみたい」と思ったことを覚えています。</span></p>
+            <p class="p-interview-detail__text">京浜電設の求人を見つけ、第一印象としては横浜地域に根差した企業である印象を受けました。また、自宅から近く通いやすいと感じたことを覚えています。事業会社の広報は未経験でしたが、会社の取り組みや事業の価値を伝えていく広報は商品PRとは異なる魅力があると感じ応募しました。<span>創業70年という歴史のある会社ですが、最終面接で社長とお話をしたときに、アクティブに未来に向けて会社として新しいことに取り組んでいる話を聞き、「ここで働いてみたい」と思えたことが入社を決めた理由のひとつです。</span></p>
           </section>
           <figure class="p-interview-detail__image"><img src="../../images/interview/saito-anju-work-01.webp" alt="打ち合わせ中のA.Sさん" width="640" height="400"></figure>
           <section class="p-interview-detail__section">
             <h2 class="p-interview-detail__question">入社後は、どのような業務に取り組まれてきましたか。</h2>
-            <p class="p-interview-detail__text">入社当初は、立ち上がったばかりの広報担当として社内報の充実やホームページ、SNSのリニューアルに取り組みました。工事が終わった後に現場の社員へ取材を行い、どのような工事を行ったのかを社内報やホームページ上で共有するなど、社内外に会社の取り組みを伝えてきました。</p>
-            <p class="p-interview-detail__text">その後はCSR活動や認証取得にも関わるようになり、地域貢献活動やイベントへの協力など、会社の取り組みを整理して発信する仕事にも携わっています。現在は経営企画室に所属し、広報業務に加えて人事評価制度の整備や社内研修、全社プロジェクトの運営などにも関わっています。</p>
+            <p class="p-interview-detail__text">入社当初は、立ち上がったばかりの広報担当として社内報の充実やホームページ、SNSのリニューアルに取り組みました。また、まずは建設業や電気工事、京浜電設のことをよく知ろうと社員とコミュニケーションをとることからはじめました。工事が終わった後に現場の社員へ取材を行い、どのような工事を行ったのかを社内報やホームページ上で共有するなど、社内外に会社の取り組みを伝える工夫をしています。</p>
+            <p class="p-interview-detail__text">その後は CSR 活動や認証取得にも関わるようになり、地域貢献活動やイベントへの協力など、会社の取り組みを整理して発信する仕事も増えていきました。</p>
           </section>
           <figure class="p-interview-detail__image p-interview-detail__image--career-path"><img src="<?php echo $career_path_img; ?>" alt="A.Sさんのキャリアパス" width="1000" height="350" style="object-fit:contain;"></figure>
           <section class="p-interview-detail__section">
             <h2 class="p-interview-detail__question">現在取り組まれている学びについても教えてください。</h2>
-            <p class="p-interview-detail__text">経営企画の仕事に携わる中で、経営や組織運営について学びたいと考えるようになりました。現在はビジネススクールに通い、MBA取得に向けて学んでいます。ビジネススクールではビジネスコンペに参加する機会があり、チームで課題解決の提案を行った結果、準優勝という結果を残すことができました。<span>仕事と学業の両立は大変な面もありますが、会社から学びの機会を後押ししてもらえたからこそ挑戦できた経験だと感じています。今後は学んだ内容を業務にも活かしていきたいと考えています。</span></p>
+            <p class="p-interview-detail__text">経営企画の仕事に携わる中で、経営や組織運営について学びを深めたいと考えるようになりました。会社の支援制度を活用し、ビジネススクール(経営大学院)に通い、MBAを取得しました。ビジネススクールでは、経営全般の知識にケーススタディで触れることができるため、学びをすぐに実務に活かすことでできていると実感しています。在学中には、ビジネススクールで出会った仲間たちとビジネスケースコンペに参加する機会があり、全国120を超えるチームの中から準優勝という結果を残すことができました。<span>仕事と学業の両立は大変な面もありますが、会社から学びの機会を後押ししてもらえたからこそ挑戦できた経験だと感じています。また、一緒に働く仲間やこれから入社する方にも、「学びたいという意欲」を後押しできるような制度や仕組みづくりもしていきたいです。</span></p>
           </section>
           <section class="p-interview-detail__section">
             <h2 class="p-interview-detail__question">入社を検討している方に向けて、メッセージをお願いします。</h2>

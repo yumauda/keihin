@@ -5,13 +5,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <meta name="format-detection" content="telephone=no" />
-  <title>倉橋 なほさん | 働く仲間の声 | 京浜電設株式会社 採用サイト</title>
+  <title>N.Kさん | 働く仲間の声 | 京浜電設株式会社 採用サイト</title>
   <meta name="description" content="京浜電設株式会社で働く総務部 在職2年目 N.Kさんのインタビューです。" />
   <meta name="robots" content="noindex,nofollow" />
   <meta name="theme-color" content="#005D97" />
   <meta property="og:locale" content="ja_JP" />
   <meta property="og:site_name" content="京浜電設株式会社 採用サイト" />
-  <meta property="og:title" content="倉橋 なほさん | 働く仲間の声" />
+  <meta property="og:title" content="N.Kさん | 働く仲間の声" />
   <meta property="og:description" content="能登半島地震をきっかけに転職。観光業から電設会社の採用担当へ。" />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="/recruit/interview/kurahashi-naho/" />

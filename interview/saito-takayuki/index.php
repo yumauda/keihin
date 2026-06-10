@@ -5,13 +5,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <meta name="format-detection" content="telephone=no" />
-  <title>齊藤 たかゆきさん | 働く仲間の声 | 京浜電設株式会社 採用サイト</title>
+  <title>T.Sさん | 働く仲間の声 | 京浜電設株式会社 採用サイト</title>
   <meta name="description" content="京浜電設株式会社で働く営業部 営業部長 T.Sさんのインタビューです。" />
   <meta name="robots" content="noindex,nofollow" />
   <meta name="theme-color" content="#005D97" />
   <meta property="og:locale" content="ja_JP" />
   <meta property="og:site_name" content="京浜電設株式会社 採用サイト" />
-  <meta property="og:title" content="齊藤 たかゆきさん | 働く仲間の声" />
+  <meta property="og:title" content="T.Sさん | 働く仲間の声" />
   <meta property="og:description" content="大手企業で30年以上の経験。営業部長として京浜電設の成長に挑む。" />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="/recruit/interview/saito-takayuki/" />

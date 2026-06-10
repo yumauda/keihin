@@ -62,7 +62,7 @@
                             <li class="p-header__nav-item"><a class="p-header__nav-link" href="/recruit/work/">京浜電設の仕事</a></li>
                             <li class="p-header__nav-item"><a class="p-header__nav-link" href="/recruit/message/">代表メッセージ</a></li>
                             <li class="p-header__nav-item"><a class="p-header__nav-link" href="/recruit/career/">キャリアアップストーリー</a></li>
-                            <li class="p-header__nav-item"><a class="p-header__nav-link" href="#">研修制度</a></li>
+                            <!-- <li class="p-header__nav-item"><a class="p-header__nav-link" href="#">研修制度</a></li> -->
                             <li class="p-header__nav-item"><a class="p-header__nav-link" href="/recruit/welfare/">福利厚生</a></li>
                             <li class="p-header__nav-item"><a class="p-header__nav-link" href="/recruit/faq/">FAQ</a></li>
                             <li class="p-header__nav-item"><a class="p-header__nav-link" href="/recruit/position/">募集要項</a></li>
@@ -101,9 +101,9 @@
                             <li class="p-drawer-content__list">
                                 <a href="/recruit/career/" class="p-drawer-content__link">キャリアアップストーリー</a>
                             </li>
-                            <li class="p-drawer-content__list">
+                            <!-- <li class="p-drawer-content__list">
                                 <a href="#" class="p-drawer-content__link">研修制度</a>
-                            </li>
+                            </li> -->
                             <li class="p-drawer-content__list">
                                 <a href="/recruit/welfare/" class="p-drawer-content__link">福利厚生</a>
                             </li>

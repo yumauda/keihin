@@ -5547,7 +5547,8 @@ body {
 @media screen and (min-width: 768px) {
   .p-recruit__tabs {
     gap: 2rem;
-    grid-template-columns: repeat(4, 14.0625rem);
+    grid-template-columns: repeat(2, 14.0625rem);
+    place-content: center;
   }
 }
 

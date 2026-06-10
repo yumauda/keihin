@@ -102,11 +102,11 @@
             <h2 class="p-welfare__card-title">奨学金</h2>
             <p class="p-welfare__card-text p-welfare__card-text--dummy">奨学金の返済負担を軽減するため、 一定条件を満たした社員に対して 返済支援制度を設けています。</p>
           </li>
-          <li class="p-welfare__card">
+          <!-- <li class="p-welfare__card">
             <figure class="p-welfare__icon"><img src="../images/top/top-welfare-icon-12.webp" alt="" width="83" height="64" loading="lazy" decoding="async"></figure>
             <h2 class="p-welfare__card-title">リファラル採用</h2>
             <p class="p-welfare__card-text p-welfare__card-text--dummy">社員紹介による採用を推進しています。 信頼できる人財の採用を促進し、 社員には紹介インセンティブを支給します。（最大30万円）</p>
-          </li>
+          </li> -->
         </ul>
       </div>
     </section>

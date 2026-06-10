@@ -21,7 +21,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/styles.css?v=20260516">
+  <link rel="stylesheet" href="../css/styles.css?v=20260610">
   <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
@@ -49,9 +49,9 @@
         <p class="p-recruit__tab-lead">京浜電設では、現在以下の職種を募集しております。</p>
         <div class="p-recruit__tabs js-recruit-tabs" role="tablist" aria-label="募集区分">
           <button class="p-recruit__tab is-active js-recruit-tab" id="recruit-tab-new-graduate" type="button" role="tab" aria-selected="true" aria-controls="recruit-panel-new-graduate" data-recruit-tab="new-graduate">新卒採用</button>
-          <button class="p-recruit__tab js-recruit-tab" id="recruit-tab-construction" type="button" role="tab" aria-selected="false" aria-controls="recruit-panel-construction" data-recruit-tab="construction">キャリア採用<span>（工事事業部）</span></button>
-          <button class="p-recruit__tab js-recruit-tab" id="recruit-tab-sales" type="button" role="tab" aria-selected="false" aria-controls="recruit-panel-sales" data-recruit-tab="sales">キャリア採用<span>（営業部）</span></button>
-          <button class="p-recruit__tab js-recruit-tab" id="recruit-tab-admin" type="button" role="tab" aria-selected="false" aria-controls="recruit-panel-admin" data-recruit-tab="admin">キャリア採用<span>（総務部）</span></button>
+          <button class="p-recruit__tab js-recruit-tab" id="recruit-tab-construction" type="button" role="tab" aria-selected="false" aria-controls="recruit-panel-construction" data-recruit-tab="construction">キャリア採用</button>
+          <!-- <button class="p-recruit__tab js-recruit-tab" id="recruit-tab-sales" type="button" role="tab" aria-selected="false" aria-controls="recruit-panel-sales" data-recruit-tab="sales">キャリア採用<span>（営業部）</span></button>
+          <button class="p-recruit__tab js-recruit-tab" id="recruit-tab-admin" type="button" role="tab" aria-selected="false" aria-controls="recruit-panel-admin" data-recruit-tab="admin">キャリア採用<span>（総務部）</span></button> -->
         </div>
 
         <div class="p-recruit__panels">
@@ -106,7 +106,7 @@
           </section>
 
           <section class="p-recruit__panel p-recruit__panel--construction js-recruit-panel" id="recruit-panel-construction" role="tabpanel" aria-labelledby="recruit-tab-construction" data-recruit-panel="construction" hidden>
-            <h2 class="p-recruit__panel-title">キャリア採用（工事事業部）募集要項</h2>
+            <h2 class="p-recruit__panel-title">キャリア採用募集要項</h2>
             <dl class="p-recruit__table">
               <div class="p-recruit__row p-recruit__row--job"><dt>職種</dt><dd>電気工事の施工管理／現場監督（官公庁・民間・工場案件）</dd></div>
               <div class="p-recruit__row p-recruit__row--description">

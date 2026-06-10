@@ -5,13 +5,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <meta name="format-detection" content="telephone=no" />
-  <title>秋山 ひなたさん | 働く仲間の声 | 京浜電設株式会社 採用サイト</title>
+  <title>H.Aさん | 働く仲間の声 | 京浜電設株式会社 採用サイト</title>
   <meta name="description" content="京浜電設株式会社で働く工事事業部 在職1年目 H.Aさんのインタビューです。" />
   <meta name="robots" content="noindex,nofollow" />
   <meta name="theme-color" content="#005D97" />
   <meta property="og:locale" content="ja_JP" />
   <meta property="og:site_name" content="京浜電設株式会社 採用サイト" />
-  <meta property="og:title" content="秋山 ひなたさん | 働く仲間の声" />
+  <meta property="og:title" content="H.Aさん | 働く仲間の声" />
   <meta property="og:description" content="大阪から上京して京浜電設へ。文系出身の私が電気工事の仕事を選んだ理由。" />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="/recruit/interview/akiyama-hinata/" />
