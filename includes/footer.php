@@ -18,7 +18,7 @@
                 <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="/recruit/message/">代表メッセージ</a></li>
                 <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="/recruit/career/">キャリアアップストーリー</a></li>
                 <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="/recruit/career-plan/">キャリアプラン</a></li>
-                <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="#">研修制度</a></li>
+                <!-- <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="#">研修制度</a></li> -->
             </ul>
 
             <ul class="p-footer__nav">
