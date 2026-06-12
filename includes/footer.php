@@ -13,7 +13,7 @@
 
         <div class="p-footer__nav-wrap">
             <ul class="p-footer__nav">
-                <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="/recruit/interview/">働く仲間の声</a></li>
+                <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="/recruit/interview/">働く仲間の言葉</a></li>
                 <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="/recruit/work/">京浜電設の仕事</a></li>
                 <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="/recruit/message/">代表メッセージ</a></li>
                 <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="/recruit/career/">キャリアアップストーリー</a></li>

@@ -58,7 +58,7 @@
                     <nav class="p-header__nav" aria-label="グローバルナビゲーション">
                         <ul class="p-header__nav-list">
                             <li class="p-header__nav-item"><a class="p-header__nav-link" href="/recruit/">HOME</a></li>
-                            <li class="p-header__nav-item"><a class="p-header__nav-link" href="/recruit/interview/">働く仲間の声</a></li>
+                            <li class="p-header__nav-item"><a class="p-header__nav-link" href="/recruit/interview/">働く仲間の言葉</a></li>
                             <li class="p-header__nav-item"><a class="p-header__nav-link" href="/recruit/work/">京浜電設の仕事</a></li>
                             <li class="p-header__nav-item"><a class="p-header__nav-link" href="/recruit/message/">代表メッセージ</a></li>
                             <li class="p-header__nav-item"><a class="p-header__nav-link" href="/recruit/career/">キャリアアップストーリー</a></li>
@@ -90,7 +90,7 @@
                                 <a href="/recruit/" class="p-drawer-content__link">HOME</a>
                             </li>
                             <li class="p-drawer-content__list">
-                                <a href="/recruit/interview/" class="p-drawer-content__link">働く仲間の声</a>
+                                <a href="/recruit/interview/" class="p-drawer-content__link">働く仲間の言葉</a>
                             </li>
                             <li class="p-drawer-content__list">
                                 <a href="/recruit/message/" class="p-drawer-content__link">代表メッセージ</a>
