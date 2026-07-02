@@ -3,11 +3,10 @@
 .p-mv {
   background-color: #e5e5e5;
   overflow-x: clip;
-  height: rem(745);
-  
+  padding-top: rem(70);
+
   @include mq(md) {
     padding-top: rem(109);
-    height: rem(854);
   }
 }
 
@@ -16,22 +15,36 @@
   position: relative;
 }
 
+.p-mv__video {
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  width: 100vw;
+}
+
+.p-mv__video video {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 720 / 720;
+
+  @include mq(md){
+    aspect-ratio: 1920 / 1080;
+
+  }
+}
+
 .js-mv-img {
   --mv-mask-progress: 115%;
-  mask-image: linear-gradient(
-    90deg,
-    #000 0%,
-    #000 calc(var(--mv-mask-progress) - 14%),
-    rgba(0, 0, 0, 0) var(--mv-mask-progress)
-  );
+  mask-image: linear-gradient(90deg,
+      #000 0%,
+      #000 calc(var(--mv-mask-progress) - 14%),
+      rgba(0, 0, 0, 0) var(--mv-mask-progress));
   mask-repeat: no-repeat;
   mask-size: 100% 100%;
-  -webkit-mask-image: linear-gradient(
-    90deg,
-    #000 0%,
-    #000 calc(var(--mv-mask-progress) - 14%),
-    rgba(0, 0, 0, 0) var(--mv-mask-progress)
-  );
+  -webkit-mask-image: linear-gradient(90deg,
+      #000 0%,
+      #000 calc(var(--mv-mask-progress) - 14%),
+      rgba(0, 0, 0, 0) var(--mv-mask-progress));
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: 100% 100%;
 }
@@ -41,6 +54,7 @@
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
   height: rem(400);
+
   @include mq(md) {
     height: initial;
   }
@@ -53,7 +67,7 @@
   aspect-ratio: 320 / 400;
   object-fit: cover;
   object-position: 78% 80%;
-  
+
   @include mq(md) {
     height: auto;
     aspect-ratio: initial;
@@ -89,10 +103,11 @@
   bottom: rem(20);
   z-index: 2;
   width: rem(280);
-  @include mq(md){
+
+  @include mq(md) {
     max-width: rem(904);
     width: 100%;
-    
+
   }
 }
 

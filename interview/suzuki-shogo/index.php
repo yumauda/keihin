@@ -5,14 +5,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <meta name="format-detection" content="telephone=no" />
-  <title>S.Sさん | 働く仲間の声 | 京浜電設株式会社 採用サイト</title>
-  <meta name="description" content="京浜電設株式会社で働く工事事業部 在職3年目 S.Sさんのインタビューです。" />
+  <title>京浜電設株式会社｜働く仲間の言葉｜インタビュー06</title>
+  <meta name="description" content="神奈川・横浜で70年以上の歴史と実績を重ね、さらなる成長を続ける「京浜電設」で働く先輩社員より、エントリーを検討されている皆さまに、生の声をお届けしています。" />
   <meta name="robots" content="noindex,nofollow" />
   <meta name="theme-color" content="#005D97" />
   <meta property="og:locale" content="ja_JP" />
   <meta property="og:site_name" content="京浜電設株式会社 採用サイト" />
-  <meta property="og:title" content="S.Sさん | 働く仲間の声" />
-  <meta property="og:description" content="情報学部出身からインフラの仕事へ。電気設備の図面作成を担当。" />
+  <meta property="og:title" content="京浜電設株式会社｜働く仲間の言葉｜インタビュー06" />
+  <meta property="og:description" content="神奈川・横浜で70年以上の歴史と実績を重ね、さらなる成長を続ける「京浜電設」で働く先輩社員より、エントリーを検討されている皆さまに、生の声をお届けしています。" />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="/recruit/interview/suzuki-shogo/" />
   <meta property="og:image" content="/images/interview/suzuki-main.webp" />

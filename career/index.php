@@ -5,14 +5,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <meta name="format-detection" content="telephone=no" />
-  <title>キャリアアップストーリー | 京浜電設株式会社 採用サイト</title>
-  <meta name="description" content="京浜電設株式会社 取締役副社長 菊池佑弥のキャリアアップストーリーをご紹介します。現場で培った経験を、次の時代へつなぐ歩みです。" />
+  <title>京浜電設株式会社｜キャリアアップストーリー</title>
+  <meta name="description" content="2012年に新卒で入社した私が、現場での経験を重ねながら副社長になるまでのリアルな物語です。環境が人を育て、人が組織を育てていく好循環を生み出していきたいと考えています。" />
   <meta name="robots" content="noindex,nofollow" />
   <meta name="theme-color" content="#005D97" />
   <meta property="og:locale" content="ja_JP" />
   <meta property="og:site_name" content="京浜電設株式会社 採用サイト" />
-  <meta property="og:title" content="キャリアアップストーリー | 京浜電設株式会社 採用サイト" />
-  <meta property="og:description" content="京浜電設株式会社 取締役副社長 菊池佑弥のキャリアアップストーリーをご紹介します。" />
+  <meta property="og:title" content="京浜電設株式会社｜キャリアアップストーリー" />
+  <meta property="og:description" content="2012年に新卒で入社した私が、現場での経験を重ねながら副社長になるまでのリアルな物語です。環境が人を育て、人が組織を育てていく好循環を生み出していきたいと考えています。" />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="/recruit/career/" />
   <meta property="og:image" content="/images/career/career-hero.webp" />

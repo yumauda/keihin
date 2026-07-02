@@ -5037,18 +5037,35 @@ body {
 .p-mv {
   background-color: #e5e5e5;
   overflow-x: clip;
-  height: 46.5625rem;
+  padding-top: 4.375rem;
 }
 @media screen and (min-width: 768px) {
   .p-mv {
     padding-top: 6.8125rem;
-    height: 53.375rem;
   }
 }
 
 .p-mv__content {
   min-height: inherit;
   position: relative;
+}
+
+.p-mv__video {
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  width: 100vw;
+}
+
+.p-mv__video video {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 720/720;
+}
+@media screen and (min-width: 768px) {
+  .p-mv__video video {
+    aspect-ratio: 1920/1080;
+  }
 }
 
 .js-mv-img {

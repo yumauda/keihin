@@ -8,14 +8,14 @@ $career_path_img = '../../images/interview/saito-anju-career-path.webp';
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <meta name="format-detection" content="telephone=no" />
-  <title>A.Sさん | 働く仲間の声 | 京浜電設株式会社 採用サイト</title>
-  <meta name="description" content="京浜電設株式会社で働く経営企画室 A.Sさんのインタビューです。" />
+  <title>京浜電設株式会社｜働く仲間の言葉｜インタビュー09</title>
+  <meta name="description" content="神奈川・横浜で70年以上の歴史と実績を重ね、さらなる成長を続ける「京浜電設」で働く先輩社員より、エントリーを検討されている皆さまに、生の声をお届けしています。" />
   <meta name="robots" content="noindex,nofollow" />
   <meta name="theme-color" content="#005D97" />
   <meta property="og:locale" content="ja_JP" />
   <meta property="og:site_name" content="京浜電設株式会社 採用サイト" />
-  <meta property="og:title" content="A.Sさん | 働く仲間の声" />
-  <meta property="og:description" content="広報として入社し、経営企画へ。MBA取得を目指して広がるキャリア。" />
+  <meta property="og:title" content="京浜電設株式会社｜働く仲間の言葉｜インタビュー09" />
+  <meta property="og:description" content="神奈川・横浜で70年以上の歴史と実績を重ね、さらなる成長を続ける「京浜電設」で働く先輩社員より、エントリーを検討されている皆さまに、生の声をお届けしています。" />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="/recruit/interview/saito-anju/" />
   <meta property="og:image" content="/images/interview/saito-anju-main.webp" />

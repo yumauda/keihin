@@ -5,14 +5,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <meta name="format-detection" content="telephone=no" />
-  <title>代表メッセージ | 京浜電設株式会社 採用サイト</title>
-  <meta name="description" content="京浜電設株式会社 代表取締役 福島佳孝から、三方よしの理念と採用に込めた想いをお伝えします。" />
+  <title>京浜電設株式会社｜代表からのメッセージ</title>
+  <meta name="description" content="自分たちだけでなく、お客様にとっても、社会にとっても価値のある仕事を成し遂げていく。「三方よし」の理念に共感していただける方と一緒に、夢のある未来を描いていきたいと考えています。" />
   <meta name="robots" content="noindex,nofollow" />
   <meta name="theme-color" content="#005D97" />
   <meta property="og:locale" content="ja_JP" />
   <meta property="og:site_name" content="京浜電設株式会社 採用サイト" />
-  <meta property="og:title" content="代表メッセージ | 京浜電設株式会社 採用サイト" />
-  <meta property="og:description" content="京浜電設株式会社 代表取締役 福島佳孝から、三方よしの理念と採用に込めた想いをお伝えします。" />
+  <meta property="og:title" content="京浜電設株式会社｜代表からのメッセージ" />
+  <meta property="og:description" content="自分たちだけでなく、お客様にとっても、社会にとっても価値のある仕事を成し遂げていく。「三方よし」の理念に共感していただける方と一緒に、夢のある未来を描いていきたいと考えています。" />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="/recruit/message/" />
   <meta property="og:image" content="/images/message/message-president.webp" />

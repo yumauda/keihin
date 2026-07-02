@@ -5,14 +5,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <meta name="format-detection" content="telephone=no" />
-  <title>募集要項 | 京浜電設株式会社 採用サイト</title>
-  <meta name="description" content="京浜電設株式会社の募集要項を掲載しています。新卒採用、キャリア採用の職種、募集要項、雇用形態、給与、勤務時間、休日、福利厚生、勤務地をご確認いただけます。" />
+  <title>京浜電設株式会社｜募集要項</title>
+  <meta name="description" content="神奈川・横浜で70年以上の歴史と実績を重ね、ますます元気に成長を続ける「京浜電設」の新卒採用・キャリア採用の募集要項はこちら。" />
   <meta name="robots" content="noindex,nofollow" />
   <meta name="theme-color" content="#005D97" />
   <meta property="og:locale" content="ja_JP" />
   <meta property="og:site_name" content="京浜電設株式会社 採用サイト" />
-  <meta property="og:title" content="募集要項 | 京浜電設株式会社 採用サイト" />
-  <meta property="og:description" content="京浜電設株式会社の募集要項を掲載しています。" />
+  <meta property="og:title" content="京浜電設株式会社｜募集要項" />
+  <meta property="og:description" content="神奈川・横浜で70年以上の歴史と実績を重ね、ますます元気に成長を続ける「京浜電設」の新卒採用・キャリア採用の募集要項はこちら。" />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="/recruit/position/" />
   <meta property="og:image" content="/images/common/header_logo.png" />

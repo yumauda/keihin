@@ -5,14 +5,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <meta name="format-detection" content="telephone=no" />
-  <title>福利厚生 | 京浜電設株式会社 採用サイト</title>
-  <meta name="description" content="京浜電設株式会社の福利厚生制度をご紹介します。社宅制度、健康診断、社内イベント、資格取得支援など、働く人を支える制度を掲載しています。" />
+  <title>京浜電設株式会社｜福利厚生</title>
+  <meta name="description" content="「京浜電設」では、居心地のいい職場づくりとワークライフバランスを整えるために、また、資格取得や自己成長のために、さまざまな福利厚生・社内制度を用意しています。" />
   <meta name="robots" content="noindex,nofollow" />
   <meta name="theme-color" content="#005D97" />
   <meta property="og:locale" content="ja_JP" />
   <meta property="og:site_name" content="京浜電設株式会社 採用サイト" />
-  <meta property="og:title" content="福利厚生 | 京浜電設株式会社 採用サイト" />
-  <meta property="og:description" content="京浜電設株式会社の福利厚生制度をご紹介します。" />
+  <meta property="og:title" content="京浜電設株式会社｜福利厚生" />
+  <meta property="og:description" content="「京浜電設」では、居心地のいい職場づくりとワークライフバランスを整えるために、また、資格取得や自己成長のために、さまざまな福利厚生・社内制度を用意しています。" />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="/recruit/welfare/" />
   <meta property="og:image" content="/images/top/top-welfare-icon-01.webp" />

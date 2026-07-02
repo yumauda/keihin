@@ -5,14 +5,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <meta name="format-detection" content="telephone=no" />
-  <title>社員の主な出身校・専攻学部・学科 | 京浜電設株式会社 採用サイト</title>
-  <meta name="description" content="京浜電設株式会社で活躍する社員の主な出身校、専攻学部、専攻学科をご紹介します。専門知識や技術は入社後でも身につけられます。" />
+  <title>京浜電設株式会社｜社員の主な出身校・専攻学部・学科</title>
+  <meta name="description" content="神奈川・横浜で70年以上の歴史と実績を重ね、さらなる成長を続ける「京浜電設」では、理系、文系を問わず、さまざまな出身校、専攻学部・学科の社員が活躍しています。" />
   <meta name="robots" content="noindex,nofollow" />
   <meta name="theme-color" content="#005D97" />
   <meta property="og:locale" content="ja_JP" />
   <meta property="og:site_name" content="京浜電設株式会社 採用サイト" />
-  <meta property="og:title" content="社員の主な出身校・専攻学部・学科 | 京浜電設株式会社 採用サイト" />
-  <meta property="og:description" content="京浜電設株式会社で活躍する社員の主な出身校、専攻学部、専攻学科をご紹介します。" />
+  <meta property="og:title" content="京浜電設株式会社｜社員の主な出身校・専攻学部・学科" />
+  <meta property="og:description" content="神奈川・横浜で70年以上の歴史と実績を重ね、さらなる成長を続ける「京浜電設」では、理系、文系を問わず、さまざまな出身校、専攻学部・学科の社員が活躍しています。" />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="/recruit/education/" />
   <meta property="og:image" content="/recruit/images/common/header_logo.png" />

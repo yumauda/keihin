@@ -6,22 +6,22 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <meta name="format-detection" content="telephone=no" />
   <!-- meta情報 -->
-  <title>京浜電設株式会社 採用サイト | 働く仲間の声・キャリア・福利厚生</title>
-  <meta name="description" content="京浜電設株式会社の採用サイトです。働く仲間の声、代表メッセージ、キャリアアップストーリー、福利厚生、募集要項などを掲載しています。" />
+  <title>京浜電設株式会社｜新卒・キャリア採用TOPページ</title>
+  <meta name="description" content="神奈川・横浜で創業して70年以上が経ち、さらに成長を続ける「京浜電設」の採用ページへ、ようこそ。一般電気工事・官公庁工事・制御工事を3つの柱とし安定した経営を行っています。" />
   <meta name="keywords" content="京浜電設,京浜電設株式会社,採用サイト,新卒採用,中途採用,電気工事,福利厚生,キャリアアップ" />
   <meta name="robots" content="noindex,nofollow" />
   <meta name="theme-color" content="#005D97" />
   <!-- ogp -->
   <meta property="og:locale" content="ja_JP" />
   <meta property="og:site_name" content="京浜電設株式会社 採用サイト" />
-  <meta property="og:title" content="京浜電設株式会社 採用サイト | 働く仲間の声・キャリア・福利厚生" />
-  <meta property="og:description" content="京浜電設株式会社の採用情報を掲載。働く仲間の声、代表メッセージ、キャリア、福利厚生、募集要項をご覧いただけます。" />
+  <meta property="og:title" content="京浜電設株式会社｜新卒・キャリア採用TOPページ" />
+  <meta property="og:description" content="神奈川・横浜で創業して70年以上が経ち、さらに成長を続ける「京浜電設」の採用ページへ、ようこそ。一般電気工事・官公庁工事・制御工事を3つの柱とし安定した経営を行っています。" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="./" />
   <meta property="og:image" content="./images/common/header_logo.png" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="京浜電設株式会社 採用サイト | 働く仲間の声・キャリア・福利厚生" />
-  <meta name="twitter:description" content="京浜電設株式会社の採用情報を掲載。働く仲間の声、代表メッセージ、キャリア、福利厚生、募集要項をご覧いただけます。" />
+  <meta name="twitter:title" content="京浜電設株式会社｜新卒・キャリア採用TOPページ" />
+  <meta name="twitter:description" content="神奈川・横浜で創業して70年以上が経ち、さらに成長を続ける「京浜電設」の採用ページへ、ようこそ。一般電気工事・官公庁工事・制御工事を3つの柱とし安定した経営を行っています。" />
   <meta name="twitter:image" content="./images/common/header_logo.png" />
   <!-- ファビコン -->
   <link rel="icon" type="image/png" href="./images/common/header_logo.png" />
@@ -30,7 +30,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/styles.css?v=20260604">
+  <link rel="stylesheet" href="./css/styles.css?v=20260701">
   <!-- JavaScript -->
   <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
@@ -89,10 +89,10 @@
   </div>
   -->
   <main class="p-main">
-    <section class="p-mv">
-      <div class="l-wide-inner">
+    <div class="p-mv">
+      <!-- <div class="l-wide-inner">
         <div class="p-mv__content">
-          <!-- 一時的にFV要素を停止
+          一時的にFV要素を停止
           <figure class="p-mv__img js-mv-img">
             <img src="./images/top/mv_img.webp" alt="働く未来のためにともに育とう。" width="1400" height="746">
           </figure>
@@ -100,20 +100,33 @@
           <figure class="p-mv__logo js-mv-logo">
             <img src="./images/top/mv_logo.png" alt="grow to glow" width="904" height="241">
           </figure>
-          -->
+
         </div>
 
 
+      </div> -->
+      <div class="p-mv__video">
+        <video autoplay muted loop playsinline>
+          <source
+            src="./images/top/mv_sp.mp4"
+            type="video/mp4"
+            media="(max-width: 767px)">
+          <source
+            src="./images/top/mv_pc.mp4"
+            type="video/mp4"
+            media="(min-width: 768px)">
+        </video>
       </div>
-    </section>
+
+    </div>
     <section class="p-top-text">
       <div class="l-inner">
         <div class="p-top-text__content">
-          <h2 class="p-top-text__title">
+          <h1 class="p-top-text__title">
             <span class="p-top-text__line js-blur-word">私たちといっしょに</span>
             <span class="p-top-text__line js-blur-word">あなたのキャリアを実現しませんか。</span>
             <span class="p-top-text__line js-blur-word">70年経ったいまも、伸び盛りの会社です。</span>
-          </h2>
+          </h1>
         </div>
       </div>
     </section>

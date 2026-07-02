@@ -31,7 +31,7 @@
 
             <ul class="p-footer__nav">
                 <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="#">コーポレートサイト</a></li>
-                <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="#">プライバシーポリシー</a></li>
+                <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="https://www.kdcg.co.jp/privacy/index.html" target="_blank" rel="noopener noreferrer">プライバシーポリシー</a></li>
             </ul>
         </div>
 

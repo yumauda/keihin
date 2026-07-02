@@ -5,14 +5,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <meta name="format-detection" content="telephone=no" />
-  <title>キャリアプラン | 京浜電設株式会社 採用サイト</title>
-  <meta name="description" content="京浜電設株式会社のキャリアプランをご紹介します。資格取得、年収モデル、研修制度など、入社後の成長ステップを掲載しています。" />
+  <title>京浜電設株式会社｜キャリアプラン</title>
+  <meta name="description" content="神奈川・横浜で70年以上の歴史と実績を重ね、さらなる成長を続ける「京浜電設」には、社員一人ひとりが自らのキャリアを描き、夢を持って歩いていかれる環境が整っています。" />
   <meta name="robots" content="noindex,nofollow" />
   <meta name="theme-color" content="#005D97" />
   <meta property="og:locale" content="ja_JP" />
   <meta property="og:site_name" content="京浜電設株式会社 採用サイト" />
-  <meta property="og:title" content="キャリアプラン | 京浜電設株式会社 採用サイト" />
-  <meta property="og:description" content="京浜電設株式会社のキャリアプラン、資格取得、年収モデル、研修制度をご紹介します。" />
+  <meta property="og:title" content="京浜電設株式会社｜キャリアプラン" />
+  <meta property="og:description" content="神奈川・横浜で70年以上の歴史と実績を重ね、さらなる成長を続ける「京浜電設」には、社員一人ひとりが自らのキャリアを描き、夢を持って歩いていかれる環境が整っています。" />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="/recruit/career-plan/" />
   <meta property="og:image" content="/images/career-plan/career-plan-diagram.webp" />

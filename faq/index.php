@@ -5,14 +5,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <meta name="format-detection" content="telephone=no" />
-  <title>よくある質問 | 京浜電設株式会社 採用サイト</title>
-  <meta name="description" content="京浜電設株式会社の採用に関するよくある質問を掲載しています。選考、配属、働き方、福利厚生、入社後の研修についてご確認いただけます。" />
+  <title>京浜電設株式会社｜FAQ（よくある質問）</title>
+  <meta name="description" content="神奈川・横浜で70年以上の歴史と実績を重ね、さらなる成長を続ける「京浜電設」の採用・選考・仕事・環境・制度などについて「よくある質問」と、その回答についてまとめたページです。" />
   <meta name="robots" content="noindex,nofollow" />
   <meta name="theme-color" content="#005D97" />
   <meta property="og:locale" content="ja_JP" />
   <meta property="og:site_name" content="京浜電設株式会社 採用サイト" />
-  <meta property="og:title" content="よくある質問 | 京浜電設株式会社 採用サイト" />
-  <meta property="og:description" content="京浜電設株式会社の採用に関するよくある質問を掲載しています。" />
+  <meta property="og:title" content="京浜電設株式会社｜FAQ（よくある質問）" />
+  <meta property="og:description" content="神奈川・横浜で70年以上の歴史と実績を重ね、さらなる成長を続ける「京浜電設」の採用・選考・仕事・環境・制度などについて「よくある質問」と、その回答についてまとめたページです。" />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="/recruit/faq/" />
   <meta property="og:image" content="/images/common/header_logo.png" />

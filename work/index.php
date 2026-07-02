@@ -5,14 +5,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <meta name="format-detection" content="telephone=no" />
-  <title>京浜電設の仕事 | 京浜電設株式会社 採用サイト</title>
-  <meta name="description" content="京浜電設株式会社の主な仕事内容と、電気が届くまでの流れをご紹介します。" />
+  <title>京浜電設株式会社の仕事｜電気工事・営業・経営企画・総務等の紹介</title>
+  <meta name="description" content="オフィスビル・商業施設・学校・工場などの電気・通信設備の設計・工事・点検・管理。高圧から低圧まで広範囲な受変電設備や発電・通信設備の設置の流れを、イラストで分かりやすくご紹介。" />
   <meta name="robots" content="noindex,nofollow" />
   <meta name="theme-color" content="#005D97" />
   <meta property="og:locale" content="ja_JP" />
   <meta property="og:site_name" content="京浜電設株式会社 採用サイト" />
-  <meta property="og:title" content="京浜電設の仕事 | 京浜電設株式会社 採用サイト" />
-  <meta property="og:description" content="京浜電設株式会社の主な仕事内容と、電気が届くまでの流れをご紹介します。" />
+  <meta property="og:title" content="京浜電設株式会社の仕事｜電気工事・営業・経営企画・総務等の紹介" />
+  <meta property="og:description" content="オフィスビル・商業施設・学校・工場などの電気・通信設備の設計・工事・点検・管理。高圧から低圧まで広範囲な受変電設備や発電・通信設備の設置の流れを、イラストで分かりやすくご紹介。" />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="/recruit/work/" />
   <meta property="og:image" content="/images/common/header_logo.png" />

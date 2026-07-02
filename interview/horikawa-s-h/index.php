@@ -5,14 +5,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <meta name="format-detection" content="telephone=no" />
-  <title>S.Hさん | 働く仲間の声 | 京浜電設株式会社 採用サイト</title>
-  <meta name="description" content="京浜電設株式会社で働く総務部 在職1年目 S.Hさんのインタビューです。" />
+  <title>京浜電設株式会社｜働く仲間の言葉｜インタビュー03</title>
+  <meta name="description" content="神奈川・横浜で70年以上の歴史と実績を重ね、さらなる成長を続ける「京浜電設」で働く先輩社員より、エントリーを検討されている皆さまに、生の声をお届けしています。" />
   <meta name="robots" content="noindex,nofollow" />
   <meta name="theme-color" content="#005D97" />
   <meta property="og:locale" content="ja_JP" />
   <meta property="og:site_name" content="京浜電設株式会社 採用サイト" />
-  <meta property="og:title" content="S.Hさん | 働く仲間の声" />
-  <meta property="og:description" content="人柄をきちんと見てくれる会社で働く心地よさ。社内の働きやすさを支える総務人事。" />
+  <meta property="og:title" content="京浜電設株式会社｜働く仲間の言葉｜インタビュー03" />
+  <meta property="og:description" content="神奈川・横浜で70年以上の歴史と実績を重ね、さらなる成長を続ける「京浜電設」で働く先輩社員より、エントリーを検討されている皆さまに、生の声をお届けしています。" />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="/recruit/interview/horikawa-s-h/" />
   <meta property="og:image" content="/images/interview/horikawa-main.webp" />

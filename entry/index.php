@@ -26,14 +26,14 @@ $prefectures = [
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <meta name="format-detection" content="telephone=no" />
-  <title>応募フォーム | 京浜電設株式会社 採用サイト</title>
-  <meta name="description" content="京浜電設株式会社 採用サイトの応募フォームです。" />
+  <title>京浜電設株式会社｜採用エントリーフォーム</title>
+  <meta name="description" content="神奈川・横浜で70年以上の歴史と実績を重ね、ますます元気に成長を続ける「京浜電設」の採用にご応募される方は、こちらのエントリーフォームから。" />
   <meta name="robots" content="noindex,nofollow" />
   <meta name="theme-color" content="#005D97" />
   <meta property="og:locale" content="ja_JP" />
   <meta property="og:site_name" content="京浜電設株式会社 採用サイト" />
-  <meta property="og:title" content="応募フォーム | 京浜電設株式会社 採用サイト" />
-  <meta property="og:description" content="京浜電設株式会社 採用サイトの応募フォームです。" />
+  <meta property="og:title" content="京浜電設株式会社｜採用エントリーフォーム" />
+  <meta property="og:description" content="神奈川・横浜で70年以上の歴史と実績を重ね、ますます元気に成長を続ける「京浜電設」の採用にご応募される方は、こちらのエントリーフォームから。" />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="/recruit/entry/" />
   <meta property="og:image" content="/recruit/images/common/header_logo.png" />

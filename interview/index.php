@@ -5,14 +5,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <meta name="format-detection" content="telephone=no" />
-  <title>働く仲間の声 | 京浜電設株式会社 採用サイト</title>
-  <meta name="description" content="京浜電設株式会社で働く社員の声をご紹介します。新卒・中途入社の社員、管理職や中堅社員の言葉を掲載しています。" />
+  <title>京浜電設株式会社｜働く仲間の言葉｜インデックス</title>
+  <meta name="description" content="神奈川・横浜で70年以上の歴史と実績を重ね、ますます元気に成長を続ける「京浜電設」で働く若手社員、ベテラン社員たちの等身大のストーリーを集めたページです。" />
   <meta name="robots" content="noindex,nofollow" />
   <meta name="theme-color" content="#005D97" />
   <meta property="og:locale" content="ja_JP" />
   <meta property="og:site_name" content="京浜電設株式会社 採用サイト" />
-  <meta property="og:title" content="働く仲間の声 | 京浜電設株式会社 採用サイト" />
-  <meta property="og:description" content="京浜電設株式会社で働く社員の声をご紹介します。" />
+  <meta property="og:title" content="京浜電設株式会社｜働く仲間の言葉｜インデックス" />
+  <meta property="og:description" content="神奈川・横浜で70年以上の歴史と実績を重ね、ますます元気に成長を続ける「京浜電設」で働く若手社員、ベテラン社員たちの等身大のストーリーを集めたページです。" />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="/recruit/interview/" />
   <meta property="og:image" content="/images/common/header_logo.png" />
