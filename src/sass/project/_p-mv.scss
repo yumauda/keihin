@@ -28,7 +28,7 @@
   aspect-ratio: 720 / 720;
 
   @include mq(md){
-    aspect-ratio: 1920 / 1080;
+    aspect-ratio: 1920 / 960;
 
   }
 }

@@ -106,7 +106,7 @@
 
       </div> -->
       <div class="p-mv__video">
-        <video autoplay muted loop playsinline>
+        <video autoplay muted playsinline>
           <source
             src="./images/top/mv_sp.mp4"
             type="video/mp4"

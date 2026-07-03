@@ -5064,7 +5064,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .p-mv__video video {
-    aspect-ratio: 1920/1080;
+    aspect-ratio: 1920/960;
   }
 }
 
