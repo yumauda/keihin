@@ -50,8 +50,6 @@
         <div class="p-recruit__tabs js-recruit-tabs" role="tablist" aria-label="募集区分">
           <button class="p-recruit__tab is-active js-recruit-tab" id="recruit-tab-new-graduate" type="button" role="tab" aria-selected="true" aria-controls="recruit-panel-new-graduate" data-recruit-tab="new-graduate">新卒採用</button>
           <button class="p-recruit__tab js-recruit-tab" id="recruit-tab-construction" type="button" role="tab" aria-selected="false" aria-controls="recruit-panel-construction" data-recruit-tab="construction">キャリア採用</button>
-          <button class="p-recruit__tab js-recruit-tab" id="recruit-tab-sales" type="button" role="tab" aria-selected="false" aria-controls="recruit-panel-sales" aria-label="キャリア採用（営業部）" data-recruit-tab="sales">営業</button>
-          <button class="p-recruit__tab js-recruit-tab" id="recruit-tab-admin" type="button" role="tab" aria-selected="false" aria-controls="recruit-panel-admin" aria-label="キャリア採用（総務部）" data-recruit-tab="admin">総務</button>
         </div>
 
         <div class="p-recruit__panels">
@@ -127,66 +125,58 @@
               <div class="p-recruit__row p-recruit__row--benefit"><dt>福利厚生</dt><dd>通勤手当、健康保険、厚生年金保険、雇用保険、労災保険、退職金制度、社宅制度</dd></div>
               <div class="p-recruit__row p-recruit__row--place"><dt>勤務地</dt><dd>本社（横浜市神奈川区）<br>最寄り駅：東急東横線 菊名駅・妙蓮寺駅より徒歩15分、JR横浜線 大口駅より徒歩16分<br>原則、転勤無し。</dd></div>
             </dl>
-            <a class="p-recruit__entry-button" href="/recruit/entry/">
-              <span class="p-recruit__entry-text">エントリーはこちら</span>
-              <span class="p-recruit__entry-icon" aria-hidden="true"></span>
-            </a>
-          </section>
 
-          <section class="p-recruit__panel p-recruit__panel--sales js-recruit-panel" id="recruit-panel-sales" role="tabpanel" aria-labelledby="recruit-tab-sales" data-recruit-panel="sales" hidden>
-            <h2 class="p-recruit__panel-title">キャリア採用（営業）募集要項</h2>
-            <dl class="p-recruit__table">
-              <div class="p-recruit__row p-recruit__row--job"><dt>職種</dt><dd>営業職</dd></div>
-              <div class="p-recruit__row p-recruit__row--description">
-                <dt>募集要項</dt>
-                <dd>
-                  <p>■ゼネコンや官公庁向けの提案営業<br>商業施設・学校・道路等の民間工事・公共工事の受注獲得</p>
-                  <p>■商社や機械メーカー向けの提案営業<br>工場生産設備工事の受注獲得</p>
-                  <p>■その他業務<br>見積り/積算/図面の拾い出しもお任せいたします。将来的には顧客紹介等を中心に、新規の顧客獲得に向けて積極的にプロジェクトに参加いただきます。</p>
-                  <p>《必須条件》<br>・普通自動車免許（AT限定可）　<br>・電気設備工事業界での営業経験のある方<br>・基本的なPCスキルのある方（Excel／Word）</p>
-                  <p>《歓迎条件》<br>・電気工事に関する知識/資格をお持ちの方（第二種電気工事士、第一種電気工事士、電気工事施工管理技士など）　<br>・ゼネコン・ビル管理会社等との折衝経験のある方<br>・工事現場の流れが理解できる方　<br>・プラント/空調設備関係の営業経験のある方</p>
-                </dd>
-              </div>
-              <div class="p-recruit__row p-recruit__row--type"><dt>雇用形態</dt><dd>正社員</dd></div>
-              <div class="p-recruit__row p-recruit__row--salary"><dt>給与</dt><dd>当社規定による</dd></div>
-              <div class="p-recruit__row p-recruit__row--hours"><dt>勤務時間</dt><dd>8:00～17:30 （7時間55分/休憩95分）</dd></div>
-              <div class="p-recruit__row p-recruit__row--holiday"><dt>休日</dt><dd>年間休日：124日、完全週休二日制（土曜日、日曜日）、国民の祝日、年末年始、特別休暇（慶弔等）、設立記念日5月10日、その他会社の指定する日<br>ワークライフバランスを重視し、有給の取得は半日休・時間休も選択可能。</dd></div>
-              <div class="p-recruit__row p-recruit__row--benefit"><dt>福利厚生</dt><dd>通勤手当、健康保険、厚生年金保険、雇用保険、労災保険、退職金制度</dd></div>
-              <div class="p-recruit__row p-recruit__row--place"><dt>勤務地</dt><dd>本社（横浜市神奈川区）<br>最寄り駅：東急東横線 菊名駅・妙蓮寺駅より徒歩15分、JR横浜線 大口駅より徒歩16分<br>原則、転勤無し。</dd></div>
-            </dl>
-            <a class="p-recruit__entry-button" href="/recruit/entry/">
-              <span class="p-recruit__entry-text">エントリーはこちら</span>
-              <span class="p-recruit__entry-icon" aria-hidden="true"></span>
-            </a>
-          </section>
+            <section class="p-recruit__panel-section p-recruit__panel--sales">
+              <h2 class="p-recruit__panel-title">キャリア採用（営業）募集要項</h2>
+              <dl class="p-recruit__table">
+                <div class="p-recruit__row p-recruit__row--job"><dt>職種</dt><dd>営業職</dd></div>
+                <div class="p-recruit__row p-recruit__row--description">
+                  <dt>募集要項</dt>
+                  <dd>
+                    <p>■ゼネコンや官公庁向けの提案営業<br>商業施設・学校・道路等の民間工事・公共工事の受注獲得</p>
+                    <p>■商社や機械メーカー向けの提案営業<br>工場生産設備工事の受注獲得</p>
+                    <p>■その他業務<br>見積り/積算/図面の拾い出しもお任せいたします。将来的には顧客紹介等を中心に、新規の顧客獲得に向けて積極的にプロジェクトに参加いただきます。</p>
+                    <p>《必須条件》<br>・普通自動車免許（AT限定可）　<br>・電気設備工事業界での営業経験のある方<br>・基本的なPCスキルのある方（Excel／Word）</p>
+                    <p>《歓迎条件》<br>・電気工事に関する知識/資格をお持ちの方（第二種電気工事士、第一種電気工事士、電気工事施工管理技士など）　<br>・ゼネコン・ビル管理会社等との折衝経験のある方<br>・工事現場の流れが理解できる方　<br>・プラント/空調設備関係の営業経験のある方</p>
+                  </dd>
+                </div>
+                <div class="p-recruit__row p-recruit__row--type"><dt>雇用形態</dt><dd>正社員</dd></div>
+                <div class="p-recruit__row p-recruit__row--salary"><dt>給与</dt><dd>当社規定による</dd></div>
+                <div class="p-recruit__row p-recruit__row--hours"><dt>勤務時間</dt><dd>8:00～17:30 （7時間55分/休憩95分）</dd></div>
+                <div class="p-recruit__row p-recruit__row--holiday"><dt>休日</dt><dd>年間休日：124日、完全週休二日制（土曜日、日曜日）、国民の祝日、年末年始、特別休暇（慶弔等）、設立記念日5月10日、その他会社の指定する日<br>ワークライフバランスを重視し、有給の取得は半日休・時間休も選択可能。</dd></div>
+                <div class="p-recruit__row p-recruit__row--benefit"><dt>福利厚生</dt><dd>通勤手当、健康保険、厚生年金保険、雇用保険、労災保険、退職金制度</dd></div>
+                <div class="p-recruit__row p-recruit__row--place"><dt>勤務地</dt><dd>本社（横浜市神奈川区）<br>最寄り駅：東急東横線 菊名駅・妙蓮寺駅より徒歩15分、JR横浜線 大口駅より徒歩16分<br>原則、転勤無し。</dd></div>
+              </dl>
+            </section>
 
-          <section class="p-recruit__panel p-recruit__panel--admin js-recruit-panel" id="recruit-panel-admin" role="tabpanel" aria-labelledby="recruit-tab-admin" data-recruit-panel="admin" hidden>
-            <h2 class="p-recruit__panel-title">キャリア採用（総務）募集要項</h2>
-            <dl class="p-recruit__table">
-              <div class="p-recruit__row p-recruit__row--job"><dt>職種</dt><dd>総務人事職</dd></div>
-              <div class="p-recruit__row p-recruit__row--description">
-                <dt>募集要項</dt>
-                <dd>
-                  <p>募集背景<br>当社では昨年、サポート部門としての質向上と管理部門としての適正な予算管理を目的に、総務課と人事課を統合し「総務人事課」を新設しました。<br>多職能化による機動力向上と、社内満足度向上を進める中で、総務・労務領域を中心に活躍いただける主任～課長候補を募集します。</p>
-                  <p>主な業務内容<br>ご経験・ご志向に応じて担当範囲を決定します。</p>
-                  <p>■ 総務・労務関連（中心業務）<br>・勤怠管理、給与計算<br>・社会保険手続き、年末調整<br>・就業規則の改訂・運用<br>・安全衛生管理<br>・ファシリティマネジメント（設備・備品管理）</p>
-                  <p>■ 人事関連<br>・新卒・中途採用業務<br>・人事評価制度の企画・運用<br>・教育・研修制度の企画・運用</p>
-                  <p>■ その他<br>・社内イベントの企画・運営など庶務業務</p>
-                  <p>この仕事の魅力<br>・変革期にある組織で、主任・課長候補として裁量を持って働ける<br>・会社の成長・拡大を、総務人事の立場から支えられる<br>・社労士・外部専門家と連携し、実務＋制度設計の両面でスキルアップできる</p>
-                  <p>求める人物像<br>・労務業務を一通り経験している方<br>（特に勤怠管理・給与計算の実務経験）<br>・課題発見力があり、自ら改善提案・実行ができる方<br>・若手育成やチームづくりの経験がある方<br>・「安定した企業で、成長フェーズを支えたい」と考える方</p>
-                </dd>
-              </div>
-              <div class="p-recruit__row p-recruit__row--type"><dt>雇用形態</dt><dd>正社員</dd></div>
-              <div class="p-recruit__row p-recruit__row--salary"><dt>給与</dt><dd>当社規定による</dd></div>
-              <div class="p-recruit__row p-recruit__row--hours"><dt>勤務時間</dt><dd>9:00～18:00（7時間55分/休憩65分）<br>※一般職で採用した場合は95分となります。<br>（内訳：午前15分、昼休憩65分、午後15分）</dd></div>
-              <div class="p-recruit__row p-recruit__row--holiday"><dt>休日</dt><dd>年間休日：124日、完全週休二日制（土曜日、日曜日）、国民の祝日、年末年始、特別休暇（慶弔等）、設立記念日5月10日、その他会社の指定する日<br>ワークライフバランスを重視し、有給の取得は半日休・時間休も選択可能。</dd></div>
-              <div class="p-recruit__row p-recruit__row--benefit"><dt>福利厚生</dt><dd>通勤手当、健康保険、厚生年金保険、雇用保険、労災保険、退職金制度、資格取得費会社負担、資格取得褒賞金、永年勤続祝金</dd></div>
-              <div class="p-recruit__row p-recruit__row--place"><dt>勤務地</dt><dd>本社（横浜市神奈川区）<br><br>・JR横浜線/東急電鉄東急東横線 「菊名駅」から、バス約5～10分程度<br>・JR京浜東北線 「鶴見駅」から、バス約18～20分程度<br><br>《最寄バス停》<br>以下、何れかのバス停から徒歩約3分<br>「松見町バス停」「内路バス停」「菊名老人センター前バス停」<br><br>※バス代支給<br>※バイク、自転車通勤可（無料駐輪場あり）<br>※原則転勤無し</dd></div>
-            </dl>
-            <a class="p-recruit__entry-button" href="/recruit/entry/">
-              <span class="p-recruit__entry-text">エントリーはこちら</span>
-              <span class="p-recruit__entry-icon" aria-hidden="true"></span>
-            </a>
+            <section class="p-recruit__panel-section p-recruit__panel--admin">
+              <h2 class="p-recruit__panel-title">キャリア採用（総務）募集要項</h2>
+              <dl class="p-recruit__table">
+                <div class="p-recruit__row p-recruit__row--job"><dt>職種</dt><dd>総務人事職</dd></div>
+                <div class="p-recruit__row p-recruit__row--description">
+                  <dt>募集要項</dt>
+                  <dd>
+                    <p>募集背景<br>当社では昨年、サポート部門としての質向上と管理部門としての適正な予算管理を目的に、総務課と人事課を統合し「総務人事課」を新設しました。<br>多職能化による機動力向上と、社内満足度向上を進める中で、総務・労務領域を中心に活躍いただける主任～課長候補を募集します。</p>
+                    <p>主な業務内容<br>ご経験・ご志向に応じて担当範囲を決定します。</p>
+                    <p>■ 総務・労務関連（中心業務）<br>・勤怠管理、給与計算<br>・社会保険手続き、年末調整<br>・就業規則の改訂・運用<br>・安全衛生管理<br>・ファシリティマネジメント（設備・備品管理）</p>
+                    <p>■ 人事関連<br>・新卒・中途採用業務<br>・人事評価制度の企画・運用<br>・教育・研修制度の企画・運用</p>
+                    <p>■ その他<br>・社内イベントの企画・運営など庶務業務</p>
+                    <p>この仕事の魅力<br>・変革期にある組織で、主任・課長候補として裁量を持って働ける<br>・会社の成長・拡大を、総務人事の立場から支えられる<br>・社労士・外部専門家と連携し、実務＋制度設計の両面でスキルアップできる</p>
+                    <p>求める人物像<br>・労務業務を一通り経験している方<br>（特に勤怠管理・給与計算の実務経験）<br>・課題発見力があり、自ら改善提案・実行ができる方<br>・若手育成やチームづくりの経験がある方<br>・「安定した企業で、成長フェーズを支えたい」と考える方</p>
+                  </dd>
+                </div>
+                <div class="p-recruit__row p-recruit__row--type"><dt>雇用形態</dt><dd>正社員</dd></div>
+                <div class="p-recruit__row p-recruit__row--salary"><dt>給与</dt><dd>当社規定による</dd></div>
+                <div class="p-recruit__row p-recruit__row--hours"><dt>勤務時間</dt><dd>9:00～18:00（7時間55分/休憩65分）<br>※一般職で採用した場合は95分となります。<br>（内訳：午前15分、昼休憩65分、午後15分）</dd></div>
+                <div class="p-recruit__row p-recruit__row--holiday"><dt>休日</dt><dd>年間休日：124日、完全週休二日制（土曜日、日曜日）、国民の祝日、年末年始、特別休暇（慶弔等）、設立記念日5月10日、その他会社の指定する日<br>ワークライフバランスを重視し、有給の取得は半日休・時間休も選択可能。</dd></div>
+                <div class="p-recruit__row p-recruit__row--benefit"><dt>福利厚生</dt><dd>通勤手当、健康保険、厚生年金保険、雇用保険、労災保険、退職金制度、資格取得費会社負担、資格取得褒賞金、永年勤続祝金</dd></div>
+                <div class="p-recruit__row p-recruit__row--place"><dt>勤務地</dt><dd>本社（横浜市神奈川区）<br><br>・JR横浜線/東急電鉄東急東横線 「菊名駅」から、バス約5～10分程度<br>・JR京浜東北線 「鶴見駅」から、バス約18～20分程度<br><br>《最寄バス停》<br>以下、何れかのバス停から徒歩約3分<br>「松見町バス停」「内路バス停」「菊名老人センター前バス停」<br><br>※バス代支給<br>※バイク、自転車通勤可（無料駐輪場あり）<br>※原則転勤無し</dd></div>
+              </dl>
+              <a class="p-recruit__entry-button" href="/recruit/entry/">
+                <span class="p-recruit__entry-text">エントリーはこちら</span>
+                <span class="p-recruit__entry-icon" aria-hidden="true"></span>
+              </a>
+            </section>
           </section>
         </div>
       </div>

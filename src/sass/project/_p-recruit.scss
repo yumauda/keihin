@@ -112,7 +112,7 @@
 
   @include mq(md) {
     gap: rem(32);
-    grid-template-columns: repeat(4, rem(225));
+    grid-template-columns: repeat(2, rem(225));
     place-content: center;
   }
 }
@@ -184,6 +184,14 @@
   left: 0;
   position: absolute;
   width: 100%;
+}
+
+.p-recruit__panel-section {
+  margin-top: rem(52);
+
+  @include mq(md) {
+    margin-top: rem(72);
+  }
 }
 
 .p-recruit__table {

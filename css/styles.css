@@ -5564,7 +5564,7 @@ body {
 @media screen and (min-width: 768px) {
   .p-recruit__tabs {
     gap: 2rem;
-    grid-template-columns: repeat(4, 14.0625rem);
+    grid-template-columns: repeat(2, 14.0625rem);
     place-content: center;
   }
 }
@@ -5640,6 +5640,15 @@ body {
   left: 0;
   position: absolute;
   width: 100%;
+}
+
+.p-recruit__panel-section {
+  margin-top: 3.25rem;
+}
+@media screen and (min-width: 768px) {
+  .p-recruit__panel-section {
+    margin-top: 4.5rem;
+  }
 }
 
 .p-recruit__table {
