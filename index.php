@@ -226,7 +226,7 @@
                   <path d="M33 56h30v14H33V56Z" />
                 </svg>
               </div>
-              <h3 class="p-people__card-title">コツコツ<br>積み重なれる方</h3>
+              <h3 class="p-people__card-title">コツコツ<br>取り組める方</h3>
               <p class="p-people__card-text">すぐに結果が出なくても、<br>積み上げが力になる仕事です。</p>
               <div class="p-people__field">
                 <p class="p-people__field-label">現場では</p>
@@ -501,7 +501,7 @@
               <figure class="p-top-welfare__card-image">
                 <img decoding="async" loading="lazy" src="./images/top/top-welfare-icon-05.webp" alt="" width="118" height="86">
               </figure>
-              <p class="p-top-welfare__card-title">通勤交通費支給</p>
+              <p class="p-top-welfare__card-title">通勤交通費・バス代支給</p>
             </li>
             <li class="p-top-welfare__card js-blur-word">
               <figure class="p-top-welfare__card-image">
@@ -531,7 +531,7 @@
               <figure class="p-top-welfare__card-image">
                 <img decoding="async" loading="lazy" src="./images/top/top-welfare-icon-10.webp" alt="" width="113" height="80">
               </figure>
-              <p class="p-top-welfare__card-title">MBA取得</p>
+              <p class="p-top-welfare__card-title">MBA取得支援</p>
             </li>
             <li class="p-top-welfare__card js-blur-word">
               <figure class="p-top-welfare__card-image">

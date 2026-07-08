@@ -69,8 +69,8 @@
           </li>
           <li class="p-welfare__card">
             <figure class="p-welfare__icon"><img src="../images/top/top-welfare-icon-05.webp" alt="" width="118" height="86" loading="lazy" decoding="async"></figure>
-            <h2 class="p-welfare__card-title">通勤交通費支給</h2>
-            <p class="p-welfare__card-text">公共交通機関を利用する場合、通勤交通費を全額支給します。（社内規定あり）<br>バイク、自転車での通勤も可能です。</p>
+            <h2 class="p-welfare__card-title">通勤交通費・バス代支給</h2>
+            <p class="p-welfare__card-text">公共交通機関を利用する場合、通勤交通費を全額支給します。<br>（社内規定あり）<br>バイク、自転車での通勤も可能です。</p>
           </li>
           <li class="p-welfare__card">
             <figure class="p-welfare__icon"><img src="../images/top/top-welfare-icon-06.webp" alt="" width="115" height="115" loading="lazy" decoding="async"></figure>
@@ -94,7 +94,7 @@
           </li>
           <li class="p-welfare__card">
             <figure class="p-welfare__icon"><img src="../images/top/top-welfare-icon-10.webp" alt="" width="113" height="80" loading="lazy" decoding="async"></figure>
-            <h2 class="p-welfare__card-title">MBA取得</h2>
+            <h2 class="p-welfare__card-title">MBA取得支援</h2>
             <p class="p-welfare__card-text p-welfare__card-text--dummy">社員の成長を支援するため、 MBA取得などの自己研鑽をサポート。 学び続ける意欲を会社が応援します。</p>
           </li>
           <li class="p-welfare__card">
