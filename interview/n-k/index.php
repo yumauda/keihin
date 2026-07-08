@@ -14,7 +14,7 @@
   <meta property="og:title" content="京浜電設株式会社｜働く仲間の言葉｜インタビュー05" />
   <meta property="og:description" content="神奈川・横浜で70年以上の歴史と実績を重ね、さらなる成長を続ける「京浜電設」で働く先輩社員より、エントリーを検討されている皆さまに、生の声をお届けしています。" />
   <meta property="og:type" content="article" />
-  <meta property="og:url" content="/recruit/interview/kurahashi-naho/" />
+  <meta property="og:url" content="/recruit/interview/n-k/" />
   <meta property="og:image" content="/images/interview/kurahashi-main.webp" />
   <link rel="icon" type="image/png" href="/images/common/header_logo.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/images/common/header_logo.png">
@@ -58,7 +58,7 @@
         <article class="p-interview-detail__article">
           <section class="p-interview-detail__section">
             <h2 class="p-interview-detail__question">京浜電設に入社を決めた理由を教えてください。</h2>
-            <p class="p-interview-detail__text">転職のきっかけは、2024年1月に起こった能登半島地震です。前職は能登半島にある温泉旅館で、接客と採用に関わる業務を担当していました。地震の影響で環境が変わり、今後の働き方を考える中で、転職を検討するようになりました。そんなとき、前職でお世話になっていた方が京浜電設のグループ会社へ転職し、「一度話を聞いてみないか？」と声をかけられたことが、この会社を知ったきっかけです。<br>元々は前職の経験を活かして観光業やサービス業への転職を考えていたため、電気工事の会社で働くことは想像していませんでした。それでも、面接に参加したときに、営業所長から会社の今や、これからの方向性について率直に話を聞き「この会社で働いてみたい」と魅力を感じ、入社を決めました。</p>
+            <p class="p-interview-detail__text">転職のきっかけは、2024年1月に起こった能登半島地震です。前職は能登半島にある温泉旅館で、接客と採用に関わる業務を担当していました。地震の影響で環境が変わり、今後の働き方を考える中で、転職を検討するようになりました。そんなとき、前職でお世話になっていた方が京浜電設のグループ会社へ転職し、「一度話を聞いてみないか？」と声をかけられたことが、この会社を知ったきっかけです。<br>元々は前職の経験を活かして観光業やサービス業への転職を考えていたため、電気工事の会社で働くことは想像していませんでした。それでも、面接に参加したときに、社長と経営企画室の方から会社の今や、これからの方向性について率直に話を聞き「この会社で働いてみたい」と魅力を感じ、入社を決めました。</p>
           </section>
 
           <section class="p-interview-detail__section">
@@ -81,7 +81,7 @@
 
           <section class="p-interview-detail__section">
             <h2 class="p-interview-detail__question">入社を検討している方に向けてメッセージをお願いします。</h2>
-            <p class="p-interview-detail__text"><span>京浜電設では女性社員も多く、現場や管理部門でそれぞれの役割を担いながら働いています。私自身も知識がない状態で入社しましたが、働きながら少しずつ仕事を理解していくことができました。</span>業界に馴染みがない方でも、経験を重ねながら知識を身につけていける環境だと思います。</p>
+            <p class="p-interview-detail__text">京浜電設では女性社員も多く、現場や管理部門など、それぞれのフィールドで活躍しています。 一人ひとりがこれまでの経験や強みを活かしながら、自らでキャリアプランを描き、新たな挑戦ができる環境だと思います。 業界に馴染みがない方でも、当社の企業理念や目指す方向性に共鳴していただけるのであれば、ぜひ一緒に成長していければ嬉しいです。</p>
           </section>
         </article>
 

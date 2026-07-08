@@ -14,7 +14,7 @@
   <meta property="og:title" content="京浜電設株式会社｜働く仲間の言葉｜インタビュー06" />
   <meta property="og:description" content="神奈川・横浜で70年以上の歴史と実績を重ね、さらなる成長を続ける「京浜電設」で働く先輩社員より、エントリーを検討されている皆さまに、生の声をお届けしています。" />
   <meta property="og:type" content="article" />
-  <meta property="og:url" content="/recruit/interview/suzuki-shogo/" />
+  <meta property="og:url" content="/recruit/interview/s-s/" />
   <meta property="og:image" content="/images/interview/suzuki-main.webp" />
   <link rel="icon" type="image/png" href="/images/common/header_logo.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/images/common/header_logo.png">

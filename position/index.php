@@ -126,6 +126,11 @@
               <div class="p-recruit__row p-recruit__row--place"><dt>勤務地</dt><dd>本社（横浜市神奈川区）<br>最寄り駅：東急東横線 菊名駅・妙蓮寺駅より徒歩15分、JR横浜線 大口駅より徒歩16分<br>原則、転勤無し。</dd></div>
             </dl>
 
+            <a class="p-recruit__entry-button" href="/recruit/entry/">
+              <span class="p-recruit__entry-text">エントリーはこちら</span>
+              <span class="p-recruit__entry-icon" aria-hidden="true"></span>
+            </a>
+
             <section class="p-recruit__panel-section p-recruit__panel--sales">
               <h2 class="p-recruit__panel-title">キャリア採用（営業）募集要項</h2>
               <dl class="p-recruit__table">
@@ -147,6 +152,11 @@
                 <div class="p-recruit__row p-recruit__row--benefit"><dt>福利厚生</dt><dd>通勤手当、健康保険、厚生年金保険、雇用保険、労災保険、退職金制度</dd></div>
                 <div class="p-recruit__row p-recruit__row--place"><dt>勤務地</dt><dd>本社（横浜市神奈川区）<br>最寄り駅：東急東横線 菊名駅・妙蓮寺駅より徒歩15分、JR横浜線 大口駅より徒歩16分<br>原則、転勤無し。</dd></div>
               </dl>
+
+              <a class="p-recruit__entry-button" href="/recruit/entry/">
+                <span class="p-recruit__entry-text">エントリーはこちら</span>
+                <span class="p-recruit__entry-icon" aria-hidden="true"></span>
+              </a>
             </section>
 
             <section class="p-recruit__panel-section p-recruit__panel--admin">

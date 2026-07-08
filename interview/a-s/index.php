@@ -17,7 +17,7 @@ $career_path_img = '../../images/interview/saito-anju-career-path.webp';
   <meta property="og:title" content="京浜電設株式会社｜働く仲間の言葉｜インタビュー09" />
   <meta property="og:description" content="神奈川・横浜で70年以上の歴史と実績を重ね、さらなる成長を続ける「京浜電設」で働く先輩社員より、エントリーを検討されている皆さまに、生の声をお届けしています。" />
   <meta property="og:type" content="article" />
-  <meta property="og:url" content="/recruit/interview/saito-anju/" />
+  <meta property="og:url" content="/recruit/interview/a-s/" />
   <meta property="og:image" content="/images/interview/saito-anju-main.webp" />
   <link rel="icon" type="image/png" href="/images/common/header_logo.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/images/common/header_logo.png">
@@ -59,7 +59,7 @@ $career_path_img = '../../images/interview/saito-anju-career-path.webp';
           </section>
           <section class="p-interview-detail__section">
             <h2 class="p-interview-detail__question">どのようなきっかけで京浜電設を知りましたか。</h2>
-            <p class="p-interview-detail__text">京浜電設の求人を見つけ、第一印象としては横浜地域に根差した企業である印象を受けました。また、自宅から近く通いやすいと感じたことを覚えています。事業会社の広報は未経験でしたが、会社の取り組みや事業の価値を伝えていく広報は商品PRとは異なる魅力があると感じ応募しました。<span>創業70年という歴史のある会社ですが、最終面接で社長とお話をしたときに、アクティブに未来に向けて会社として新しいことに取り組んでいる話を聞き、「ここで働いてみたい」と思えたことが入社を決めた理由のひとつです。</span></p>
+            <p class="p-interview-detail__text">京浜電設の求人を見つけ、第一印象としては横浜地域に根差した企業である印象を受けました。また、自宅から近く通いやすいと感じたことを覚えています。事業会社の広報は未経験でしたが、会社の取り組みや事業の価値を伝えていく広報は商品PRとは異なる魅力があると感じ応募しました。<span>創業70年という歴史のある会社ですが、最終面接で社長とお話をしたときに、アクティブに未来に向けて会社として新しいことに取り組んでいる話を聞き、「ここで働いてみたい」と思いました。</span></p>
           </section>
           <figure class="p-interview-detail__image"><img src="../../images/interview/saito-anju-work-01.webp" alt="打ち合わせ中のA.Sさん" width="640" height="400"></figure>
           <section class="p-interview-detail__section">

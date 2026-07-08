@@ -44,7 +44,7 @@
 
         <ul class="p-interview__cards">
           <li class="p-interview__card">
-            <a class="p-interview__card-link" href="/recruit/interview/akiyama-hinata/">
+            <a class="p-interview__card-link" href="/recruit/interview/h-a/">
               <figure class="p-interview__image">
                 <img src="../images/interview/interview-h-a.webp" alt="工事事業部 在職2年目 H.Aさん" width="2250" height="1500">
               </figure>
@@ -55,7 +55,7 @@
             </a>
           </li>
           <li class="p-interview__card">
-            <a class="p-interview__card-link" href="/recruit/interview/masamori-akihito/">
+            <a class="p-interview__card-link" href="/recruit/interview/a-m/">
               <figure class="p-interview__image">
                 <img src="../images/interview/interview-a-m.webp" alt="営業部 営業 在職2年目 A.Mさん" width="2250" height="1500">
               </figure>
@@ -66,7 +66,7 @@
             </a>
           </li>
           <li class="p-interview__card">
-            <a class="p-interview__card-link" href="/recruit/interview/horikawa-s-h/">
+            <a class="p-interview__card-link" href="/recruit/interview/s-h/">
               <figure class="p-interview__image">
                 <img src="../images/interview/interview-s-h.webp" alt="総務部 総務人事課 在職2年目 S.Hさん" width="2250" height="1500">
               </figure>
@@ -77,7 +77,7 @@
             </a>
           </li>
           <li class="p-interview__card">
-            <a class="p-interview__card-link" href="/recruit/interview/nagaoka-kanako/">
+            <a class="p-interview__card-link" href="/recruit/interview/k-n/">
               <figure class="p-interview__image">
                 <img src="../images/interview/interview-k-n.webp" alt="総務部 経理課 在職2年目 K.Nさん" width="1500" height="2250">
               </figure>
@@ -88,7 +88,7 @@
             </a>
           </li>
           <li class="p-interview__card">
-            <a class="p-interview__card-link" href="/recruit/interview/kurahashi-naho/">
+            <a class="p-interview__card-link" href="/recruit/interview/n-k/">
               <figure class="p-interview__image">
                 <img src="../images/interview/interview-n-k.webp" alt="人事総務課 在職2年目 N.Kさん" width="2250" height="1500">
               </figure>
@@ -99,7 +99,7 @@
             </a>
           </li>
           <li class="p-interview__card">
-            <a class="p-interview__card-link" href="/recruit/interview/suzuki-shogo/">
+            <a class="p-interview__card-link" href="/recruit/interview/s-s/">
               <figure class="p-interview__image">
                 <img src="../images/interview/interview-s-s.webp" alt="工事事業部 第4課 在職3年目 S.Sさん" width="1500" height="2250">
               </figure>
@@ -119,7 +119,7 @@
 
         <ul class="p-interview__message-cards">
           <li class="p-interview__message-card">
-            <a class="p-interview__message-card-link" href="/recruit/interview/saito-takayuki/">
+            <a class="p-interview__message-card-link" href="/recruit/interview/t-s/">
               <figure class="p-interview__message-image">
                 <img src="../images/interview/interview-t-s.webp" alt="営業部 営業部長 T.Sさん" width="1500" height="2250">
               </figure>
@@ -130,7 +130,7 @@
             </a>
           </li>
           <li class="p-interview__message-card">
-            <a class="p-interview__message-card-link" href="/recruit/interview/sunagawa-machiko/">
+            <a class="p-interview__message-card-link" href="/recruit/interview/m-s/">
               <figure class="p-interview__message-image">
                 <img src="../images/interview/interview-m-s.webp" alt="営業部 積算 M.Sさん" width="2250" height="1500">
               </figure>
@@ -141,7 +141,7 @@
             </a>
           </li>
           <li class="p-interview__message-card">
-            <a class="p-interview__message-card-link" href="/recruit/interview/saito-anju/">
+            <a class="p-interview__message-card-link" href="/recruit/interview/a-s/">
               <figure class="p-interview__message-image">
                 <img src="../images/interview/interview-a-s.webp" alt="経営企画室 A.Sさん" width="2250" height="1500">
               </figure>
@@ -153,7 +153,7 @@
           </li>
 
           <li class="p-interview__message-card">
-            <a class="p-interview__message-card-link" href="/recruit/interview/iwabuchi/">
+            <a class="p-interview__message-card-link" href="/recruit/interview/n-i/">
               <figure class="p-interview__message-image">
                 <img src="../images/interview/interview-n-i.webp" alt="工事事業部 施工管理 N.Iさん" width="2250" height="1500">
               </figure>
