@@ -115,7 +115,7 @@
     <div class="p-message__cta-wrapper">
       <div class="l-inner">
 
-        <a class="p-message__cta" href="#">
+        <a class="p-message__cta" href="https://www.kdcg.co.jp/csr/index.html" target="_blank">
           <p class="p-message__cta-text">社会課題解決に向けて</p>
           <span class="p-message__cta-icon">
             <svg id="グループ_11" data-name="グループ 11" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40.697 40.697">
