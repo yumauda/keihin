@@ -70,7 +70,7 @@
           <li class="p-welfare__card">
             <figure class="p-welfare__icon"><img src="../images/top/top-welfare-icon-05.webp" alt="" width="118" height="86" loading="lazy" decoding="async"></figure>
             <h2 class="p-welfare__card-title">通勤交通費・バス代支給</h2>
-            <p class="p-welfare__card-text">公共交通機関を利用する場合、通勤交通費を全額支給します。<br>（社内規定あり）<br>バイク、自転車での通勤も可能です。</p>
+            <p class="p-welfare__card-text">公共交通機関を利用する場合、通勤交通費を全額支給します。<br>※支給は社内規定によります。<br>バイク、自転車での通勤も可能です。</p>
           </li>
           <li class="p-welfare__card">
             <figure class="p-welfare__icon"><img src="../images/top/top-welfare-icon-06.webp" alt="" width="115" height="115" loading="lazy" decoding="async"></figure>

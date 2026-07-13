@@ -70,7 +70,7 @@
           </details>
           <details class="p-faq__item">
             <summary class="p-faq__question"><span class="p-faq__label" aria-hidden="true">Q</span><span class="p-faq__question-text">応募にあたって必要な資格はありますか？</span></summary>
-            <div class="p-faq__answer"><span class="p-faq__label p-faq__label--answer" aria-hidden="true">A</span><p class="p-faq__answer-text">ありません。ただ入社までに普通自動車の運転免許が必須となります（AT限定可）</p></div>
+            <div class="p-faq__answer"><span class="p-faq__label p-faq__label--answer" aria-hidden="true">A</span><p class="p-faq__answer-text">ありません。ただし、職種によっては入社までに普通自動車運転免許の取得をお願いしています（AT 限定可）。</p></div>
           </details>
           <details class="p-faq__item">
             <summary class="p-faq__question"><span class="p-faq__label" aria-hidden="true">Q</span><span class="p-faq__question-text">施工管理についてあまり理解していませんが、応募しても大丈夫ですか？</span></summary>

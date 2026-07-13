@@ -5,7 +5,7 @@ session_start();
 mb_language('Japanese');
 mb_internal_encoding('UTF-8');
 
-$adminTo = getenv('ENTRY_MAIL_TO') ?: 'firststep.yumauda@gmail.com';
+$adminTo = getenv('ENTRY_MAIL_TO') ?: 'firststep.yumauda@gmail.com, info@kdcg.co.jp, sugiyama@ad-plant.com';
 $fromAddress = getenv('ENTRY_MAIL_FROM') ?: 'info@kdcg.co.jp';
 $siteOrigin = 'https://dev.kdcg.co.jp';
 $siteBasePath = '/recruit';
