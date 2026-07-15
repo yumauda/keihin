@@ -527,19 +527,27 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       const input = field.querySelector('.js-entry-file');
       const name = field.querySelector('.p-entry__file-name span');
       const clear = field.querySelector('.js-entry-file-clear');
+      const existing = field.querySelector('.js-entry-existing-file');
       if (!input || !name || !clear) return;
 
       const defaultText = name.textContent;
+      const emptyText = 'ファイル選択‥';
 
       function sync() {
         const file = input.files && input.files[0] ? input.files[0] : null;
-        name.textContent = file ? file.name : defaultText;
-        clear.disabled = !file;
+        const hasExisting = existing && existing.value !== '';
+        name.textContent = file ? file.name : (hasExisting ? defaultText : emptyText);
+        input.required = !file && !hasExisting;
+        clear.disabled = !file && !hasExisting;
       }
 
-      input.addEventListener('change', sync);
+      input.addEventListener('change', function () {
+        if (input.files && input.files[0] && existing) existing.value = '';
+        sync();
+      });
       clear.addEventListener('click', function () {
         input.value = '';
+        if (existing) existing.value = '';
         sync();
       });
 

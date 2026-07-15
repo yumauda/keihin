@@ -32,7 +32,16 @@ $fields = [
   'source' => '京浜電設を知ったきっかけ',
 ];
 
-$required = ['job_type', 'last_name', 'first_name', 'last_kana', 'first_kana', 'tel', 'email', 'email_confirm'];
+$required = [
+  'job_type' => '応募区分を選択してください。',
+  'last_name' => '氏名（姓）を入力してください。',
+  'first_name' => '氏名（名）を入力してください。',
+  'last_kana' => 'フリガナ（セイ）を入力してください。',
+  'first_kana' => 'フリガナ（メイ）を入力してください。',
+  'tel' => 'TELを入力してください。',
+  'email' => 'E-mailを入力してください。',
+  'email_confirm' => '確認用E-mailを入力してください。',
+];
 $fileFields = [
   'resume' => '履歴書',
   'career_file' => '職務経歴書',
@@ -112,10 +121,9 @@ function validateInput($required)
 {
   $errors = [];
 
-  foreach ($required as $key) {
+  foreach ($required as $key => $message) {
     if (requestValue($key) === '') {
-      $errors[] = '必須項目が未入力です。';
-      break;
+      $errors[] = $message;
     }
   }
 
@@ -124,7 +132,8 @@ function validateInput($required)
     $errors[] = 'E-mailの形式が正しくありません。';
   }
 
-  if ($email !== requestValue('email_confirm')) {
+  $emailConfirm = requestValue('email_confirm');
+  if ($email !== '' && $emailConfirm !== '' && $email !== $emailConfirm) {
     $errors[] = 'E-mailと確認用E-mailが一致していません。';
   }
 
@@ -182,10 +191,41 @@ function saveUpload($field, $label, $tmpDir)
   }
 
   return [[
+    'id' => basename($destination),
     'path' => $destination,
     'name' => $original,
     'type' => mime_content_type($destination) ?: 'application/octet-stream',
   ], null];
+}
+
+function restoreUpload($field, $label, $tmpDir)
+{
+  $id = requestValue($field . '_existing');
+  $draftUploads = is_array($_SESSION['entry_saved_uploads'] ?? null) ? $_SESSION['entry_saved_uploads'] : [];
+  $saved = $draftUploads[$field] ?? null;
+
+  if ($id === '' || !is_array($saved) || !hash_equals((string)($saved['id'] ?? ''), $id)) {
+    return [null, "{$label}を選択してください。"];
+  }
+
+  $realTmp = realpath($tmpDir);
+  $realPath = realpath((string)($saved['path'] ?? ''));
+  if (!$realTmp || !$realPath || strpos($realPath, $realTmp . DIRECTORY_SEPARATOR) !== 0 || !is_file($realPath)) {
+    return [null, "{$label}を選択してください。"];
+  }
+
+  $saved['path'] = $realPath;
+  return [$saved, null];
+}
+
+function preserveDraft($data, $errors, $uploads)
+{
+  $_SESSION['entry_saved_uploads'] = $uploads;
+  $_SESSION['entry_form_draft'] = [
+    'data' => $data,
+    'errors' => array_values(array_unique($errors)),
+    'uploads' => $uploads,
+  ];
 }
 
 function collectPostedData($fields)
@@ -305,7 +345,6 @@ function renderConfirm($data, $fields, $uploads)
         </div>
 
         <form class="p-entry__confirm-form" action="mail.php" method="post">
-          <input type="hidden" name="mode" value="send">
           <input type="hidden" name="entry_token" value="<?php echo h($_POST['entry_token'] ?? ''); ?>">
           <?php foreach ($data as $key => $value) : ?>
             <input type="hidden" name="<?php echo h($key); ?>" value="<?php echo h($value); ?>">
@@ -316,8 +355,8 @@ function renderConfirm($data, $fields, $uploads)
             <input type="hidden" name="<?php echo h($key); ?>_type" value="<?php echo h($file['type']); ?>">
           <?php endforeach; ?>
           <div class="p-entry__actions">
-            <button class="p-entry__button p-entry__button--submit" type="submit">送信する</button>
-            <button class="p-entry__button p-entry__button--back" type="button" onclick="history.back();">戻る</button>
+            <button class="p-entry__button p-entry__button--submit" type="submit" name="mode" value="send">送信する</button>
+            <button class="p-entry__button p-entry__button--back" type="submit" name="mode" value="back">戻る</button>
           </div>
         </form>
       </div>
@@ -447,6 +486,7 @@ function validateTempAttachment($key, $label, $tmpDir)
   }
 
   return [[
+    'id' => basename($realPath),
     'path' => $realPath,
     'name' => $name ?: basename($realPath),
     'type' => $type,
@@ -475,7 +515,7 @@ function renderThanks()
 
 $mode = requestValue('mode');
 
-if ($_SERVER['REQUEST_METHOD'] !== 'POST' || !in_array($mode, ['confirm', 'send'], true)) {
+if ($_SERVER['REQUEST_METHOD'] !== 'POST' || !in_array($mode, ['confirm', 'send', 'back'], true)) {
   header('Location: ' . $entryUrl);
   exit;
 }
@@ -492,12 +532,33 @@ if (!validToken()) {
 }
 
 $data = collectPostedData($fields);
+
+if ($mode === 'back') {
+  $uploads = [];
+  $errors = [];
+  foreach ($fileFields as $key => $label) {
+    [$file, $error] = validateTempAttachment($key, $label, $tmpDir);
+    if ($error) {
+      $errors[] = $error;
+    } else {
+      $uploads[$key] = $file;
+    }
+  }
+
+  preserveDraft($data, $errors, $uploads);
+  header('Location: ' . $entryUrl);
+  exit;
+}
+
 $errors = array_merge(validateInput($required), spamErrors());
 
 if ($mode === 'confirm') {
   $uploads = [];
   foreach ($fileFields as $key => $label) {
-    [$file, $error] = saveUpload($key, $label, $tmpDir);
+    $hasNewUpload = isset($_FILES[$key]['error']) && $_FILES[$key]['error'] !== UPLOAD_ERR_NO_FILE;
+    [$file, $error] = $hasNewUpload
+      ? saveUpload($key, $label, $tmpDir)
+      : restoreUpload($key, $label, $tmpDir);
     if ($error) {
       $errors[] = $error;
     } else {
@@ -506,11 +567,12 @@ if ($mode === 'confirm') {
   }
 
   if ($errors) {
-    cleanTempFiles($uploads);
-    renderErrorPage($errors, $entryUrl);
+    preserveDraft($data, $errors, $uploads);
+    header('Location: ' . $entryUrl);
     exit;
   }
 
+  unset($_SESSION['entry_form_draft'], $_SESSION['entry_saved_uploads']);
   renderConfirm($data, $fields, $uploads);
   exit;
 }
@@ -541,5 +603,6 @@ if (!sendMultipartMail($adminTo, $subject, $body, $fromAddress, $data['email'], 
 sendReceiptMail($data['email'], $fromAddress, $data, $fields);
 $_SESSION['entry_last_send'] = time();
 unset($_SESSION['entry_form_token']);
+unset($_SESSION['entry_form_draft'], $_SESSION['entry_saved_uploads']);
 cleanTempFiles($attachments);
 renderThanks();

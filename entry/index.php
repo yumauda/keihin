@@ -8,6 +8,28 @@ if (empty($_SESSION['entry_form_token'])) {
 
 $token = $_SESSION['entry_form_token'];
 $startedAt = time();
+$draft = $_SESSION['entry_form_draft'] ?? [];
+unset($_SESSION['entry_form_draft']);
+$formData = is_array($draft['data'] ?? null) ? $draft['data'] : [];
+$formErrors = is_array($draft['errors'] ?? null) ? $draft['errors'] : [];
+$formUploads = is_array($draft['uploads'] ?? null) ? $draft['uploads'] : [];
+
+function h($value)
+{
+  return htmlspecialchars((string)$value, ENT_QUOTES, 'UTF-8');
+}
+
+function formValue($key)
+{
+  global $formData;
+  return h($formData[$key] ?? '');
+}
+
+function isFormChoiceSelected($key, $value)
+{
+  global $formData;
+  return isset($formData[$key]) && (string)$formData[$key] === $value;
+}
 $prefectures = [
   '北海道', '青森県', '岩手県', '宮城県', '秋田県', '山形県', '福島県',
   '茨城県', '栃木県', '群馬県', '埼玉県', '千葉県', '東京都', '神奈川県',
@@ -78,36 +100,46 @@ $prefectures = [
             <label>会社URL<input type="text" name="company_url" tabindex="-1" autocomplete="off"></label>
           </div>
 
+          <?php if ($formErrors) : ?>
+            <div class="p-entry__error" role="alert" aria-live="polite">
+              <ul>
+                <?php foreach (array_unique($formErrors) as $error) : ?>
+                  <li><?php echo h($error); ?></li>
+                <?php endforeach; ?>
+              </ul>
+            </div>
+          <?php endif; ?>
+
           <div class="p-entry__row">
             <div class="p-entry__label">応募区分<span class="p-entry__required">必須</span></div>
             <div class="p-entry__control p-entry__radio-grid">
-              <label><input type="radio" name="job_type" value="新卒採用" required> 新卒採用</label>
-              <label><input type="radio" name="job_type" value="キャリア採用（工事事業部）"> キャリア採用（工事事業部）</label>
-              <label><input type="radio" name="job_type" value="キャリア採用（営業部）"> キャリア採用（営業部）</label>
-              <label><input type="radio" name="job_type" value="キャリア採用（総務部）"> キャリア採用（総務部）</label>
+              <label><input type="radio" name="job_type" value="新卒採用"<?php echo isFormChoiceSelected('job_type', '新卒採用') ? ' checked' : ''; ?> required> 新卒採用</label>
+              <label><input type="radio" name="job_type" value="キャリア採用（工事事業部）"<?php echo isFormChoiceSelected('job_type', 'キャリア採用（工事事業部）') ? ' checked' : ''; ?>> キャリア採用（工事事業部）</label>
+              <label><input type="radio" name="job_type" value="キャリア採用（営業部）"<?php echo isFormChoiceSelected('job_type', 'キャリア採用（営業部）') ? ' checked' : ''; ?>> キャリア採用（営業部）</label>
+              <label><input type="radio" name="job_type" value="キャリア採用（総務部）"<?php echo isFormChoiceSelected('job_type', 'キャリア採用（総務部）') ? ' checked' : ''; ?>> キャリア採用（総務部）</label>
             </div>
           </div>
 
           <div class="p-entry__row">
             <div class="p-entry__label">氏名<span class="p-entry__required">必須</span></div>
             <div class="p-entry__control p-entry__name-grid">
-              <input class="p-entry__input" type="text" name="last_name" placeholder="姓" required>
-              <input class="p-entry__input" type="text" name="first_name" placeholder="名" required>
+              <input class="p-entry__input" type="text" name="last_name" value="<?php echo formValue('last_name'); ?>" placeholder="姓" required>
+              <input class="p-entry__input" type="text" name="first_name" value="<?php echo formValue('first_name'); ?>" placeholder="名" required>
             </div>
           </div>
 
           <div class="p-entry__row">
             <div class="p-entry__label">フリガナ<span class="p-entry__required">必須</span></div>
             <div class="p-entry__control p-entry__name-grid">
-              <input class="p-entry__input" type="text" name="last_kana" placeholder="セイ" required>
-              <input class="p-entry__input" type="text" name="first_kana" placeholder="メイ" required>
+              <input class="p-entry__input" type="text" name="last_kana" value="<?php echo formValue('last_kana'); ?>" placeholder="セイ" required>
+              <input class="p-entry__input" type="text" name="first_kana" value="<?php echo formValue('first_kana'); ?>" placeholder="メイ" required>
             </div>
           </div>
 
           <div class="p-entry__row">
             <div class="p-entry__label">年齢</div>
             <div class="p-entry__control p-entry__age">
-              <input class="p-entry__input" type="number" name="age" min="15" max="80" placeholder="30">
+              <input class="p-entry__input" type="number" name="age" value="<?php echo formValue('age'); ?>" min="15" max="80" placeholder="30">
               <span>歳</span>
             </div>
           </div>
@@ -117,24 +149,24 @@ $prefectures = [
             <div class="p-entry__control p-entry__address">
               <div class="p-entry__zip">
                 <span>〒</span>
-                <input class="p-entry__input" type="text" name="zip" inputmode="numeric" placeholder="半角数字">
+                <input class="p-entry__input" type="text" name="zip" value="<?php echo formValue('zip'); ?>" inputmode="numeric" placeholder="半角数字">
                 <select class="p-entry__select" name="prefecture">
                   <option value="">都道府県 選択...</option>
                   <?php foreach ($prefectures as $prefecture) : ?>
-                    <option value="<?php echo htmlspecialchars($prefecture, ENT_QUOTES, 'UTF-8'); ?>"><?php echo htmlspecialchars($prefecture, ENT_QUOTES, 'UTF-8'); ?></option>
+                    <option value="<?php echo h($prefecture); ?>"<?php echo isFormChoiceSelected('prefecture', $prefecture) ? ' selected' : ''; ?>><?php echo h($prefecture); ?></option>
                   <?php endforeach; ?>
                 </select>
               </div>
-              <input class="p-entry__input" type="text" name="city" placeholder="市町村（郵便番号入力時に自動入力されます。）">
-              <input class="p-entry__input" type="text" name="street" placeholder="丁目番地">
-              <input class="p-entry__input" type="text" name="building" placeholder="建物名・号室">
+              <input class="p-entry__input" type="text" name="city" value="<?php echo formValue('city'); ?>" placeholder="市町村（郵便番号入力時に自動入力されます。）">
+              <input class="p-entry__input" type="text" name="street" value="<?php echo formValue('street'); ?>" placeholder="丁目番地">
+              <input class="p-entry__input" type="text" name="building" value="<?php echo formValue('building'); ?>" placeholder="建物名・号室">
             </div>
           </div>
 
           <div class="p-entry__row">
             <div class="p-entry__label">TEL<span class="p-entry__required">必須</span></div>
             <div class="p-entry__control">
-              <input class="p-entry__input" type="tel" name="tel" placeholder="090-0000-0000" pattern="[0-9\\-]+" required>
+              <input class="p-entry__input" type="tel" name="tel" value="<?php echo formValue('tel'); ?>" placeholder="090-0000-0000" pattern="[0-9\\-]+" required>
               <p class="p-entry__help">※半角数字とハイフン（-）のみ入力できます。</p>
             </div>
           </div>
@@ -142,14 +174,14 @@ $prefectures = [
           <div class="p-entry__row">
             <div class="p-entry__label">E-mail<span class="p-entry__required">必須</span></div>
             <div class="p-entry__control">
-              <input class="p-entry__input" type="email" name="email" placeholder="半角英数字のみ" required>
+              <input class="p-entry__input" type="email" name="email" value="<?php echo formValue('email'); ?>" placeholder="半角英数字のみ" required>
             </div>
           </div>
 
           <div class="p-entry__row">
             <div class="p-entry__label">確認用E-mail<span class="p-entry__required">必須</span></div>
             <div class="p-entry__control">
-              <input class="p-entry__input" type="email" name="email_confirm" placeholder="半角英数字のみ" required>
+              <input class="p-entry__input" type="email" name="email_confirm" value="<?php echo formValue('email_confirm'); ?>" placeholder="半角英数字のみ" required>
             </div>
           </div>
 
@@ -157,8 +189,10 @@ $prefectures = [
             <div class="p-entry__label">履歴書<span class="p-entry__required">必須</span></div>
             <div class="p-entry__control">
               <div class="p-entry__file-field">
-                <input class="p-entry__file js-entry-file" id="entry-resume" type="file" name="resume" accept=".pdf,.doc,.docx,.xls,.xlsx,.jpg,.jpeg,.png" required>
-                <label class="p-entry__file-name" for="entry-resume"><span>ファイル選択‥</span></label>
+                <?php $resume = $formUploads['resume'] ?? null; ?>
+                <input class="p-entry__file js-entry-file" id="entry-resume" type="file" name="resume" accept=".pdf,.doc,.docx,.xls,.xlsx,.jpg,.jpeg,.png"<?php echo $resume ? '' : ' required'; ?>>
+                <input class="js-entry-existing-file" type="hidden" name="resume_existing" value="<?php echo h($resume['id'] ?? ''); ?>">
+                <label class="p-entry__file-name" for="entry-resume"><span><?php echo h($resume['name'] ?? 'ファイル選択‥'); ?></span></label>
                 <label class="p-entry__file-browse" for="entry-resume">参照</label>
                 <button class="p-entry__file-clear js-entry-file-clear" type="button">取消</button>
               </div>
@@ -169,8 +203,10 @@ $prefectures = [
             <div class="p-entry__label">職務経歴書<span class="p-entry__required">必須</span></div>
             <div class="p-entry__control">
               <div class="p-entry__file-field">
-                <input class="p-entry__file js-entry-file" id="entry-career-file" type="file" name="career_file" accept=".pdf,.doc,.docx,.xls,.xlsx,.jpg,.jpeg,.png" required>
-                <label class="p-entry__file-name" for="entry-career-file"><span>ファイル選択‥</span></label>
+                <?php $careerFile = $formUploads['career_file'] ?? null; ?>
+                <input class="p-entry__file js-entry-file" id="entry-career-file" type="file" name="career_file" accept=".pdf,.doc,.docx,.xls,.xlsx,.jpg,.jpeg,.png"<?php echo $careerFile ? '' : ' required'; ?>>
+                <input class="js-entry-existing-file" type="hidden" name="career_file_existing" value="<?php echo h($careerFile['id'] ?? ''); ?>">
+                <label class="p-entry__file-name" for="entry-career-file"><span><?php echo h($careerFile['name'] ?? 'ファイル選択‥'); ?></span></label>
                 <label class="p-entry__file-browse" for="entry-career-file">参照</label>
                 <button class="p-entry__file-clear js-entry-file-clear" type="button">取消</button>
               </div>
@@ -180,17 +216,17 @@ $prefectures = [
           <div class="p-entry__row p-entry__row--textarea">
             <div class="p-entry__label">自由記入欄</div>
             <div class="p-entry__control">
-              <textarea class="p-entry__textarea" name="message"></textarea>
+              <textarea class="p-entry__textarea" name="message"><?php echo formValue('message'); ?></textarea>
             </div>
           </div>
 
           <div class="p-entry__row">
             <div class="p-entry__label p-entry__label--wide">京浜電設を知ったきっかけ</div>
             <div class="p-entry__control p-entry__trigger">
-              <label><input type="radio" name="source" value="ホームページ"> ホームページ</label>
-              <label><input type="radio" name="source" value="就活情報サイト"> 就活情報サイト</label>
-              <label><input type="radio" name="source" value="口コミサイト"> 口コミサイト</label>
-              <label><input type="radio" name="source" value="インスタグラム"> インスタグラム</label>
+              <label><input type="radio" name="source" value="ホームページ"<?php echo isFormChoiceSelected('source', 'ホームページ') ? ' checked' : ''; ?>> ホームページ</label>
+              <label><input type="radio" name="source" value="就活情報サイト"<?php echo isFormChoiceSelected('source', '就活情報サイト') ? ' checked' : ''; ?>> 就活情報サイト</label>
+              <label><input type="radio" name="source" value="口コミサイト"<?php echo isFormChoiceSelected('source', '口コミサイト') ? ' checked' : ''; ?>> 口コミサイト</label>
+              <label><input type="radio" name="source" value="インスタグラム"<?php echo isFormChoiceSelected('source', 'インスタグラム') ? ' checked' : ''; ?>> インスタグラム</label>
             </div>
           </div>
 
