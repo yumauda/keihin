@@ -7262,22 +7262,20 @@ body {
 }
 
 .p-welfare__sub {
-  display: block;
+  display: inline-block;
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.4;
   margin-top: 0.5rem;
   padding-top: 0.5625rem;
   position: relative;
-  text-align: center;
-  width: 13.625rem;
 }
 @media screen and (min-width: 768px) {
   .p-welfare__sub {
     font-size: 1.4375rem;
+    margin-left: 3.4375rem;
     margin-top: 0.75rem;
     padding-top: 1.125rem;
-    width: 26.1875rem;
   }
 }
 

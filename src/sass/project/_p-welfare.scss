@@ -47,21 +47,19 @@
 }
 
 .p-welfare__sub {
-  display: block;
+  display: inline-block;
   font-size: rem(16);
   font-weight: 500;
   line-height: 1.4;
   margin-top: rem(8);
   padding-top: rem(9);
   position: relative;
-  text-align: center;
-  width: rem(218);
 
   @include mq(md) {
     font-size: rem(23);
+    margin-left: rem(55);
     margin-top: rem(12);
     padding-top: rem(18);
-    width: rem(419);
   }
 }
 
