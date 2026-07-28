@@ -21,7 +21,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/styles.css?v=20260703">
+  <link rel="stylesheet" href="../css/styles.css?v=20260728">
   <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
@@ -37,8 +37,10 @@
     <section class="p-recruit__hero">
       <div class="l-inner">
         <div class="p-recruit__heading">
-          <p class="p-recruit__en">POSITION</p>
-          <h1 class="p-recruit__sub">新卒・キャリア採用募集要項</h1>
+          <div class="p-recruit__heading-content">
+            <p class="p-recruit__en">POSITION</p>
+            <h1 class="p-recruit__sub">新卒・キャリア採用募集要項</h1>
+          </div>
         </div>
         <p class="p-recruit__lead">京浜電設は、設立より70余年、電気工事・電気通信工事を扱っています。<br>急速に変化する時代にしなやかに対応し、電気工事業を追求してまいりました。<br>特に、官公庁・工場・商業ビル等の電気・計装・自動制御・通信工事には数多くの実績があり、工場生産設備については小～大規模の工事を得意としております。</p>
       </div>
@@ -147,7 +149,8 @@
                 </div>
                 <div class="p-recruit__row p-recruit__row--type"><dt>雇用形態</dt><dd>正社員</dd></div>
                 <div class="p-recruit__row p-recruit__row--salary"><dt>給与</dt><dd>当社規定による</dd></div>
-                <div class="p-recruit__row p-recruit__row--hours"><dt>勤務時間</dt><dd>8:00～17:30 （7時間55分/休憩95分）</dd></div>
+                <div class="p-recruit__row p-recruit__row--hours"><dt>就業時間</dt><dd>9:00～18:00(所定労働時間：7 時間 55 分)<br>※一般職で採用した場合は 9:00～17:30 となります。 (所定労働時間：6 時間 55 分)</dd></div>
+                <div class="p-recruit__row p-recruit__row--break"><dt>休憩</dt><dd>65 分（11:55～13:00）<br>※一般職で採用した場合は 95 分となります。<br>(内訳：午前 15 分、昼休憩 65 分、午後 15 分)</dd></div>
                 <div class="p-recruit__row p-recruit__row--holiday"><dt>休日</dt><dd>年間休日：124日、完全週休二日制（土曜日、日曜日）、国民の祝日、年末年始、特別休暇（慶弔等）、設立記念日5月10日、その他会社の指定する日<br>ワークライフバランスを重視し、有給の取得は半日休・時間休も選択可能。</dd></div>
                 <div class="p-recruit__row p-recruit__row--benefit"><dt>福利厚生</dt><dd>通勤手当、健康保険、厚生年金保険、雇用保険、労災保険、退職金制度</dd></div>
                 <div class="p-recruit__row p-recruit__row--place"><dt>勤務地</dt><dd>本社（横浜市神奈川区）<br>最寄り駅：東急東横線 菊名駅・妙蓮寺駅より徒歩15分、JR横浜線 大口駅より徒歩16分<br>原則、転勤無し。</dd></div>

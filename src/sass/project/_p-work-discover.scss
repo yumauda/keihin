@@ -22,7 +22,6 @@
 
   @include mq(md) {
     text-align: left;
-    width: rem(307);
   }
 }
 
@@ -41,17 +40,17 @@
 }
 
 .p-work-discover__sub {
-  display: inline-block;
+  display: block;
   font-size: rem(16);
   font-weight: 500;
   line-height: 1.4;
   position: relative;
   margin-top: rem(4);
+  text-align: center;
+  width: 100%;
 
   @include mq(md) {
     font-size: rem(23);
-    text-align: center;
-    width: rem(307);
     margin-top: rem(8);
   }
 }

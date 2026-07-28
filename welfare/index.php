@@ -21,7 +21,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/styles.css?v=20260604">
+  <link rel="stylesheet" href="../css/styles.css?v=20260728">
   <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
@@ -40,7 +40,7 @@
           <p class="p-welfare__en">OUR BENEFITS</p>
           <h1 class="p-welfare__sub">働く人を支える福利厚生制度</h1>
         </div>
-        <p class="p-welfare__lead">社会保険完備、福利厚生も充実しております。<br class="u-desktop">例えば、懇親会や社員旅行、食事会などございます。居心地がいい職場作りを心がけております。</p>
+        <p class="p-welfare__lead">社会保険完備、福利厚生も充実しております。<br class="u-desktop">例えば、経営計画発表会や社員研修、食事会などございます。居心地がいい職場作りを心がけております。</p>
       </div>
     </section>
 
@@ -94,8 +94,8 @@
           </li>
           <li class="p-welfare__card">
             <figure class="p-welfare__icon"><img src="../images/top/top-welfare-icon-10.webp" alt="" width="113" height="80" loading="lazy" decoding="async"></figure>
-            <h2 class="p-welfare__card-title">MBA取得支援</h2>
-            <p class="p-welfare__card-text p-welfare__card-text--dummy">社員の成長を支援するため、 MBA取得などの自己研鑽をサポート。 学び続ける意欲を会社が応援します。</p>
+            <h2 class="p-welfare__card-title">資格学校通学支援</h2>
+            <p class="p-welfare__card-text p-welfare__card-text--dummy">大学・大学院・資格学校への通学や社員の成長を支援するため、 MBA 取得などの自己研鑽をサポート。学び続ける意欲を会社が応援します。</p>
           </li>
           <li class="p-welfare__card">
             <figure class="p-welfare__icon"><img src="../images/top/top-welfare-icon-11.webp" alt="" width="90" height="86" loading="lazy" decoding="async"></figure>

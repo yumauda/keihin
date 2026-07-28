@@ -21,7 +21,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/styles.css?v=20260516">
+  <link rel="stylesheet" href="../css/styles.css?v=20260728">
   <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
@@ -37,8 +37,10 @@
     <section class="p-faq__hero">
       <div class="l-inner">
         <div class="p-faq__heading">
-          <p class="p-faq__en">Q<span class="p-faq__amp">&amp;</span>A</p>
-          <h1 class="p-faq__sub">よくある質問</h1>
+          <div class="p-faq__heading-content">
+            <p class="p-faq__en">Q<span class="p-faq__amp">&amp;</span>A</p>
+            <h1 class="p-faq__sub">よくある質問</h1>
+          </div>
         </div>
       </div>
     </section>
@@ -85,8 +87,8 @@
         <h2 class="p-faq__category-title p-faq__category-title--work">仕事・就業環境について</h2>
         <div class="p-faq__list">
           <details class="p-faq__item">
-            <summary class="p-faq__question"><span class="p-faq__label" aria-hidden="true">Q</span><span class="p-faq__question-text">転勤はありますか？</span></summary>
-            <div class="p-faq__answer"><span class="p-faq__label p-faq__label--answer" aria-hidden="true">A</span><p class="p-faq__answer-text">ありません。ごくまれに出張はありますが、転居を伴う異動・配属はありませんので、ご安心ください。</p></div>
+            <summary class="p-faq__question"><span class="p-faq__label" aria-hidden="true">Q</span><span class="p-faq__question-text">出張は有りますか？</span></summary>
+            <div class="p-faq__answer"><span class="p-faq__label p-faq__label--answer" aria-hidden="true">A</span><p class="p-faq__answer-text">拠点は横浜市内が中心ですが、工事案件増加に伴いまれに遠方への出張があります。</p></div>
           </details>
           <details class="p-faq__item">
             <summary class="p-faq__question"><span class="p-faq__label" aria-hidden="true">Q</span><span class="p-faq__question-text">勤務時間について教えてください</span></summary>
@@ -101,8 +103,8 @@
             <div class="p-faq__answer"><span class="p-faq__label p-faq__label--answer" aria-hidden="true">A</span><p class="p-faq__answer-text">いいえ、出来ます。<br>入社後は施工管理の仕事である写真撮影や書類作成、また工程・安全・品質・原価管理のサポートなどから始め、日々の業務を通して資格取得に必要な経験を少しずつ積んでいきます。</p></div>
           </details>
           <details class="p-faq__item">
-            <summary class="p-faq__question"><span class="p-faq__label" aria-hidden="true">Q</span><span class="p-faq__question-text">売上や利益のノルマはありますか？</span></summary>
-            <div class="p-faq__answer"><span class="p-faq__label p-faq__label--answer" aria-hidden="true">A</span><p class="p-faq__answer-text">京浜電設には、ノルマはありません。<br>本人の等級に応じた目標を設定し、それを達成していく事で、自分自身を成長させ、それが評価（処遇）に繋がっていきます。</p></div>
+            <summary class="p-faq__question"><span class="p-faq__label" aria-hidden="true">Q</span><span class="p-faq__question-text">売り上げやノルマはありますか？</span></summary>
+            <div class="p-faq__answer"><span class="p-faq__label p-faq__label--answer" aria-hidden="true">A</span><p class="p-faq__answer-text">会社の経営計画と連動しながら、一人ひとりが等級に応じた目標を設定します。目標達成に向けて挑戦を重ねることで成長を実感でき、その成果は適正な評価（処遇）へとつながっていきます。</p></div>
           </details>
         </div>
 
@@ -114,7 +116,7 @@
           </details>
           <details class="p-faq__item">
             <summary class="p-faq__question"><span class="p-faq__label" aria-hidden="true">Q</span><span class="p-faq__question-text">自動車・バイク・自転車通勤はできますか？</span></summary>
-            <div class="p-faq__answer"><span class="p-faq__label p-faq__label--answer" aria-hidden="true">A</span><p class="p-faq__answer-text">出来ます。会社敷地内にある無料の駐車場・駐輪場が利用できます。またご自宅から会社や現場までの往復のガソリン代を通勤手当として支給しています。</p></div>
+            <div class="p-faq__answer"><span class="p-faq__label p-faq__label--answer" aria-hidden="true">A</span><p class="p-faq__answer-text">技術職の方は自動車通勤が可能です。営業、事務職の方は、自転車またはバイクでの通勤が可能です。いずれも会社敷地内に無料の駐車場・駐輪場を完備しており、通勤手当としてご自宅から会社または現場までの往復距離に応じたガソリン代を支給しています。</p></div>
           </details>
           <details class="p-faq__item">
             <summary class="p-faq__question"><span class="p-faq__label" aria-hidden="true">Q</span><span class="p-faq__question-text">休日はどのようになっていますか？</span></summary>
@@ -122,7 +124,7 @@
           </details>
           <details class="p-faq__item">
             <summary class="p-faq__question"><span class="p-faq__label" aria-hidden="true">Q</span><span class="p-faq__question-text">産休・育休制度はどのようになっていますか？</span></summary>
-            <div class="p-faq__answer"><span class="p-faq__label p-faq__label--answer" aria-hidden="true">A</span><p class="p-faq__answer-text">産前産後・育児休業制度があります。産休育休明けの復職率は、現時点で100％です。また復職者の中には男性も含まれます。</p></div>
+            <div class="p-faq__answer"><span class="p-faq__label p-faq__label--answer" aria-hidden="true">A</span><p class="p-faq__answer-text">産前産後休業・育児休業制度があります。京浜電設では、男女ともに産休・育休取得後の復職率は現在 100％です。</p></div>
           </details>
         </div>
       </div>
