@@ -139,39 +139,39 @@
           </div>
           <ul class="p-top-interview__cards">
             <li class="p-top-interview__card js-blur-word">
-              <a class="p-top-interview__card-link" href="/recruit/interview/n-k/">
+              <a class="p-top-interview__card-link" href="/recruit/interview/n-i/">
                 <figure class="p-top-interview__image">
-                  <img decoding="async" loading="lazy" src="./images/top/top-interview-card-01.webp" alt="総務部 N.Kさん" width="274" height="283">
+                  <img decoding="async" loading="lazy" src="./images/top/top-interview-card-h-i.webp" alt="工事事業部 H.Iさん" width="274" height="283">
                 </figure>
-                <p class="p-top-interview__card-title">次は私が採用を通じて<br>誰かの縁をつなぎたい</p>
-                <p class="p-top-interview__name">総務部　N.Kさん</p>
+                <p class="p-top-interview__card-title">史学科出身の私も<br>インフラを支えるプロに！</p>
+                <p class="p-top-interview__name">工事事業部　H.Iさん</p>
               </a>
             </li>
             <li class="p-top-interview__card js-blur-word">
               <a class="p-top-interview__card-link" href="/recruit/interview/s-s/">
                 <figure class="p-top-interview__image">
-                  <img decoding="async" loading="lazy" src="./images/top/top-interview-card-02.webp" alt="工事事業部 S.Sさん" width="274" height="283">
+                  <img decoding="async" loading="lazy" src="./images/top/top-interview-card-s-s.webp" alt="工事事業部 S.Sさん" width="274" height="283">
                 </figure>
                 <p class="p-top-interview__card-title">情報系の知識をベースに<br>ステップアップを実感！</p>
                 <p class="p-top-interview__name">工事事業部　S.Sさん</p>
               </a>
             </li>
             <li class="p-top-interview__card js-blur-word">
-              <a class="p-top-interview__card-link" href="/recruit/interview/a-m/">
+              <a class="p-top-interview__card-link" href="/recruit/interview/n-k/">
                 <figure class="p-top-interview__image">
-                  <img decoding="async" loading="lazy" src="./images/top/top-interview-card-03.webp" alt="営業部 A.Mさん" width="274" height="283">
+                  <img decoding="async" loading="lazy" src="./images/top/top-interview-card-n-k.webp" alt="総務部 N.Kさん" width="274" height="283">
                 </figure>
-                <p class="p-top-interview__card-title">異業種からの挑戦でも<br>相談しながら成長できる！</p>
-                <p class="p-top-interview__name">営業部　A.Mさん</p>
+                <p class="p-top-interview__card-title">次は私が採用を通じて<br>誰かの縁をつなぎたい</p>
+                <p class="p-top-interview__name">総務部　N.Kさん</p>
               </a>
             </li>
             <li class="p-top-interview__card js-blur-word">
-              <a class="p-top-interview__card-link" href="/recruit/interview/s-h/">
+              <a class="p-top-interview__card-link" href="/recruit/interview/m-s/">
                 <figure class="p-top-interview__image">
-                  <img decoding="async" loading="lazy" src="./images/top/top-interview-card-04.webp" alt="総務部 S.Hさん" width="274" height="283">
+                  <img decoding="async" loading="lazy" src="./images/top/top-interview-card-m-s.webp" alt="営業部 M.Sさん" width="274" height="283">
                 </figure>
-                <p class="p-top-interview__card-title">私をきちんと見てくれる<br>そんな会社で働く心地よさ</p>
-                <p class="p-top-interview__name">総務部　S.Hさん</p>
+                <p class="p-top-interview__card-title">みんなで「ありがとう」を<br>共有できる職場です</p>
+                <p class="p-top-interview__name">営業部　M.Sさん</p>
               </a>
             </li>
           </ul>
@@ -322,7 +322,7 @@
             </li>
             <li class="p-top-number__card js-blur-word">
               <figure class="p-top-number__image">
-                <img decoding="async" loading="lazy" src="./images/common/top-number-card-06.webp" alt="男女比13対7" width="224" height="243">
+                <img decoding="async" loading="lazy" src="./images/common/top-number-card-06.webp" alt="男女比6対4" width="224" height="243">
               </figure>
             </li>
             <li class="p-top-number__card js-blur-word">

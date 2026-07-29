@@ -1146,6 +1146,34 @@ select::-ms-expand {
   width: 100%;
 }
 
+.p-career__text + .p-career__photo {
+  margin-top: 1.75rem;
+}
+@media screen and (min-width: 768px) {
+  .p-career__text + .p-career__photo {
+    margin-top: 2.75rem;
+  }
+}
+
+.p-career__photo--presi {
+  aspect-ratio: 1368/769;
+}
+@media screen and (min-width: 768px) {
+  .p-career__photo--presi {
+    aspect-ratio: 1368/769;
+    max-width: 50rem;
+  }
+}
+
+.p-career__photo + .p-career__text {
+  margin-top: 1.75rem;
+}
+@media screen and (min-width: 768px) {
+  .p-career__photo + .p-career__text {
+    margin-top: 2.75rem;
+  }
+}
+
 .p-contact {
   padding-top: 4rem;
   padding-bottom: 4.5rem;
