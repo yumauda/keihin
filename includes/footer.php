@@ -17,21 +17,14 @@
                 <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="/recruit/work/">京浜電設の仕事</a></li>
                 <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="/recruit/message/">代表メッセージ</a></li>
                 <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="/recruit/career/">キャリアアップストーリー</a></li>
-                <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="/recruit/career-plan/">キャリアプラン</a></li>
-                <!-- <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="#">研修制度</a></li> -->
+                <li class="p-footer__nav-item p-footer__nav-item--sub"><a class="p-footer__nav-link" href="/recruit/career-plan/">キャリアプラン</a></li>
             </ul>
 
             <ul class="p-footer__nav">
-                <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="/recruit/education/">社員の主な出身校・専攻学部・学科</a></li>
+                <li class="p-footer__nav-item p-footer__nav-item--sub"><a class="p-footer__nav-link" href="/recruit/education/">社員の主な出身校・専攻学部・学科</a></li>
                 <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="/recruit/welfare/">福利厚生</a></li>
                 <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="/recruit/faq/">FAQ（よくある質問）</a></li>
                 <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="/recruit/position/">募集要項</a></li>
-                <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="/recruit/entry/">エントリーフォーム</a></li>
-            </ul>
-
-            <ul class="p-footer__nav">
-                <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="#">コーポレートサイト</a></li>
-                <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="https://www.kdcg.co.jp/privacy/index.html" target="_blank" rel="noopener noreferrer">プライバシーポリシー</a></li>
             </ul>
         </div>
 
@@ -44,6 +37,6 @@
     </div>
 
     <div class="p-footer__copy">
-        <p class="p-footer__copy-text">Copyright © 京浜電設株式会社 All Rights Reserved.</p>
+        <p class="p-footer__copy-text">Copyright © Keihin Densetsu Co., Ltd. All Rights Reserved.</p>
     </div>
 </footer>

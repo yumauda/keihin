@@ -242,7 +242,8 @@
   }
 }
 .p-message__text span {
-  font-weight: 700;
+  background: linear-gradient(transparent 58%, #ffd166 58%);
+  font-weight: inherit;
 }
 
 .p-message__section-title+.p-message__text,
