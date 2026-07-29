@@ -139,7 +139,7 @@ $prefectures = [
           <div class="p-entry__row">
             <div class="p-entry__label">年齢</div>
             <div class="p-entry__control p-entry__age">
-              <input class="p-entry__input" type="number" name="age" value="<?php echo formValue('age'); ?>" min="15" max="80" placeholder="30">
+              <input class="p-entry__input" type="number" name="age" value="<?php echo formValue('age'); ?>" min="18" max="80" placeholder="30">
               <span>歳</span>
             </div>
           </div>

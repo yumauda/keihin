@@ -162,7 +162,7 @@
               </a>
             </section>
 
-            <section class="p-recruit__panel-section p-recruit__panel--admin">
+            <!-- <section class="p-recruit__panel-section p-recruit__panel--admin">
               <h2 class="p-recruit__panel-title">キャリア採用（総務）募集要項</h2>
               <dl class="p-recruit__table">
                 <div class="p-recruit__row p-recruit__row--job"><dt>職種</dt><dd>総務人事職</dd></div>
@@ -189,7 +189,7 @@
                 <span class="p-recruit__entry-text">エントリーはこちら</span>
                 <span class="p-recruit__entry-icon" aria-hidden="true"></span>
               </a>
-            </section>
+            </section> -->
           </section>
         </div>
       </div>

@@ -8,7 +8,7 @@
   padding-bottom: rem(40);
 
   @include mq(md) {
-    padding-top: rem(82);
+    padding-top: rem(138);
     padding-bottom: rem(72);
   }
 }
@@ -17,42 +17,48 @@
   padding: rem(50) 0 rem(48);
 
   @include mq(md) {
-    padding: rem(96) 0 rem(68);
+    padding-top: rem(56);
+    padding-bottom: rem(68);
   }
 }
 
 .p-faq__heading {
   text-align: center;
-  width: fit-content;
 
   @include mq(md) {
     margin-left: auto;
     margin-right: auto;
-    max-width: rem(1002);
+    max-width: rem(1010);
+    // width: fit-content;
     width: 100%;
   }
 }
 
 .p-faq__heading-content {
-  align-items: center;
+  align-items: flex-start;
   display: flex;
   flex-direction: column;
   text-align: center;
-  width: fit-content;
+  width: rem(67);
+
+  @include mq(md) {
+    width: rem(118);
+  }
 }
 
 .p-faq__en {
   align-items: baseline;
-  border-bottom: rem(3) solid #fe4504;
+  border-bottom: 3px solid #fe4504;
   display: flex;
   gap: rem(6);
   font-family: $second-font-family;
-  font-size: rem(42);
+  font-size: rem(52);
   font-weight: 400;
   justify-content: center;
   letter-spacing: 0;
   line-height: 1;
   position: relative;
+  width: fit-content;
 
   @include mq(md) {
     font-size: rem(100);
@@ -66,19 +72,20 @@
 }
 
 .p-faq__sub {
-  display: inline-block;
+  align-self: center;
+  display: block;
   font-size: rem(12);
   font-weight: 500;
   line-height: 1.5;
-  position: relative;
-  padding-top: rem(8);
+  margin-top: rem(5);
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  width: fit-content;
+  white-space: nowrap;
+  width: max-content;
 
   @include mq(md) {
-    font-size: rem(25);
+    font-size: rem(23);
+    line-height: calc(30 / 23);
+    margin-top: rem(17);
   }
 }
 

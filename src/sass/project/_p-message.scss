@@ -241,6 +241,9 @@
     line-height: 1.95;
   }
 }
+.p-message__text span {
+  font-weight: 700;
+}
 
 .p-message__section-title+.p-message__text,
 .p-message__text+.p-message__text {

@@ -297,42 +297,42 @@
           <ul class="p-top-number__cards">
             <li class="p-top-number__card js-blur-word">
               <figure class="p-top-number__image">
-                <img decoding="async" loading="lazy" src="./images/common/top-number-card-01.png" alt="会社創業74年" width="224" height="243">
+                <img decoding="async" loading="lazy" src="./images/common/top-number-card-01.webp" alt="会社創業74年" width="224" height="243">
               </figure>
             </li>
             <li class="p-top-number__card js-blur-word">
               <figure class="p-top-number__image">
-                <img decoding="async" loading="lazy" src="./images/common/top-number-card-02.png" alt="従業員数66名" width="224" height="243">
+                <img decoding="async" loading="lazy" src="./images/common/top-number-card-02.webp" alt="従業員数66名" width="224" height="243">
               </figure>
             </li>
             <li class="p-top-number__card js-blur-word">
               <figure class="p-top-number__image">
-                <img decoding="async" loading="lazy" src="./images/common/top-number-card-03.png" alt="3年以内の新卒採用人数00人" width="224" height="243">
+                <img decoding="async" loading="lazy" src="./images/common/top-number-card-03.webp" alt="3年以内の新卒採用人数00人" width="224" height="243">
               </figure>
             </li>
             <li class="p-top-number__card js-blur-word">
               <figure class="p-top-number__image">
-                <img decoding="async" loading="lazy" src="./images/common/top-number-card-04.png" alt="平均年齢40歳" width="224" height="243">
+                <img decoding="async" loading="lazy" src="./images/common/top-number-card-04.webp" alt="平均年齢40歳" width="224" height="243">
               </figure>
             </li>
             <li class="p-top-number__card js-blur-word">
               <figure class="p-top-number__image">
-                <img decoding="async" loading="lazy" src="./images/common/top-number-card-05.png" alt="平均勤続年数6.6年" width="224" height="243">
+                <img decoding="async" loading="lazy" src="./images/common/top-number-card-05.webp" alt="平均勤続年数6.6年" width="224" height="243">
               </figure>
             </li>
             <li class="p-top-number__card js-blur-word">
               <figure class="p-top-number__image">
-                <img decoding="async" loading="lazy" src="./images/common/top-number-card-06.png" alt="男女比13対7" width="224" height="243">
+                <img decoding="async" loading="lazy" src="./images/common/top-number-card-06.webp" alt="男女比13対7" width="224" height="243">
               </figure>
             </li>
             <li class="p-top-number__card js-blur-word">
               <figure class="p-top-number__image">
-                <img decoding="async" loading="lazy" src="./images/common/top-number-card-07.png" alt="年間休日123日" width="224" height="243">
+                <img decoding="async" loading="lazy" src="./images/common/top-number-card-07.webp" alt="年間休日123日" width="224" height="243">
               </figure>
             </li>
             <li class="p-top-number__card js-blur-word">
               <figure class="p-top-number__image">
-                <img decoding="async" loading="lazy" src="./images/common/top-number-card-08.png" alt="社員の年代別比率" width="224" height="243">
+                <img decoding="async" loading="lazy" src="./images/common/top-number-card-08.webp" alt="社員の年代別比率" width="224" height="243">
               </figure>
             </li>
           </ul>
@@ -428,35 +428,37 @@
     <section class="p-top-license js-blur-word">
       <div class="l-inner">
         <div class="p-top-license__content">
-          <div class="p-top-license__box">
-            <div class="p-top-license__heading">
-              <h2 class="p-top-license__title">
-                <span>社員の学生時代の専攻学部・</span>
-                <span>学科・保有する資格</span>
-              </h2>
-            </div>
-            <div class="p-top-license__section">
-              <h3 class="p-top-license__label">専攻学部</h3>
-              <p class="p-top-license__text">工学部・理学部・経済学部・商学部・商経学部・法学部・文学部・教育学部・社会科学部・外国語学部・<br class="u-desktop">ネットワーク情報学部・グローバルコミュニケーション学部 他</p>
-            </div>
-            <div class="p-top-license__section">
-              <h3 class="p-top-license__label">専攻学科</h3>
-              <p class="p-top-license__text">電気工学科・電気科・電気工事科・電気工事技術科・電気電子学科・電気システム科・経営学科・政治学科・<br class="u-desktop">建築学科・法律学科・心理学科・情報サイエンス学科 他</p>
-            </div>
-            <div class="p-top-license__section p-top-license__section--last">
-              <h3 class="p-top-license__label">社員の保有する資格</h3>
+          <div class="p-top-license__intro">
+            <h2 class="p-top-license__en-title">EDUCATION</h2>
+            <p class="p-top-license__sub-title">社員の主な出身校・専攻学部・学科</p>
+            <p class="p-top-license__lead-title">学部・学科は問いません。</p>
+            <p class="p-top-license__description">京浜電設では、工学部・理学部はもちろん、経済学部・法学部・文学部など、<br class="u-desktop">さまざまな学部・学科出身の社員が活躍しています。<br class="u-desktop">電気に関する専門知識は、入社後の研修や資格取得支援制度を通じて身につけることができます。<br class="u-desktop">実際に多くの社員が、入社後に電気工事士や施工管理技士などの資格を取得しています。</p>
+          </div>
+          <div class="p-top-license__details">
+            <section class="p-top-license__group">
+              <h3 class="p-top-license__heading">社員の学生時代の専攻学部・学科</h3>
+              <div class="p-top-license__section">
+                <h4 class="p-top-license__label">専攻学部</h4>
+                <p class="p-top-license__text">工学部・理学部・経済学部・商学部・商経学部・法学部・文学部・教育学部・社会科学部・外国語学部・ネットワーク情報学部・グローバルコミュニケーション学部 他</p>
+              </div>
+              <div class="p-top-license__section">
+                <h4 class="p-top-license__label">専攻学科</h4>
+                <p class="p-top-license__text">電気工学科・電気科・電気工事科・電気工事技術科・電気電子学科・電気システム科・経営学科・政治学科・建築学科・法律学科・心理学科・情報サイエンス学科 他</p>
+              </div>
+            </section>
+            <section class="p-top-license__group p-top-license__group--qualification">
+              <h3 class="p-top-license__heading">入社後の主な取得資格</h3>
               <p class="p-top-license__text">1級施工管理・2級施工管理・第一種電気工事士・第二種電気工事士 他</p>
-            </div>
-            <div class="p-top-license__button-wrap">
-              <a class="p-top-license__button" href="/recruit/education/">
-                <span class="p-top-license__button-text">出身校などについてもっと見る</span>
-                <span class="p-top-license__button-icon" aria-hidden="true"></span>
-              </a>
-            </div>
+            </section>
+          </div>
+          <div class="p-top-license__button-wrap">
+            <a class="p-top-license__button" href="/recruit/education/">
+              <span class="p-top-license__button-text">出身校などについてもっと見る</span>
+              <span class="p-top-license__button-icon" aria-hidden="true"></span>
+            </a>
           </div>
         </div>
       </div>
-
     </section>
     <div class="p-top-license__loop">
       <div class="p-top-license__loop-track">

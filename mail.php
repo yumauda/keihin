@@ -151,8 +151,8 @@ function validateInput($required)
   }
 
   $age = requestValue('age');
-  if ($age !== '' && (!ctype_digit($age) || (int)$age < 15 || (int)$age > 80)) {
-    $errors[] = '年齢は15から80までの半角数字で入力してください。';
+  if ($age !== '' && (!ctype_digit($age) || (int)$age < 18 || (int)$age > 80)) {
+    $errors[] = '年齢は18から80までの半角数字で入力してください。';
   }
 
   return $errors;
