@@ -11,12 +11,10 @@
 }
 
 .p-education__hero {
-  min-height: rem(300);
   padding: rem(48) 0 rem(64);
 
   @include mq(md) {
-    min-height: rem(360);
-    padding: rem(86) 0 rem(70);
+    padding: rem(56) 0 rem(70);
   }
 }
 

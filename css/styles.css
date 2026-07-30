@@ -2060,13 +2060,11 @@ select::-ms-expand {
 }
 
 .p-education__hero {
-  min-height: 18.75rem;
   padding: 3rem 0 4rem;
 }
 @media screen and (min-width: 768px) {
   .p-education__hero {
-    min-height: 22.5rem;
-    padding: 5.375rem 0 4.375rem;
+    padding: 3.5rem 0 4.375rem;
   }
 }
 
@@ -7432,7 +7430,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .p-welfare__card-title {
-    font-size: 1.5625rem;
+    font-size: 1.375rem;
     margin-top: 1.625rem;
   }
 }

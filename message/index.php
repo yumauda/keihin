@@ -30,7 +30,8 @@
 </head>
 
 <body>
-  <?php // ローカル環境用: include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'); ?>
+  <?php // ローカル環境用: include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/header.php');
+  ?>
   <?php include_once(__DIR__ . '/../includes/header.php'); ?>
 
   <main class="p-message">
@@ -68,7 +69,7 @@
           <section class="p-message__section">
             <h2 class="p-message__section-title">リスク分散をしながら時代の波に<br class="u-mobile">乗っていく</h2>
             <p class="p-message__text">現在、京浜電設では主に三つの分野で事業を行っています。建物の電気設備に関わる工事、官公庁の公共工事、そして工場の生産ラインなどの工事です。一つの分野だけに偏るのではなく、三つの分野を時代に応じてバランスよく手がけることにより、バブル崩壊やリーマンショック、東日本大震災、新型コロナのパンデミックなど、世界と日本の危機的な状況を乗り越え、今日まで元気に事業を継続してきました。変化の激しい時代にあって、こうしたリスク分散の体制もまた、私たちの強みであるといえます。</p>
-            <p class="p-message__text">私たちが常に意識しなくてはならないのは、<span>現場の先に必ずエンドユーザーがいるということです。</span>工事を完成させた先には、その建物や設備を実際に使う人がいます。だからこそ、その人たちが利用している未来の姿まで深く思い描いて仕事をする必要があるのです。</p>
+            <p class="p-message__text"><span>私たちが常に意識しなくてはならないのは、現場の先に必ずエンドユーザーがいるということです。</span>工事を完成させた先には、その建物や設備を実際に使う人がいます。だからこそ、その人たちが利用している未来の姿まで深く思い描いて仕事をする必要があるのです。</p>
           </section>
 
           <section class="p-message__section">
@@ -132,7 +133,8 @@
     </div>
   </main>
 
-  <?php // ローカル環境用: include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'); ?>
+  <?php // ローカル環境用: include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php');
+  ?>
   <?php include_once(__DIR__ . '/../includes/footer.php'); ?>
 </body>
 
