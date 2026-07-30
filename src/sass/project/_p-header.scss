@@ -47,6 +47,11 @@
   flex-shrink: 0;
   position: relative;
   z-index: 10000;
+
+  @media screen and (min-width: 1210px) {
+    align-items: center;
+    display: flex;
+  }
 }
 
 .p-header__logo {
@@ -66,13 +71,24 @@
   width: 100%;
 }
 
+.p-header__corporate {
+  color: #005DC9;
+  display: none;
+  font-size: rem(13);
+  font-weight: 500;
+  line-height: 1.4;
+  margin-left: rem(24);
+  text-decoration: none;
+  white-space: nowrap;
+
+  @media screen and (min-width: 1210px) {
+    display: inline-block;
+  }
+}
+
 .p-header.is-drawer-active {
   background-color: #476ed6;
   box-shadow: none;
-
-  @media screen and (max-width: 1209px) {
-    height: rem(46);
-  }
 }
 
 .p-header.is-drawer-active .p-header__logo svg path,
@@ -315,10 +331,7 @@ body {
 }
 
 .p-header.is-drawer-active .p-header__entry {
-  @media screen and (max-width: 1209px) {
-    height: rem(22);
-    width: rem(101);
-  }
+
 }
 
 .p-header__entry-text {
