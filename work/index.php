@@ -30,7 +30,8 @@
 </head>
 
 <body>
-  <?php // ローカル環境用: include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'); ?>
+  <?php // ローカル環境用: include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'); 
+  ?>
   <?php include_once(__DIR__ . '/../includes/header.php'); ?>
 
   <main class="p-work">
@@ -111,7 +112,7 @@
         <div class="p-work-electric__heading">
           <h2 class="p-work-electric__title">京浜電設が主に行っている電気工事の範囲です</h2>
         </div>
-        <p class="p-work-electric__lead">各発電所でつくられた電気は、遠方地域まで効率よく送るため、超高圧変電所で遠くに送れる電圧にします。このときの電圧は数千V〜２万Vと非常に高く、そのままでは使用できません。途中にある変電所で少しずつ電圧を下げていき、工場・ビル・マンション・一般住宅など使う場所に適した電気を届けています。こうして、安全で安定した電気が、私たちの暮らしや仕事を支えているのです。</p>
+        <p class="p-work-electric__lead">京浜電設では主に三つの分野で事業を行っています。建物の電気設備に関わる工事、官公庁の公共工事、そして工場の生産ラインなどの工事です。</p>
 
         <figure class="p-work-electric__img">
           <img decoding="async" loading="lazy" src="../images/work/work-electric.webp" alt="金属の未来をリファイン" width="431" height="380">
@@ -141,7 +142,8 @@
     </section>
   </main>
 
-  <?php // ローカル環境用: include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'); ?>
+  <?php // ローカル環境用: include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'); 
+  ?>
   <?php include_once(__DIR__ . '/../includes/footer.php'); ?>
 </body>
 
