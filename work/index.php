@@ -2,12 +2,12 @@
 <html lang="ja">
 
 <head>
+  <?php include_once(__DIR__ . '/../includes/gtm-head.php'); ?>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <meta name="format-detection" content="telephone=no" />
   <title>京浜電設株式会社の仕事｜電気工事・営業・経営企画・総務等の紹介</title>
   <meta name="description" content="オフィスビル・商業施設・学校・工場などの電気・通信設備の設計・工事・点検・管理。高圧から低圧まで広範囲な受変電設備や発電・通信設備の設置の流れを、イラストで分かりやすくご紹介。" />
-  <meta name="robots" content="noindex,nofollow" />
   <meta name="theme-color" content="#005D97" />
   <meta property="og:locale" content="ja_JP" />
   <meta property="og:site_name" content="京浜電設株式会社 採用サイト" />
@@ -15,7 +15,7 @@
   <meta property="og:description" content="オフィスビル・商業施設・学校・工場などの電気・通信設備の設計・工事・点検・管理。高圧から低圧まで広範囲な受変電設備や発電・通信設備の設置の流れを、イラストで分かりやすくご紹介。" />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="/recruit/work/" />
-  <meta property="og:image" content="/images/common/header_logo.png" />
+  <meta property="og:image" content="https://www.kdcg.co.jp/recruit/images/common/ogp.jpg" />
   <link rel="icon" type="image/png" href="/images/common/header_logo.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/images/common/header_logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,6 +30,7 @@
 </head>
 
 <body>
+  <?php include_once(__DIR__ . '/../includes/gtm-body.php'); ?>
   <?php // ローカル環境用: include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'); 
   ?>
   <?php include_once(__DIR__ . '/../includes/header.php'); ?>
@@ -112,7 +113,8 @@
         <div class="p-work-electric__heading">
           <h2 class="p-work-electric__title">京浜電設が主に行っている電気工事の範囲です</h2>
         </div>
-        <p class="p-work-electric__lead">京浜電設では主に三つの分野で事業を行っています。建物の電気設備に関わる工事、官公庁の公共工事、そして工場の生産ラインなどの工事です。</p>
+        <p class="p-work-electric__lead">京浜電設では主に三つの分野で事業を行っています。建物の電気設備に関わる工事、官公庁の公共工事、そして工場の生産ラインなどの工事です。<br><br></p>
+        <p class="p-work-electric__lead">各発電所でつくられた電気は、遠方地域まで効率よく送るため、超高圧変電所で遠くに送れる電圧にします。このときの電圧は数千V〜２万Vと非常に高く、そのままでは使用できません。途中にある変電所で少しずつ電圧を下げていき、工場・ビル・マンション・一般住宅など使う場所に適した電気を届けています。こうして、安全で安定した電気が、私たちの暮らしや仕事を支えているのです。</p>
 
         <figure class="p-work-electric__img">
           <img decoding="async" loading="lazy" src="../images/work/work-electric.webp" alt="金属の未来をリファイン" width="431" height="380">

@@ -2,12 +2,12 @@
 <html lang="ja">
 
 <head>
+  <?php include_once(__DIR__ . '/../includes/gtm-head.php'); ?>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <meta name="format-detection" content="telephone=no" />
   <title>京浜電設株式会社｜福利厚生</title>
   <meta name="description" content="「京浜電設」では、居心地のいい職場づくりとワークライフバランスを整えるために、また、資格取得や自己成長のために、さまざまな福利厚生・社内制度を用意しています。" />
-  <meta name="robots" content="noindex,nofollow" />
   <meta name="theme-color" content="#005D97" />
   <meta property="og:locale" content="ja_JP" />
   <meta property="og:site_name" content="京浜電設株式会社 採用サイト" />
@@ -15,7 +15,7 @@
   <meta property="og:description" content="「京浜電設」では、居心地のいい職場づくりとワークライフバランスを整えるために、また、資格取得や自己成長のために、さまざまな福利厚生・社内制度を用意しています。" />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="/recruit/welfare/" />
-  <meta property="og:image" content="/images/top/top-welfare-icon-01.webp" />
+  <meta property="og:image" content="https://www.kdcg.co.jp/recruit/images/common/ogp.jpg" />
   <link rel="icon" type="image/png" href="/images/common/header_logo.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/images/common/header_logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,6 +30,7 @@
 </head>
 
 <body>
+  <?php include_once(__DIR__ . '/../includes/gtm-body.php'); ?>
   <?php // ローカル環境用: include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'); ?>
   <?php include_once(__DIR__ . '/../includes/header.php'); ?>
 

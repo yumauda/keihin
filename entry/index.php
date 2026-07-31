@@ -45,12 +45,12 @@ $prefectures = [
 <html lang="ja">
 
 <head>
+  <?php include_once(__DIR__ . '/../includes/gtm-head.php'); ?>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <meta name="format-detection" content="telephone=no" />
   <title>京浜電設株式会社｜採用エントリーフォーム</title>
   <meta name="description" content="神奈川・横浜で70年以上の歴史と実績を重ね、ますます元気に成長を続ける「京浜電設」の採用にご応募される方は、こちらのエントリーフォームから。" />
-  <meta name="robots" content="noindex,nofollow" />
   <meta name="theme-color" content="#005D97" />
   <meta property="og:locale" content="ja_JP" />
   <meta property="og:site_name" content="京浜電設株式会社 採用サイト" />
@@ -58,7 +58,7 @@ $prefectures = [
   <meta property="og:description" content="神奈川・横浜で70年以上の歴史と実績を重ね、ますます元気に成長を続ける「京浜電設」の採用にご応募される方は、こちらのエントリーフォームから。" />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="/recruit/entry/" />
-  <meta property="og:image" content="/recruit/images/common/header_logo.png" />
+  <meta property="og:image" content="https://www.kdcg.co.jp/recruit/images/common/ogp.jpg" />
   <link rel="icon" type="image/png" href="/recruit/images/common/header_logo.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/recruit/images/common/header_logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -73,6 +73,7 @@ $prefectures = [
 </head>
 
 <body>
+  <?php include_once(__DIR__ . '/../includes/gtm-body.php'); ?>
   <?php include_once(__DIR__ . '/../includes/header.php'); ?>
 
   <main class="p-entry">

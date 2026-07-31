@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+  <?php include_once(__DIR__ . '/../../includes/gtm-head.php'); ?>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <meta name="format-detection" content="telephone=no" />
   <title>京浜電設株式会社｜働く仲間の言葉｜インタビュー10</title>
   <meta name="description" content="神奈川・横浜で70年以上の歴史と実績を重ね、さらなる成長を続ける「京浜電設」で働く先輩社員より、エントリーを検討されている皆さまに、生の声をお届けしています。" />
-  <meta name="robots" content="noindex,nofollow" />
   <meta name="theme-color" content="#005D97" />
   <meta property="og:locale" content="ja_JP" />
   <meta property="og:site_name" content="京浜電設株式会社 採用サイト" />
@@ -14,7 +14,7 @@
   <meta property="og:description" content="神奈川・横浜で70年以上の歴史と実績を重ね、さらなる成長を続ける「京浜電設」で働く先輩社員より、エントリーを検討されている皆さまに、生の声をお届けしています。" />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="/recruit/interview/n-i/" />
-  <meta property="og:image" content="/images/interview/iwabuchi-main.webp" />
+  <meta property="og:image" content="https://www.kdcg.co.jp/recruit/images/common/ogp.jpg" />
   <link rel="icon" type="image/png" href="/images/common/header_logo.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/images/common/header_logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,6 +28,7 @@
   <script defer src="../../js/script.js?v=20260525"></script>
 </head>
 <body>
+  <?php include_once(__DIR__ . '/../../includes/gtm-body.php'); ?>
   <?php include_once(__DIR__ . '/../../includes/header.php'); ?>
   <main class="p-interview-detail">
     <section class="p-interview-detail__hero"><div class="l-inner"><div class="p-interview-detail__heading"><p class="p-interview-detail__en">INTERVIEW</p><p class="p-interview-detail__sub">働く仲間の言葉</p></div><div class="p-interview-detail__hero-body"><div class="p-interview-detail__hero-text"><h1 class="p-interview-detail__title">史学科出身で電気工事の世界へ。<br>未経験から施工管理の仕事に就く。</h1><p class="p-interview-detail__profile">工事事業部<br>N.Iさん</p></div><figure class="p-interview-detail__main-image"><img src="../../images/interview/iwabuchi-main.webp" alt="工事事業部 N.Iさん" width="420" height="464"></figure></div></div></section>

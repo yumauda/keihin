@@ -2,6 +2,7 @@
 <html lang="ja">
 
 <head>
+  <?php include_once(__DIR__ . '/includes/gtm-head.php'); ?>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <meta name="format-detection" content="telephone=no" />
@@ -9,7 +10,6 @@
   <title>京浜電設株式会社｜新卒・キャリア採用TOPページ</title>
   <meta name="description" content="神奈川・横浜で創業して70年以上が経ち、さらに成長を続ける「京浜電設」の採用ページへ、ようこそ。一般電気工事・官公庁工事・制御工事を3つの柱とし安定した経営を行っています。" />
   <meta name="keywords" content="京浜電設,京浜電設株式会社,採用サイト,新卒採用,中途採用,電気工事,福利厚生,キャリアアップ" />
-  <meta name="robots" content="noindex,nofollow" />
   <meta name="theme-color" content="#005D97" />
   <!-- ogp -->
   <meta property="og:locale" content="ja_JP" />
@@ -18,11 +18,11 @@
   <meta property="og:description" content="神奈川・横浜で創業して70年以上が経ち、さらに成長を続ける「京浜電設」の採用ページへ、ようこそ。一般電気工事・官公庁工事・制御工事を3つの柱とし安定した経営を行っています。" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="./" />
-  <meta property="og:image" content="./images/common/header_logo.png" />
+  <meta property="og:image" content="https://www.kdcg.co.jp/recruit/images/common/ogp.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="京浜電設株式会社｜新卒・キャリア採用TOPページ" />
   <meta name="twitter:description" content="神奈川・横浜で創業して70年以上が経ち、さらに成長を続ける「京浜電設」の採用ページへ、ようこそ。一般電気工事・官公庁工事・制御工事を3つの柱とし安定した経営を行っています。" />
-  <meta name="twitter:image" content="./images/common/header_logo.png" />
+  <meta name="twitter:image" content="https://www.kdcg.co.jp/recruit/images/common/ogp.jpg" />
   <!-- ファビコン -->
   <link rel="icon" type="image/png" href="./images/common/header_logo.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="./images/common/header_logo.png">
@@ -40,6 +40,7 @@
 </head>
 
 <body>
+  <?php include_once(__DIR__ . '/includes/gtm-body.php'); ?>
 
   <?php // ローカル環境用: include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'); 
   ?>
@@ -212,7 +213,7 @@
                 </svg>
               </div>
               <h3 class="p-people__card-title">素直に<br>学び続けられる方</h3>
-              <p class="p-people__card-text">先輩や職人に聞きながら<br>一歩ずつ成長していく環境です。</p>
+              <p class="p-people__card-text">先輩や職人に聞きながら<br>一歩ずつ成長していく<br class="u-mobile">環境です。</p>
               <div class="p-people__field">
                 <p class="p-people__field-label">現場では</p>
                 <p class="p-people__field-text">先輩や職人に聞きながら<br>仕事を覚えていきます</p>
@@ -227,7 +228,7 @@
                 </svg>
               </div>
               <h3 class="p-people__card-title">コツコツ<br>取り組める方</h3>
-              <p class="p-people__card-text">すぐに結果が出なくても、<br>積み上げが力になる仕事です。</p>
+              <p class="p-people__card-text">すぐに結果が出なくても、<br>積み上げが力になる<br class="u-mobile">仕事です。</p>
               <div class="p-people__field">
                 <p class="p-people__field-label">現場では</p>
                 <p class="p-people__field-text">一つひとつの作業を積み上げる<br>仕事です</p>
@@ -245,7 +246,7 @@
                 </svg>
               </div>
               <h3 class="p-people__card-title">人との関わりを<br>大切にできる方</h3>
-              <p class="p-people__card-text">現場はチーム戦。声を掛け合い、<br>支え合うことで仕事が進みます。</p>
+              <p class="p-people__card-text">現場はチーム戦。<br class="u-mobile">声を掛け合い、<br>支え合うことで<br class="u-mobile">仕事が進みます。</p>
               <div class="p-people__field">
                 <p class="p-people__field-label">現場では</p>
                 <p class="p-people__field-text">チームで連携しながら<br>現場を進めていきます</p>
@@ -259,7 +260,7 @@
                 </svg>
               </div>
               <h3 class="p-people__card-title">手応えのある<br>仕事が好きな方</h3>
-              <p class="p-people__card-text">自分の関わった工事が形になり、<br>街のインフラとして残ります。</p>
+              <p class="p-people__card-text">自分の関わった工事が<br class="u-mobile">形になり、<br>街のインフラとして<br class="u-mobile">残ります。</p>
               <div class="p-people__field">
                 <p class="p-people__field-label">現場では</p>
                 <p class="p-people__field-text">完成したときに<br>成果が形として残ります</p>
@@ -278,7 +279,7 @@
                 </svg>
               </div>
               <h3 class="p-people__card-title">成長したい<br>気持ちがある方</h3>
-              <p class="p-people__card-text">資格取得や研修を会社が支え、<br>本人の意思に応えていきます。</p>
+              <p class="p-people__card-text">資格取得や研修を<br class="u-mobile">会社が支え、<br>本人の意思に<br class="u-mobile">応えていきます。</p>
               <div class="p-people__field">
                 <p class="p-people__field-label">現場では</p>
                 <p class="p-people__field-text">未経験からでも<br>挑戦できる環境があります</p>

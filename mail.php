@@ -7,7 +7,7 @@ mb_internal_encoding('UTF-8');
 
 $adminTo = getenv('ENTRY_MAIL_TO') ?: 'firststep.yumauda@gmail.com, info@kdcg.co.jp, sugiyama@ad-plant.com';
 $fromAddress = getenv('ENTRY_MAIL_FROM') ?: 'info@kdcg.co.jp';
-$siteOrigin = 'https://dev.kdcg.co.jp';
+$siteOrigin = 'https://www.kdcg.co.jp';
 $siteBasePath = '/recruit';
 $homeUrl = $siteBasePath . '/';
 $entryUrl = $siteBasePath . '/entry/';
@@ -244,12 +244,12 @@ function renderHead($title)
 <html lang="ja">
 
 <head>
+  <?php include_once(__DIR__ . '/includes/gtm-head.php'); ?>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <meta name="format-detection" content="telephone=no" />
   <title><?php echo h($title); ?> | 京浜電設株式会社 採用サイト</title>
   <meta name="description" content="京浜電設株式会社 採用サイトの応募フォームです。" />
-  <meta name="robots" content="noindex,nofollow" />
   <meta name="theme-color" content="#005D97" />
   <link rel="icon" type="image/png" href="/recruit/images/common/header_logo.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/recruit/images/common/header_logo.png">
@@ -265,6 +265,7 @@ function renderHead($title)
 </head>
 
 <body>
+  <?php include_once(__DIR__ . '/includes/gtm-body.php'); ?>
 <?php include_once(__DIR__ . '/includes/header.php'); ?>
 <?php
 }
