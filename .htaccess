@@ -1,0 +1,6 @@
+RewriteEngine On
+
+# 旧採用サイトから新URLへの301リダイレクト
+RewriteRule ^recruit-info/index\.html$ /recruit/position/ [R=301,L]
+RewriteRule ^entry/index\.html$ /recruit/entry/ [R=301,L]
+RewriteRule ^interview/index\.html$ /recruit/interview/ [R=301,L]
