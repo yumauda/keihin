@@ -3447,7 +3447,7 @@ select::-ms-expand {
   position: relative;
   z-index: 10000;
 }
-@media screen and (min-width: 1210px) {
+@media screen and (min-width: 768px) {
   .p-header__heading {
     align-items: center;
     display: flex;
@@ -3472,6 +3472,12 @@ select::-ms-expand {
   width: 100%;
 }
 
+.p-header__logo svg {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
 .p-header__corporate {
   color: #005DC9;
   display: none;
@@ -3481,9 +3487,9 @@ select::-ms-expand {
   margin-left: 1.5rem;
   text-decoration: none;
   white-space: nowrap;
-  margin-top: -0.5625rem;
+  margin-top: -0.875rem;
 }
-@media screen and (min-width: 1210px) {
+@media screen and (min-width: 768px) {
   .p-header__corporate {
     display: inline-block;
   }
@@ -8172,7 +8178,7 @@ body {
 }
 
 .p-work-electric__img {
-  max-width: 65.625rem;
+  max-width: 50rem;
   margin-left: auto;
   margin-right: auto;
   margin-top: 4rem;
