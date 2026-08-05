@@ -142,10 +142,10 @@
             <li class="p-top-interview__card js-blur-word">
               <a class="p-top-interview__card-link" href="/recruit/interview/n-i/">
                 <figure class="p-top-interview__image">
-                  <img decoding="async" loading="lazy" src="./images/top/top-interview-card-h-i.webp" alt="工事事業部 H.Iさん" width="274" height="283">
+                  <img decoding="async" loading="lazy" src="./images/top/top-interview-card-h-i.webp" alt="工事事業部 N.Iさん" width="274" height="283">
                 </figure>
                 <p class="p-top-interview__card-title">史学科出身の私も<br>インフラを支えるプロに！</p>
-                <p class="p-top-interview__name">工事事業部　H.Iさん</p>
+                <p class="p-top-interview__name">工事事業部　N.Iさん</p>
               </a>
             </li>
             <li class="p-top-interview__card js-blur-word">
