@@ -5087,7 +5087,7 @@ body {
 }
 
 .p-mv {
-  background-color: #e5e5e5;
+  background-color: #000;
   overflow-x: clip;
   padding-top: 4.375rem;
 }
@@ -5103,12 +5103,15 @@ body {
 }
 
 .p-mv__video {
+  background-color: #000;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
   width: 100vw;
 }
 
 .p-mv__video video {
+  background-color: #000;
+  display: block;
   object-fit: cover;
   width: 100%;
   height: auto;

@@ -8,6 +8,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   const $translateToggle = $('.js-translate-toggle');
   const $translateMenu = $('.js-translate-menu');
   const $translateOptions = $('.js-translate-option');
+  const mvVideo = document.querySelector('.p-mv__video video');
 
   const params = new URLSearchParams(window.location.search);
   const sentType = params.get('sent');
@@ -16,6 +17,30 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   const TRANSLATE_STORAGE_KEY = 'keihinTranslateLang';
   let translateScriptRequested = false;
   let pendingTranslateLang = null;
+
+  function playMvVideo() {
+    if (!mvVideo || document.visibilityState !== 'visible') return;
+
+    mvVideo.muted = true;
+    const playPromise = mvVideo.play();
+
+    if (playPromise && typeof playPromise.catch === 'function') {
+      playPromise.catch(function () {
+        // Safariが自動再生を保留した場合は、タブ表示時に再試行する
+      });
+    }
+  }
+
+  if (mvVideo) {
+    mvVideo.defaultMuted = true;
+    mvVideo.setAttribute('muted', '');
+    playMvVideo();
+
+    $(window).on('pageshow', playMvVideo);
+    $(document).on('visibilitychange', function () {
+      if (document.visibilityState === 'visible') playMvVideo();
+    });
+  }
 
   function getCurrentTranslateLang() {
     try {

@@ -31,7 +31,8 @@
 
 <body>
   <?php include_once(__DIR__ . '/../includes/gtm-body.php'); ?>
-  <?php // ローカル環境用: include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'); ?>
+  <?php // ローカル環境用: include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'); 
+  ?>
   <?php include_once(__DIR__ . '/../includes/header.php'); ?>
 
   <main class="p-recruit">
@@ -79,7 +80,7 @@
               <div class="p-recruit__row p-recruit__row--salary">
                 <dt>給与</dt>
                 <dd>
-                  <p>大学卒 ： 259,000円<br>【内訳】基本給：197,000円・固定残業代：62,000円（40時間）<br>専門卒 ： 256,100円<br>【内訳】基本給：194,800円・固定残業代：61,300円（40時間）<br>※固定残業代は残業がない場合も支給し、超過分は別途支給いたします。<br>※月平均残業時間は19.3時間です。（2024年度実績）</p>
+                  <p>大学卒 ： 259,900円<br>【内訳】基本給：198,000円・固定残業代：61,900円（40時間）<br>専門卒 ： 257,300円<br>【内訳】基本給：196,000円・固定残業代：61,300円（40時間）<br>※固定残業代は残業がない場合も支給し、超過分は別途支給いたします。<br>※月平均残業時間は14.7時間です。（2025年度実績）</p>
                   <p>昇給：年1回（業績により変動）<br>賞与：年2回（7月、12月）（業績により変動）</p>
                 </dd>
               </div>
@@ -109,7 +110,10 @@
           <section class="p-recruit__panel p-recruit__panel--construction js-recruit-panel" id="recruit-panel-construction" role="tabpanel" aria-labelledby="recruit-tab-construction" data-recruit-panel="construction" hidden>
             <h2 class="p-recruit__panel-title">キャリア採用（電気施工管理）募集要項</h2>
             <dl class="p-recruit__table">
-              <div class="p-recruit__row p-recruit__row--job"><dt>職種</dt><dd>電気工事の施工管理／現場監督（官公庁・民間・工場案件）</dd></div>
+              <div class="p-recruit__row p-recruit__row--job">
+                <dt>職種</dt>
+                <dd>電気工事の施工管理／現場監督（官公庁・民間・工場案件）</dd>
+              </div>
               <div class="p-recruit__row p-recruit__row--description">
                 <dt>募集要項</dt>
                 <dd>
@@ -121,12 +125,30 @@
                   <p>求める人物像<br>・主体的に現場をまとめられる方<br>・プロジェクト全体を俯瞰して管理できる方<br>・将来的に会社の中核を担いたいという志をお持ちの方</p>
                 </dd>
               </div>
-              <div class="p-recruit__row p-recruit__row--type"><dt>雇用形態</dt><dd>正社員</dd></div>
-              <div class="p-recruit__row p-recruit__row--salary"><dt>給与</dt><dd>当社規定による</dd></div>
-              <div class="p-recruit__row p-recruit__row--hours"><dt>勤務時間</dt><dd>8:00～17:30 （7時間55分/休憩95分）</dd></div>
-              <div class="p-recruit__row p-recruit__row--holiday"><dt>休日</dt><dd>年間休日：124日、完全週休二日制（土曜日、日曜日）、国民の祝日、年末年始、特別休暇（慶弔等）、設立記念日5月10日、その他会社の指定する日<br>ワークライフバランスを重視し、有給の取得は半日休・時間休も選択可能。</dd></div>
-              <div class="p-recruit__row p-recruit__row--benefit"><dt>福利厚生</dt><dd>通勤手当、健康保険、厚生年金保険、雇用保険、労災保険、退職金制度、社宅制度</dd></div>
-              <div class="p-recruit__row p-recruit__row--place"><dt>勤務地</dt><dd>本社（横浜市神奈川区）<br>最寄り駅：東急東横線 菊名駅・妙蓮寺駅より徒歩15分、JR横浜線 大口駅より徒歩16分<br>原則、転勤無し。</dd></div>
+              <div class="p-recruit__row p-recruit__row--type">
+                <dt>雇用形態</dt>
+                <dd>正社員</dd>
+              </div>
+              <div class="p-recruit__row p-recruit__row--salary">
+                <dt>給与</dt>
+                <dd>当社規定による</dd>
+              </div>
+              <div class="p-recruit__row p-recruit__row--hours">
+                <dt>勤務時間</dt>
+                <dd>8:00～17:30 （7時間55分/休憩95分）</dd>
+              </div>
+              <div class="p-recruit__row p-recruit__row--holiday">
+                <dt>休日</dt>
+                <dd>年間休日：124日、完全週休二日制（土曜日、日曜日）、国民の祝日、年末年始、特別休暇（慶弔等）、設立記念日5月10日、その他会社の指定する日<br>ワークライフバランスを重視し、有給の取得は半日休・時間休も選択可能。</dd>
+              </div>
+              <div class="p-recruit__row p-recruit__row--benefit">
+                <dt>福利厚生</dt>
+                <dd>通勤手当、健康保険、厚生年金保険、雇用保険、労災保険、退職金制度、社宅制度</dd>
+              </div>
+              <div class="p-recruit__row p-recruit__row--place">
+                <dt>勤務地</dt>
+                <dd>本社（横浜市神奈川区）<br>最寄り駅：東急東横線 菊名駅・妙蓮寺駅より徒歩15分、JR横浜線 大口駅より徒歩16分<br>原則、転勤無し。</dd>
+              </div>
             </dl>
 
             <a class="p-recruit__entry-button" href="/recruit/entry/">
@@ -137,7 +159,10 @@
             <section class="p-recruit__panel-section p-recruit__panel--sales">
               <h2 class="p-recruit__panel-title">キャリア採用（営業）募集要項</h2>
               <dl class="p-recruit__table">
-                <div class="p-recruit__row p-recruit__row--job"><dt>職種</dt><dd>営業職</dd></div>
+                <div class="p-recruit__row p-recruit__row--job">
+                  <dt>職種</dt>
+                  <dd>営業職</dd>
+                </div>
                 <div class="p-recruit__row p-recruit__row--description">
                   <dt>募集要項</dt>
                   <dd>
@@ -148,13 +173,34 @@
                     <p>《歓迎条件》<br>・電気工事に関する知識/資格をお持ちの方（第二種電気工事士、第一種電気工事士、電気工事施工管理技士など）　<br>・ゼネコン・ビル管理会社等との折衝経験のある方<br>・工事現場の流れが理解できる方　<br>・プラント/空調設備関係の営業経験のある方</p>
                   </dd>
                 </div>
-                <div class="p-recruit__row p-recruit__row--type"><dt>雇用形態</dt><dd>正社員</dd></div>
-                <div class="p-recruit__row p-recruit__row--salary"><dt>給与</dt><dd>当社規定による</dd></div>
-                <div class="p-recruit__row p-recruit__row--hours"><dt>就業時間</dt><dd>9:00～18:00(所定労働時間：7 時間 55 分)<br>※一般職で採用した場合は 9:00～17:30 となります。 (所定労働時間：6 時間 55 分)</dd></div>
-                <div class="p-recruit__row p-recruit__row--break"><dt>休憩</dt><dd>65 分（11:55～13:00）<br>※一般職で採用した場合は 95 分となります。<br>(内訳：午前 15 分、昼休憩 65 分、午後 15 分)</dd></div>
-                <div class="p-recruit__row p-recruit__row--holiday"><dt>休日</dt><dd>年間休日：124日、完全週休二日制（土曜日、日曜日）、国民の祝日、年末年始、特別休暇（慶弔等）、設立記念日5月10日、その他会社の指定する日<br>ワークライフバランスを重視し、有給の取得は半日休・時間休も選択可能。</dd></div>
-                <div class="p-recruit__row p-recruit__row--benefit"><dt>福利厚生</dt><dd>通勤手当、健康保険、厚生年金保険、雇用保険、労災保険、退職金制度</dd></div>
-                <div class="p-recruit__row p-recruit__row--place"><dt>勤務地</dt><dd>本社（横浜市神奈川区）<br>最寄り駅：東急東横線 菊名駅・妙蓮寺駅より徒歩15分、JR横浜線 大口駅より徒歩16分<br>原則、転勤無し。</dd></div>
+                <div class="p-recruit__row p-recruit__row--type">
+                  <dt>雇用形態</dt>
+                  <dd>正社員</dd>
+                </div>
+                <div class="p-recruit__row p-recruit__row--salary">
+                  <dt>給与</dt>
+                  <dd>当社規定による</dd>
+                </div>
+                <div class="p-recruit__row p-recruit__row--hours">
+                  <dt>就業時間</dt>
+                  <dd>9:00～18:00(所定労働時間：7 時間 55 分)<br>※一般職で採用した場合は 9:00～17:30 となります。 (所定労働時間：6 時間 55 分)</dd>
+                </div>
+                <div class="p-recruit__row p-recruit__row--break">
+                  <dt>休憩</dt>
+                  <dd>65 分（11:55～13:00）<br>※一般職で採用した場合は 95 分となります。<br>(内訳：午前 15 分、昼休憩 65 分、午後 15 分)</dd>
+                </div>
+                <div class="p-recruit__row p-recruit__row--holiday">
+                  <dt>休日</dt>
+                  <dd>年間休日：124日、完全週休二日制（土曜日、日曜日）、国民の祝日、年末年始、特別休暇（慶弔等）、設立記念日5月10日、その他会社の指定する日<br>ワークライフバランスを重視し、有給の取得は半日休・時間休も選択可能。</dd>
+                </div>
+                <div class="p-recruit__row p-recruit__row--benefit">
+                  <dt>福利厚生</dt>
+                  <dd>通勤手当、健康保険、厚生年金保険、雇用保険、労災保険、退職金制度</dd>
+                </div>
+                <div class="p-recruit__row p-recruit__row--place">
+                  <dt>勤務地</dt>
+                  <dd>本社（横浜市神奈川区）<br>最寄り駅：東急東横線 菊名駅・妙蓮寺駅より徒歩15分、JR横浜線 大口駅より徒歩16分<br>原則、転勤無し。</dd>
+                </div>
               </dl>
 
               <a class="p-recruit__entry-button" href="/recruit/entry/">
@@ -197,7 +243,8 @@
     </section>
   </main>
 
-  <?php // ローカル環境用: include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'); ?>
+  <?php // ローカル環境用: include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'); 
+  ?>
   <?php include_once(__DIR__ . '/../includes/footer.php'); ?>
 </body>
 

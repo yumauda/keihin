@@ -36,7 +36,7 @@
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script defer src="./js/gsap.js?v=20260525"></script>
-  <script defer src="./js/script.js?v=20260525"></script>
+  <script defer src="./js/script.js?v=20260820"></script>
 </head>
 
 <body>
@@ -107,7 +107,7 @@
 
       </div> -->
       <div class="p-mv__video">
-        <video autoplay muted playsinline>
+        <video autoplay muted playsinline preload="auto" poster="./images/top/mv_poster.jpg">
           <source
             src="./images/top/mv_sp.mp4"
             type="video/mp4"
