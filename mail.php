@@ -251,8 +251,9 @@ function renderHead($title)
   <title><?php echo h($title); ?> | 京浜電設株式会社 採用サイト</title>
   <meta name="description" content="京浜電設株式会社 採用サイトの応募フォームです。" />
   <meta name="theme-color" content="#005D97" />
-  <link rel="icon" type="image/png" href="/recruit/images/common/header_logo.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/recruit/images/common/header_logo.png">
+  <link rel="icon" href="/recruit/images/common/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="./images/common/favicon.png" sizes="64x64">
+  <link rel="apple-touch-icon" href="./images/common/apple-touch-icon.png" sizes="180x180">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">

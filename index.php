@@ -24,8 +24,9 @@
   <meta name="twitter:description" content="神奈川・横浜で創業して70年以上が経ち、さらに成長を続ける「京浜電設」の採用ページへ、ようこそ。一般電気工事・官公庁工事・制御工事を3つの柱とし安定した経営を行っています。" />
   <meta name="twitter:image" content="https://www.kdcg.co.jp/recruit/images/common/ogp.jpg" />
   <!-- ファビコン -->
-  <link rel="icon" type="image/png" href="./images/common/header_logo.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="./images/common/header_logo.png">
+  <link rel="icon" href="/recruit/images/common/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="./images/common/favicon.png" sizes="64x64">
+  <link rel="apple-touch-icon" href="./images/common/apple-touch-icon.png" sizes="180x180">
   <!-- CSS (sassコマンドで自動生成) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

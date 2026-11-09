@@ -16,8 +16,9 @@
   <meta property="og:type" content="article" />
   <meta property="og:url" content="/recruit/position/" />
   <meta property="og:image" content="https://www.kdcg.co.jp/recruit/images/common/ogp.jpg" />
-  <link rel="icon" type="image/png" href="/images/common/header_logo.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/common/header_logo.png">
+  <link rel="icon" href="/recruit/images/common/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="../images/common/favicon.png" sizes="64x64">
+  <link rel="apple-touch-icon" href="../images/common/apple-touch-icon.png" sizes="180x180">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
@@ -80,7 +81,7 @@
               <div class="p-recruit__row p-recruit__row--salary">
                 <dt>給与</dt>
                 <dd>
-                  <p>大学卒 ： 259,900円<br>【内訳】基本給：198,000円・固定残業代：61,900円（40時間）<br>専門卒 ： 257,300円<br>【内訳】基本給：196,000円・固定残業代：61,300円（40時間）<br>※固定残業代は残業がない場合も支給し、超過分は別途支給いたします。<br>※月平均残業時間は14.7時間です。（2025年度実績）</p>
+                  <p>大学卒 ： 269,800円<br>【内訳】基本給：205,500円・固定残業代：64,300円（40時間）<br>専門卒 ： 268,700円<br>【内訳】基本給：204,700円・固定残業代：64,000円（40時間）<br>※固定残業代は残業がない場合も支給し、超過分は別途支給いたします。<br>※月平均残業時間は14.7時間です。（2025年度実績）</p>
                   <p>昇給：年1回（業績により変動）<br>賞与：年2回（7月、12月）（業績により変動）</p>
                 </dd>
               </div>
@@ -90,7 +91,7 @@
               </div>
               <div class="p-recruit__row p-recruit__row--holiday">
                 <dt>休日</dt>
-                <dd>年間休日：124日、完全週休二日制（土曜日、日曜日）、国民の祝日、年末年始、特別休暇（慶弔等）、設立記念日5月10日、その他会社の指定する日<br>ワークライフバランスを重視し、有給の取得は半日休・時間休も選択可能。</dd>
+                <dd>年間休日：125日、完全週休二日制（土曜日、日曜日）、国民の祝日、年末年始、特別休暇（慶弔等）、設立記念日5月10日、その他会社の指定する日<br>ワークライフバランスを重視し、有給の取得は半日休・時間休も選択可能。</dd>
               </div>
               <div class="p-recruit__row p-recruit__row--benefit">
                 <dt>福利厚生</dt>
@@ -139,7 +140,7 @@
               </div>
               <div class="p-recruit__row p-recruit__row--holiday">
                 <dt>休日</dt>
-                <dd>年間休日：124日、完全週休二日制（土曜日、日曜日）、国民の祝日、年末年始、特別休暇（慶弔等）、設立記念日5月10日、その他会社の指定する日<br>ワークライフバランスを重視し、有給の取得は半日休・時間休も選択可能。</dd>
+                <dd>年間休日：125日、完全週休二日制（土曜日、日曜日）、国民の祝日、年末年始、特別休暇（慶弔等）、設立記念日5月10日、その他会社の指定する日<br>ワークライフバランスを重視し、有給の取得は半日休・時間休も選択可能。</dd>
               </div>
               <div class="p-recruit__row p-recruit__row--benefit">
                 <dt>福利厚生</dt>
@@ -191,7 +192,7 @@
                 </div>
                 <div class="p-recruit__row p-recruit__row--holiday">
                   <dt>休日</dt>
-                  <dd>年間休日：124日、完全週休二日制（土曜日、日曜日）、国民の祝日、年末年始、特別休暇（慶弔等）、設立記念日5月10日、その他会社の指定する日<br>ワークライフバランスを重視し、有給の取得は半日休・時間休も選択可能。</dd>
+                  <dd>年間休日：125日、完全週休二日制（土曜日、日曜日）、国民の祝日、年末年始、特別休暇（慶弔等）、設立記念日5月10日、その他会社の指定する日<br>ワークライフバランスを重視し、有給の取得は半日休・時間休も選択可能。</dd>
                 </div>
                 <div class="p-recruit__row p-recruit__row--benefit">
                   <dt>福利厚生</dt>
@@ -228,7 +229,7 @@
                 <div class="p-recruit__row p-recruit__row--type"><dt>雇用形態</dt><dd>正社員</dd></div>
                 <div class="p-recruit__row p-recruit__row--salary"><dt>給与</dt><dd>当社規定による</dd></div>
                 <div class="p-recruit__row p-recruit__row--hours"><dt>勤務時間</dt><dd>9:00～18:00（7時間55分/休憩65分）<br>※一般職で採用した場合は95分となります。<br>（内訳：午前15分、昼休憩65分、午後15分）</dd></div>
-                <div class="p-recruit__row p-recruit__row--holiday"><dt>休日</dt><dd>年間休日：124日、完全週休二日制（土曜日、日曜日）、国民の祝日、年末年始、特別休暇（慶弔等）、設立記念日5月10日、その他会社の指定する日<br>ワークライフバランスを重視し、有給の取得は半日休・時間休も選択可能。</dd></div>
+                <div class="p-recruit__row p-recruit__row--holiday"><dt>休日</dt><dd>年間休日：125日、完全週休二日制（土曜日、日曜日）、国民の祝日、年末年始、特別休暇（慶弔等）、設立記念日5月10日、その他会社の指定する日<br>ワークライフバランスを重視し、有給の取得は半日休・時間休も選択可能。</dd></div>
                 <div class="p-recruit__row p-recruit__row--benefit"><dt>福利厚生</dt><dd>通勤手当、健康保険、厚生年金保険、雇用保険、労災保険、退職金制度、資格取得費会社負担、資格取得褒賞金、永年勤続祝金</dd></div>
                 <div class="p-recruit__row p-recruit__row--place"><dt>勤務地</dt><dd>本社（横浜市神奈川区）<br><br>・JR横浜線/東急電鉄東急東横線 「菊名駅」から、バス約5～10分程度<br>・JR京浜東北線 「鶴見駅」から、バス約18～20分程度<br><br>《最寄バス停》<br>以下、何れかのバス停から徒歩約3分<br>「松見町バス停」「内路バス停」「菊名老人センター前バス停」<br><br>※バス代支給<br>※バイク、自転車通勤可（無料駐輪場あり）<br>※原則転勤無し</dd></div>
               </dl>

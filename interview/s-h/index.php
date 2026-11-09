@@ -16,8 +16,9 @@
   <meta property="og:type" content="article" />
   <meta property="og:url" content="/recruit/interview/s-h/" />
   <meta property="og:image" content="https://www.kdcg.co.jp/recruit/images/common/ogp.jpg" />
-  <link rel="icon" type="image/png" href="/images/common/header_logo.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/common/header_logo.png">
+  <link rel="icon" href="/recruit/images/common/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="../../images/common/favicon.png" sizes="64x64">
+  <link rel="apple-touch-icon" href="../../images/common/apple-touch-icon.png" sizes="180x180">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
